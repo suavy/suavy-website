@@ -1,0 +1,28 @@
+.header {
+    padding: 10px 15px;
+    margin: 0 auto;
+    background-color: $green;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'VT323', monospace;
+    //font-family: 'Bellota', cursive;
+    @include font-size(36px);
+}
+
+.header__nav {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.header__nav__item {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 10px;
+}

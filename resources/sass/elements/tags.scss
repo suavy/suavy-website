@@ -1,0 +1,48 @@
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tags--flex {
+  .tag {
+    flex: 1 auto;
+    text-align: center;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: $lightmetal;
+  color: $metal;
+  @include font-size(15px);
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: dashed;
+  margin: 4px;
+  @include border-radius(3px);
+  font-weight: 500;
+  i {
+    @include font-size(15px);
+    padding-right: 5px;
+  }
+}
+
+.tag--main {
+
+}
+
+.tag--child {
+
+}
+
+.tag-title {
+  display: inline-block;
+  padding: 3px 5px 3px 0;
+  @include font-size(13px);
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: middle;
+  border: 5px solid transparent;
+  border-left-width: 0px;
+}

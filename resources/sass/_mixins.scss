@@ -1,0 +1,244 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _mixins.scss
+* Description:  The purpose of this library is to facilitate the use of CSS
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _browser-prefix		($property, $value)
+* _align-items			($value)
+* _animation			($properties)
+* _blur					($blur: 1px)
+* _border-radius		($radius: 3px)
+* _box-shadow			($x: 0, $y: 0, $blur: 1px, $color: rgba(0,0,0,.4), $inset: "")
+* _box-sizing			($type: border-box)
+* _display-flex
+* _double-border		($colorOne, $colorTwo, $sizeOne: 1px, $sizeTwo: 1px, $radius: 0)
+* _flex-grow			($number : 1)
+* _flex-wrap			($value)
+* _font-size			($size)
+* _image-2x				($url, $width, $height)
+* _justify-content		($value)
+* _keyframes			($animation-name)
+* _linear-gradient		($direction, $start-color, $start-position, $end-color, $end-position)
+* _opacity				($opacity: 0.5)
+* _transform			($params)
+* _transition			($properties)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+@mixin browser-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+/* _align-items
+===========================================*/
+@mixin align-items($value){
+  @include browser-prefix('align-items', $value);
+}
+
+/* _animation
+===========================================*/
+@mixin animation($properties...) {
+  @include browser-prefix('animation', $properties);
+}
+
+/* _blur
+===========================================*/
+@mixin blur($blur : 1px){
+  filter: blur($blur);
+  -webkit-filter: blur($blur);
+}
+
+/* _border-radius
+===========================================*/
+@mixin border-radius($radius: 3px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* _box-shadow
+===========================================*/
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 1px, $color: rgba(0,0,0,.4), $inset: "") {
+  @if ($inset != "") {
+    -webkit-box-shadow: $inset $x $y $blur $color;
+    -moz-box-shadow:    $inset $x $y $blur $color;
+    box-shadow:         $inset $x $y $blur $color;
+  } @else {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow:    $x $y $blur $color;
+    box-shadow:         $x $y $blur $color;
+  }
+}
+
+/* _box-sizing
+===========================================*/
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing:   $type;
+  -moz-box-sizing:      $type;
+  -ms-box-sizing:		  $type;
+  box-sizing:           $type;
+}
+
+/* _display-flex
+===========================================*/
+@mixin display-flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flex-button;  /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/* _double-border
+===========================================*/
+@mixin double-border($colorOne, $colorTwo, $sizeOne: 1px, $sizeTwo: 1px, $radius: 0) {
+  border: $sizeOne solid $colorOne;
+  @include box-shadow(0, 0, $sizeTwo, $colorTwo, 0);
+  @if ($radius != 0) {
+    @include border-radius($radius);
+  }
+}
+
+/* _flex-grow
+===========================================*/
+@mixin flex-grow($number : 1) {
+  -webkit-flex-grow: $number;
+  -moz-flex-grow: $number;
+  -ms-flex-grow: $number;
+  flex-grow: $number;
+}
+
+/* _flex-wrap
+===========================================*/
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+/* _font-size
+===========================================*/
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+/* _image-2x
+===========================================*/
+@mixin image-2x($url, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    background-image: url($url);
+    background-size: $width $height;
+  }
+}
+
+/* _justify-content
+===========================================*/
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  -moz-justify-content: $value;
+  -ms-justify-content: $value;
+  justify-content: $value;
+}
+
+/* _keyframes
+===========================================*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+/* linear-gradient
+===========================================*/
+@mixin linear-gradient($direction, $start-color: #FFFFFF, $start-position: 0%, $end-color: #000000, $end-position:100%) {
+  background:  $start-color;
+  background: -webkit-linear-gradient($direction, $start-color $start-position, $end-color $end-position); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($direction, $start-color $start-position, $end-color $end-position); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($direction, $start-color $start-position, $end-color $end-position); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($direction, $start-color $start-position, $end-color $end-position); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+/* _multiLineEllipsis
+===========================================*/
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+/* _opacity
+===========================================*/
+@mixin opacity($opacity : 0.5) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
+/* _transform
+===========================================*/
+@mixin transform($params) {
+  @include browser-prefix('transform', $params);
+}
+
+/* _transition
+===========================================*/
+@mixin transition($properties...) {
+  @if length($properties) >= 1 {
+    @include browser-prefix('transition', $properties);
+  }
+
+  @else {
+    @include browser-prefix('transition', $what: all, $length: 1s, $easing: ease-in-out);
+  }
+}

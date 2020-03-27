@@ -1,0 +1,14 @@
+/* _button
+===========================================*/
+.buttons {
+  display: inline-block;
+}
+
+.button {
+  background-color: $lightmetal;
+  color: $black;
+  padding: 3px 5px;
+  margin-right: 5px;
+  @include border-radius(3px);
+  display: inline-block;
+}
