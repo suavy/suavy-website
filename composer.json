@@ -45,6 +45,11 @@
         ]
     },
     "autoload-dev": {
+        "files": [
+            "app/Helpers/ColorHelper.php",
+            "app/Helpers/DatetimeHelper.php",
+            "app/Helpers/SecurityHelper.php"
+        ],
         "psr-4": {
             "Tests\\": "tests/"
         }
