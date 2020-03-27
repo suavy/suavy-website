@@ -1,0 +1,626 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _reset.scss
+* Description:  reset default browsers styles
+* Author:       Christophe DO OUTEIRO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _mixins.scss
+* Description:  The purpose of this library is to facilitate the use of CSS
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _browser-prefix		($property, $value)
+* _align-items			($value)
+* _animation			($properties)
+* _blur					($blur: 1px)
+* _border-radius		($radius: 3px)
+* _box-shadow			($x: 0, $y: 0, $blur: 1px, $color: rgba(0,0,0,.4), $inset: "")
+* _box-sizing			($type: border-box)
+* _display-flex
+* _double-border		($colorOne, $colorTwo, $sizeOne: 1px, $sizeTwo: 1px, $radius: 0)
+* _flex-grow			($number : 1)
+* _flex-wrap			($value)
+* _font-size			($size)
+* _image-2x				($url, $width, $height)
+* _justify-content		($value)
+* _keyframes			($animation-name)
+* _linear-gradient		($direction, $start-color, $start-position, $end-color, $end-position)
+* _opacity				($opacity: 0.5)
+* _transform			($params)
+* _transition			($properties)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _align-items
+===========================================*/
+
+/* _animation
+===========================================*/
+
+/* _blur
+===========================================*/
+
+/* _border-radius
+===========================================*/
+
+/* _box-shadow
+===========================================*/
+
+/* _box-sizing
+===========================================*/
+
+/* _display-flex
+===========================================*/
+
+/* _double-border
+===========================================*/
+
+/* _flex-grow
+===========================================*/
+
+/* _flex-wrap
+===========================================*/
+
+/* _font-size
+===========================================*/
+
+/* _image-2x
+===========================================*/
+
+/* _justify-content
+===========================================*/
+
+/* _keyframes
+===========================================*/
+
+/* linear-gradient
+===========================================*/
+
+/* _multiLineEllipsis
+===========================================*/
+
+/* _opacity
+===========================================*/
+
+/* _transform
+===========================================*/
+
+/* _transition
+===========================================*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _variables.scss
+* Description:  Main project variables
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _breakpoints
+* _colors
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _breakpoints
+===========================================*/
+
+/* _colors
+===========================================*/
+
+.color-white {
+  color: #ecf0f1 !important;
+}
+
+.bg-white {
+  background-color: #ecf0f1 !important;
+  fill: #ecf0f1 !important;
+}
+
+.color-lightgray {
+  color: #d2d7d3 !important;
+}
+
+.bg-lightgray {
+  background-color: #d2d7d3 !important;
+  fill: #d2d7d3 !important;
+}
+
+.color-blue {
+  color: #3490dc !important;
+}
+
+.bg-blue {
+  background-color: #3490dc !important;
+  fill: #3490dc !important;
+}
+
+.color-indigo {
+  color: #6574cd !important;
+}
+
+.bg-indigo {
+  background-color: #6574cd !important;
+  fill: #6574cd !important;
+}
+
+.color-purple {
+  color: #9561e2 !important;
+}
+
+.bg-purple {
+  background-color: #9561e2 !important;
+  fill: #9561e2 !important;
+}
+
+.color-pink {
+  color: #f66d9b !important;
+}
+
+.bg-pink {
+  background-color: #f66d9b !important;
+  fill: #f66d9b !important;
+}
+
+.color-red {
+  color: #e3342f !important;
+}
+
+.bg-red {
+  background-color: #e3342f !important;
+  fill: #e3342f !important;
+}
+
+.color-orange {
+  color: #f6993f !important;
+}
+
+.bg-orange {
+  background-color: #f6993f !important;
+  fill: #f6993f !important;
+}
+
+.color-yellow {
+  color: #ffed4a !important;
+}
+
+.bg-yellow {
+  background-color: #ffed4a !important;
+  fill: #ffed4a !important;
+}
+
+.color-green {
+  color: #38c172 !important;
+}
+
+.bg-green {
+  background-color: #38c172 !important;
+  fill: #38c172 !important;
+}
+
+.color-teal {
+  color: #4dc0b5 !important;
+}
+
+.bg-teal {
+  background-color: #4dc0b5 !important;
+  fill: #4dc0b5 !important;
+}
+
+.color-cyan {
+  color: #6cb2eb !important;
+}
+
+.bg-cyan {
+  background-color: #6cb2eb !important;
+  fill: #6cb2eb !important;
+}
+
+.color-gray {
+  color: #2d3436 !important;
+}
+
+.bg-gray {
+  background-color: #2d3436 !important;
+  fill: #2d3436 !important;
+}
+
+.color-black {
+  color: #080808 !important;
+}
+
+.bg-black {
+  background-color: #080808 !important;
+  fill: #080808 !important;
+}
+
+html,
+body {
+  background-color: #ecf0f1;
+  color: #080808;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+}
+
+.content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  padding: 10px 0 0;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-alt-style {
+  font-family: Courier, monospace;
+}
+
+/* _button
+===========================================*/
+
+.buttons {
+  display: inline-block;
+}
+
+.button {
+  background-color: rgba(113, 128, 147, 0.1);
+  color: #080808;
+  padding: 3px 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* _button-theme
+===========================================*/
+
+.buttons-theme {
+  display: inline-block;
+}
+
+.button-theme {
+  display: inline-block;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 5px 5px;
+  background-color: #080808;
+  color: #718093;
+  border-right: 2px solid #d2d7d3;
+}
+
+.button-theme:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.button-theme:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right-width: 0;
+}
+
+.button-theme:hover,
+.button-theme--selected {
+  background-color: #ecf0f1;
+  color: #718093;
+  transition: 0.3s ease-in-out;
+}
+
+.buttons-theme--vertical .button-theme {
+  display: block;
+  border-right: none;
+  border-bottom: 2px solid #d2d7d3;
+}
+
+.buttons-theme--vertical .button-theme:first-child {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+}
+
+.buttons-theme--vertical .button-theme:last-child {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-width: 0;
+}
+
+/* _button-flag
+===========================================*/
+
+.buttons-flag {
+  display: inline-block;
+}
+
+.button-flag {
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  border-right: 2px solid #d2d7d3;
+}
+
+.button-flag img {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.button-flag:first-child img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.button-flag:last-child {
+  border-width: 0;
+}
+
+.button-flag:last-child img {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.button-flag:hover,
+.button-flag--selected {
+  opacity: 0.8;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.buttons-flag--vertical .button-flag {
+  display: block;
+  border-right: none;
+  border-bottom: 2px solid #d2d7d3;
+}
+
+.buttons-flag--vertical .button-flag:first-child img {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+}
+
+.buttons-flag--vertical .button-flag:last-child {
+  border-bottom-width: 0;
+}
+
+.buttons-flag--vertical .button-flag:last-child img {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+}
+
+.link {
+  font-weight: bold;
+  color: #080808;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tags--flex .tag {
+  flex: 1 auto;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: rgba(113, 128, 147, 0.1);
+  color: #718093;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: dashed;
+  margin: 4px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.tag i {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  padding-right: 5px;
+}
+
+.tag-title {
+  display: inline-block;
+  padding: 3px 5px 3px 0;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: middle;
+  border: 5px solid transparent;
+  border-left-width: 0px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _home.scss
+* Description:  Home page specific CSS
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _base
+* _skills
+* _projects
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.footer {
+  border-top: 2px solid rgba(113, 128, 147, 0.1);
+  font-family: Courier, monospace;
+  text-align: center;
+  padding: 15px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 2px solid rgba(113, 128, 147, 0.1);
+  font-family: Courier, monospace;
+  text-align: center;
+  padding: 15px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body.night {
+  background-color: #080808;
+  color: #d2d7d3;
+}
+
+body.night .button {
+  background-color: #718093;
+}
+
+body.night .link {
+  color: #d2d7d3;
+}
+

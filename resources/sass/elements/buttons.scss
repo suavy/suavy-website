@@ -1,0 +1,115 @@
+/* _button
+===========================================*/
+.buttons {
+  display: inline-block;
+}
+
+.button {
+  background-color: $lightmetal;
+  color: $black;
+  padding: 3px 5px;
+  margin-right: 5px;
+  @include border-radius(3px);
+  display: inline-block;
+}
+
+/* _button-theme
+===========================================*/
+.buttons-theme {
+  display: inline-block;
+}
+
+.button-theme {
+  display: inline-block;
+  @include font-size(20px);
+  padding: 5px 5px;
+  background-color: $black;
+  color: $metal;
+  border-right: 2px solid $lightgray;
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right-width: 0;
+  }
+  &:hover, &--selected {
+    background-color: $white;
+    color: $metal;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+}
+
+.buttons-theme--vertical {
+  .button-theme {
+    display: block;
+    border-right: none;
+    border-bottom: 2px solid $lightgray;
+    &:first-child {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 5px;
+    }
+    &:last-child {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-width: 0;
+    }
+  }
+}
+
+/* _button-flag
+===========================================*/
+.buttons-flag {
+  display: inline-block;
+}
+
+.button-flag {
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  border-right: 2px solid $lightgray;
+  img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+
+  }
+  &:first-child img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &:last-child {
+    img {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    border-width: 0;
+  }
+  &:hover, &--selected {
+    opacity: 0.8;
+    filter: grayscale(0%);
+  }
+}
+
+.buttons-flag--vertical {
+  .button-flag {
+    display: block;
+    border-right: none;
+    border-bottom: 2px solid $lightgray;
+    &:first-child img {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 5px;
+    }
+    &:last-child  {
+      img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+      }
+      border-bottom-width: 0;
+    }
+  }
+}

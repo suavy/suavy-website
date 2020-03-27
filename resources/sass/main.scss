@@ -1,0 +1,31 @@
+html, body {
+  background-color: $white;
+  color: $black;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+
+}
+
+.content {
+  padding: 10px;
+}
+
+.title {
+  @include font-size(28px);
+  padding: 10px 0 0;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-alt-style {
+  font-family: Courier, monospace;
+}
