@@ -15,7 +15,6 @@ class CreateInterestsTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('interests'); // todo remove this
         Schema::create('interests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name_fr')->nullable();
@@ -27,6 +26,18 @@ class CreateInterestsTable extends Migration
             $table->timestamps();
         });
         $this->seed();
+
+        Schema::create('user_interest', function (Blueprint $table) {
+            $table->id();
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->unsignedBigInteger('interest_id');
+            $table->foreign('interest_id')->references('id')->on('interests')->onDelete('cascade');
+
+            $table->timestamps();
+        });
 
     }
 
@@ -72,6 +83,22 @@ class CreateInterestsTable extends Migration
             'name_pt' => "Natureza",
             'name_en' => "Nature",
             'name_es' => "",
+            'color' => "",
+        ]);
+        Interest::create([
+            'icon' => "fad fa-solar-system",
+            'name_fr' => "Astrophysique",
+            'name_pt' => "Astrofísica",
+            'name_en' => "Astrophysics",
+            'name_es' => "Astrofísica",
+            'color' => "",
+        ]);
+        Interest::create([
+            'icon' => "fas fa-gamepad-alt",
+            'name_fr' => "Jeux video",
+            'name_pt' => "Video games",
+            'name_en' => "Video games",
+            'name_es' => "Vídeo juegos",
             'color' => "",
         ]);
     }

@@ -2,22 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Traits\IsTranslatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
-{
-    use Notifiable;
+class OpenSourceProject extends Model {
+
+    use IsTranslatable;
+
 
     /*
     |--------------------------------------------------------------------------
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function address(){                   return $this->belongsTo(Address::class);}
-    public function skills(){                    return $this->belongsToMany(Skill::class); }
-    public function interests(){                 return $this->belongsToMany(Interest::class); }
 
     /*
     |--------------------------------------------------------------------------
@@ -26,15 +23,20 @@ class User extends Authenticatable
     */
 
     protected $fillable = [
+        'slug',
         'name',
-        'email',
-        'password',
-        'admin',
-        'address_id'];
-    protected $hidden = ['password', 'remember_token',];
-    protected $dates = ['created_at', 'updated_at',];
-
-
+        'description_fr',
+        'description_pt',
+        'description_en',
+        'description_es',
+        'color',
+        'color_light',
+        'started_at',
+        'ended_at',
+        'source_link',
+        'website_link'
+    ];
+    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
 
     /*
     |--------------------------------------------------------------------------
@@ -59,5 +61,6 @@ class User extends Authenticatable
     | _Functions
     |--------------------------------------------------------------------------
     */
+
 
 }
