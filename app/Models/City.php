@@ -2,22 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Traits\IsTranslatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
-{
-    use Notifiable;
+class City extends Model {
+
+    use IsTranslatable;
 
     /*
     |--------------------------------------------------------------------------
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function address(){                   return $this->belongsTo(Address::class);}
-    public function skills(){                    return $this->belongsToMany(Skill::class); }
-    public function interests(){                 return $this->belongsToMany(Interest::class); }
+    public function country(){          return $this->belongsTo(Country::class);}
 
     /*
     |--------------------------------------------------------------------------
@@ -26,15 +23,13 @@ class User extends Authenticatable
     */
 
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'admin',
-        'address_id'];
-    protected $hidden = ['password', 'remember_token',];
+        'name_fr',
+        'name_pt',
+        'name_en',
+        'name_es',
+        'country_id'
+    ];
     protected $dates = ['created_at', 'updated_at',];
-
-
 
     /*
     |--------------------------------------------------------------------------
@@ -59,5 +54,6 @@ class User extends Authenticatable
     | _Functions
     |--------------------------------------------------------------------------
     */
+
 
 }

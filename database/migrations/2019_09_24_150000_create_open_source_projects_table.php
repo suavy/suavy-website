@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 use App\Models\PersonalProject;
 
-class CreatePersonalProjectsTable extends Migration
+class CreateOpenSourceProjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,8 @@ class CreatePersonalProjectsTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('personal_projects'); // todo remove this
-        Schema::create('personal_projects', function (Blueprint $table) {
+        Schema::dropIfExists('open_source_projects'); // todo remove this
+        Schema::create('open_source_projects', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('slug')->unique();
             $table->string('name');
@@ -43,14 +43,12 @@ class CreatePersonalProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personal_projects');
+        Schema::dropIfExists('open_source_projects');
     }
 
     public function seed()
     {
-
-
-        PersonalProject::create([
+        \App\Models\OpenSourceProject::create([
             'slug' => 'my-online-resume',
             'name' => 'My Online Resume',
             'color' => '#1e3799',
@@ -65,20 +63,5 @@ class CreatePersonalProjectsTable extends Migration
             'website_link' => '',
         ]);
 
-        PersonalProject::create([
-            'slug' => 'live-statistics',
-            'name' => 'Live Statistics',
-            'color' => '#1e3799',
-            'color_light' => hex2rgba('#1e3799', 0.2),
-            'started_at' => \Carbon\Carbon::create(2015, 10, 1),
-            'ended_at' => null,
-            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'description_pt' => '',
-            'description_en' => '',
-            'description_es' => '',
-            'source_link' => 'https://github.com/cdo9/live-statistics',
-            'website_link' => 'https://live-statistics.com/',
-
-        ]);
     }
 }

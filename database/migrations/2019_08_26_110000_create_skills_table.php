@@ -28,6 +28,18 @@ class CreateSkillsTable extends Migration
         });
         $this->seed();
 
+        Schema::create('user_skill', function (Blueprint $table) {
+            $table->id();
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->unsignedBigInteger('skill_id');
+            $table->foreign('skill_id')->references('id')->on('skills')->onDelete('cascade');
+
+            $table->timestamps();
+        });
+
     }
 
     /**
