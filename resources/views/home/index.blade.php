@@ -1,4 +1,4 @@
 @extends('layouts.main')
 @section('content')
-    Hello world!
+    @include('home.partials.match')
 @endsection

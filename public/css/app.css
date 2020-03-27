@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);@import url(https://fonts.googleapis.com/css?family=Bellota:700&display=swap);@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);@import url(https://fonts.googleapis.com/css?family=Bellota:700&display=swap);@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -326,12 +326,12 @@ a {
 }
 
 .color-green {
-  color: #20C20E !important;
+  color: #21b989 !important;
 }
 
 .bg-green {
-  background-color: #20C20E !important;
-  fill: #20C20E !important;
+  background-color: #21b989 !important;
+  fill: #21b989 !important;
 }
 
 .color-teal {
@@ -362,45 +362,65 @@ a {
 }
 
 .color-black {
-  color: #080808 !important;
+  color: #000 !important;
 }
 
 .bg-black {
-  background-color: #080808 !important;
-  fill: #080808 !important;
+  background-color: #000 !important;
+  fill: #000 !important;
 }
 
 html,
 body {
   background-color: #ecf0f1;
-  color: #080808;
+  color: #000;
   font-family: "DM Sans", sans-serif;
   font-weight: 200;
   font-size: 16px;
   margin: 0;
 }
 
-.content {
-  padding: 10px;
+.alert {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #ecf0f1;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background-color: #21b989;
+  background-image: linear-gradient(135deg, #21b989 0%, #16A085 100%);
+  border-radius: 5px;
 }
 
-.title {
-  font-size: 28px;
-  font-size: 1.75rem;
-  padding: 10px 0 0;
-  font-weight: bold;
+.alert__text {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 42px;
 }
 
-.hide {
-  display: none;
+.alert__title {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-align: right;
+  font-family: "Abril Fatface", cursive;
+  font-size: 52px;
+  font-size: 3.25rem;
 }
 
-.italic {
-  font-style: italic;
+.alert__title a {
+  color: #ecf0f1;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(236, 240, 241, 0.5);
+          text-decoration-color: rgba(236, 240, 241, 0.5);
 }
 
-.font-alt-style {
-  font-family: Courier, monospace;
+.alert__title a:hover {
+  -webkit-text-decoration-color: #ecf0f1;
+          text-decoration-color: #ecf0f1;
 }
 
 /* _button
@@ -412,7 +432,7 @@ body {
 
 .button {
   background-color: rgba(113, 128, 147, 0.1);
-  color: #080808;
+  color: #000;
   padding: 3px 5px;
   margin-right: 5px;
   border-radius: 3px;
@@ -421,7 +441,7 @@ body {
 
 .link {
   font-weight: bold;
-  color: #080808;
+  color: #000;
 }
 
 /* _button-theme
@@ -432,9 +452,10 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   padding: 5px 5px;
-  background-color: #080808;
+  background-color: #ecf0f1;
   color: #718093;
   border-right: 2px solid #d2d7d3;
+  opacity: 0.5;
 }
 
 .button-theme:first-child {
@@ -453,23 +474,7 @@ body {
   background-color: #ecf0f1;
   color: #718093;
   transition: 0.3s ease-in-out;
-}
-
-.buttons-theme--vertical .button-theme {
-  display: block;
-  border-right: none;
-  border-bottom: 2px solid #d2d7d3;
-}
-
-.buttons-theme--vertical .button-theme:first-child {
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 5px;
-}
-
-.buttons-theme--vertical .button-theme:last-child {
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-width: 0;
+  opacity: 0.9;
 }
 
 /* _button-flag
@@ -506,29 +511,9 @@ body {
 
 .button-flag:hover,
 .button-flag--selected {
-  opacity: 0.8;
+  opacity: 0.9;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
-}
-
-.buttons-flag--vertical .button-flag {
-  display: block;
-  border-right: none;
-  border-bottom: 2px solid #d2d7d3;
-}
-
-.buttons-flag--vertical .button-flag:first-child img {
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 5px;
-}
-
-.buttons-flag--vertical .button-flag:last-child {
-  border-bottom-width: 0;
-}
-
-.buttons-flag--vertical .button-flag:last-child img {
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 5px;
 }
 
 .tags {
@@ -586,7 +571,6 @@ body {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .footer {
-  border-top: 2px solid rgba(113, 128, 147, 0.1);
   font-family: Courier, monospace;
   text-align: center;
   padding: 15px;
@@ -597,7 +581,7 @@ body {
 .header {
   padding: 10px 15px;
   margin: 0 auto;
-  background-color: #20C20E;
+  background-color: #21b989;
 }
 
 .header__logo {
@@ -624,15 +608,7 @@ body {
 }
 
 body.night {
-  background-color: #080808;
-  color: #d2d7d3;
-}
-
-body.night .button {
-  background-color: #718093;
-}
-
-body.night .link {
+  background-color: #000;
   color: #d2d7d3;
 }
 

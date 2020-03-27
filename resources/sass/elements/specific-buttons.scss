@@ -8,9 +8,10 @@
     display: inline-block;
     @include font-size(20px);
     padding: 5px 5px;
-    background-color: $black;
+    background-color: $white;
     color: $metal;
     border-right: 2px solid $lightgray;
+    opacity: 0.5;
     &:first-child {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -25,23 +26,7 @@
         color: $metal;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
-    }
-}
-
-.buttons-theme--vertical {
-    .button-theme {
-        display: block;
-        border-right: none;
-        border-bottom: 2px solid $lightgray;
-        &:first-child {
-            border-bottom-left-radius: 0;
-            border-top-right-radius: 5px;
-        }
-        &:last-child {
-            border-top-right-radius: 0;
-            border-bottom-left-radius: 5px;
-            border-bottom-width: 0;
-        }
+        opacity: 0.9;
     }
 }
 
@@ -75,26 +60,7 @@
         border-width: 0;
     }
     &:hover, &--selected {
-        opacity: 0.8;
+        opacity: 0.9;
         filter: grayscale(0%);
-    }
-}
-
-.buttons-flag--vertical {
-    .button-flag {
-        display: block;
-        border-right: none;
-        border-bottom: 2px solid $lightgray;
-        &:first-child img {
-            border-bottom-left-radius: 0;
-            border-top-right-radius: 5px;
-        }
-        &:last-child  {
-            img {
-                border-top-right-radius: 0;
-                border-bottom-left-radius: 5px;
-            }
-            border-bottom-width: 0;
-        }
     }
 }
