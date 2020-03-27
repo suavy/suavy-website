@@ -1,4 +1,10 @@
 .link {
-  font-weight: bold;
-  color: $black;
+    color: $black;
+}
+.link--underline {
+    text-decoration: underline;
+    text-decoration-color: transparentize($black, 0.5);
+    &:hover {
+        text-decoration-color: $black;
+    }
 }

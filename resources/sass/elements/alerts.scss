@@ -1,7 +1,6 @@
 .alert {
     max-width: 1024px;
     margin: 0 auto;
-    color: $white;
     padding: 30px 40px;
     box-sizing: border-box;
     background-color: #21b989;
@@ -25,12 +24,5 @@
     text-align: right;
     font-family: 'Abril Fatface', cursive;
     @include font-size(52px);
-    a {
-        color: $white;
-        text-decoration: underline;
-        text-decoration-color: transparentize($white, 0.5);
-        &:hover {
-            text-decoration-color: $white;
-        }
-    }
+
 }

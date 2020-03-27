@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);@import url(https://fonts.googleapis.com/css?family=Bellota:700&display=swap);@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=VT323&display=swap);@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -374,7 +374,7 @@ html,
 body {
   background-color: #ecf0f1;
   color: #000;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   font-size: 16px;
   margin: 0;
@@ -383,7 +383,6 @@ body {
 .alert {
   max-width: 1024px;
   margin: 0 auto;
-  color: #ecf0f1;
   padding: 30px 40px;
   box-sizing: border-box;
   background-color: #21b989;
@@ -411,18 +410,6 @@ body {
   font-size: 3.25rem;
 }
 
-.alert__title a {
-  color: #ecf0f1;
-  text-decoration: underline;
-  -webkit-text-decoration-color: rgba(236, 240, 241, 0.5);
-          text-decoration-color: rgba(236, 240, 241, 0.5);
-}
-
-.alert__title a:hover {
-  -webkit-text-decoration-color: #ecf0f1;
-          text-decoration-color: #ecf0f1;
-}
-
 /* _button
 ===========================================*/
 
@@ -440,8 +427,18 @@ body {
 }
 
 .link {
-  font-weight: bold;
   color: #000;
+}
+
+.link--underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.5);
+          text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
+.link--underline:hover {
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
 }
 
 /* _button-theme
@@ -571,11 +568,19 @@ body {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .footer {
-  font-family: Courier, monospace;
   text-align: center;
   padding: 15px;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.footer__links {
+  padding-bottom: 10px;
+}
+
+.footer__links li {
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 .header {
@@ -589,7 +594,7 @@ body {
   width: 50%;
   text-align: left;
   vertical-align: middle;
-  font-family: "VT323", monospace;
+  font-family: "Abril Fatface", cursive;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -609,6 +614,20 @@ body {
 
 body.night {
   background-color: #000;
-  color: #d2d7d3;
+  color: #ecf0f1;
+}
+
+body.night .link {
+  color: #ecf0f1;
+}
+
+body.night .link--underline {
+  -webkit-text-decoration-color: rgba(236, 240, 241, 0.5);
+          text-decoration-color: rgba(236, 240, 241, 0.5);
+}
+
+body.night .link--underline:hover {
+  -webkit-text-decoration-color: #ecf0f1;
+          text-decoration-color: #ecf0f1;
 }
 
