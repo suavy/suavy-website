@@ -9,12 +9,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fontawesome.min.css') }}">
 
     <!-- Scripts -->
     @stack('before-head-scripts')
     <!-- Head Scripts -->
-
+    <script src="https://kit.fontawesome.com/7b866af269.js" crossorigin="anonymous"></script>
     <!-- /Head Scripts -->
     @stack('after-head-scripts')
 </head>
