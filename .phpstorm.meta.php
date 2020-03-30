@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2020-03-27 13:30:16.
+    * Generated on 2020-03-27 16:27:00.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -40,6 +40,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -126,6 +127,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -138,6 +140,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -165,6 +168,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\Illuminate\Container\Container::makeWith(0), map([
         '' => '@',
@@ -196,6 +200,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -282,6 +287,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -294,6 +300,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -321,6 +328,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
@@ -352,6 +360,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -438,6 +447,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -450,6 +460,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -477,6 +488,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
@@ -508,6 +520,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -594,6 +607,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -606,6 +620,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -633,6 +648,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\App::make(0), map([
         '' => '@',
@@ -664,6 +680,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -750,6 +767,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -762,6 +780,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -789,6 +808,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\App::makeWith(0), map([
         '' => '@',
@@ -820,6 +840,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -906,6 +927,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -918,6 +940,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -945,6 +968,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\app(0), map([
         '' => '@',
@@ -976,6 +1000,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -1062,6 +1087,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -1074,6 +1100,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -1101,6 +1128,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
     override(\resolve(0), map([
         '' => '@',
@@ -1132,6 +1160,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
         'Whoops\Handler\HandlerInterface' => \Facade\Ignition\ErrorPage\IgnitionWhoopsHandler::class,
+        'alerts' => \Prologue\Alerts\AlertsMessageBag::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -1218,6 +1247,7 @@ namespace PHPSTORM_META {
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'composer' => \Illuminate\Support\Composer::class,
         'cookie' => \Illuminate\Cookie\CookieJar::class,
+        'crud' => \Backpack\CRUD\app\Library\CrudPanel\CrudPanel::class,
         'database-reset-command-for-laravel' => \Suavy\DatabaseResetCommandForLaravel\DatabaseResetCommandForLaravel::class,
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
@@ -1230,6 +1260,7 @@ namespace PHPSTORM_META {
         'flare.client' => \Facade\FlareClient\Flare::class,
         'flare.http' => \Facade\FlareClient\Http\Client::class,
         'flare.logger' => \Monolog\Logger::class,
+        'gravatar' => \Creativeorange\Gravatar\Gravatar::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\LogManager::class,
@@ -1257,6 +1288,7 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
+        'widgets' => \Illuminate\Support\Collection::class,
     ]));
 
 
