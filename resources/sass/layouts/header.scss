@@ -9,7 +9,7 @@
     width: 50%;
     text-align: left;
     vertical-align: middle;
-    font-family: 'Abril Fatface', cursive;
+    font-family: $titleFont;
     @include font-size(36px);
 }
 

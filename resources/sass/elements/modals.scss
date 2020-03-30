@@ -1,0 +1,75 @@
+.modal-container {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.modal {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+}
+
+.modal__close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+    }
+}
+
+
+/* Specific modals */
+.modal--match {
+
+}
+.modal--match__compare {
+    padding: 20px 0;
+}
+.modal--match__compare__love, .modal--match__compare__hate {
+    display: inline-block;
+    width: 50%;
+    //background-color: pink;
+    box-sizing: border-box;
+    vertical-align: top;
+    .title {
+        padding-bottom: 10px;
+    }
+    ul {
+        list-style-position: inside;
+        list-style-type: disc;
+        li {
+            padding: 5px 5px;
+        }
+    }
+}
+.modal--match__compare__love {
+    .title { color: $green; }
+}
+.modal--match__compare__hate {
+    .title { color: $orange; }
+}

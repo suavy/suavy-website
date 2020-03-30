@@ -1,0 +1,44 @@
+.team {
+    background-color: $lightmetal;
+    position: relative;
+}
+
+.team__member {
+    width: 250px;
+    //height: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+    background-color: $white;
+    text-align: center;
+    @include border-radius(5px);
+}
+
+.team__member__photo {
+    display: block;
+    position: relative;
+    margin: 0 auto 5px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #21b989 0%, #16A085 100%);
+    @include border-radius(50%);
+    img {
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+        @include border-radius(50%);
+    }
+}
+
+.team__member__name {
+    font-family: $titleFont;
+    padding-bottom: 5px;
+}
+
+.team__member__role {
+    padding-bottom: 5px;
+}
+.team__member__location {
+    padding-bottom: 5px;
+}

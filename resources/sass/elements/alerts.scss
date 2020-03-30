@@ -22,7 +22,7 @@
     width: 50%;
     vertical-align: middle;
     text-align: right;
-    font-family: 'Abril Fatface', cursive;
+    font-family: $titleFont;
     @include font-size(52px);
 
 }

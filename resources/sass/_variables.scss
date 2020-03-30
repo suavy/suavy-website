@@ -6,6 +6,7 @@
 *
 * _breakpoints
 * _colors
+* _fonts
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* _breakpoints
@@ -79,3 +80,7 @@ $color-list: (
   .bg-#{$color} { background-color: $value !important; fill: $value !important;  }
 }
 
+/* _fonts
+===========================================*/
+$defaultFont: 'Source Sans Pro', sans-serif;
+$titleFont: 'Abril Fatface', cursive;

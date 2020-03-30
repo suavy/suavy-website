@@ -1,0 +1,36 @@
+.map-row {
+    background-color: $black;
+    text-align: center;
+    position: relative;
+    width: 98%;
+    padding: 18%;
+    overflow: hidden;
+}
+
+.map {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    path { fill: #d3d3d3; transition: .6s fill; }
+    path:hover { fill: $green; }
+}
+
+.map-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    @include border-radius(50%);
+    background-color: red;
+}

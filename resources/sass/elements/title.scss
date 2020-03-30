@@ -1,0 +1,4 @@
+.title {
+    font-family: $titleFont;
+    @include font-size(32px);
+}
