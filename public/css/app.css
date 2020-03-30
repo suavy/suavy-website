@@ -382,6 +382,7 @@ body {
   font-weight: 200;
   font-size: 16px;
   margin: 0;
+  position: relative;
 }
 
 .alert {
@@ -449,20 +450,30 @@ body {
   background-color: #21b989;
   position: relative;
   width: 100%;
-  padding: 17% 0;
-  overflow: hidden;
+}
+
+.map-col {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .map-col {
+    display: block;
+    width: 100%;
+  }
 }
 
 .map-title {
   font-family: "Abril Fatface", cursive;
   color: #ecf0f1;
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 60px;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 48px;
   padding-left: 80px;
   box-sizing: border-box;
-  position: absolute;
-  top: 25%;
   text-align: justify;
 }
 
@@ -470,10 +481,26 @@ body {
   color: #f6e58d;
 }
 
+@media (max-width: 1024px) {
+  .map-title {
+    padding: 70px 0 20px;
+    text-align: center;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 36px;
+  }
+}
+
+.map-container {
+  width: 100%;
+  padding: 33% 0;
+  overflow: hidden;
+}
+
 .map {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -481,9 +508,17 @@ body {
 .map-svg {
   position: absolute;
   top: 0;
-  left: 26%;
-  width: 50%;
+  left: -5%;
+  width: 100%;
   height: auto;
+}
+
+@media (max-width: 1024px) {
+  .map-svg {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .map-svg path {
@@ -793,10 +828,19 @@ body {
 }
 
 .header {
-  padding: 10px 15px;
   padding: 20px 80px 10px;
   margin: 0 auto;
-  background-color: #21b989;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+    border-bottom: 2px solid #ecf0f1;
+  }
 }
 
 .header__logo {

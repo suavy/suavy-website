@@ -1,8 +1,14 @@
 .header {
-    padding: 10px 15px;
     padding: 20px 80px 10px;
     margin: 0 auto;
-    background-color: $green;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    @include media('screen-small') {
+        padding: 10px 15px;
+        border-bottom: 2px solid $white;
+    }
 }
 
 .header__logo {

@@ -2,29 +2,49 @@
     background-color: $green;
     position: relative;
     width: 100%;
-    padding: 17% 0;
-    overflow: hidden;
+}
+
+.map-col {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    vertical-align: middle;
+    @include media('screen-small') {
+        display: block;
+        width: 100%;
+    }
+
 }
 
 .map-title {
     font-family: $titleFont;
     color: $white;
-    @include font-size(48px);
-    line-height: 60px;
+    @include font-size(36px);
+    line-height: 48px;
     padding-left: 80px;
     box-sizing: border-box;
-    position: absolute;
-    top: 25%;
     text-align: justify;
     span {
         color: $yellow;
     }
+    @include media('screen-small') {
+        padding: 70px 0 20px;
+        text-align: center;
+        @include font-size(28px);
+        line-height: 36px;
+    }
+}
+
+.map-container {
+    width: 100%;
+    padding: 33% 0;
+    overflow: hidden;
 }
 
 .map {
     position: absolute;
     top: 0;
-    left: 20%;
+    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -32,8 +52,13 @@
 .map-svg {
     position: absolute;
     top: 0;
-    left: 26%;
-    width: 50%;
+    left: -5%;
+    width: 100%;
+    @include media('screen-small') {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
     height: auto;
     path {
         fill: $white;
