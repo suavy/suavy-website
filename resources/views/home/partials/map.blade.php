@@ -1,4 +1,8 @@
 <div class="map-row">
+    <div class="map-title">
+        We are an <span>organization<br/> of freelancers</span>
+        that build<br/> beautiful things around<br/> the world.
+    </div>
     <div class="map">
         @include('home.partials.map-svg')
     </div>

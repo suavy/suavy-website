@@ -1,16 +1,30 @@
 .map-row {
-    background-color: $black;
-    text-align: center;
+    background-color: $green;
     position: relative;
-    width: 98%;
-    padding: 18%;
+    width: 100%;
+    padding: 17% 0;
     overflow: hidden;
+}
+
+.map-title {
+    font-family: $titleFont;
+    color: $white;
+    @include font-size(48px);
+    line-height: 60px;
+    padding-left: 80px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 25%;
+    text-align: justify;
+    span {
+        color: $yellow;
+    }
 }
 
 .map {
     position: absolute;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: 20%;
     width: 100%;
     height: 100%;
 }
@@ -18,11 +32,26 @@
 .map-svg {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 26%;
+    width: 50%;
     height: auto;
-    path { fill: #d3d3d3; transition: .6s fill; }
-    path:hover { fill: $green; }
+    path {
+        fill: $white;
+        fill-opacity: 1;
+        stroke:$white;
+        stroke-opacity: 1;
+        stroke-width:1;
+        transition: .6s fill;
+        &:hover {
+
+        }
+    }
+    path#FR, path#BR {
+        fill: $yellow;
+        &:hover {
+            fill: $blue;
+        }
+    }
 }
 
 .map-marker {
@@ -32,5 +61,5 @@
     width: 30px;
     height: 30px;
     @include border-radius(50%);
-    background-color: red;
+    //background-color: red;
 }

@@ -1,6 +1,6 @@
 <div class="header">
     <div class="header__logo">
-        <span><</span>beSuavy<span>/></span>
+        <span><</span><span>be</span>Suavy<span>/></span>
     </div><nav class="header__nav">
         <div class="header__nav__item">
             <div class="buttons-theme">

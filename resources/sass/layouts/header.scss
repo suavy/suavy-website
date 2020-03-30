@@ -1,5 +1,6 @@
 .header {
     padding: 10px 15px;
+    padding: 20px 80px 10px;
     margin: 0 auto;
     background-color: $green;
 }
@@ -10,7 +11,11 @@
     text-align: left;
     vertical-align: middle;
     font-family: $titleFont;
+    color: $white;
     @include font-size(36px);
+    span {
+        color: $yellow;
+    }
 }
 
 .header__nav {
