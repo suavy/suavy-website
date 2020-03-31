@@ -71,20 +71,35 @@
 
         }
     }
-    path#FR, path#BR {
+    path#FR, path#BR, path#PT {
         fill: $yellow;
+        cursor: pointer;
         &:hover {
-            fill: $blue;
+            //fill: $blue;
         }
     }
 }
 
 .map-marker {
+    cursor: pointer;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     @include border-radius(50%);
-    //background-color: red;
+    background-color: $gray;
+    &:hover {
+        //background-color: $red;
+    }
+}
+
+.map-marker--france {
+    top: 46.8%; left: 42.3%;
+}
+
+.map-marker--brazil {
+    top: 78%; left: 30%;
+}
+
+.map-marker--portugal {
+    top: 51.2%; left: 39.4%;
 }

@@ -17,10 +17,10 @@
     text-align: left;
     vertical-align: middle;
     font-family: $titleFont;
-    color: $white;
+    color: $yellow;
     @include font-size(36px);
     span {
-        color: $yellow;
+        color: $white;
     }
 }
 

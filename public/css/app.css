@@ -354,12 +354,12 @@ a {
 }
 
 .color-gray {
-  color: #2d3436 !important;
+  color: #718093 !important;
 }
 
 .bg-gray {
-  background-color: #2d3436 !important;
-  fill: #2d3436 !important;
+  background-color: #718093 !important;
+  fill: #718093 !important;
 }
 
 .color-black {
@@ -423,7 +423,7 @@ body {
 }
 
 .button {
-  background-color: rgba(113, 128, 147, 0.1);
+  background-color: #ecf0f1;
   color: #000;
   padding: 3px 5px;
   margin-right: 5px;
@@ -531,22 +531,34 @@ body {
 }
 
 .map-svg path#FR,
-.map-svg path#BR {
+.map-svg path#BR,
+.map-svg path#PT {
   fill: #f6e58d;
-}
-
-.map-svg path#FR:hover,
-.map-svg path#BR:hover {
-  fill: #3490dc;
+  cursor: pointer;
 }
 
 .map-marker {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
+  background-color: #718093;
+}
+
+.map-marker--france {
+  top: 46.8%;
+  left: 42.3%;
+}
+
+.map-marker--brazil {
+  top: 78%;
+  left: 30%;
+}
+
+.map-marker--portugal {
+  top: 51.2%;
+  left: 39.4%;
 }
 
 .modal-container {
@@ -717,7 +729,7 @@ body {
 .tag {
   display: inline-block;
   padding: 3px 5px;
-  background-color: rgba(113, 128, 147, 0.1);
+  background-color: #ecf0f1;
   color: #718093;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -748,7 +760,7 @@ body {
 }
 
 .team {
-  background-color: rgba(113, 128, 147, 0.1);
+  background-color: #718093;
   position: relative;
 }
 
@@ -849,13 +861,13 @@ body {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #ecf0f1;
+  color: #f6e58d;
   font-size: 36px;
   font-size: 2.25rem;
 }
 
 .header__logo span {
-  color: #f6e58d;
+  color: #ecf0f1;
 }
 
 .header__nav {
@@ -888,5 +900,22 @@ body.night .link--underline {
 body.night .link--underline:hover {
   -webkit-text-decoration-color: #ecf0f1;
           text-decoration-color: #ecf0f1;
+}
+
+body.night .header__logo {
+  color: #f6e58d;
+}
+
+body.night .header__logo span {
+  color: #718093;
+}
+
+body.night .map-title {
+  color: #718093;
+}
+
+body.night .map-svg path {
+  fill: #718093;
+  stroke: #718093;
 }
 
