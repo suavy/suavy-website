@@ -448,6 +448,7 @@ body {
 
 .map-row {
   background-color: #21b989;
+  background-image: linear-gradient(135deg, #21b989 0%, #198e69 100%);
   position: relative;
   width: 100%;
 }
@@ -469,12 +470,15 @@ body {
 .map-title {
   font-family: "Abril Fatface", cursive;
   color: #ecf0f1;
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 48px;
+  font-size: 42px;
+  font-size: 2.625rem;
+  line-height: 50px;
   padding-left: 80px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
   box-sizing: border-box;
-  text-align: justify;
+  text-align: right;
 }
 
 .map-title span {
@@ -538,27 +542,104 @@ body {
 }
 
 .map-marker {
+  position: absolute;
+}
+
+.map-marker__controller {
+  display: none;
+}
+
+.map-marker__button {
+  background-color: #718093;
+  color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: block;
   cursor: pointer;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-marker__button .fa-times {
+  display: none;
+}
+
+.map-marker__controller:checked ~ .map-marker__button {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.map-marker__controller:checked ~ .map-marker__button .fa-times {
+  display: inline-block;
+}
+
+.map-marker__item {
+  display: none;
+  background-color: #3490dc;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
   border-radius: 50%;
-  background-color: #718093;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.map-marker__item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.map-marker__controller:checked ~ .map-marker__item {
+  display: block;
+}
+
+.map-marker__item:nth-of-type(1) {
+  background-color: green;
+  transform: translate(-50%, -150%);
+}
+
+.map-marker__item:nth-of-type(2) {
+  background-color: yellow;
+  transform: translate(50%, -50%);
+}
+
+.map-marker__item:nth-of-type(3) {
+  background-color: orange;
+  transform: translate(-50%, 50%);
+}
+
+.map-marker__item:nth-of-type(4) {
+  background-color: red;
+  transform: translate(-150%, -50%);
 }
 
 .map-marker--france {
-  top: 46.8%;
-  left: 42.3%;
+  top: 47.2%;
+  left: 42.6%;
+  transform: translate(-42.3%, -46.8%);
 }
 
 .map-marker--brazil {
-  top: 78%;
+  top: 79.3%;
   left: 30%;
+  transform: translate(-30%, -78%);
 }
 
 .map-marker--portugal {
-  top: 51.2%;
-  left: 39.4%;
+  top: 52%;
+  left: 39.3%;
+  transform: translate(-39.4%, -51.2%);
 }
 
 .modal-container {

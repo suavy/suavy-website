@@ -1,5 +1,6 @@
 .map-row {
     background-color: $green;
+    background-image: linear-gradient(135deg, $green 0%, darken($green, 10%) 100%);
     position: relative;
     width: 100%;
 }
@@ -19,11 +20,14 @@
 .map-title {
     font-family: $titleFont;
     color: $white;
-    @include font-size(36px);
-    line-height: 48px;
+    @include font-size(42px);
+    line-height: 50px;
     padding-left: 80px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
     box-sizing: border-box;
-    text-align: justify;
+    text-align: right;
     span {
         color: $yellow;
     }
@@ -32,6 +36,7 @@
         text-align: center;
         @include font-size(28px);
         line-height: 36px;
+
     }
 }
 
@@ -81,25 +86,91 @@
 }
 
 .map-marker {
-    cursor: pointer;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    @include border-radius(50%);
-    background-color: $gray;
-    &:hover {
-        //background-color: $red;
+    &__controller {
+        display: none;
+    }
+
+    &__button {
+        background-color: $gray;
+        color: $white;
+        width: 15px;
+        height: 15px;
+        @include border-radius(50%);
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        .fa-times { display: none; }
+    }
+
+    &__controller:checked ~ &__button {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        vertical-align: middle;
+        .fa-times { display: inline-block; }
+        @include font-size(18px);
+    }
+
+    &__item {
+        display: none;
+        background-color: $blue;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+        box-sizing: border-box;
+        @include border-radius(50%);
+        position: absolute;
+        top: 50%; left: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            @include border-radius(50%)
+        }
+    }
+
+    &__controller:checked ~ &__item {
+        display: block;
+    }
+
+    &__item:nth-of-type(1) {
+        background-color: green;
+        transform: translate(-50%,-150%);
+    }
+
+    &__item:nth-of-type(2) {
+        background-color: yellow;
+        transform: translate(50%,-50%);
+    }
+
+    &__item:nth-of-type(3) {
+        background-color: orange;
+        transform: translate(-50%,50%);
+    }
+
+    &__item:nth-of-type(4) {
+        background-color: red;
+        transform: translate(-150%,-50%);
     }
 }
 
 .map-marker--france {
-    top: 46.8%; left: 42.3%;
+    top: 47.2%;
+    left: 42.6%;
+    transform: translate(-42.3%, -46.8%);
 }
 
 .map-marker--brazil {
-    top: 78%; left: 30%;
+    top: 79.3%;
+    left: 30%;
+    transform: translate(-30%, -78%);
 }
 
 .map-marker--portugal {
-    top: 51.2%; left: 39.4%;
+    top: 52%;
+    left: 39.3%;
+    transform: translate(-39.4%, -51.2%);
 }
