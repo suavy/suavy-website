@@ -109,10 +109,11 @@
     }
 
     &__controller:checked ~ &__button {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        @include font-size(18px);
+        width: 24px;
+        height: 24px;
+        border: 2px solid $white;
+        line-height: 24px;
+        @include font-size(14px);
         text-align: center;
         vertical-align: middle;
         .fa-times { display: inline-block; }
