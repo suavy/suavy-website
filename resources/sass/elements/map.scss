@@ -95,8 +95,8 @@
     &__button {
         background-color: $gray;
         color: $white;
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         @include border-radius(50%);
         display: block;
         cursor: pointer;
@@ -105,6 +105,7 @@
         transform: translate(-50%,-50%);
         transition-duration: 0.4s;
         .fa-times { display: none; }
+        z-index: 2;
     }
 
     &__controller:checked ~ &__button {

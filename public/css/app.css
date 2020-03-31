@@ -556,8 +556,8 @@ body {
 .map-marker__button {
   background-color: #718093;
   color: #ecf0f1;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   display: block;
   cursor: pointer;
@@ -566,6 +566,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 0.4s;
+  z-index: 2;
 }
 
 .map-marker__button .fa-times {
@@ -736,20 +737,16 @@ body {
   color: #f6993f;
 }
 
-.pulse {
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
-  z-index: -2;
-}
-
 .pulse:after {
   content: "";
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
   position: absolute;
-  margin: -13px 0 0 -13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  margin: -10px 0 0 -10px;
   -webkit-animation: pulsate 1s ease-out;
   animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
