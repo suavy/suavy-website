@@ -9,7 +9,7 @@
     @include font-size(20px);
     padding: 5px 5px;
     background-color: $white;
-    color: $metal;
+    color: $gray;
     border-right: 2px solid $lightgray;
     opacity: 0.5;
     &:first-child {
@@ -23,7 +23,7 @@
     }
     &:hover, &--selected {
         background-color: $white;
-        color: $metal;
+        color: $gray;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
         opacity: 0.9;

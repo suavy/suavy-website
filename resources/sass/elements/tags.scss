@@ -13,8 +13,8 @@
 .tag {
   display: inline-block;
   padding: 3px 5px;
-  background-color: $lightmetal;
-  color: $metal;
+  background-color: $white;
+  color: $gray;
   @include font-size(15px);
   vertical-align: middle;
   border-width: 1px;

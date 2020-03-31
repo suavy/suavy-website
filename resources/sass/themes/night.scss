@@ -6,4 +6,23 @@ body.night {
         text-decoration-color: transparentize($white, 0.5);
         &:hover { text-decoration-color: $white; }
     }
+
+
+    .header__logo {
+        color: $yellow;
+        span {
+            color: $gray;
+        }
+    }
+    .map-title {
+        color: $gray;
+    }
+    .map-svg {
+        path {
+            fill: $gray;
+            stroke:$gray;
+        }
+    }
 }
+
+
