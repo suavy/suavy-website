@@ -1,4 +1,5 @@
 <div class="home__row team">
+    Todo remove this row
     @foreach(\App\Models\User::all() as $user)
         <div class="team__member">
             <div class="team__member__photo">

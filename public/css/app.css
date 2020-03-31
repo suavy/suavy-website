@@ -543,6 +543,10 @@ body {
 
 .map-marker {
   position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .map-marker__controller {
@@ -561,6 +565,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition-duration: 0.4s;
 }
 
 .map-marker__button .fa-times {
@@ -570,11 +575,11 @@ body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 30px;
   height: 30px;
-  text-align: center;
   line-height: 30px;
-  vertical-align: middle;
   font-size: 18px;
   font-size: 1.125rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .map-marker__controller:checked ~ .map-marker__button .fa-times {
@@ -582,7 +587,8 @@ body {
 }
 
 .map-marker__item {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   background-color: #3490dc;
   width: 50px;
   height: 50px;
@@ -592,6 +598,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .map-marker__item img {
@@ -601,27 +608,32 @@ body {
 }
 
 .map-marker__controller:checked ~ .map-marker__item {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .map-marker__item:nth-of-type(1) {
   background-color: green;
   transform: translate(-50%, -150%);
+  transition-duration: 0.6s;
 }
 
 .map-marker__item:nth-of-type(2) {
   background-color: yellow;
   transform: translate(50%, -50%);
+  transition-duration: 0.8s;
 }
 
 .map-marker__item:nth-of-type(3) {
   background-color: orange;
   transform: translate(-50%, 50%);
+  transition-duration: 1s;
 }
 
 .map-marker__item:nth-of-type(4) {
   background-color: red;
   transform: translate(-150%, -50%);
+  transition-duration: 1.2s;
 }
 
 .map-marker--france {
