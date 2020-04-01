@@ -16,7 +16,8 @@ $mobile-large:	320px;
 $tablet-small:	480px;
 $tablet-large:	768px;
 $screen-small:	1024px;
-$screen-large:	1280px;
+$screen-large:	1400px;
+$screen-larger: 1800px;
 
 @mixin media($point) {
   @if $point == 'mobile-small' {
@@ -36,6 +37,9 @@ $screen-large:	1280px;
   }
   @else if $point == 'screen-large' {
     @media (max-width: $screen-large)  { @content ; }
+  }
+  @else if $point == 'screen-larger' {
+      @media (max-width: $screen-larger)  { @content ; }
   }
 }
 

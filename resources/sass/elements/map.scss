@@ -3,6 +3,10 @@
     background-image: linear-gradient(135deg, $green 0%, darken($green, 10%) 100%);
     position: relative;
     width: 100%;
+    text-align: center;
+    @include media('screen-small') {
+        background-image: none;
+    }
 }
 
 .map-col {
@@ -13,30 +17,51 @@
     @include media('screen-small') {
         display: block;
         width: 100%;
+        margin: 0 auto;
     }
+}
+
+.map-col--title {
+    width: 30%;
+    @include media('screen-larger') {
+        width: 35%;
+    }
+    @include media('screen-large') {
+        width: 45%;
+    }
+    @include media('screen-small') {
+        width: 80%;
+        padding: 80px 0 35px;
+    }
+}
+
+.map-col--map {
 
 }
 
 .map-title {
     font-family: $titleFont;
     color: $white;
-    @include font-size(42px);
-    line-height: 50px;
-    padding-left: 80px;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 800px;
+    @include font-size(36px);
+    line-height: 44px;
     box-sizing: border-box;
     text-align: right;
+    padding-right: 40px;
     span {
         color: $yellow;
     }
-    @include media('screen-small') {
-        padding: 70px 0 20px;
-        text-align: center;
+    @include media('screen-larger') {
+        @include font-size(32px);
+        line-height: 42px;
+    }
+    @include media('screen-large') {
         @include font-size(28px);
+        line-height: 40px;
+    }
+    @include media('screen-small') {
+        text-align: center;
+        @include font-size(24px);
         line-height: 36px;
-
     }
 }
 
@@ -57,7 +82,7 @@
 .map-svg {
     position: absolute;
     top: 0;
-    left: -5%;
+    left: 0;
     width: 100%;
     @include media('screen-small') {
         top: 0;
@@ -104,8 +129,8 @@
         top: 50%; left: 50%;
         transform: translate(-50%,-50%);
         transition-duration: 0.4s;
-        .fa-times { display: none; }
         z-index: 2;
+        .fa-times { display: none; }
     }
 
     &__controller:checked ~ &__button {
@@ -131,7 +156,7 @@
         position: absolute;
         top: 50%; left: 50%;
         transform: translate(-50%,-50%);
-        transition: width 0.4s linear, height 0.4s linear, transform 0.4s ease-out;
+        transition: all 0.5s ease-in-out;
         img {
             width: 100%;
             height: 100%;
@@ -169,18 +194,18 @@
 
 .map-marker--france {
     top: 47.2%;
-    left: 42.6%;
+    left: 47.6%;
     transform: translate(-42.3%, -46.8%);
 }
 
 .map-marker--brazil {
     top: 79.3%;
-    left: 30%;
+    left: 35%;
     transform: translate(-30%, -78%);
 }
 
 .map-marker--portugal {
     top: 52%;
-    left: 39.3%;
+    left: 44.3%;
     transform: translate(-39.4%, -51.2%);
 }

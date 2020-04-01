@@ -7,7 +7,7 @@
     z-index: 1000;
     @include media('screen-small') {
         padding: 10px 15px;
-        border-bottom: 2px solid $white;
+        //border-bottom: 2px solid $white;
     }
 }
 
