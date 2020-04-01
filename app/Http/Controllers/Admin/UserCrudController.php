@@ -63,19 +63,19 @@ class UserCrudController extends CrudController {
             'wrapperAttributes' => ['class' => 'form-group col-md-6'],
         ]);
 
+        $this->crud->addField([
+            'label' => "Picture",
+            'name' => "picture",
+            'type' => 'image',
+            'upload' => true,
+            'crop' => true,
+            'aspect_ratio' => 1,
+        ]);
+
     }
 
     protected function setupUpdateOperation() {
         $this->setupCreateOperation();
-    }
-
-    public function store() {
-        $randomPassword = str_random(20);
-        $this->crud->request->request->add(['password' => Hash::make($randomPassword)]);
-        $this->crud->addField(['type' => 'hidden', 'name' => 'password']);
-        $response = $this->traitStore();
-        $user = $this->crud->entry;
-        return $response;
     }
 
 }

@@ -19,7 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('email')->unique();
             $table->string('password');
+            $table->text('picture')->nullable();
             $table->boolean('admin')->default(false);
+            $table->boolean('disabled')->default(false);
             $table->foreignId('country_id');
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->foreignId('city_id');
@@ -63,6 +65,47 @@ class CreateUsersTable extends Migration
         $user->admin = 1;
         $user->city_id = 1;
         $user->country_id = 1;
+        $user->save();
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Matheus';
+        $user->lastname = ' ';
+        $user->email = 'matheus@me.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 3;
+        $user->country_id = 2;
+        $user->save();
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Breno';
+        $user->lastname = ' ';
+        $user->email = 'breno@me.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 2;
+        $user->country_id = 3;
+        $user->save();
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Elisa';
+        $user->lastname = 'Nogueira';
+        $user->email = 'elisa@me.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->admin = 1;
+        $user->city_id = 1;
+        $user->country_id = 1;
+        $user->save();
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Yago';
+        $user->lastname = ' ';
+        $user->email = 'yago@me.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 2;
+        $user->country_id = 3;
         $user->save();
 
     }
