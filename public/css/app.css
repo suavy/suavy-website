@@ -645,12 +645,6 @@ body {
   transition: 0.6s fill;
 }
 
-.map-svg path#FR,
-.map-svg path#BR,
-.map-svg path#PT {
-  fill: #f6e58d;
-}
-
 .map-marker {
   position: absolute;
   -webkit-user-select: none;
