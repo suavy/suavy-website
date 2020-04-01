@@ -44,6 +44,10 @@ class CountryCrudController extends CrudController {
         $this->crud->addField(['name' => 'name_pt', 'label' => 'name pt','type' => 'text',]);
         $this->crud->addField(['name' => 'name_en', 'label' => 'name en','type' => 'text',]);
         $this->crud->addField(['name' => 'name_es', 'label' => 'name es','type' => 'text',]);
+        $this->crud->addField(['name' => 'flag_image', 'label' => 'flag','type' => 'text',]);
+        $this->crud->addField(['name' => 'code', 'label' => 'country code','type' => 'text',]);
+        $this->crud->addField(['name' => 'map_marker_position_top', 'label' => 'map marker position top','type' => 'number',]);
+        $this->crud->addField(['name' => 'map_marker_position_left', 'label' => 'map marker position left','type' => 'number',]);
     }
 
     protected function setupUpdateOperation() {

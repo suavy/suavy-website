@@ -101,13 +101,6 @@
 
         }
     }
-    path#FR, path#BR, path#PT {
-        fill: $yellow;
-        //cursor: pointer;
-        &:hover {
-            //fill: $blue;
-        }
-    }
 }
 
 .map-marker {

@@ -17,6 +17,7 @@ class Country extends Model {
     |--------------------------------------------------------------------------
     */
     public function cities(){          return $this->belongsToMany(City::class);}
+    public function users(){           return $this->hasMany(User::class);}
 
     /*
     |--------------------------------------------------------------------------
@@ -30,6 +31,9 @@ class Country extends Model {
         'name_pt',
         'name_en',
         'name_es',
+        'code',
+        'map_marker_position_top',
+        'map_marker_position_left'
     ];
     protected $dates = ['created_at', 'updated_at',];
 
