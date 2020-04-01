@@ -91,7 +91,7 @@
     }
     height: auto;
     path {
-        fill: $white;
+        fill: transparentize($white, 0.1);
         fill-opacity: 1;
         stroke:$white;
         stroke-opacity: 1;
@@ -103,7 +103,7 @@
     }
     path#FR, path#BR, path#PT {
         fill: $yellow;
-        cursor: pointer;
+        //cursor: pointer;
         &:hover {
             //fill: $blue;
         }
@@ -119,10 +119,10 @@
 
     &__button {
         background-color: $gray;
-        color: $white;
+        color: $gray;
         width: 10px;
         height: 10px;
-        @include border-radius(50%);
+        @include border-radius(100%);
         display: block;
         cursor: pointer;
         position: absolute;
@@ -132,11 +132,15 @@
         z-index: 2;
         .fa-times { display: none; }
     }
+    &__button.pulse:after {
+        box-shadow: 0 0 1px 2px $gray;
+    }
 
     &__controller:checked ~ &__button {
         width: 24px;
         height: 24px;
-        border: 2px solid $white;
+        background-color: $yellow;
+        border: 2px solid $gray;
         line-height: 24px;
         @include font-size(14px);
         text-align: center;

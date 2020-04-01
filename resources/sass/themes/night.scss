@@ -11,16 +11,25 @@ body.night {
     .header__logo {
         color: $yellow;
         span {
-            color: $gray;
+            color: $black;
         }
     }
     .map-title {
-        color: $gray;
+        color: $black;
     }
     .map-svg {
         path {
-            fill: $gray;
-            stroke:$gray;
+            fill: transparentize($black, 0.3);
+            stroke:$black;
+        }
+    }
+    .map-marker {
+        &__button {
+            background-color: $black;
+            color: $black;
+        }
+        &__button.pulse:after {
+            box-shadow: 0 0 1px 2px $black;
         }
     }
 }
