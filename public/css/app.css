@@ -746,24 +746,6 @@ body {
   display: none;
 }
 
-.map-marker--france {
-  top: 47.2%;
-  left: 47.6%;
-  transform: translate(-42.3%, -46.8%);
-}
-
-.map-marker--brazil {
-  top: 79.3%;
-  left: 35%;
-  transform: translate(-30%, -78%);
-}
-
-.map-marker--portugal {
-  top: 52%;
-  left: 44.3%;
-  transform: translate(-39.4%, -51.2%);
-}
-
 .modal-container {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
