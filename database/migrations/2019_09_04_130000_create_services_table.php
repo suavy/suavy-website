@@ -23,6 +23,8 @@ class CreateServicesTable extends Migration
             $table->string('name_en')->nullable();
             $table->string('name_es')->nullable();
             $table->string('color')->nullable();
+            $table->string('icon')->nullable();
+
             $table->timestamps();
         });
         $this->seed();
@@ -41,60 +43,70 @@ class CreateServicesTable extends Migration
 
     public function seed() {
         Service::create([
+            'icon' => "fad fa-fw fa-sort-alpha-up-alt",
             'name_fr' => "Développement de votre site (de A à Z)",
             'name_pt' => "Desenvolvimento do seu site (de A a Z)",
             'name_en' => "Development of your site (from A to Z)",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-cash-register",
             'name_fr' => "Intégration système de paiement (Stripe, Paypal)",
             'name_pt' => "Integração de sistema de pagamento (Stripe, Paypal)",
             'name_en' => "Payment system integration (Stripe, Paypal)",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-exchange",
             'name_fr' => "Développement d'API",
             'name_pt' => "Desenvolvimento de API",
             'name_en' => "API development",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-database",
             'name_fr' => "Gestion/optimisation de bases de données",
             'name_pt' => "Gestão/otimização de base de dados",
             'name_en' => "Database management/optimization",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-eye",
             'name_fr' => "Accompagnement SEO",
             'name_pt' => "Suporte em SEO",
             'name_en' => "SEO support",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-construction",
             'name_fr' => "Accompagnement dans la création ou la refonte de votre projet",
             'name_pt' => "Acompanhamento na criação ou redesenho do seu projeto",
             'name_en' => "Accompaniment in the creation or redesign of your project",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-ruler-triangle",
             'name_fr' => "Accompagnement UI/UX",
             'name_pt' => "Suporte UI/UX",
             'name_en' => "UI/UX support",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-mobile-alt",
             'name_fr' => "Développement mobile iOS/Androïd",
             'name_pt' => "Desenvolvimento móvel iOS/Androïd",
             'name_en' => "Mobile development iOS/Androïd",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-paint-roller",
             'name_fr' => "Intégration front",
             'name_pt' => "Integração front",
             'name_en' => "Front integration",
             'name_es' => "",
         ]);
         Service::create([
+            'icon' => "fad fa-fw fa-drafting-compass",
             'name_fr' => "Conception de design",
             'name_pt' => "",
             'name_en' => "",

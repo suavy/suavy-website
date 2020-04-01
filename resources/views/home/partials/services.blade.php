@@ -1,16 +1,10 @@
 <div class="home__row">
+    <h2 class="title services-title">Expertise</h2>
     <div class="services">
-
-    @foreach(\App\Models\Service::all() as $service)
-        <div class="service">
-            <div class="service__icon">
-                <i class="fad fa-fw fa-sort-alpha-up-alt"></i>
-                <i class="fad fa-fw fa-rocket-launch"></i>
+        @foreach(\App\Models\Service::all() as $service)<div class="service">
+            <div class="service__content">
+                <i class="{{ $service->icon }}"></i> {{ $service->name_fr }}
             </div>
-            <div class="service__name">
-                <h3>{{ $service->name_fr }}</h3>
-            </div>
-        </div>
-    @endforeach
+        </div>@endforeach
     </div>
 </div>

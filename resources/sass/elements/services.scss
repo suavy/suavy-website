@@ -1,29 +1,30 @@
 .services {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.services-title {
+    padding: 10px 10px 20px;
 }
 
 .service {
-    width: 300px;
-    padding: 30px 20px;
+    @include border-radius(8px);
     box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-    background-color: transparentize($gray, 0.5);
-    text-align: center;
-    @include border-radius(5px);
-    vertical-align: top;
+    padding: 10px;
+    &:hover {
+        cursor: pointer;
+        color: $black;
+        background-color: $yellow;
+        background-image: linear-gradient(135deg, $yellow 0%, darken($yellow, 5%) 100%);
+    }
 }
 
-.service__icon {
-    @include font-size(48px);
-}
-
-.service__name {
-    font-family: $titleFont;
+.service__content {
+    //font-family: $titleFont;
     @include font-size(20px);
     line-height: 24px;
-    min-height: 72px;
-    font-weight: bold;
-    padding-top: 10px;
-    vertical-align: middle;
+    //font-weight: bold;
+    //vertical-align: middle;
 }

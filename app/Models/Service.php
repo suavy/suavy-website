@@ -24,7 +24,7 @@ class Service extends Model {
     |--------------------------------------------------------------------------
     */
 
-    protected $fillable = ['name_fr', 'name_pt', 'name_en', 'name_es',];
+    protected $fillable = ['color', 'icon', 'name_fr', 'name_pt', 'name_en', 'name_es',];
     protected $dates = ['created_at', 'updated_at',];
 
     /*
