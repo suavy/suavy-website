@@ -853,6 +853,38 @@ body {
   color: #f6993f;
 }
 
+.services {
+  position: relative;
+}
+
+.service {
+  width: 300px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  display: inline-block;
+  background-color: rgba(113, 128, 147, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.service__icon {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+.service__name {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  min-height: 72px;
+  font-weight: bold;
+  padding-top: 10px;
+  vertical-align: middle;
+}
+
 /* _button-theme
 ===========================================*/
 
