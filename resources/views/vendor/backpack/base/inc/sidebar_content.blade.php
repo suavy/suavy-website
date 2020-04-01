@@ -4,6 +4,10 @@
 <li class="nav-title">Utilisateurs</li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('user') }}"><i class="far fa-fw fa-users "></i> Utilisateurs</a></li>
 <li class="nav-title">Données</li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('skill') }}"><i class="far fa-fw fa-hospitals"></i> Compétences</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('establishment') }}"><i class="far fa-fw fa-clinic-medical"></i> Établissements</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('provider-company') }}"><i class="far fa-fw fa-building "></i> Entreprises prestataires</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('city') }}"><i class="far fa-fw fa-hospitals"></i> Cities</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('country') }}"><i class="far fa-fw fa-hospitals"></i> Countries</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('interest') }}"><i class="far fa-fw fa-hospitals"></i> Interests</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('open-source-project') }}"><i class="far fa-fw fa-hospitals"></i> Open Source Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('project') }}"><i class="far fa-fw fa-hospitals"></i> Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('service') }}"><i class="far fa-fw fa-hospitals"></i> Services</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('skill') }}"><i class="far fa-fw fa-hospitals"></i> Skills</a></li>

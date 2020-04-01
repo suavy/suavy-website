@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use App\Traits\IsTranslatable;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Country extends Model {
 
+    use CrudTrait;
     use IsTranslatable;
 
     /*
@@ -23,7 +25,7 @@ class Country extends Model {
     */
 
     protected $fillable = [
-        'icon',
+        'flag_image',
         'name_fr',
         'name_pt',
         'name_en',
