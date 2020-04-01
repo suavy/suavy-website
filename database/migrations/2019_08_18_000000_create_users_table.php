@@ -20,8 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->boolean('admin')->default(false);
-            $table->foreignId('address_id');
-            $table->foreign('address_id')->references('id')->on('addresses')->onDelete('cascade');
+            $table->foreignId('country_id');
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
+            $table->foreignId('city_id');
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -48,7 +50,8 @@ class CreateUsersTable extends Migration
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
-        $user->address()->associate(1);
+        $user->city_id = 1;
+        $user->country_id = 1;
         $user->save();
 
         $user = new \App\Models\User();
@@ -58,7 +61,8 @@ class CreateUsersTable extends Migration
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
-        $user->address()->associate(2);
+        $user->city_id = 1;
+        $user->country_id = 1;
         $user->save();
 
     }

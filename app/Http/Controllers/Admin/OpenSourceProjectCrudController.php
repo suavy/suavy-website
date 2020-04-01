@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\ActivityLog;
+use App\Models\OpenSourceProject;
 use App\Models\ProviderCompany;
 use App\Models\Establishment;
 use App\Models\Group;
@@ -16,7 +17,7 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 
-class SkillCrudController extends CrudController {
+class OpenSourceProjectCrudController extends CrudController {
     use ListOperation;
     use CreateOperation;
     use UpdateOperation;
@@ -24,34 +25,30 @@ class SkillCrudController extends CrudController {
     use ShowOperation;
 
     public function setup() {
-        $this->crud->setModel(Skill::class);
-        $this->crud->setRoute("admin/skill");
-        $this->crud->setEntityNameStrings("skill", "skills");
+        $this->crud->setModel(OpenSourceProject::class);
+        $this->crud->setRoute("admin/open-source-project");
+        $this->crud->setEntityNameStrings("open source project", "open source projects");
     }
 
     protected function setupListOperation() {
         $this->crud->addColumn(['name' => 'id', 'label' => '#']);
         $this->crud->addColumn(['name' => 'slug', 'label' => 'slug']);
         $this->crud->addColumn(['name' => 'name', 'label' => 'name']);
-        $this->crud->addColumn(['name' => 'color', 'label' => 'color']);
-        $this->crud->addColumn(['name' => 'color_light', 'label' => 'color light']);
-        $this->crud->addColumn(['name' => 'parent.name', 'label' => 'skill parent']);
+        $this->crud->addColumn(['name' => 'source_link', 'label' => 'source link']);
+
     }
 
     protected function setupCreateOperation() {
         $this->crud->addField(['name' => 'slug', 'label' => 'slug','type' => 'text',]);
         $this->crud->addField(['name' => 'name', 'label' => 'name','type' => 'text',]);
-        $this->crud->addField(['name' => 'color', 'label' => 'color','type' => 'text',]);
-        $this->crud->addField(['name' => 'color_light', 'label' => 'color_light','type' => 'text',]);
-        $this->crud->addField([
-            'name' => 'parent_id',
-            'label' => 'skill parent',
-            'type' => 'select',
-            'entity' => 'parent',
-            'model' => Skill::class,
-            'attribute' => 'name',
-            'wrapperAttributes' => ['class' => 'form-group col-md-4'],
-        ]);
+        $this->crud->addField(['name' => 'description_fr', 'label' => 'description fr','type' => 'textarea',]);
+        $this->crud->addField(['name' => 'description_pt', 'label' => 'description pt','type' => 'textarea',]);
+        $this->crud->addField(['name' => 'description_en', 'label' => 'description en','type' => 'textarea',]);
+        $this->crud->addField(['name' => 'description_es', 'label' => 'description es','type' => 'textarea',]);
+        $this->crud->addField(['name' => 'source_link', 'label' => 'source link','type' => 'text',]);
+        $this->crud->addField(['name' => 'website_link', 'label' => 'website link','type' => 'text',]);
+        $this->crud->addField(['name' => 'started_at', 'label' => 'Started at','type' => 'date',]);
+        $this->crud->addField(['name' => 'ended_at', 'label' => 'Ended at','type' => 'date',]);
     }
 
     protected function setupUpdateOperation() {

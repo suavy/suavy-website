@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use App\Traits\IsTranslatable;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Interest extends Model {
 
+    use CrudTrait;
     use IsTranslatable;
 
     /*
@@ -23,6 +25,7 @@ class Interest extends Model {
     */
 
     protected $fillable = [
+        'color',
         'icon',
         'name_fr',
         'name_pt',

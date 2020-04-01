@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use App\Traits\IsTranslatable;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class City extends Model {
 
+    use CrudTrait;
     use IsTranslatable;
 
     /*

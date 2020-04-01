@@ -15,6 +15,7 @@ class Skill extends Model {
     |--------------------------------------------------------------------------
     */
     public function user() {                    return $this->belongsToMany(User::class); }
+    public function parent(){                   return $this->belongsTo(Skill::class,'parent_id');}
 
     /*
     |--------------------------------------------------------------------------
