@@ -1130,6 +1130,7 @@ body.night .map-svg path {
 body.night .map-marker__button {
   background-color: #1e272e;
   color: #1e272e;
+  border-color: #1e272e !important;
 }
 
 body.night .map-marker__button.pulse:after {
