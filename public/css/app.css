@@ -637,7 +637,7 @@ body {
 }
 
 .map-svg path {
-  fill: rgba(245, 246, 250, 0.9);
+  fill: rgba(245, 246, 250, 0.7);
   fill-opacity: 1;
   stroke: #f5f6fa;
   stroke-opacity: 1;
@@ -844,9 +844,15 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
   padding: 10px;
+  margin: 10px 10px 0 0;
+  position: relative;
 }
 
 .service:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   color: #1e272e;
   background-color: #f6e58d;

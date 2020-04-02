@@ -109,7 +109,21 @@ class CreateServicesTable extends Migration
             'icon' => "fad fa-fw fa-drafting-compass",
             'name_fr' => "Conception de design",
             'name_pt' => "",
-            'name_en' => "",
+            'name_en' => "Design conception",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-robot",
+            'name_fr' => "Automatisation",
+            'name_pt' => "",
+            'name_en' => "Automation",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-server",
+            'name_fr' => "Serveur",
+            'name_pt' => "",
+            'name_en' => "Server",
             'name_es' => "",
         ]);
 

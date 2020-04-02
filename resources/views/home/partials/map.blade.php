@@ -1,10 +1,6 @@
 <div class="map-row">
     <div class="map-col map-col--title">
-        <div class="map-title">
-            We are an
-            <span>organization of freelancers</span>
-            that build beautiful things around the world.
-        </div>
+        <div class="map-title">@lang('base.map.title')</div>
     </div><div class="map-col map-col--map">
         <div class="map-container">
             <div class="map">
