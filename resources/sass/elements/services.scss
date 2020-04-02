@@ -13,7 +13,10 @@
     @include border-radius(8px);
     box-sizing: border-box;
     padding: 10px;
+    margin: 10px 10px 0 0;
+    position: relative;
     &:hover {
+        user-select: none;
         cursor: pointer;
         color: $black;
         background-color: $yellow;
