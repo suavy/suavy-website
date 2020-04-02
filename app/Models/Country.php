@@ -16,7 +16,7 @@ class Country extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function cities(){          return $this->belongsToMany(City::class);}
+    public function cities(){          return $this->hasMany(City::class);}
     public function users(){           return $this->hasMany(User::class);}
 
     /*

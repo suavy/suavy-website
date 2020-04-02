@@ -44,6 +44,8 @@ class ServiceCrudController extends CrudController {
         $this->crud->addField(['name' => 'name_pt', 'label' => 'name pt','type' => 'text',]);
         $this->crud->addField(['name' => 'name_en', 'label' => 'name en','type' => 'text',]);
         $this->crud->addField(['name' => 'name_es', 'label' => 'name es','type' => 'text',]);
+        $this->crud->addField(['name' => 'color', 'label' => 'color','type' => 'text',]);
+        $this->crud->addField(['name' => 'icon', 'label' => 'icon','type' => 'text',]);
     }
 
     protected function setupUpdateOperation() {

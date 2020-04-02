@@ -19,6 +19,7 @@ Route::group([
     Route::crud('interest', 'InterestCrudController');
     Route::crud('open-source-project', 'OpenSourceProjectCrudController');
     Route::crud('project', 'ProjectCrudController');
+    Route::crud('project-feature', 'ProjectFeatureCrudController');
     Route::crud('service', 'ServiceCrudController');
     Route::crud('skill', 'SkillCrudController');
     Route::crud('user', 'UserCrudController');

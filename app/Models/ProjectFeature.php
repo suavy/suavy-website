@@ -6,7 +6,7 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model {
+class ProjectFeature extends Model {
 
     use CrudTrait;
     use IsTranslatable;
@@ -16,8 +16,7 @@ class Project extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function skills() { return $this->belongsToMany(Skill::class); }
-    public function features() {return $this->hasMany(ProjectFeature::class); }
+    public function project() { return $this->belongsTo(Project::class); }
 
     /*
     |--------------------------------------------------------------------------
@@ -26,19 +25,14 @@ class Project extends Model {
     */
 
     protected $fillable = [
-        'slug',
-        'name',
-        'description_fr',
-        'description_pt',
-        'description_en',
-        'description_es',
-        'area',
-        'color',
-        'color_light',
-        'started_at',
-        'ended_at',
-        ];
-    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
+        'name_fr',
+        'name_pt',
+        'name_en',
+        'name_es',
+        'order',
+        'project_id'
+    ];
+    protected $dates = ['created_at', 'updated_at',];
 
     /*
     |--------------------------------------------------------------------------

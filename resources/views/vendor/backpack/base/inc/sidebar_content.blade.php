@@ -9,5 +9,6 @@
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('interest') }}"><i class="far fa-fw fa-hospitals"></i> Interests</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('open-source-project') }}"><i class="far fa-fw fa-hospitals"></i> Open Source Projects</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('project') }}"><i class="far fa-fw fa-hospitals"></i> Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('project-feature') }}"><i class="far fa-fw fa-hospitals"></i> Project features</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('service') }}"><i class="far fa-fw fa-hospitals"></i> Services</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('skill') }}"><i class="far fa-fw fa-hospitals"></i> Skills</a></li>

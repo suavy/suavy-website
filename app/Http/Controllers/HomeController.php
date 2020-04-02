@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
+use App\Models\OpenSourceProject;
+use App\Models\Project;
+use App\Models\Service;
 
 class HomeController extends Controller {
 
@@ -12,6 +15,14 @@ class HomeController extends Controller {
             $query->where('disabled',false);
         }])->get();
 
-        return view('home.index',compact('countries'));
+        $projects = Project::query()->with(['skills','features'=>function($query){
+            $query->orderBy('order');
+        }])->get();
+
+        $openSourceProjects = OpenSourceProject::query()->get();
+
+        $services = Service::query()->get();
+
+        return view('home.index',compact('countries','services','openSourceProjects','projects'));
     }
 }
