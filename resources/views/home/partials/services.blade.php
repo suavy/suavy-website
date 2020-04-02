@@ -3,7 +3,7 @@
     <div class="services">
         @foreach(\App\Models\Service::all() as $service)<div class="service">
             <div class="service__content">
-                <i class="{{ $service->icon }}"></i> {{ $service->name_fr }}
+                <i class="{{ $service->icon }}"></i> {{ $service->translated_name }}
             </div>
         </div>@endforeach
     </div>
