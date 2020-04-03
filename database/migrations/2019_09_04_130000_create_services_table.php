@@ -50,13 +50,13 @@ class CreateServicesTable extends Migration
     public function seed() {
         Service::create([
             'icon' => "fad fa-fw fa-sort-alpha-up-alt",
-            'name_fr' => "Développement de votre site (de A à Z)",
-            'name_pt' => "Desenvolvimento do seu site (de A a Z)",
-            'name_en' => "Development of your site (from A to Z)",
+            'name_fr' => "Développement de votre site de A à Z",
+            'name_pt' => "Desenvolvimento do seu site de A a Z",
+            'name_en' => "Development of your site from A to Z",
             'name_es' => "",
         ]);
         Service::create([
-            'icon' => "fad fa-fw fa-cash-register",
+            'icon' => "fad fa-fw fa-coin",
             'name_fr' => "Intégration système de paiement (Stripe, Paypal)",
             'name_pt' => "Integração de sistema de pagamento (Stripe, Paypal)",
             'name_en' => "Payment system integration (Stripe, Paypal)",
@@ -71,7 +71,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-database",
-            'name_fr' => "Gestion/optimisation de bases de données",
+            'name_fr' => "Gestion/optimisation de base de données",
             'name_pt' => "Gestão/otimização de base de dados",
             'name_en' => "Database management/optimization",
             'name_es' => "",
@@ -120,9 +120,9 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-server",
-            'name_fr' => "Serveur",
+            'name_fr' => "Gestion de serveur",
             'name_pt' => "",
-            'name_en' => "Server",
+            'name_en' => "Server management",
             'name_es' => "",
         ]);
         Service::create([
@@ -141,9 +141,9 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-map-marked-alt",
-            'name_fr' => "(Google Maps, Mapbox)",
-            'name_pt' => "(Google Maps, Mapbox)",
-            'name_en' => "(Google Maps, Mapbox)",
+            'name_fr' => "Cartographie (Google Maps, Mapbox)",
+            'name_pt' => "Mapping (Google Maps, Mapbox)",
+            'name_en' => "Mapping (Google Maps, Mapbox)",
             'name_es' => "",
         ]);
     }
