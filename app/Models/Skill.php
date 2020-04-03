@@ -28,7 +28,10 @@ class Skill extends Model {
         'name',
         'color',
         'color_light',
-        'parent_id'
+        'lft',
+        'rgt',
+        'depth',
+        'parent_id',
     ];
     protected $dates = ['created_at', 'updated_at',];
 

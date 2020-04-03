@@ -14,6 +14,7 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
+use Backpack\CRUD\app\Http\Controllers\Operations\ReorderOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 use Illuminate\Support\Facades\Hash;
@@ -24,6 +25,7 @@ class UserCrudController extends CrudController {
     use UpdateOperation;
     use DeleteOperation;
     use ShowOperation;
+    use ReorderOperation;
 
     public function setup() {
         $this->crud->setModel(User::class);
@@ -76,6 +78,15 @@ class UserCrudController extends CrudController {
 
     protected function setupUpdateOperation() {
         $this->setupCreateOperation();
+    }
+
+    protected function setupReorderOperation()
+    {
+        // define which model attribute will be shown on draggable elements
+        $this->crud->set('reorder.label', 'firstname');
+        // define how deep the admin is allowed to nest the items
+        // for infinite levels, set it to 0
+        $this->crud->set('reorder.max_level', 1);
     }
 
 }

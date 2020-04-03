@@ -16,12 +16,12 @@ class HomeController extends Controller {
         }])->get();
 
         $projects = Project::query()->with(['skills','features'=>function($query){
-            $query->orderBy('order');
+            $query->orderBy('lft');
         }])->get();
 
         $openSourceProjects = OpenSourceProject::query()->get();
 
-        $services = Service::query()->get();
+        $services = Service::query()->orderBy('lft')->get();
 
         return view('home.index',compact('countries','services','openSourceProjects','projects'));
     }

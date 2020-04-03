@@ -22,6 +22,12 @@ class CreateSkillsTable extends Migration
             $table->string('name');
             $table->string('color')->nullable();
             $table->string('color_light')->nullable();
+
+            //reorder
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
+
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->foreign('parent_id')->references('id')->on('skills');
             $table->timestamps();

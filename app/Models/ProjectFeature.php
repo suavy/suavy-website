@@ -30,6 +30,10 @@ class ProjectFeature extends Model {
         'name_en',
         'name_es',
         'order',
+        'lft',
+        'rgt',
+        'depth',
+        'parent_id',
         'project_id'
     ];
     protected $dates = ['created_at', 'updated_at',];

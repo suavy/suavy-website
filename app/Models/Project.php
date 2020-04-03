@@ -37,6 +37,10 @@ class Project extends Model {
         'color_light',
         'started_at',
         'ended_at',
+        'lft',
+        'rgt',
+        'depth',
+        'parent_id',
         ];
     protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
 
