@@ -7,6 +7,7 @@
     {{--
     @include('home.partials.team')
     @include('home.partials.projects')
+
     @include('home.partials.open-source-projects')
     --}}
 @endsection

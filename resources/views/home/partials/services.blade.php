@@ -1,5 +1,4 @@
 <div class="home__row">
-    <h2 class="title services-title">@lang('base.services.title')</h2>
     <div class="services">
         @foreach($services as $service)
             <div class="service">

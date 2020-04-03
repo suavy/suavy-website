@@ -52,7 +52,7 @@ class CreateServicesTable extends Migration
         Service::create([
             'icon' => "fad fa-fw fa-coin",
             'name_fr' => "Intégration système de paiement (Stripe, Paypal)",
-            'name_pt' => "Integração de sistema de pagamento (Stripe, Paypal)",
+            'name_pt' => "Integração de sistemas de pagamento (Stripe, Paypal)",
             'name_en' => "Payment system integration (Stripe, Paypal)",
             'name_es' => "",
         ]);
@@ -73,7 +73,7 @@ class CreateServicesTable extends Migration
         Service::create([
             'icon' => "fad fa-fw fa-eye",
             'name_fr' => "Accompagnement SEO",
-            'name_pt' => "Suporte em SEO",
+            'name_pt' => "Suporte SEO",
             'name_en' => "SEO support",
             'name_es' => "",
         ]);
@@ -87,7 +87,7 @@ class CreateServicesTable extends Migration
         Service::create([
             'icon' => "fad fa-fw fa-mobile-alt",
             'name_fr' => "Développement mobile iOS/Androïd",
-            'name_pt' => "Desenvolvimento móvel iOS/Androïd",
+            'name_pt' => "Desenvolvimento mobile iOS/Androïd",
             'name_en' => "Mobile development iOS/Androïd",
             'name_es' => "",
         ]);
@@ -108,21 +108,21 @@ class CreateServicesTable extends Migration
         Service::create([
             'icon' => "fad fa-fw fa-robot",
             'name_fr' => "Automatisation des tâches",
-            'name_pt' => "Automação",
+            'name_pt' => "Automação de tarefas",
             'name_en' => "Tasks automation",
             'name_es' => "",
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-server",
             'name_fr' => "Gestion de serveur",
-            'name_pt' => "",
+            'name_pt' => "Gestão de servidor",
             'name_en' => "Server management",
             'name_es' => "",
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-chart-network",
             'name_fr' => "Track your audience",
-            'name_pt' => "Track your audience",
+            'name_pt' => "Acompanhe seu público",
             'name_en' => "Track your audience",
             'name_es' => "",
         ]);
