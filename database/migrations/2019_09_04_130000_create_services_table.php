@@ -79,16 +79,9 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-construction",
-            'name_fr' => "Accompagnement dans la création ou la refonte de votre projet",
-            'name_pt' => "Acompanhamento na criação ou redesenho do seu projeto",
-            'name_en' => "Accompaniment in the creation or redesign of your project",
-            'name_es' => "",
-        ]);
-        Service::create([
-            'icon' => "fad fa-fw fa-ruler-triangle",
-            'name_fr' => "Accompagnement UI/UX",
-            'name_pt' => "Suporte UI/UX",
-            'name_en' => "UI/UX support",
+            'name_fr' => "Création ou refonte de votre projet",
+            'name_pt' => "Criação ou redesenho do seu projeto",
+            'name_en' => "Creation or redesign of your project",
             'name_es' => "",
         ]);
         Service::create([
@@ -107,16 +100,16 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-drafting-compass",
-            'name_fr' => "Conception de design",
-            'name_pt' => "",
-            'name_en' => "Design conception",
+            'name_fr' => "UX/UI Design",
+            'name_pt' => "UX/UI Design",
+            'name_en' => "UX/UI Design",
             'name_es' => "",
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-robot",
-            'name_fr' => "Automatisation",
-            'name_pt' => "",
-            'name_en' => "Automation",
+            'name_fr' => "Automatisation des tâches",
+            'name_pt' => "Automação",
+            'name_en' => "Tasks automation",
             'name_es' => "",
         ]);
         Service::create([
@@ -126,17 +119,26 @@ class CreateServicesTable extends Migration
             'name_en' => "Server",
             'name_es' => "",
         ]);
-
-
-        /*
-            • Développement PHP (de préférence avec le Framework Laravel)
-            • Développement Front (Intégration, design, ui/ux, responsive)
-            • Développement d'API et gestion d'API externes
-            • Accompagnement dans la création ou la refonte de votre projet
-            • Accompagnement SEO
-            •
-            • Intégration système de paiement (Stripe, Paypal)
-            • Développement mobile iOS/Androïd avec React Native __[Niveau Junior]__
-         */
+        Service::create([
+            'icon' => "fad fa-fw fa-chart-network",
+            'name_fr' => "Track your audience",
+            'name_pt' => "Track your audience",
+            'name_en' => "Track your audience",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-search",
+            'name_fr' => "Recherche rapide (Algolia, Elasticsearch)",
+            'name_pt' => "Pesquisa rápida (Algolia, Elasticsearch)",
+            'name_en' => "Rapid search (Algolia, Elasticsearch)",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-map-marked-alt",
+            'name_fr' => "(Google Maps, Mapbox)",
+            'name_pt' => "(Google Maps, Mapbox)",
+            'name_en' => "(Google Maps, Mapbox)",
+            'name_es' => "",
+        ]);
     }
 }
