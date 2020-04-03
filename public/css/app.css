@@ -1035,45 +1035,48 @@ body {
   position: relative;
 }
 
-.team__member {
-  width: 250px;
-  padding: 10px;
-  box-sizing: border-box;
-  margin: 10px;
-  display: inline-block;
-  background-color: #f5f6fa;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.team__member__photo {
-  display: block;
+.team__member-container {
   position: relative;
-  margin: 0 auto 5px;
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #21b989 0%, #16A085 100%);
-  border-radius: 50%;
+  background-color: #f5f6fa;
+  display: inline-block;
+  width: 16.666%;
+  box-sizing: border-box;
+  border: 3px solid #718093;
+  padding: 10px;
 }
 
-.team__member__photo img {
-  margin: 5px;
-  width: 60px;
-  height: 60px;
+@media (max-width: 1400px) {
+  .team__member-container {
+    width: 33.333%;
+  }
+}
+
+.team__member {
+  text-align: center;
+}
+
+.team__member__picture {
+  padding-bottom: 10px;
+}
+
+.team__member__picture img {
   border-radius: 50%;
+  width: 80px;
 }
 
 .team__member__name {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.team__member__name span {
   font-family: "Abril Fatface", cursive;
-  padding-bottom: 5px;
 }
 
 .team__member__role {
-  padding-bottom: 5px;
-}
-
-.team__member__location {
-  padding-bottom: 5px;
+  color: #21b989;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .title {
@@ -1091,7 +1094,13 @@ body {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .home__row {
-  padding: 30px;
+  padding: 30px 60px;
+}
+
+@media (max-width: 1024px) {
+  .home__row {
+    padding: 10px 15px;
+  }
 }
 
 .footer {

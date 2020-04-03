@@ -16,7 +16,9 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('firstname');
-            $table->string('lastname');
+            $table->string('lastname')->nullable();
+            $table->string('nickname')->nullable();
+            $table->string('role')->nullable();
             $table->string('email')->unique();
             $table->string('password');
             $table->text('picture')->nullable();
@@ -55,6 +57,8 @@ class CreateUsersTable extends Migration
         $user = new \App\Models\User();
         $user->firstname = 'Matthieu';
         $user->lastname = 'Kassian';
+        $user->nickname = 'lemattou';
+        $user->role = 'Project Lead & Backend Dev';
         $user->email = 'kassian.matthieu@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -66,6 +70,8 @@ class CreateUsersTable extends Migration
         $user = new \App\Models\User();
         $user->firstname = 'Christophe';
         $user->lastname = 'Do Outeiro';
+        $user->nickname = 'cdo';
+        $user->role = 'Project Lead & Fullstack Dev';
         $user->email = 'cdo_outeiro@me.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -76,7 +82,9 @@ class CreateUsersTable extends Migration
 
         $user = new \App\Models\User();
         $user->firstname = 'Matheus';
-        $user->lastname = ' ';
+        $user->lastname = 'Matheus';
+        $user->nickname = 'matheus';
+        $user->role = 'Backend Dev';
         $user->email = 'matheus@me.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -86,8 +94,10 @@ class CreateUsersTable extends Migration
 
         $user = new \App\Models\User();
         $user->firstname = 'Breno';
-        $user->lastname = ' ';
-        $user->email = 'breno@me.com';
+        $user->lastname = 'Romeiro';
+        $user->nickname = 'bsromeiro';
+        $user->role = 'Frontend Dev';
+        $user->email = 'bsromeiro@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 2;
@@ -97,7 +107,9 @@ class CreateUsersTable extends Migration
         $user = new \App\Models\User();
         $user->firstname = 'Elisa';
         $user->lastname = 'Nogueira';
-        $user->email = 'elisa@me.com';
+        $user->nickname = 'elisanog';
+        $user->role = 'Data Analyst';
+        $user->email = 'elisanog05@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
@@ -107,8 +119,10 @@ class CreateUsersTable extends Migration
 
         $user = new \App\Models\User();
         $user->firstname = 'Yago';
-        $user->lastname = ' ';
-        $user->email = 'yago@me.com';
+        $user->lastname = 'Lomondo';
+        $user->nickname = 'yagolomondo';
+        $user->role = 'Tracking Strategy';
+        $user->email = 'yagolcs@msn.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 2;

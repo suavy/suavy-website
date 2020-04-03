@@ -146,5 +146,40 @@ class CreateServicesTable extends Migration
             'name_en' => "Mapping (Google Maps, Mapbox)",
             'name_es' => "",
         ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-analytics",
+            'name_fr' => "Data analysis",
+            'name_pt' => "Data analysis",
+            'name_en' => "Data analysis",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-vials",
+            'name_fr' => "A/B testing",
+            'name_pt' => "A/B testing",
+            'name_en' => "A/B testing",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-wrench",
+            'name_fr' => "Data strategy",
+            'name_pt' => "Data strategy",
+            'name_en' => "Data strategy",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-layer-group",
+            'name_fr' => "Deployment of use cases",
+            'name_pt' => "Deployment of use cases",
+            'name_en' => "Deployment of use cases",
+            'name_es' => "",
+        ]);
+        Service::create([
+            'icon' => "fad fa-fw fa-bug",
+            'name_fr' => "Focus sur des problématiques marketing",
+            'name_pt' => "Foco em soluções de marketing",
+            'name_en' => "Focus on Marketing issues",
+            'name_es' => "",
+        ]);
     }
 }
