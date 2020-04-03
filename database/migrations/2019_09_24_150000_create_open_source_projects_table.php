@@ -30,6 +30,12 @@ class CreateOpenSourceProjectsTable extends Migration
             $table->string('website_link', 500)->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
+            //reorder
+            $table->integer('parent_id')->nullable()->default(0);
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
+
             $table->timestamps();
         });
         $this->seed();

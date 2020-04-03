@@ -22,6 +22,13 @@ class CreateUsersTable extends Migration
             $table->text('picture')->nullable();
             $table->boolean('admin')->default(false);
             $table->boolean('disabled')->default(false);
+
+            //reorder
+            $table->integer('parent_id')->nullable()->default(0);
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
+
             $table->foreignId('country_id');
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->foreignId('city_id');

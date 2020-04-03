@@ -25,6 +25,12 @@ class CreateServicesTable extends Migration
             $table->string('color')->nullable();
             $table->string('icon')->nullable();
 
+            //reorder
+            $table->integer('parent_id')->nullable()->default(0);
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
+
             $table->timestamps();
         });
         $this->seed();

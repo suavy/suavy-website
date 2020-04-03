@@ -29,6 +29,13 @@ class CreateProjectsTable extends Migration
             $table->string('color_light')->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
+
+            //reorder
+            $table->integer('parent_id')->nullable()->default(0);
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
+
             //$table->string('color')->nullable();
             //$table->boolean('senior')->nullable(); // todo add to seed
             //$table->unsignedBigInteger('parent_id')->nullable();

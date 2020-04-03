@@ -21,7 +21,12 @@ class CreateProjectFeaturesTable extends Migration
             $table->text('name_pt')->nullable();
             $table->text('name_en')->nullable();
             $table->text('name_es')->nullable();
-            $table->smallInteger('order');
+
+            //reorder
+            $table->integer('parent_id')->nullable()->default(0);
+            $table->integer('lft')->default(0);
+            $table->integer('rgt')->default(0);
+            $table->integer('depth')->default(0);
 
             $table->foreignId('project_id');
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
@@ -49,35 +54,30 @@ class CreateProjectFeaturesTable extends Migration
         \App\Models\ProjectFeature::query()->insert([
             [
                 'project_id'=>$project->id,
-                'order'=>1,
                 'name_fr'=>"Annonces médicales avec : 10 types d’annonces, 60 spécialités, 4 types de comptes donc 60x10x4 possibilités de formulaires de création",
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'order'=>2,
                 'name_fr'=>"Contrats de travail 100% dématérialisés avec signature éléctronique et transmission à l’ordre des médecins",
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'order'=>3,
                 'name_fr'=>"Recherche d'annonces (+10.000) en quelques ms avec Algolia et affichage sur une map Mabox",
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'order'=>5,
                 'name_fr'=>"Paiement sécurisé avec Stripe",
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'order'=>4,
                 'name_fr'=>"Recrutement de remplaçants par SMS",
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),

@@ -37,6 +37,10 @@ class User extends Authenticatable
         'admin',
         'disabled',
         'picture',
+        'lft',
+        'rgt',
+        'depth',
+        'parent_id',
         'city_id',
         'country_id'];
     protected $hidden = ['password', 'remember_token',];

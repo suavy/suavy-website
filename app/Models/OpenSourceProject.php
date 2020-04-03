@@ -36,7 +36,11 @@ class OpenSourceProject extends Model {
         'started_at',
         'ended_at',
         'source_link',
-        'website_link'
+        'website_link',
+        'lft',
+        'rgt',
+        'depth',
+        'parent_id',
     ];
     protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
 
