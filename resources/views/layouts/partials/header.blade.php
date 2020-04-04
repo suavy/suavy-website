@@ -14,13 +14,13 @@
         <div class="header__nav__item">
             <div class="buttons-flag">
                 <a href="{{ route('switch-locale', ['locale' => 'fr']) }}" class="button-flag @if(session('locale') == "fr") button-flag--selected @endif">
-                    <img src="{{ asset('images/flags/fr.svg') }}"/>
+                    <img src="{{ asset('images/flags/square/fr.svg') }}"/>
                 </a><a href="{{ route('switch-locale', ['locale' => 'pt']) }}" class="button-flag @if(session('locale') == "pt") button-flag--selected @endif">
-                    <img src="{{ asset('images/flags/pt.svg') }}"/>
+                    <img src="{{ asset('images/flags/square/pt.svg') }}"/>
                 </a><a href="{{ route('switch-locale', ['locale' => 'en']) }}" class="button-flag @if(session('locale') == "en") button-flag--selected @endif">
-                    <img src="{{ asset('images/flags/en.svg') }}"/>
+                    <img src="{{ asset('images/flags/square/uk.svg') }}"/>
                 </a><!--<a href="{{ route('switch-locale', ['locale' => 'es']) }}" class="button-flag @if(session('locale') == "es") button-flag--selected @endif">
-                <img src="{{ asset('images/flags/es.svg') }}"/>
+                <img src="{{ asset('images/flags/square/es.svg') }}"/>
             </a>-->
             </div>
         </div>

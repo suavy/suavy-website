@@ -148,7 +148,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-analytics",
-            'name_fr' => "Data analysis",
+            'name_fr' => "Data Analyse",
             'name_pt' => "Data analysis",
             'name_en' => "Data analysis",
             'name_es' => "",
@@ -162,14 +162,14 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-wrench",
-            'name_fr' => "Data strategy",
-            'name_pt' => "Data strategy",
-            'name_en' => "Data strategy",
+            'name_fr' => "Stratégie Data (Marketing data-driven & CRM)",
+            'name_pt' => "Data strategy (Marketing data-driven & CRM)",
+            'name_en' => "Data strategy (Marketing data-driven & CRM)",
             'name_es' => "",
         ]);
         Service::create([
             'icon' => "fad fa-fw fa-layer-group",
-            'name_fr' => "Deployment of use cases",
+            'name_fr' => "Déploiement de cas d’usages",
             'name_pt' => "Deployment of use cases",
             'name_en' => "Deployment of use cases",
             'name_es' => "",

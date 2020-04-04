@@ -7,9 +7,13 @@
     position: relative;
     background-color: $white;
     display: inline-block;
-    width: 16.666%;
+    width: 20%;
     @include media('screen-large') {
         width: 33.333%;
+        //border-bottom: 2px solid $white;
+    }
+    @include media('screen-small') {
+        width: 50%;
         //border-bottom: 2px solid $white;
     }
     box-sizing: border-box;
@@ -39,4 +43,20 @@
 .team__member__role {
     color: $green;
     @include font-size(14px);
+}
+
+.team__member__speak {
+
+}
+
+.team__member__speak__language {
+    display: inline-block;
+    img {
+        height: 24px;
+        width: auto;
+    }
+}
+
+.team__member__location {
+
 }

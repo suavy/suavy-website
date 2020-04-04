@@ -15,6 +15,7 @@
     padding: 10px;
     margin: 10px 10px 0 0;
     position: relative;
+    @include font-size(20px);
     &:hover {
         user-select: none;
         cursor: pointer;
@@ -22,12 +23,12 @@
         background-color: $yellow;
         background-image: linear-gradient(135deg, $yellow 0%, darken($yellow, 5%) 100%);
     }
+    @include media('screen-small') {
+        @include font-size(16px);
+        padding: 5px;
+
+    }
 }
 
 .service__content {
-    //font-family: $titleFont;
-    @include font-size(20px);
-    line-height: 24px;
-    //font-weight: bold;
-    //vertical-align: middle;
 }

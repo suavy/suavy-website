@@ -129,5 +129,17 @@ class CreateUsersTable extends Migration
         $user->country_id = 3;
         $user->save();
 
+        $user = new \App\Models\User();
+        $user->firstname = 'Heloise';
+        $user->lastname = 'Vieu';
+        $user->nickname = 'helowwkity';
+        $user->role = 'Com';
+        $user->email = 'vieu.heloise@gmail.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 1;
+        $user->country_id = 1;
+        $user->save();
+
     }
 }
