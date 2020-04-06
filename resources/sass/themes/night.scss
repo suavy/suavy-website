@@ -1,4 +1,16 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _night.scss
+* Description:  Night mode theme of Suavy Website
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+*
+*
+*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 body.night {
+    /* _base
+    ===========================================*/
     background-color: $black;
     color: $white;
     .link { color: $white; }
@@ -7,22 +19,28 @@ body.night {
         &:hover { text-decoration-color: $white; }
     }
 
-
+    /* _header
+    ===========================================*/
     .header__logo {
         color: $yellow;
         span {
             color: $black;
         }
     }
+
+    /* _map
+    ===========================================*/
     .map-title {
         color: $black;
     }
+
     .map-svg {
         path {
             fill: transparentize($black, 0.3);
             stroke:$black;
         }
     }
+
     .map-marker {
         &__button {
             background-color: $black;
@@ -33,6 +51,10 @@ body.night {
             box-shadow: 0 0 1px 2px $black;
         }
     }
+
+    /* _client
+    ===========================================*/
+    .client img { filter: brightness(0) invert(1); }
 }
 
 

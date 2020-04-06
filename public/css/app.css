@@ -829,56 +829,6 @@ body {
   color: #f6993f;
 }
 
-.projects {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.project {
-  background-color: #718093;
-  width: 600px;
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 10px;
-}
-
-.project__name {
-  font-size: 18px;
-  font-size: 1.125rem;
-  background-color: #f6e58d;
-}
-
-.project__features {
-  background-color: #f66d9b;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.project__features__item {
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 5px 8px;
-  position: relative;
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-
-.project__features__item:hover {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  color: #1e272e;
-  background-color: #f6e58d;
-  background-image: linear-gradient(135deg, #f6e58d 0%, #f4e075 100%);
-}
-
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -1112,6 +1062,9 @@ body {
 *
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+/* _base
+===========================================*/
+
 .home__row {
   padding: 30px 60px;
 }
@@ -1120,6 +1073,32 @@ body {
   .home__row {
     padding: 10px 15px;
   }
+}
+
+/* _clients
+===========================================*/
+
+.home__row--clients .title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.client {
+  padding: 20px;
+}
+
+.client img {
+  width: auto;
+  height: 45px;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .footer {
@@ -1181,9 +1160,28 @@ body {
   padding-left: 10px;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _night.scss
+* Description:  Night mode theme of Suavy Website
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+*
+*
+*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 body.night {
+  /* _base
+  ===========================================*/
   background-color: #1e272e;
   color: #f5f6fa;
+  /* _header
+  ===========================================*/
+  /* _map
+  ===========================================*/
+  /* _client
+  ===========================================*/
 }
 
 body.night .link {
@@ -1225,5 +1223,10 @@ body.night .map-marker__button {
 
 body.night .map-marker__button.pulse:after {
   box-shadow: 0 0 1px 2px #1e272e;
+}
+
+body.night .client img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 

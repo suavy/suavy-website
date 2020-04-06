@@ -5,9 +5,7 @@
     @include('home.partials.team')
 
     @include('home.partials.match')
-    {{--
-    @include('home.partials.projects')
 
-    @include('home.partials.open-source-projects')
-    --}}
+    @include('home.partials.clients')
+
 @endsection
