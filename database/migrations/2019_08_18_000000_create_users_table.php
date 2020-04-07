@@ -90,6 +90,8 @@ class CreateUsersTable extends Migration
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 3;
         $user->country_id = 2;
+        $user->disabled = true;
+
         $user->save();
 
         $user = new \App\Models\User();
@@ -130,9 +132,9 @@ class CreateUsersTable extends Migration
         $user->save();
 
         $user = new \App\Models\User();
-        $user->firstname = 'Heloise';
+        $user->firstname = 'Héloïse';
         $user->lastname = 'Vieu';
-        $user->nickname = 'helowwkity';
+        $user->nickname = 'helowwkitty';
         $user->role = 'Com';
         $user->email = 'vieu.heloise@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
