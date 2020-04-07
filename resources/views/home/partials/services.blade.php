@@ -1,4 +1,4 @@
-<div class="home__row">
+<div class="home__row home__row--above-team">
     <div class="services">
         @foreach($services as $service)
             <div class="service">

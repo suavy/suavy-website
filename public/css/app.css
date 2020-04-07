@@ -984,70 +984,6 @@ body {
   border-left-width: 0px;
 }
 
-.team {
-  background-color: #718093;
-  position: relative;
-}
-
-.team__member-container {
-  position: relative;
-  background-color: #f5f6fa;
-  display: inline-block;
-  width: 20%;
-  box-sizing: border-box;
-  border: 3px solid #718093;
-  padding: 10px;
-}
-
-@media (max-width: 1400px) {
-  .team__member-container {
-    width: 33.333%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .team__member-container {
-    width: 50%;
-  }
-}
-
-.team__member {
-  text-align: center;
-}
-
-.team__member__picture {
-  padding-bottom: 10px;
-}
-
-.team__member__picture img {
-  border-radius: 50%;
-  width: 80px;
-}
-
-.team__member__name {
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
-.team__member__name span {
-  font-family: "Abril Fatface", cursive;
-}
-
-.team__member__role {
-  color: #21b989;
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-
-.team__member__speak__language {
-  display: inline-block;
-}
-
-.team__member__speak__language img {
-  height: 24px;
-  width: auto;
-}
-
 .title {
   font-family: "Abril Fatface", cursive;
   font-size: 32px;
@@ -1099,6 +1035,119 @@ body {
   height: 45px;
   -webkit-filter: brightness(0);
           filter: brightness(0);
+}
+
+/* _team
+===========================================*/
+
+.home__row--team {
+  background-color: #d2d7d3;
+  padding: 0 !important;
+}
+
+.home__row--above-team {
+  padding-bottom: 120px;
+}
+
+.team {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.team__member-container {
+  position: relative;
+  display: inline-block;
+  width: 33.333%;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+  margin-bottom: 120px;
+}
+
+.team__member-container:nth-child(3n+1):nth-last-child(-n+3),
+.team__member-container:nth-child(3n+1):nth-last-child(-n+3) ~ .team__member-container {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .team__member-container {
+    width: 50%;
+  }
+
+  .team__member-container:nth-child(3n+1):nth-last-child(-n+3),
+  .team__member-container:nth-child(3n+1):nth-last-child(-n+3) ~ .team__member-container {
+    margin-bottom: inherit;
+  }
+
+  .team__member-container:nth-child(2n+1):nth-last-child(-n+2),
+  .team__member-container:nth-child(2n+1):nth-last-child(-n+2) ~ .team__member-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team__member-container {
+    width: 100%;
+  }
+
+  .team__member-container:nth-child(2n+1):nth-last-child(-n+2),
+  .team__member-container:nth-child(2n+1):nth-last-child(-n+2) ~ .team__member-container {
+    margin-bottom: inherit;
+  }
+
+  .team__member-container:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.team__member {
+  text-align: center;
+}
+
+.team__member__picture {
+  position: relative;
+}
+
+.team__member__picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+}
+
+.team__member__name {
+  padding: 5px 0;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.team__member__name span {
+  font-family: "Abril Fatface", cursive;
+}
+
+.team__member__role {
+  padding: 0 0 5px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+.team__member__about {
+  color: #718093;
+  max-width: 240px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.team__member__about__language {
+  display: inline-block;
+}
+
+.team__member__about__language img {
+  vertical-align: middle;
+  height: 20px;
+  width: auto;
 }
 
 .footer {

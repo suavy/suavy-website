@@ -40,3 +40,107 @@
         filter: brightness(0);
     }
 }
+
+/* _team
+===========================================*/
+.home__row--team {
+    background-color: $lightgray;
+    padding: 0 !important;
+
+}
+
+.home__row--above-team {
+    padding-bottom: 120px;
+}
+
+.team {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team__member-container {
+    position: relative;
+    display: inline-block;
+    width: 33.333%;
+    &:nth-child(3n+1):nth-last-child(-n+3),
+    &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
+        //background-color: $red;
+        margin-bottom: 20px;
+    }
+    @include media('screen-small') {
+        width: 50%;
+        &:nth-child(3n+1):nth-last-child(-n+3),
+        &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
+            //bbackground-color: $green;
+            margin-bottom: inherit;
+        }
+        &:nth-child(2n+1):nth-last-child(-n+2),
+        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
+            //bbackground-color: $pink;
+            margin-bottom: 20px;
+        }
+    }
+    @include media('tablet-small') {
+        width: 100%;
+        &:nth-child(2n+1):nth-last-child(-n+2),
+        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
+            //bbackground-color: $yellow;
+            margin-bottom: inherit;
+        }
+        &:last-child {
+            //bbackground-color: $purple;
+            margin-bottom: 20px;
+        }
+
+    }
+    box-sizing: border-box;
+    padding: 0 10px 10px;
+    margin-bottom: 120px;
+}
+
+
+.team__member {
+    text-align: center;
+}
+
+.team__member__picture {
+    position: relative;
+    img {
+        @include border-radius(50%);
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+
+    }
+}
+
+.team__member__name {
+    padding: 5px 0;
+    @include font-size(20px);
+    span {
+        font-family: $titleFont;
+    }
+}
+
+.team__member__role {
+    padding: 0 0 5px;
+    @include font-size(15px);
+    text-transform: uppercase;
+}
+
+.team__member__about {
+    color: $gray;
+    max-width: 240px;
+    margin: 0 auto;
+    @include font-size(14px);
+}
+
+.team__member__about__language {
+    display: inline-block;
+    img {
+        vertical-align: middle;
+        height: 20px;
+        width: auto;
+    }
+}
