@@ -1,4 +1,4 @@
-<div class="home__row home__row--team">
+<div class="home__row home__row--team" id="teamRow">
     <div class="team">
         @foreach(\App\Models\User::all() as $user)<div class="team__member-container">
             <div class="team__member">
@@ -34,3 +34,14 @@
         </div>@endforeach
     </div>
 </div>
+
+@push('after-foot-scripts')
+    <!-- PS : trianglifly est inclus dans le head -->
+    <script>
+        $(document).ready(function() {
+            console.log( "ready!" );
+            var pattern = Trianglify({ width: window.innerWidth, height: window.innerHeight });
+            $("#teamRow").appendChild(pattern.canvas());
+        });
+    </script>
+@endpush
