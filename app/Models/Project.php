@@ -33,6 +33,7 @@ class Project extends Model {
         'description_en',
         'description_es',
         'area',
+        'company_logo',
         'color',
         'color_light',
         'started_at',
@@ -55,6 +56,16 @@ class Project extends Model {
     | _Mutators
     |--------------------------------------------------------------------------
     */
+    public function setCompanyLogoAttribute($value)
+    {
+        $attribute_name = "company_logo";
+        $disk = "public";
+        $destination_path = "company_logos";
+
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
+
+        // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
+    }
 
     /*
     |--------------------------------------------------------------------------

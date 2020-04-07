@@ -25,6 +25,7 @@ class CreateProjectsTable extends Migration
             $table->text('description_en')->nullable();
             $table->text('description_es')->nullable();
             $table->string('area')->nullable();
+            $table->string('company_logo')->nullable();
             $table->string('color')->nullable();
             $table->string('color_light')->nullable();
             $table->timestamp('started_at')->nullable();

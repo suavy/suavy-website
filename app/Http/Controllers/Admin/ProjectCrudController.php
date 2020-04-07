@@ -60,6 +60,13 @@ class ProjectCrudController extends CrudController {
             'attribute' => 'name',
             'pivot' => true, /* Do not remove this or saving will fail */
         ]);
+        $this->crud->addField([   // Upload
+                'name' => 'company_logo',
+                'label' => 'Company logo',
+                'type' => 'upload',
+                'upload' => true,
+                'disk' => 'public', // if you store files in the /public folder, please ommit this; if you store them in /storage or S3, please specify it;
+                ]);
     }
 
     protected function setupUpdateOperation() {

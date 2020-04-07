@@ -1,4 +1,5 @@
-<div class="home__row home__row--team" id="teamRow">
+<div class="home__row home__row--team" style="position: relative;">
+    <div style="position: absolute; width: 100%; height: 100%;"  id="teamRow"></div>
     <div class="team">
         @foreach(\App\Models\User::all() as $user)<div class="team__member-container">
             <div class="team__member">
@@ -41,7 +42,7 @@
         $(document).ready(function() {
             console.log( "ready!" );
             var pattern = Trianglify({ width: window.innerWidth, height: window.innerHeight });
-            $("#teamRow").appendChild(pattern.canvas());
+            $("#teamRow").html(pattern.canvas());
         });
     </script>
 @endpush
