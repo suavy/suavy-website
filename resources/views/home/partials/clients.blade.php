@@ -1,9 +1,10 @@
 <div class="home__row home__row--clients">
     <h2 class="title">Our clients</h2>
     <div class="clients">
+        {{--
         @foreach($projects as $project)
-
-        @endforeach
+            <img src="{{ $project->company_logo }}"/>
+        @endforeach--}}
         @foreach($projects->take(1) as $project)
             <div class="client">
                 <img src="{{ asset('images/temp_logos/remplafrance.svg') }}" />

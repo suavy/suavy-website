@@ -51,6 +51,9 @@ class Project extends Model {
     | _Accessors
     |--------------------------------------------------------------------------
     */
+    public function getCompanyLogoAttribute($value) {
+        return asset('storage/'.$value);
+    }
 
     /*
     |--------------------------------------------------------------------------
