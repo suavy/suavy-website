@@ -5,6 +5,7 @@
             <div class="team__member">
                 <div class="team__member__picture">
                     <img class="team__member__picture__image" src="https://picsum.photos/200"/>
+                    <div class="team__member__picture__border"></div>
                     <div class="team__member__picture__hover">
                         <div class="team__member__picture__hover__content">
                             <div class="team__member__picture__hover__content__citation">
@@ -35,7 +36,7 @@
                     </div>
                 </div>
                 <div class="team__member__location">
-                    <i class="fad fa-fw fa-street-view"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}
+                    <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}
                 </div>
             </div>
         </div>@endforeach
