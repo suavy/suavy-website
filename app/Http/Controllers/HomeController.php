@@ -17,7 +17,7 @@ class HomeController extends Controller {
 
         $projects = Project::query()->with(['skills','features'=>function($query){
             $query->orderBy('lft');
-        }])->get();
+        }])->where('disabled',false)->get();
 
         $openSourceProjects = OpenSourceProject::query()->get();
 

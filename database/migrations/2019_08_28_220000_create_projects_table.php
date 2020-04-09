@@ -30,6 +30,7 @@ class CreateProjectsTable extends Migration
             $table->string('color_light')->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
+            $table->boolean('disabled')->default(false);
 
             //reorder
             $table->integer('parent_id')->nullable()->default(0);

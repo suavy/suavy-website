@@ -35,6 +35,7 @@ class ProjectCrudController extends CrudController {
 
     protected function setupListOperation() {
         $this->crud->addColumn(['name' => 'id', 'label' => '#']);
+        $this->crud->addColumn(['name' => 'disabled', 'label' => 'disabled']);
         $this->crud->addColumn(['name' => 'slug', 'label' => 'slug']);
         $this->crud->addColumn(['name' => 'name', 'label' => 'name']);
         $this->crud->addColumn(['name' => 'started_at', 'label' => 'Started at']);
@@ -43,6 +44,7 @@ class ProjectCrudController extends CrudController {
     }
 
     protected function setupCreateOperation() {
+        $this->crud->addField(['name' => 'disabled', 'label' => 'disabled','type' => 'checkbox',]);
         $this->crud->addField(['name' => 'slug', 'label' => 'slug','type' => 'text',]);
         $this->crud->addField(['name' => 'name', 'label' => 'name','type' => 'text',]);
         $this->crud->addField(['name' => 'description_fr', 'label' => 'description fr','type' => 'textarea',]);
@@ -65,7 +67,6 @@ class ProjectCrudController extends CrudController {
                 'label' => 'Company logo',
                 'type' => 'upload',
                 'upload' => true,
-                'disk' => 'public', // if you store files in the /public folder, please ommit this; if you store them in /storage or S3, please specify it;
                 ]);
     }
 

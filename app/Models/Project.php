@@ -36,6 +36,7 @@ class Project extends Model {
         'company_logo',
         'color',
         'color_light',
+        'disabled',
         'started_at',
         'ended_at',
         'lft',
