@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 7.3.0 on 2020-03-27 16:26:59.
+ * Generated for Laravel 7.5.2 on 2020-04-10 22:33:23.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -6640,6 +6640,31 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
+         * Assert that a request / response pair was not recorded matching a given truth test.
+         *
+         * @param callable $callback
+         * @return void 
+         * @static 
+         */ 
+        public static function assertNotSent($callback)
+        {
+                        /** @var \Illuminate\Http\Client\Factory $instance */
+                        $instance->assertNotSent($callback);
+        }
+        
+        /**
+         * Assert that no request / response pair was recorded.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function assertNothingSent()
+        {
+                        /** @var \Illuminate\Http\Client\Factory $instance */
+                        $instance->assertNothingSent();
+        }
+        
+        /**
          * Assert that every created response sequence is empty.
          *
          * @return void 
@@ -10142,7 +10167,9 @@ namespace Illuminate\Support\Facades {
          * Gets the preferred format for the response by inspecting, in the following order:
          *   * the request format set using setRequestFormat
          *   * the values of the Accept HTTP header
-         *   * the content type of the body of the request.
+         * 
+         * Note that if you use this method, you should send the "Vary: Accept" header
+         * in the response to prevent any issues with intermediary HTTP caches.
          *
          * @static 
          */ 
@@ -11344,13 +11371,14 @@ namespace Illuminate\Support\Facades {
          * Merge the given array with the last group stack.
          *
          * @param array $new
+         * @param bool $prependExistingPrefix
          * @return array 
          * @static 
          */ 
-        public static function mergeWithLastGroup($new)
+        public static function mergeWithLastGroup($new, $prependExistingPrefix = true)
         {
                         /** @var \Illuminate\Routing\Router $instance */
-                        return $instance->mergeWithLastGroup($new);
+                        return $instance->mergeWithLastGroup($new, $prependExistingPrefix);
         }
         
         /**
@@ -16211,6 +16239,19 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Remove an attribute from one column's definition array.
+         *
+         * @param string $column The name of the column.
+         * @param string $attribute The name of the attribute being removed.
+         * @static 
+         */ 
+        public static function removeColumnAttribute($column, $attribute)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->removeColumnAttribute($column, $attribute);
+        }
+        
+        /**
          * Change attributes for multiple columns.
          *
          * @param array $columns
@@ -16330,6 +16371,55 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Check if a column exists, by any given attribute.
+         *
+         * @param string $attribute Attribute name on that column definition array.
+         * @param string $value Value of that attribute on that column definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasColumnWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->hasColumnWhere($attribute, $value);
+        }
+        
+        /**
+         * Get the first column where a given attribute has the given value.
+         *
+         * @param string $attribute Attribute name on that column definition array.
+         * @param string $value Value of that attribute on that column definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function firstColumnWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->firstColumnWhere($attribute, $value);
+        }
+        
+        /**
+         * Create and return a CrudColumn object for that column name.
+         * 
+         * Enables developers to use a fluent syntax to declare their columns,
+         * in addition to the existing options:
+         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
+         * - CRUD::column('price')->type('number');
+         * 
+         * And if the developer uses the CrudColumn object as Column in his CrudController:
+         * - Column::name('price')->type('number');
+         *
+         * @param string $name The name of the column in the db, or model attribute.
+         * @return \Backpack\CRUD\app\Library\CrudPanel\CrudColumn 
+         * @static 
+         */ 
+        public static function column($name)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->column($name);
+        }
+        
+        /**
          * Get the CRUD fields for the current operation.
          *
          * @return array 
@@ -16391,6 +16481,18 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Move this field to be first in the fields list.
+         *
+         * @return bool|null 
+         * @static 
+         */ 
+        public static function makeFirstField()
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->makeFirstField();
+        }
+        
+        /**
          * Remove a certain field from the create/update/both forms by its name.
          *
          * @param string $name Field name (as defined with the addField() procedure)
@@ -16426,16 +16528,29 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Remove an attribute from one field's definition array.
+         *
+         * @param string $field The name of the field.
+         * @param string $attribute The name of the attribute being removed.
+         * @static 
+         */ 
+        public static function removeFieldAttribute($field, $attribute)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->removeFieldAttribute($field, $attribute);
+        }
+        
+        /**
          * Update value of a given key for a current field.
          *
-         * @param string $field The field
+         * @param string $fieldName The field name
          * @param array $modifications An array of changes to be made.
          * @static 
          */ 
-        public static function modifyField($field, $modifications)
+        public static function modifyField($fieldName, $modifications)
         {
                         /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
-                        return $instance->modifyField($field, $modifications);
+                        return $instance->modifyField($fieldName, $modifications);
         }
         
         /**
@@ -16652,6 +16767,55 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Check if a field exists, by any given attribute.
+         *
+         * @param string $attribute Attribute name on that field definition array.
+         * @param string $value Value of that attribute on that field definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasFieldWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->hasFieldWhere($attribute, $value);
+        }
+        
+        /**
+         * Get the first field where a given attribute has the given value.
+         *
+         * @param string $attribute Attribute name on that field definition array.
+         * @param string $value Value of that attribute on that field definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function firstFieldWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->firstFieldWhere($attribute, $value);
+        }
+        
+        /**
+         * Create and return a CrudField object for that field name.
+         * 
+         * Enables developers to use a fluent syntax to declare their fields,
+         * in addition to the existing options:
+         * - CRUD::addField(['name' => 'price', 'type' => 'number']);
+         * - CRUD::field('price')->type('number');
+         * 
+         * And if the developer uses the CrudField object as Field in his CrudController:
+         * - Field::name('price')->type('number');
+         *
+         * @param string $name The name of the column in the db, or model attribute.
+         * @return \Backpack\CRUD\app\Library\CrudPanel\CrudField 
+         * @static 
+         */ 
+        public static function field($name)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->field($name);
+        }
+        
+        /**
          * Add another clause to the query (for ex, a WHERE clause).
          * 
          * Examples:
@@ -16802,7 +16966,7 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
          * @param bool|string $position Position on the stack: beginning or end. If false, the position will be
          *                                     'beginning' for the line stack or 'end' otherwise.
          * @param bool $replaceExisting True if a button with the same name on the given stack should be replaced.
-         * @return \Backpack\CRUD\app\Library\CrudPanel\Traits\CrudButton The new CRUD button.
+         * @return \Backpack\CRUD\app\Library\CrudPanel\CrudButton The new CRUD button.
          * @static 
          */ 
         public static function addButton($stack, $name, $type, $content, $position = false, $replaceExisting = true)
@@ -16916,6 +17080,72 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         {
                         /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
                         return $instance->removeButtonFromStack($name, $stack);
+        }
+        
+        /**
+         * Move the most recently added button before or after the given target button. Default is before.
+         *
+         * @param string|array $target The target button name or array.
+         * @param string|array $destination The destination button name or array.
+         * @param bool $before If true, the button will be moved before the target button, otherwise it will be moved after it.
+         * @static 
+         */ 
+        public static function moveButton($target, $where, $destination)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->moveButton($target, $where, $destination);
+        }
+        
+        /**
+         * Check if a filter exists, by any given attribute.
+         *
+         * @param string $attribute Attribute name on that filter definition array.
+         * @param string $value Value of that attribute on that filter definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasButtonWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->hasButtonWhere($attribute, $value);
+        }
+        
+        /**
+         * Get the first filter where a given attribute has the given value.
+         *
+         * @param string $attribute Attribute name on that filter definition array.
+         * @param string $value Value of that attribute on that filter definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function firstButtonWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->firstButtonWhere($attribute, $value);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getButtonKey($buttonName)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->getButtonKey($buttonName);
+        }
+        
+        /**
+         * Add a new button to the current CRUD operation.
+         *
+         * @param string|array $attributes Button name or array that contains name, stack, type and content.
+         * @return \Backpack\CRUD\app\Library\CrudPanel\CrudButton 
+         * @static 
+         */ 
+        public static function button($attributes = null)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->button($attributes);
         }
         
         /**
@@ -17166,6 +17396,20 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Add a filter by specifying the entire CrudFilter object.
+         * 
+         * The filter logic does NOT get applied.
+         *
+         * @param \Backpack\CRUD\app\Library\CrudPanel\CrudFilter $object
+         * @static 
+         */ 
+        public static function addCrudFilter($object)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->addCrudFilter($object);
+        }
+        
+        /**
          * Apply the filter.
          *
          * @param \Backpack\CRUD\app\Library\CrudPanel\CrudFilter $filter
@@ -17179,17 +17423,18 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         }
         
         /**
+         * Apply all unapplied filters in the filter collection.
          * 
+         * This is called by the ListOperation just in case developers forgot to call apply()
+         * at the end of their filter declarations.
          *
-         * @param string $name
-         * @param string $operator
-         * @param array $input
+         * @return void 
          * @static 
          */ 
-        public static function addDefaultFilterLogic($name, $operator, $input = null)
+        public static function applyUnappliedFilters()
         {
                         /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
-                        return $instance->addDefaultFilterLogic($name, $operator, $input);
+                        $instance->applyUnappliedFilters();
         }
         
         /**
@@ -17249,6 +17494,17 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
          *
          * @static 
          */ 
+        public static function replaceFilter($name, $newFilter)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->replaceFilter($name, $newFilter);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
         public static function removeFilter($name)
         {
                         /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
@@ -17264,6 +17520,116 @@ namespace Backpack\CRUD\app\Library\CrudPanel {
         {
                         /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
                         return $instance->removeAllFilters();
+        }
+        
+        /**
+         * Move the most recently added filter after the given target filter.
+         *
+         * @param string|array $destination The target filter name or array.
+         * @static 
+         */ 
+        public static function afterFilter($destination)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->afterFilter($destination);
+        }
+        
+        /**
+         * Move the most recently added filter before the given target filter.
+         *
+         * @param string|array $destination The target filter name or array.
+         * @static 
+         */ 
+        public static function beforeFilter($destination)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->beforeFilter($destination);
+        }
+        
+        /**
+         * Move this filter to be first in the columns list.
+         *
+         * @return bool|null 
+         * @static 
+         */ 
+        public static function makeFirstFilter()
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->makeFirstFilter();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getFilterKey($filterName)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->getFilterKey($filterName);
+        }
+        
+        /**
+         * Move the most recently added filter before or after the given target filter. Default is before.
+         *
+         * @param string|array $target The target filter name or array.
+         * @param string|array $destination The destination filter name or array.
+         * @param bool $before If true, the filter will be moved before the target filter, otherwise it will be moved after it.
+         * @static 
+         */ 
+        public static function moveFilter($target, $where, $destination)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->moveFilter($target, $where, $destination);
+        }
+        
+        /**
+         * Check if a filter exists, by any given attribute.
+         *
+         * @param string $attribute Attribute name on that filter definition array.
+         * @param string $value Value of that attribute on that filter definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasFilterWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->hasFilterWhere($attribute, $value);
+        }
+        
+        /**
+         * Get the first filter where a given attribute has the given value.
+         *
+         * @param string $attribute Attribute name on that filter definition array.
+         * @param string $value Value of that attribute on that filter definition array.
+         * @return bool 
+         * @static 
+         */ 
+        public static function firstFilterWhere($attribute, $value)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->firstFilterWhere($attribute, $value);
+        }
+        
+        /**
+         * Create and return a CrudFilter object for that attribute.
+         * 
+         * Enables developers to use a fluent syntax to declare their filters,
+         * in addition to the existing options:
+         * - CRUD::addFilter(['name' => 'price', 'type' => 'range'], false, function($value) {});
+         * - CRUD::filter('price')->type('range')->whenActive(function($value) {});
+         * 
+         * And if the developer uses the CrudField object as Field in his CrudController:
+         * - Filter::name('price')->type('range')->whenActive(function($value) {});
+         *
+         * @param string $name The name of the column in the db, or model attribute.
+         * @return \Backpack\CRUD\app\Library\CrudPanel\CrudField 
+         * @static 
+         */ 
+        public static function filter($name)
+        {
+                        /** @var \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $instance */
+                        return $instance->filter($name);
         }
         
         /**
@@ -22185,6 +22551,18 @@ namespace  {
             {
                                 /** @var \Illuminate\Database\Query\Builder $instance */
                                 return $instance->forPageAfterId($perPage, $lastId, $column);
+            }
+         
+            /**
+             * Remove all existing orders and optionally add a new order.
+             *
+             * @return \Illuminate\Database\Query\Builder 
+             * @static 
+             */ 
+            public static function reorder($column = null, $direction = 'asc')
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                return $instance->reorder($column, $direction);
             }
          
             /**
