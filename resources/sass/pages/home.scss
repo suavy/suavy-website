@@ -56,10 +56,9 @@
 .contact {
     max-width: 1024px;
     margin: 0 auto;
-}
-
-.contact__form {
-    .input-group { color: $lightgray; }
+    .form {
+        .input-group { color: $lightgray; }
+    }
 }
 
 /* _team

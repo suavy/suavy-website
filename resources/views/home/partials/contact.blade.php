@@ -1,12 +1,12 @@
 <div class="home__row home__row--contact">
     <div class="contact">
-        <form class="contact__form">
+        <x-form>
             <x-inputs.checkboxes label="What type of project do you need ?"/>
             <x-inputs.checkboxes label="Delivery Time"/>
             <x-inputs.checkboxes label="Budget Range"/>
-            <x-inputs.text label="Nom"/>
-            <x-inputs.text label="Email"/>
-            <x-inputs.textarea label="Message"/>
-        </form>
+            <x-inputs.text name="a" label="Nom"/>
+            <x-inputs.text name="b" label="Email"/>
+            <x-inputs.textarea name="c" label="Message" placeholder="Type your message here"/>
+        </x-form>
     </div>
 </div>

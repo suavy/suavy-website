@@ -5,9 +5,9 @@ namespace App\View\Components\Inputs;
 class Textarea extends Input
 {
 
-    public function __construct($label)
+    public function __construct($name, $label, $placeholder = null)
     {
-        parent::__construct($label);
+        parent::__construct($name, $label, $placeholder);
     }
 
 

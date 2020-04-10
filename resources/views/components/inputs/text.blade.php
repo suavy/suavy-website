@@ -1,4 +1,4 @@
-<div class="form-group form-group--inline">
+<div class="form-group">
     <label class="label">{{ $label }}</label>
-    <input type="text" />
+    <input type="text" placeholder="{{ $placeholder }}" name="{{ $name }}" />
 </div>

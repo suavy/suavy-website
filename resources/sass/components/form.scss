@@ -1,14 +1,19 @@
+.form {
+
+}
+
 label.label {
     display: block;
     font-weight: bold;
-    @include font-size(20px);
+    @include font-size(24px);
+    padding-bottom: 5px;
 }
 
 .form-group {
-    padding: 0 0 10px;
+    padding: 20px 0;
     .form-group {
         padding: 0;
-        margin: 10px 10px 5px 0;
+        margin: 5px 10px 10px 0;
     }
 }
 
