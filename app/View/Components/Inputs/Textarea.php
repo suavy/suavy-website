@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Inputs;
 
-class Checkbox extends Input
+class Textarea extends Input
 {
 
     public function __construct($label)
@@ -13,6 +13,6 @@ class Checkbox extends Input
 
     public function render()
     {
-        return view('components.inputs.checkbox');
+        return view('components.inputs.textarea');
     }
 }

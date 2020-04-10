@@ -4,9 +4,9 @@
             <x-inputs.checkboxes label="What type of project do you need ?"/>
             <x-inputs.checkboxes label="Delivery Time"/>
             <x-inputs.checkboxes label="Budget Range"/>
-            <!-- todo
-                    - Name,Email,Message (text,text,textarea)
-            -->
+            <x-inputs.text label="Nom"/>
+            <x-inputs.text label="Email"/>
+            <x-inputs.textarea label="Message"/>
         </form>
     </div>
 </div>

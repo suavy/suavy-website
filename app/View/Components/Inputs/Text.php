@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Inputs;
 
-class Checkbox extends Input
+class Text extends Input
 {
 
     public function __construct($label)
@@ -10,9 +10,8 @@ class Checkbox extends Input
         parent::__construct($label);
     }
 
-
     public function render()
     {
-        return view('components.inputs.checkbox');
+        return view('components.inputs.text');
     }
 }
