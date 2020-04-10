@@ -990,12 +990,62 @@ body {
   font-size: 2rem;
 }
 
+label.label {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.form-group {
+  padding: 0 0 10px;
+}
+
+.form-group .form-group {
+  padding: 0;
+  margin: 10px 10px 5px 0;
+}
+
+.form-group--inline {
+  display: inline-block;
+}
+
+.checkbox {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.checkbox .label {
+  padding: 10px;
+  border: 1px solid #d2d7d3;
+}
+
+.checkbox .label:hover {
+  background-color: #21b989;
+}
+
+.checkbox input[type=checkbox] {
+  display: none;
+}
+
+.checkbox input:checked + .label {
+  background-color: #21b989;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _home.scss
 * Description:  Home page specific CSS
 * Author:       Christophe DO OUTEIRO
 *** INDEX: ************************************************************
 *
+* _base
+* _clients
+* _contact
+* _team
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* _base
@@ -1035,6 +1085,23 @@ body {
   height: 45px;
   -webkit-filter: brightness(0);
           filter: brightness(0);
+}
+
+/* _contact
+===========================================*/
+
+.home__row--contact {
+  background-color: #718093;
+  color: #f5f6fa;
+}
+
+.contact {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact__form .input-group {
+  color: #d2d7d3;
 }
 
 /* _team

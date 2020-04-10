@@ -4,6 +4,11 @@
 * Author:       Christophe DO OUTEIRO
 *** INDEX: ************************************************************
 *
+* _base
+* _clients
+* _contact
+* _team
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* _base
@@ -39,6 +44,22 @@
         height: 45px;
         filter: brightness(0);
     }
+}
+
+/* _contact
+===========================================*/
+.home__row--contact {
+    background-color: $gray;
+    color: $white;
+}
+
+.contact {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    .input-group { color: $lightgray; }
 }
 
 /* _team

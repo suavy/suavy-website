@@ -1,0 +1,20 @@
+.checkbox {
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox .label {
+    padding: 10px;
+    border: 1px solid $lightgray;
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input:checked + .label {
+    background-color: $green;
+}

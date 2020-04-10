@@ -1,0 +1,17 @@
+label.label {
+    display: block;
+    font-weight: bold;
+    @include font-size(20px);
+}
+
+.form-group {
+    padding: 0 0 10px;
+    .form-group {
+        padding: 0;
+        margin: 10px 10px 5px 0;
+    }
+}
+
+.form-group--inline {
+    display: inline-block;
+}
