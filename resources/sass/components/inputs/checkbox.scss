@@ -5,9 +5,9 @@
 
 .checkbox .label {
     padding: 10px;
-    border: 1px solid $lightgray;
+    border: 1px solid $black;
     &:hover {
-        background-color: $green;
+        //background-color: $green;
     }
 }
 
@@ -16,5 +16,5 @@
 }
 
 .checkbox input:checked + .label {
-    background-color: $green;
+    background-color: $red;
 }

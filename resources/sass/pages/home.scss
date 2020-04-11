@@ -49,15 +49,14 @@
 /* _contact
 ===========================================*/
 .home__row--contact {
-    background-color: $gray;
-    color: $white;
+
 }
 
 .contact {
     max-width: 1024px;
     margin: 0 auto;
     .form {
-        .input-group { color: $lightgray; }
+        .input-group { }
     }
 }
 

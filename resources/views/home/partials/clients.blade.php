@@ -1,4 +1,4 @@
-<div class="home__row home__row--clients">
+<div class="home__row home__row--clients bg-yellow">
     <h2 class="title">Our clients</h2>
     <div class="clients">
         {{--

@@ -9,13 +9,17 @@ class Input extends Component
 
     public $name;
     public $label;
-    public $placeholder;
 
-    public function __construct($name, $label, $placeholder = null)
+    public $placeholder;
+    public $size;
+
+    public function __construct($name, $label, $params = [])
     {
         $this->name = $name;
         $this->label = $label;
-        $this->placeholder = $placeholder;
+        foreach ($params as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

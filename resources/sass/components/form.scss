@@ -1,20 +1,27 @@
 .form {
-
+    white-space: nowrap;
 }
 
 label.label {
     display: block;
     font-weight: bold;
-    @include font-size(24px);
+    @include font-size(20px);
+    font-family: $titleFont;
     padding-bottom: 5px;
 }
 
 .form-group {
-    padding: 20px 0;
+    white-space: normal;
+    padding: 10px 0;
     .form-group {
         padding: 0;
         margin: 5px 10px 10px 0;
     }
+}
+
+.form-group--6 {
+    display: inline-block;
+    width: 50%;
 }
 
 .form-group--inline {

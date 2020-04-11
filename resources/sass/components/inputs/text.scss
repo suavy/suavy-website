@@ -4,12 +4,11 @@ input {
     box-sizing: border-box;
     padding: 10px;
     @include font-size(16px);
-    border: 1px solid $lightgray;
-    color: $white;
+    border: 1px solid $black;
     background-color: transparent;
     width: 100%;
     &::placeholder {
-        color: $lightgray;
+        color: $gray;
         opacity: 1;
     }
 }
