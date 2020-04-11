@@ -20,7 +20,6 @@
     transition: 0.6s;
     @include font-size(16px);
     color: $gray;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -30,7 +29,7 @@
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-    //border-color: $green;
+    border-color: $green;
     box-shadow: inset 350px 0 0 0 $green;
     color: $black;
     //box-shadow: 0 5px 5px -4px $green;

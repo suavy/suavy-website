@@ -1,12 +1,7 @@
 .map-row {
-    background-color: $green;
-    background-image: linear-gradient(135deg, $green 0%, darken($green, 10%) 100%);
     position: relative;
     width: 100%;
-    text-align: center;
-    @include media('screen-small') {
-        background-image: none;
-    }
+
 }
 
 .map-col {
@@ -43,7 +38,7 @@
     font-family: $titleFont;
     color: $white;
     @include font-size(36px);
-    line-height: 44px;
+    line-height: 48px;
     box-sizing: border-box;
     text-align: right;
     padding-right: 40px;
@@ -52,7 +47,7 @@
     }
     @include media('screen-larger') {
         @include font-size(32px);
-        line-height: 42px;
+        line-height: 44px;
     }
     @include media('screen-large') {
         @include font-size(28px);

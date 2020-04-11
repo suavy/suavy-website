@@ -14,6 +14,7 @@
 /* _base
 ===========================================*/
 .home__row {
+    position: relative;
     padding: 30px 60px;
     @include media('screen-small') {
         padding: 10px 15px;
@@ -49,7 +50,7 @@
 /* _contact
 ===========================================*/
 .home__row--contact {
-
+    padding: 60px;
 }
 
 .contact {
@@ -60,6 +61,18 @@
     }
 }
 
+/* _map
+===========================================*/
+.home__row--map {
+    text-align: center;
+    @include media('screen-small') {
+        background-image: none;
+    }
+}
+
+.home__row--below-map {
+    padding-bottom: 120px;
+}
 /* _team
 ===========================================*/
 .home__row--team {
@@ -177,6 +190,7 @@
     transform: rotate3d(0,1,0,-180deg);
     transform-style: preserve-3d;
 }
+
 .team__member__picture__hover__content__citation {
     text-align: center;
     color: $white;
@@ -186,8 +200,8 @@
 }
 
 .team__member__name {
-    padding: 5px 0;
-    @include font-size(20px);
+    padding: 10px 0 5px;
+    @include font-size(18px);
     span {
         font-family: $titleFont;
     }
@@ -196,11 +210,12 @@
 .team__member__role {
     padding: 0;
     @include font-size(14px);
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    color: $gray;
 }
 
 .team__member__languages {
-
+    padding: 2px 0 0;
 }
 
 .team__member__language {
@@ -216,4 +231,5 @@
     padding: 0 0 5px;
     color: $gray;
     @include font-size(14px);
+    display: none;
 }

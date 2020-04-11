@@ -1,4 +1,4 @@
-<div class="home__row home__row--contact">
+<div class="home__row home__row--contact bg-gradient-yellow">
     <div class="contact">
         <x-form>
             <x-inputs.checkboxes label="What type(s) of services do you need ? 🤔"/>

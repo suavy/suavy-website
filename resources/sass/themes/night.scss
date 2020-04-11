@@ -28,6 +28,14 @@ body.night {
         }
     }
 
+    /* _form
+    ===========================================*/
+    .checkbox .label,
+    input,
+    textarea {
+        border-color: $white;
+    }
+
     /* _map
     ===========================================*/
     .map-title {
