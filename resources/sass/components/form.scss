@@ -7,7 +7,7 @@ label.label {
     font-weight: bold;
     @include font-size(20px);
     font-family: $titleFont;
-    padding-bottom: 5px;
+    padding: 0 5px 5px;
 }
 
 .form-group {
@@ -15,15 +15,11 @@ label.label {
     padding: 10px 0;
     .form-group {
         padding: 0;
-        margin: 5px 10px 10px 0;
+        margin: 5px;
     }
 }
 
 .form-group--6 {
     display: inline-block;
     width: 50%;
-}
-
-.form-group--inline {
-    display: inline-block;
 }
