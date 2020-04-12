@@ -20,9 +20,9 @@ class CreateCountryTable extends Migration
             $table->string('name_en')->nullable();
             $table->string('name_es')->nullable();
             $table->string('flag_image')->nullable();
-            $table->string('code',2)->nullable();
-            $table->decimal('map_marker_position_top', 5,2);
-            $table->decimal('map_marker_position_left', 5,2);
+            $table->string('code', 2)->nullable();
+            $table->decimal('map_marker_position_top', 5, 2);
+            $table->decimal('map_marker_position_left', 5, 2);
             $table->timestamps();
         });
 
@@ -49,7 +49,7 @@ class CreateCountryTable extends Migration
             'code' => 'FR',
             'flag_image' => 'images/flags/fr.svg',
             'map_marker_position_top' => 47.2,
-            'map_marker_position_left' => 47.6
+            'map_marker_position_left' => 47.6,
         ]);
         \App\Models\Country::create([
             'name_fr' => 'Portugal',
@@ -59,7 +59,7 @@ class CreateCountryTable extends Migration
             'flag_image' => 'images/flags/pt.svg',
             'code' => 'PT',
             'map_marker_position_top' => 52,
-            'map_marker_position_left' => 44.3
+            'map_marker_position_left' => 44.3,
         ]);
         \App\Models\Country::create([
             'name_fr' => 'Brésil',
@@ -69,8 +69,7 @@ class CreateCountryTable extends Migration
             'code' => 'BR',
             'flag_image' => 'images/flags/br.svg',
             'map_marker_position_top' => 79.3,
-            'map_marker_position_left' => 35
+            'map_marker_position_left' => 35,
         ]);
-
     }
 }

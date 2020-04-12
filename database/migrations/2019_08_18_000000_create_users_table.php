@@ -142,6 +142,5 @@ class CreateUsersTable extends Migration
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
-
     }
 }

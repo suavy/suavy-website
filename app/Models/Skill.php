@@ -5,8 +5,8 @@ namespace App\Models;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Skill extends Model {
-
+class Skill extends Model
+{
     use CrudTrait;
 
     /*
@@ -14,8 +14,15 @@ class Skill extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function user() {                    return $this->belongsToMany(User::class); }
-    public function parent(){                   return $this->belongsTo(Skill::class,'parent_id');}
+    public function user()
+    {
+        return $this->belongsToMany(User::class);
+    }
+
+    public function parent()
+    {
+        return $this->belongsTo(self::class, 'parent_id');
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -33,9 +40,7 @@ class Skill extends Model {
         'depth',
         'parent_id',
     ];
-    protected $dates = ['created_at', 'updated_at',];
-
-
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -60,5 +65,4 @@ class Skill extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
 }

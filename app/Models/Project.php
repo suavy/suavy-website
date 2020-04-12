@@ -6,8 +6,8 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model {
-
+class Project extends Model
+{
     use CrudTrait;
     use IsTranslatable;
 
@@ -16,8 +16,15 @@ class Project extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function skills() { return $this->belongsToMany(Skill::class); }
-    public function features() {return $this->hasMany(ProjectFeature::class); }
+    public function skills()
+    {
+        return $this->belongsToMany(Skill::class);
+    }
+
+    public function features()
+    {
+        return $this->hasMany(ProjectFeature::class);
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -43,15 +50,16 @@ class Project extends Model {
         'rgt',
         'depth',
         'parent_id',
-        ];
-    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
+    ];
+    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at'];
 
     /*
     |--------------------------------------------------------------------------
     | _Accessors
     |--------------------------------------------------------------------------
     */
-    public function getCompanyLogoAttribute($value) {
+    public function getCompanyLogoAttribute($value)
+    {
         return asset('storage/'.$value);
     }
 
@@ -62,9 +70,9 @@ class Project extends Model {
     */
     public function setCompanyLogoAttribute($value)
     {
-        $attribute_name = "company_logo";
-        $disk = "public";
-        $destination_path = "company_logos";
+        $attribute_name = 'company_logo';
+        $disk = 'public';
+        $destination_path = 'company_logos';
 
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
 
@@ -82,7 +90,4 @@ class Project extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
-
 }

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\ActivityLog;
-use App\Models\ProviderCompany;
 use App\Models\Establishment;
 use App\Models\Group;
+use App\Models\ProviderCompany;
 use App\Models\Role;
 use App\Models\Service;
 use App\Models\Skill;
@@ -18,7 +18,8 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ReorderOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 
-class ServiceCrudController extends CrudController {
+class ServiceCrudController extends CrudController
+{
     use ListOperation;
     use CreateOperation;
     use UpdateOperation;
@@ -26,28 +27,30 @@ class ServiceCrudController extends CrudController {
     use ShowOperation;
     use ReorderOperation;
 
-    public function setup() {
+    public function setup()
+    {
         $this->crud->setModel(Service::class);
-        $this->crud->setRoute("admin/service");
-        $this->crud->setEntityNameStrings("service", "services");
+        $this->crud->setRoute('admin/service');
+        $this->crud->setEntityNameStrings('service', 'services');
     }
 
-    protected function setupListOperation() {
+    protected function setupListOperation()
+    {
         $this->crud->addColumn(['name' => 'id', 'label' => '#']);
         $this->crud->addColumn(['name' => 'name_fr', 'label' => 'name fr']);
         $this->crud->addColumn(['name' => 'name_pt', 'label' => 'name pt']);
         $this->crud->addColumn(['name' => 'name_en', 'label' => 'name en']);
         $this->crud->addColumn(['name' => 'name_es', 'label' => 'name es']);
-
     }
 
-    protected function setupCreateOperation() {
-        $this->crud->addField(['name' => 'name_fr', 'label' => 'name fr','type' => 'text',]);
-        $this->crud->addField(['name' => 'name_pt', 'label' => 'name pt','type' => 'text',]);
-        $this->crud->addField(['name' => 'name_en', 'label' => 'name en','type' => 'text',]);
-        $this->crud->addField(['name' => 'name_es', 'label' => 'name es','type' => 'text',]);
-        $this->crud->addField(['name' => 'color', 'label' => 'color','type' => 'text',]);
-        $this->crud->addField(['name' => 'icon', 'label' => 'icon','type' => 'text',]);
+    protected function setupCreateOperation()
+    {
+        $this->crud->addField(['name' => 'name_fr', 'label' => 'name fr', 'type' => 'text']);
+        $this->crud->addField(['name' => 'name_pt', 'label' => 'name pt', 'type' => 'text']);
+        $this->crud->addField(['name' => 'name_en', 'label' => 'name en', 'type' => 'text']);
+        $this->crud->addField(['name' => 'name_es', 'label' => 'name es', 'type' => 'text']);
+        $this->crud->addField(['name' => 'color', 'label' => 'color', 'type' => 'text']);
+        $this->crud->addField(['name' => 'icon', 'label' => 'icon', 'type' => 'text']);
     }
 
     protected function setupReorderOperation()
@@ -59,8 +62,8 @@ class ServiceCrudController extends CrudController {
         $this->crud->set('reorder.max_level', 1);
     }
 
-    protected function setupUpdateOperation() {
+    protected function setupUpdateOperation()
+    {
         $this->setupCreateOperation();
     }
-
 }

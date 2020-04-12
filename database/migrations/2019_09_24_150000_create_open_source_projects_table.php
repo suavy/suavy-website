@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\PersonalProject;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateOpenSourceProjectsTable extends Migration
 {
@@ -39,7 +38,6 @@ class CreateOpenSourceProjectsTable extends Migration
             $table->timestamps();
         });
         $this->seed();
-
     }
 
     /**
@@ -68,6 +66,5 @@ class CreateOpenSourceProjectsTable extends Migration
             'source_link' => 'https://github.com/cdo9/my-online-resume',
             'website_link' => '',
         ]);
-
     }
 }

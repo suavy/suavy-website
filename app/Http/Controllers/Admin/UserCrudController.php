@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\City;
 use App\Models\Country;
-use App\Models\ProviderCompany;
 use App\Models\Establishment;
 use App\Models\Group;
+use App\Models\ProviderCompany;
 use App\Models\Role;
 use App\Models\User;
 use App\Notifications\UserCreated;
@@ -19,7 +19,8 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 use Illuminate\Support\Facades\Hash;
 
-class UserCrudController extends CrudController {
+class UserCrudController extends CrudController
+{
     use ListOperation;
     use CreateOperation { store as traitStore; }
     use UpdateOperation;
@@ -27,13 +28,15 @@ class UserCrudController extends CrudController {
     use ShowOperation;
     use ReorderOperation;
 
-    public function setup() {
+    public function setup()
+    {
         $this->crud->setModel(User::class);
-        $this->crud->setRoute("admin/user");
-        $this->crud->setEntityNameStrings("utilisateur", "utilisateurs");
+        $this->crud->setRoute('admin/user');
+        $this->crud->setEntityNameStrings('utilisateur', 'utilisateurs');
     }
 
-    protected function setupListOperation() {
+    protected function setupListOperation()
+    {
         $this->crud->addColumn(['name' => 'id', 'label' => '#']);
         $this->crud->addColumn(['name' => 'email', 'label' => 'Email']);
         $this->crud->addColumn(['name' => 'firstname', 'label' => 'Firstname']);
@@ -41,10 +44,11 @@ class UserCrudController extends CrudController {
         $this->crud->addColumn(['name' => 'country.name', 'label' => 'Country']);
     }
 
-    protected function setupCreateOperation() {
-        $this->crud->addField(['name' => 'email', 'label' => 'Email', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6'],]);
-        $this->crud->addField(['name' => 'firstname', 'label' => 'Firstname', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6'],]);
-        $this->crud->addField(['name' => 'lastname', 'label' => 'Lastname', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6'],]);
+    protected function setupCreateOperation()
+    {
+        $this->crud->addField(['name' => 'email', 'label' => 'Email', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6']]);
+        $this->crud->addField(['name' => 'firstname', 'label' => 'Firstname', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6']]);
+        $this->crud->addField(['name' => 'lastname', 'label' => 'Lastname', 'type' => 'text', 'wrapperAttributes' => ['class' => 'form-group col-md-6']]);
 
         $this->crud->addField([
             'name' => 'city_id',
@@ -66,17 +70,17 @@ class UserCrudController extends CrudController {
         ]);
 
         $this->crud->addField([
-            'label' => "Picture",
-            'name' => "picture",
+            'label' => 'Picture',
+            'name' => 'picture',
             'type' => 'image',
             'upload' => true,
             'crop' => true,
             'aspect_ratio' => 1,
         ]);
-
     }
 
-    protected function setupUpdateOperation() {
+    protected function setupUpdateOperation()
+    {
         $this->setupCreateOperation();
     }
 
@@ -88,5 +92,4 @@ class UserCrudController extends CrudController {
         // for infinite levels, set it to 0
         $this->crud->set('reorder.max_level', 1);
     }
-
 }

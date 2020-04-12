@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\Skill;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSkillsTable extends Migration
 {
@@ -45,7 +44,6 @@ class CreateSkillsTable extends Migration
 
             $table->timestamps();
         });
-
     }
 
     /**
@@ -58,7 +56,8 @@ class CreateSkillsTable extends Migration
         Schema::dropIfExists('skills');
     }
 
-    public function seed() {
+    public function seed()
+    {
         // Colors : https://github.com/ozh/github-colors/blob/master/colors.json
         Skill::create(['slug' => 'html', 'name' => 'HTML', 'color' => '#c23616', 'color_light' => hex2rgba('#c23616', 0.2), 'parent_id' => null]);
         $skillHtml = Skill::where('slug', 'html')->first();
@@ -78,14 +77,11 @@ class CreateSkillsTable extends Migration
         Skill::create(['slug' => 'yii', 'name' => 'Yii', 'color' => '', 'parent_id' => $skillPhp->id]);
         Skill::create(['slug' => 'zend', 'name' => 'Zend', 'color' => '', 'parent_id' => $skillPhp->id]);
 
-
         Skill::create(['slug' => 'sql', 'name' => 'SQL', 'color' => '#718093', 'color_light' => hex2rgba('#718093', 0.2), 'parent_id' => null]);
         $skillSql = Skill::where('slug', 'sql')->first();
         Skill::create(['slug' => 'mysql', 'name' => 'MySQL', 'color' => '', 'parent_id' => $skillSql->id]);
         Skill::create(['slug' => 'data-optimization', 'name' => 'Data optimization', 'color' => '', 'parent_id' => $skillSql->id]);
         Skill::create(['slug' => 'data-analysis', 'name' => 'Data analysis', 'color' => '', 'parent_id' => $skillSql->id]);
-
-
 
         Skill::create(['slug' => 'js', 'name' => 'JavaScript', 'color' => '#d1a11e', 'color_light' => hex2rgba('#e1b12c', 0.2), 'parent_id' => null]);
         $skillJs = Skill::where('slug', 'js')->first();
@@ -106,7 +102,5 @@ class CreateSkillsTable extends Migration
         Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '', 'parent_id' => $skillLinux->id]);
         Skill::create(['slug' => 'homestead', 'name' => 'Homestead', 'color' => '',  'parent_id' => $skillLinux->id]);
         Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '', 'parent_id' => $skillLinux->id]);
-
-
     }
 }
