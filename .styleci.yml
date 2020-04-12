@@ -6,13 +6,3 @@ php:
     not-name:
       - index.php
       - server.php
-js: false
-ts: false
-css: false
-vue: false
-py: false
-#js:
-#  finder:
-#    not-name:
-#      - webpack.mix.js
-#css: true
