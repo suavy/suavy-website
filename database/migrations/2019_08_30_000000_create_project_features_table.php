@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\Project;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateProjectFeaturesTable extends Migration
 {
@@ -34,7 +33,6 @@ class CreateProjectFeaturesTable extends Migration
             $table->timestamps();
         });
         $this->seed();
-
     }
 
     /**
@@ -54,13 +52,13 @@ class CreateProjectFeaturesTable extends Migration
         \App\Models\ProjectFeature::query()->insert([
             [
                 'project_id'=>$project->id,
-                'name_fr'=>"Annonces médicales avec : 10 types d’annonces, 60 spécialités, 4 types de comptes donc 60x10x4 possibilités de formulaires de création",
+                'name_fr'=>'Annonces médicales avec : 10 types d’annonces, 60 spécialités, 4 types de comptes donc 60x10x4 possibilités de formulaires de création',
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'name_fr'=>"Contrats de travail 100% dématérialisés avec signature éléctronique et transmission à l’ordre des médecins",
+                'name_fr'=>'Contrats de travail 100% dématérialisés avec signature éléctronique et transmission à l’ordre des médecins',
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
@@ -72,17 +70,16 @@ class CreateProjectFeaturesTable extends Migration
             ],
             [
                 'project_id'=>$project->id,
-                'name_fr'=>"Paiement sécurisé avec Stripe",
+                'name_fr'=>'Paiement sécurisé avec Stripe',
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
             [
                 'project_id'=>$project->id,
-                'name_fr'=>"Recrutement de remplaçants par SMS",
+                'name_fr'=>'Recrutement de remplaçants par SMS',
                 'created_at' => \Carbon\Carbon::now()->toDateTime(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTime(),
             ],
         ]);
     }
-
 }

@@ -6,8 +6,8 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Interest extends Model {
-
+class Interest extends Model
+{
     use CrudTrait;
     use IsTranslatable;
 
@@ -16,7 +16,10 @@ class Interest extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function user() {                    return $this->belongsToMany(User::class); }
+    public function user()
+    {
+        return $this->belongsToMany(User::class);
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +35,7 @@ class Interest extends Model {
         'name_en',
         'name_es',
     ];
-    protected $dates = ['created_at', 'updated_at',];
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -57,6 +60,4 @@ class Interest extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
 }

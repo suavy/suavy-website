@@ -7,7 +7,6 @@ use Illuminate\Notifications\Notifiable;
 
 class BackpackUser extends User
 {
-
     protected $table = 'users';
 
     /**

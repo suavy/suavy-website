@@ -6,8 +6,8 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Country extends Model {
-
+class Country extends Model
+{
     use CrudTrait;
     use IsTranslatable;
 
@@ -16,8 +16,15 @@ class Country extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function cities(){          return $this->hasMany(City::class);}
-    public function users(){           return $this->hasMany(User::class);}
+    public function cities()
+    {
+        return $this->hasMany(City::class);
+    }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -33,9 +40,9 @@ class Country extends Model {
         'name_es',
         'code',
         'map_marker_position_top',
-        'map_marker_position_left'
+        'map_marker_position_left',
     ];
-    protected $dates = ['created_at', 'updated_at',];
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -60,6 +67,4 @@ class Country extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
 }

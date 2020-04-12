@@ -45,7 +45,7 @@ class CreateCityTable extends Migration
             'name_pt' => 'Paris',
             'name_en' => 'Paris',
             'name_es' => 'Paris',
-            'country_id' => 1
+            'country_id' => 1,
         ]);
 
         \App\Models\City::create([
@@ -53,7 +53,7 @@ class CreateCityTable extends Migration
             'name_pt' => 'Rio de Janeiro',
             'name_en' => 'Rio de Janeiro',
             'name_es' => 'Rio de Janeiro',
-            'country_id' => 3
+            'country_id' => 3,
         ]);
 
         \App\Models\City::create([
@@ -61,8 +61,7 @@ class CreateCityTable extends Migration
             'name_pt' => 'Porto',
             'name_en' => 'Porto',
             'name_es' => 'Porto',
-            'country_id' => 2
+            'country_id' => 2,
         ]);
-
     }
 }

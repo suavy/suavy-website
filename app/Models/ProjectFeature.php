@@ -6,8 +6,8 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectFeature extends Model {
-
+class ProjectFeature extends Model
+{
     use CrudTrait;
     use IsTranslatable;
 
@@ -16,7 +16,10 @@ class ProjectFeature extends Model {
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function project() { return $this->belongsTo(Project::class); }
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -34,9 +37,9 @@ class ProjectFeature extends Model {
         'rgt',
         'depth',
         'parent_id',
-        'project_id'
+        'project_id',
     ];
-    protected $dates = ['created_at', 'updated_at',];
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +64,4 @@ class ProjectFeature extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
-
 }

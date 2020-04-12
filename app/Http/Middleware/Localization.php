@@ -21,6 +21,7 @@ class Localization
         } else {
             session()->put('locale', App::getLocale());
         }
+
         return $next($request);
     }
 }

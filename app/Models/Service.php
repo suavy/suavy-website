@@ -6,12 +6,10 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model {
-
+class Service extends Model
+{
     use CrudTrait;
     use IsTranslatable;
-
-
 
     /*
     |--------------------------------------------------------------------------
@@ -35,8 +33,8 @@ class Service extends Model {
         'rgt',
         'depth',
         'parent_id',
-        ];
-    protected $dates = ['created_at', 'updated_at',];
+    ];
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +59,4 @@ class Service extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
-
 }
