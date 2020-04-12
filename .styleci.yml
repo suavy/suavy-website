@@ -3,7 +3,7 @@ disabled:
   - unused_use
 finder:
   exclude:
-    - _ide_helper.php
+    - "_ide_helper.php"
   not-name:
     - index.php
     - server.php
