@@ -6,6 +6,8 @@
 <li class="nav-title">Données</li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('city') }}"><i class="far fa-fw fa-hospitals"></i> Cities</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('country') }}"><i class="far fa-fw fa-hospitals"></i> Countries</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact-budget') }}"><i class="far fa-fw fa-hospitals"></i> Contact Budgets</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact-delivery') }}"><i class="far fa-fw fa-hospitals"></i> Contact Deliveries</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('interest') }}"><i class="far fa-fw fa-hospitals"></i> Interests</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('open-source-project') }}"><i class="far fa-fw fa-hospitals"></i> Open Source Projects</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('project') }}"><i class="far fa-fw fa-hospitals"></i> Projects</a></li>

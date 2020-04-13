@@ -22,18 +22,11 @@
                     {{ $user->role }}
                 </div>
                 <div class="team__member__languages">
+                    @foreach($user->countries as $country)
                     <div class="team__member__language">
-                        <img src="{{ asset('images/flags/rounded-rectangle/fr.svg') }}">
+                        <img src="{{ $country->flag_rounded }}">
                     </div>
-                    <div class="team__member__language">
-                        <img src="{{ asset('images/flags/rounded-rectangle/uk.svg') }}">
-                    </div>
-                    <div class="team__member__language">
-                        <img src="{{ asset('images/flags/rounded-rectangle/pt.svg') }}">
-                    </div>
-                    <div class="team__member__language">
-                        <img src="{{ asset('images/flags/rounded-rectangle/es.svg') }}">
-                    </div>
+                    @endforeach
                 </div>
                 <div class="team__member__location">
                     <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}

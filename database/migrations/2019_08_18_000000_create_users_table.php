@@ -39,6 +39,14 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
+        Schema::create('user_country', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('country_id');
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
+            $table->foreignId('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
+
         $this->seed();
     }
 
@@ -66,6 +74,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['FR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Christophe';
@@ -79,6 +88,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['FR', 'PT', 'UK', 'ES'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Matheus';
@@ -91,8 +101,8 @@ class CreateUsersTable extends Migration
         $user->city_id = 3;
         $user->country_id = 2;
         $user->disabled = true;
-
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['BR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Breno';
@@ -105,6 +115,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 2;
         $user->country_id = 3;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['BR','FR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Elisa';
@@ -118,6 +129,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['PT', 'FR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Yago';
@@ -130,6 +142,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 2;
         $user->country_id = 3;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['BR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Héloïse';
@@ -142,6 +155,7 @@ class CreateUsersTable extends Migration
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code',['FR', 'UK'])->get());
 
     }
 }

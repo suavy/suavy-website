@@ -16,6 +16,8 @@ Route::group([
 ], function () { // custom admin routes
     Route::crud('city', 'CityCrudController');
     Route::crud('country', 'CountryCrudController');
+    Route::crud('contact-delivery', 'ContactDeliveryCrudController');
+    Route::crud('contact-budget', 'ContactBudgetCrudController');
     Route::crud('interest', 'InterestCrudController');
     Route::crud('open-source-project', 'OpenSourceProjectCrudController');
     Route::crud('project', 'ProjectCrudController');

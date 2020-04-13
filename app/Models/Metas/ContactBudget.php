@@ -1,53 +1,29 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Metas;
 
-use App\Traits\IsTranslatable;
-use Backpack\CRUD\app\Models\Traits\CrudTrait;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class Country extends Model {
-
-    use CrudTrait;
-    use IsTranslatable;
-
+class ContactBudget extends Meta
+{
     /*
     |--------------------------------------------------------------------------
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function cities(){          return $this->hasMany(City::class);}
-    public function users(){           return $this->hasMany(User::class);}
 
     /*
     |--------------------------------------------------------------------------
     | _Variables
     |--------------------------------------------------------------------------
     */
-
-    protected $fillable = [
-        'flag_image',
-        'name_fr',
-        'name_pt',
-        'name_en',
-        'name_es',
-        'code',
-        'map_marker_position_top',
-        'map_marker_position_left'
-    ];
-    protected $dates = ['created_at', 'updated_at',];
+    protected $table = "contact_budgets";
 
     /*
     |--------------------------------------------------------------------------
     | _Accessors
     |--------------------------------------------------------------------------
     */
-    public function getFlagRoundedAttribute(){
-        return asset('images/flags/rounded-rectangle/'.strtolower($this->code).'.svg');
-    }
-    public function getFlagSquareAttribute(){
-        return asset('images/flags/square/'.strtolower($this->code).'.svg');
-    }
 
     /*
     |--------------------------------------------------------------------------
@@ -66,6 +42,25 @@ class Country extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
+    public static function forSelect(array $ids = []) {
+        return self::query()->whereVerified(true)->orWhereIn('id',$ids)->orderBy('name')->pluckNameId();
+    }
+    public static function seedNewSkillWithRequest(Request $request){
+        $inputSkills = $request->input('skills',[]);
+        $skills = Skill::query()->whereIn('id',$inputSkills)->pluck('id');
+        //get only skill to seed
+        foreach ($inputSkills as $key => $skill){
+            if($skills->contains($skill)){
+                unset($inputSkills[$key]);
+            }
+        }
+        //seed new skill
+        foreach ($inputSkills as $skill) {
+            $newSkill = Skill::seedMeta($skill);
+            $skills->add($newSkill->id);
+        }
 
+        return $skills;
+    }
 
 }
