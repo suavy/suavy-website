@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\Project;
 use App\Models\Skill;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateProjectSkillTable extends Migration
 {
@@ -95,7 +94,5 @@ class CreateProjectSkillTable extends Migration
         $projectLookaya->attach($skillSass);
         $projectLookaya->attach($skillJquery);
         $projectLookaya->attach($skillSql);
-
     }
-
 }

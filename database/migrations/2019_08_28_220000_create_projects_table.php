@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\Project;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateProjectsTable extends Migration
 {
@@ -45,7 +44,6 @@ class CreateProjectsTable extends Migration
             $table->timestamps();
         });
         $this->seed();
-
     }
 
     /**
@@ -89,8 +87,6 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
-
-
 
         Project::create([
             'slug' => 'nolim-bd',
@@ -136,6 +132,5 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
-
     }
 }

@@ -78,11 +78,13 @@ $color-list: (
 );
 
 @each $color, $value in $color-list {
-  .color-#{$color} { color: $value !important; }
-  .bg-#{$color} { background-color: $value !important; fill: $value !important;  }
+    .color-#{$color} { color: $value; }
+    .bg-#{$color} { background-color: $value; fill: $value; }
+    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 10%) 100%); }
+
 }
 
 /* _fonts
 ===========================================*/
-$defaultFont: 'Source Sans Pro', sans-serif;
+$defaultFont: 'Roboto', sans-serif;
 $titleFont: 'Abril Fatface', cursive;

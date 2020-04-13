@@ -14,6 +14,7 @@
 /* _base
 ===========================================*/
 .home__row {
+    position: relative;
     padding: 30px 60px;
     @include media('screen-small') {
         padding: 10px 15px;
@@ -49,27 +50,76 @@
 /* _contact
 ===========================================*/
 .home__row--contact {
-
+    padding: 60px;
 }
 
 .contact {
-    max-width: 1024px;
+    max-width: 1150px;
     margin: 0 auto;
     .form {
         .input-group { }
     }
 }
 
+/* _services
+===========================================*/
+.home__row--services {
+
+}
+
+.services {
+    text-align: center;
+}
+
+.service-categories {
+    padding: 30px 40px;
+    box-sizing: border-box;
+    @include border-radius(5px);
+}
+
+.service-categories__category {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.service-categories__category__icon {
+    @include font-size(40px);
+}
+
+.service-categories__category__name {
+    @include font-size(20px);
+}
+
+.services-view-more {
+    vertical-align: middle;
+    text-align: center;
+    font-family: $titleFont;
+    @include font-size(52px);
+}
+
+/* _map
+===========================================*/
+.home__row--map {
+    text-align: center;
+    @include media('screen-small') {
+        background-image: none;
+    }
+}
+
+.home__row--below-map {
+    padding-bottom: 120px;
+}
 /* _team
 ===========================================*/
 .home__row--team {
-    background-color: $lightgray;
-    padding: 0 !important;
+    padding: 0 0 40px !important;
 
 }
 
 .home__row--above-team {
-    padding-bottom: 120px;
+    padding-bottom: 160px;
 }
 
 .team {
@@ -177,6 +227,7 @@
     transform: rotate3d(0,1,0,-180deg);
     transform-style: preserve-3d;
 }
+
 .team__member__picture__hover__content__citation {
     text-align: center;
     color: $white;
@@ -186,8 +237,8 @@
 }
 
 .team__member__name {
-    padding: 5px 0;
-    @include font-size(20px);
+    padding: 10px 0 5px;
+    @include font-size(18px);
     span {
         font-family: $titleFont;
     }
@@ -196,11 +247,12 @@
 .team__member__role {
     padding: 0;
     @include font-size(14px);
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    color: $gray;
 }
 
 .team__member__languages {
-
+    padding: 2px 0 0;
 }
 
 .team__member__language {
@@ -216,4 +268,5 @@
     padding: 0 0 5px;
     color: $gray;
     @include font-size(14px);
+    display: none;
 }

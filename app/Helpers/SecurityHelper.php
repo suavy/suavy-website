@@ -1,8 +1,10 @@
 <?php
 
-    function fRobot(string $stringToF) {
+    function fRobot(string $stringToF)
+    {
         $stringF = "<span style='unicode-bidi:bidi-override; direction:rtl;'>";
         $stringF .= strrev($stringToF);
-        $stringF .= "</span>";
+        $stringF .= '</span>';
+
         return $stringF;
     }

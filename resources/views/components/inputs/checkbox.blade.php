@@ -1,4 +1,4 @@
-<div class="form-group form-group--inline">
+<div class="form-group">
     <label class="checkbox">
         <input type="checkbox" name="{{ $name }}" />
         <div class="label">{{ $label }}</div>

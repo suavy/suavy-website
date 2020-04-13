@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
 use App\Models\Interest;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateInterestsTable extends Migration
 {
@@ -38,7 +37,6 @@ class CreateInterestsTable extends Migration
 
             $table->timestamps();
         });
-
     }
 
     /**
@@ -51,55 +49,56 @@ class CreateInterestsTable extends Migration
         Schema::dropIfExists('interests');
     }
 
-    public function seed() {
+    public function seed()
+    {
         Interest::create([
-            'icon' => "fad fa-fw fa-laptop",
-            'name_fr' => "Informatique",
-            'name_pt' => "Informática",
-            'name_en' => "Computer science",
-            'name_es' => "",
-            'color' => "",
+            'icon' => 'fad fa-fw fa-laptop',
+            'name_fr' => 'Informatique',
+            'name_pt' => 'Informática',
+            'name_en' => 'Computer science',
+            'name_es' => '',
+            'color' => '',
         ]);
 
         Interest::create([
-            'icon' => "fad fa-fw fa-cauldron",
-            'name_fr' => "Cuisine",
-            'name_pt' => "Cozinhar",
-            'name_en' => "Cooking",
-            'name_es' => "",
-            'color' => "",
+            'icon' => 'fad fa-fw fa-cauldron',
+            'name_fr' => 'Cuisine',
+            'name_pt' => 'Cozinhar',
+            'name_en' => 'Cooking',
+            'name_es' => '',
+            'color' => '',
         ]);
         Interest::create([
-            'icon' => "fad fa-fw fa-skating",
-            'name_fr' => "Roller",
-            'name_pt' => "Roller",
-            'name_en' => "Roller",
-            'name_es' => "",
-            'color' => "",
+            'icon' => 'fad fa-fw fa-skating',
+            'name_fr' => 'Roller',
+            'name_pt' => 'Roller',
+            'name_en' => 'Roller',
+            'name_es' => '',
+            'color' => '',
         ]);
         Interest::create([
-            'icon' => "fad fa-fw fa-tree-alt",
-            'name_fr' => "Nature",
-            'name_pt' => "Natureza",
-            'name_en' => "Nature",
-            'name_es' => "",
-            'color' => "",
+            'icon' => 'fad fa-fw fa-tree-alt',
+            'name_fr' => 'Nature',
+            'name_pt' => 'Natureza',
+            'name_en' => 'Nature',
+            'name_es' => '',
+            'color' => '',
         ]);
         Interest::create([
-            'icon' => "fad fa-solar-system",
-            'name_fr' => "Astrophysique",
-            'name_pt' => "Astrofísica",
-            'name_en' => "Astrophysics",
-            'name_es' => "Astrofísica",
-            'color' => "",
+            'icon' => 'fad fa-solar-system',
+            'name_fr' => 'Astrophysique',
+            'name_pt' => 'Astrofísica',
+            'name_en' => 'Astrophysics',
+            'name_es' => 'Astrofísica',
+            'color' => '',
         ]);
         Interest::create([
-            'icon' => "fas fa-gamepad-alt",
-            'name_fr' => "Jeux video",
-            'name_pt' => "Video games",
-            'name_en' => "Video games",
-            'name_es' => "Vídeo juegos",
-            'color' => "",
+            'icon' => 'fas fa-gamepad-alt',
+            'name_fr' => 'Jeux video',
+            'name_pt' => 'Video games',
+            'name_en' => 'Video games',
+            'name_es' => 'Vídeo juegos',
+            'color' => '',
         ]);
     }
 }

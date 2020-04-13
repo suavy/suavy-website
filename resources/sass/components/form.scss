@@ -5,25 +5,20 @@
 label.label {
     display: block;
     font-weight: bold;
-    @include font-size(20px);
-    font-family: $titleFont;
-    padding-bottom: 5px;
+    @include font-size(22px);
+    padding: 0 10px 5px;
 }
 
 .form-group {
     white-space: normal;
-    padding: 10px 0;
+    padding: 15px 0;
     .form-group {
         padding: 0;
-        margin: 5px 10px 10px 0;
+        margin: 10px;
     }
 }
 
 .form-group--6 {
     display: inline-block;
     width: 50%;
-}
-
-.form-group--inline {
-    display: inline-block;
 }

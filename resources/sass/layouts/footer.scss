@@ -1,8 +1,15 @@
 .footer {
     text-align: center;
-    padding: 15px;
-    max-width: 1280px;
     margin: 0 auto;
+    padding: 20px 0 40px;
+    &:before {
+        content: " ";
+        display: block;
+        width: 180px;
+        height: 1px;
+        background-color: $black;
+        margin: 0 auto 20px;
+    }
 }
 
 .footer__links {
@@ -14,5 +21,6 @@
 }
 
 .footer__about {
-
+    @include font-size(17px);
+    font-weight: bold;
 }

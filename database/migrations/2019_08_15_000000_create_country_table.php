@@ -19,9 +19,9 @@ class CreateCountryTable extends Migration
             $table->string('name_pt')->nullable();
             $table->string('name_en')->nullable();
             $table->string('name_es')->nullable();
-            $table->string('code',2)->nullable();
-            $table->decimal('map_marker_position_top', 5,2)->nullable();
-            $table->decimal('map_marker_position_left', 5,2)->nullable();
+            $table->string('code', 2)->nullable();
+            $table->decimal('map_marker_position_top', 5, 2)->nullable();
+            $table->decimal('map_marker_position_left', 5, 2)->nullable();
             $table->timestamps();
         });
 

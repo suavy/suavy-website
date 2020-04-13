@@ -1,21 +1,21 @@
-.services {
+.old-services {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
 }
 
-.services-title {
+.old-services-title {
     padding: 10px 10px 20px;
 }
 
-.service {
+.old-service {
     @include border-radius(8px);
     box-sizing: border-box;
     padding: 10px;
     margin: 10px 10px 0 0;
     position: relative;
-    @include font-size(20px);
+    @include font-size(16px);
     &:hover {
         user-select: none;
         cursor: pointer;
@@ -24,11 +24,11 @@
         background-image: linear-gradient(135deg, $yellow 0%, darken($yellow, 5%) 100%);
     }
     @include media('screen-small') {
-        @include font-size(16px);
+        @include font-size(14px);
         padding: 5px;
 
     }
 }
 
-.service__content {
+.old-service__content {
 }

@@ -6,11 +6,10 @@ use App\Traits\IsTranslatable;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class OpenSourceProject extends Model {
-
+class OpenSourceProject extends Model
+{
     use CrudTrait;
     use IsTranslatable;
-
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +41,7 @@ class OpenSourceProject extends Model {
         'depth',
         'parent_id',
     ];
-    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at',];
+    protected $dates = ['created_at', 'updated_at', 'started_at', 'ended_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -67,6 +66,4 @@ class OpenSourceProject extends Model {
     | _Functions
     |--------------------------------------------------------------------------
     */
-
-
 }
