@@ -19,8 +19,9 @@ class User extends Authenticatable
     */
     public function countries()
     {
-        return $this->belongsToMany(Country::class,'user_country');
+        return $this->belongsToMany(Country::class, 'user_country');
     }
+
     public function country()
     {
         return $this->belongsTo(Country::class);

@@ -47,7 +47,7 @@ class CreateCountryTable extends Migration
             'name_es' => 'Francia',
             'code' => 'FR',
             'map_marker_position_top' => 47.2,
-            'map_marker_position_left' => 47.6
+            'map_marker_position_left' => 47.6,
         ]);
         \App\Models\Country::create([
             'name_fr' => 'Portugal',
@@ -56,7 +56,7 @@ class CreateCountryTable extends Migration
             'name_es' => 'Portugal',
             'code' => 'PT',
             'map_marker_position_top' => 52,
-            'map_marker_position_left' => 44.3
+            'map_marker_position_left' => 44.3,
         ]);
         \App\Models\Country::create([
             'name_fr' => 'Brésil',
@@ -65,7 +65,7 @@ class CreateCountryTable extends Migration
             'name_es' => 'Brasil',
             'code' => 'BR',
             'map_marker_position_top' => 79.3,
-            'map_marker_position_left' => 35
+            'map_marker_position_left' => 35,
         ]);
         \App\Models\Country::create([
             'name_fr' => 'Belgique',
@@ -152,6 +152,5 @@ class CreateCountryTable extends Migration
             'name_es' => 'Estados Unidos',
             'code' => 'US',
         ]);
-
     }
 }
