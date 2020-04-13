@@ -1,4 +1,4 @@
-<div class="footer bg-yellow">
+<div class="footer bg-white">
     <ul class="footer__links">
         <li><a href="https://github.com/suavy" class="link" target="_blank" rel="nofollow noreferrer noopener"><i class="fab fa-github"></i> Github</a></li>
         <li><a href="#" class="link" target="_blank" rel="nofollow noreferrer noopener"><i class="fab fa-instagram"></i> Instagram</a></li>
