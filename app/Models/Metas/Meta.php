@@ -27,7 +27,7 @@ class Meta extends Model
         'lft',
         'rgt',
         'depth',
-        'parent_id'
+        'parent_id',
     ];
     protected $dates = ['created_at', 'updated_at'];
 
@@ -48,7 +48,8 @@ class Meta extends Model
     | _Scopes
     |--------------------------------------------------------------------------
     */
-    public function scopePluckNameId($query){
+    public function scopePluckNameId($query)
+    {
         return $query->pluck('translated_name', 'id');
     }
 
@@ -57,7 +58,8 @@ class Meta extends Model
     | _Functions
     |--------------------------------------------------------------------------
     */
-    public static function createMetaTable($tableName) {
+    public static function createMetaTable($tableName)
+    {
         Schema::create($tableName, function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name_fr');
@@ -74,14 +76,18 @@ class Meta extends Model
         });
     }
 
-    public static function forSelect() {
+    public static function forSelect()
+    {
         return self::query()->pluckNameId();
     }
 
-    public static function seedMeta(string $name, array $additionalParams = null) {
+    public static function seedMeta(string $name, array $additionalParams = null)
+    {
         $params = ['slug' => Str::slug($name), 'name' => $name];
-        if(!is_null($additionalParams)) $params = array_merge($params, $additionalParams);
+        if (! is_null($additionalParams)) {
+            $params = array_merge($params, $additionalParams);
+        }
+
         return self::query()->create($params);
     }
-
 }

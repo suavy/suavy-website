@@ -17,7 +17,7 @@ class ContactBudget extends Meta
     | _Variables
     |--------------------------------------------------------------------------
     */
-    protected $table = "contact_budgets";
+    protected $table = 'contact_budgets';
 
     /*
     |--------------------------------------------------------------------------
@@ -42,15 +42,18 @@ class ContactBudget extends Meta
     | _Functions
     |--------------------------------------------------------------------------
     */
-    public static function forSelect(array $ids = []) {
-        return self::query()->whereVerified(true)->orWhereIn('id',$ids)->orderBy('name')->pluckNameId();
+    public static function forSelect(array $ids = [])
+    {
+        return self::query()->whereVerified(true)->orWhereIn('id', $ids)->orderBy('name')->pluckNameId();
     }
-    public static function seedNewSkillWithRequest(Request $request){
-        $inputSkills = $request->input('skills',[]);
-        $skills = Skill::query()->whereIn('id',$inputSkills)->pluck('id');
+
+    public static function seedNewSkillWithRequest(Request $request)
+    {
+        $inputSkills = $request->input('skills', []);
+        $skills = Skill::query()->whereIn('id', $inputSkills)->pluck('id');
         //get only skill to seed
-        foreach ($inputSkills as $key => $skill){
-            if($skills->contains($skill)){
+        foreach ($inputSkills as $key => $skill) {
+            if ($skills->contains($skill)) {
                 unset($inputSkills[$key]);
             }
         }
@@ -62,5 +65,4 @@ class ContactBudget extends Meta
 
         return $skills;
     }
-
 }

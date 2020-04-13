@@ -17,8 +17,7 @@ class ContactDelivery extends Meta
     | _Variables
     |--------------------------------------------------------------------------
     */
-    protected $table = "contact_deliveries";
-
+    protected $table = 'contact_deliveries';
 
     /*
     |--------------------------------------------------------------------------
@@ -43,5 +42,4 @@ class ContactDelivery extends Meta
     | _Functions
     |--------------------------------------------------------------------------
     */
-
 }
