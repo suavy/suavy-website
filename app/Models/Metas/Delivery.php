@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class Delivery extends Meta
 {
-
     /*
     |--------------------------------------------------------------------------
     | _Relations
@@ -19,8 +18,7 @@ class Delivery extends Meta
     | _Variables
     |--------------------------------------------------------------------------
     */
-    protected $table = "deliveries";
-
+    protected $table = 'deliveries';
 
     /*
     |--------------------------------------------------------------------------
@@ -45,5 +43,4 @@ class Delivery extends Meta
     | _Functions
     |--------------------------------------------------------------------------
     */
-
 }

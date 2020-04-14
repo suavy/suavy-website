@@ -10,7 +10,7 @@ class Checkboxes extends Component
     public $options;
     public $name;
 
-    public function __construct($label,$name,$options=[])
+    public function __construct($label, $name, $options = [])
     {
         $this->name = $name;
         $this->label = $label;

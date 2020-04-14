@@ -34,7 +34,6 @@ class ContactNotification extends Notification
         return [DiscordChannel::class];
     }
 
-
     public function toDiscord($notifiable)
     {
         return DiscordMessage::create("je m'améliore de seconde en seconde");

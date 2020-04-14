@@ -22,17 +22,17 @@ class Contact extends Model
     */
     public function budgets()
     {
-        return $this->belongsToMany(Budget::class,'contact_budget');
+        return $this->belongsToMany(Budget::class, 'contact_budget');
     }
 
     public function deliveries()
     {
-        return $this->belongsToMany(Delivery::class,'contact_delivery');
+        return $this->belongsToMany(Delivery::class, 'contact_delivery');
     }
 
     public function services()
     {
-        return $this->belongsToMany(Service::class,'contact_service');
+        return $this->belongsToMany(Service::class, 'contact_service');
     }
 
     /*
