@@ -48,10 +48,13 @@ class Country extends Model
     | _Accessors
     |--------------------------------------------------------------------------
     */
-    public function getFlagRoundedAttribute(){
+    public function getFlagRoundedAttribute()
+    {
         return asset('images/flags/rounded-rectangle/'.strtolower($this->code).'.svg');
     }
-    public function getFlagSquareAttribute(){
+
+    public function getFlagSquareAttribute()
+    {
         return asset('images/flags/square/'.strtolower($this->code).'.svg');
     }
 
