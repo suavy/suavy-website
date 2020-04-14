@@ -4,8 +4,11 @@ namespace App\View\Components\Inputs;
 
 class Checkbox extends Input
 {
-    public function __construct($name, $label, $params = [])
+    public $value;
+
+    public function __construct($name, $label, $value, $params = [])
     {
+        $this->value = $value;
         parent::__construct($name, $label, $params);
     }
 

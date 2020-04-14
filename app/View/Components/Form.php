@@ -6,9 +6,10 @@ use Illuminate\View\Component;
 
 class Form extends Component
 {
-    public function __construct()
+    public $link;
+    public function __construct($link)
     {
-        //
+        $this->link = $link;
     }
 
     public function render()

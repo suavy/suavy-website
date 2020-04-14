@@ -1,59 +1,29 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Metas;
 
-use App\Traits\IsTranslatable;
-use Backpack\CRUD\app\Models\Traits\CrudTrait;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class Country extends Model
+class Budget extends Meta
 {
-    use CrudTrait;
-    use IsTranslatable;
-
     /*
     |--------------------------------------------------------------------------
     | _Relations
     |--------------------------------------------------------------------------
     */
-    public function cities()
-    {
-        return $this->hasMany(City::class);
-    }
-
-    public function users()
-    {
-        return $this->hasMany(User::class);
-    }
 
     /*
     |--------------------------------------------------------------------------
     | _Variables
     |--------------------------------------------------------------------------
     */
-
-    protected $fillable = [
-        'name_fr',
-        'name_pt',
-        'name_en',
-        'name_es',
-        'code',
-        'map_marker_position_top',
-        'map_marker_position_left',
-    ];
-    protected $dates = ['created_at', 'updated_at'];
+    protected $table = "budgets";
 
     /*
     |--------------------------------------------------------------------------
     | _Accessors
     |--------------------------------------------------------------------------
     */
-    public function getFlagRoundedAttribute(){
-        return asset('images/flags/rounded-rectangle/'.strtolower($this->code).'.svg');
-    }
-    public function getFlagSquareAttribute(){
-        return asset('images/flags/square/'.strtolower($this->code).'.svg');
-    }
 
     /*
     |--------------------------------------------------------------------------
@@ -72,4 +42,5 @@ class Country extends Model
     | _Functions
     |--------------------------------------------------------------------------
     */
+
 }

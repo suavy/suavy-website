@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-use App\Models\PersonalProject;
-
 class CreateMetasTable extends Migration
 {
     /**
@@ -15,10 +13,11 @@ class CreateMetasTable extends Migration
      */
     public function up()
     {
-        \App\Models\Metas\ContactDelivery::createMetaTable('contact_deliveries');
+        \App\Models\Metas\Delivery::createMetaTable('deliveries');
         $this->seedContactDeliveries();
 
-        \App\Models\Metas\ContactBudget::createMetaTable('contact_budgets');
+        \App\Models\Metas\Budget::createMetaTable('budgets');
+        $this->seedContactBudget();
 
     }
 
@@ -34,26 +33,26 @@ class CreateMetasTable extends Migration
 
     public function seedContactDeliveries()
     {
-        \App\Models\Metas\ContactDelivery::query()->create([
+        \App\Models\Metas\Delivery::query()->create([
             'name_fr'=> "< 1 mois",
             'name_pt'=> "< 1 mês",
             'name_en'=> "< 1 month",
             'name_es'=> "< 1 mes",
         ]);
 
-        \App\Models\Metas\ContactDelivery::query()->create([
+        \App\Models\Metas\Delivery::query()->create([
             'name_fr'=> "1-3 mois",
             'name_pt'=> "1-3 mês",
             'name_en'=> "1-3 month",
             'name_es'=> "1-3 mes",
         ]);
-        \App\Models\Metas\ContactDelivery::query()->create([
+        \App\Models\Metas\Delivery::query()->create([
             'name_fr'=> "3-6 mois",
             'name_pt'=> "3-6 mês",
             'name_en'=> "3-6 month",
             'name_es'=> "3-6 mes",
         ]);
-        \App\Models\Metas\ContactDelivery::query()->create([
+        \App\Models\Metas\Delivery::query()->create([
             'name_fr'=> "> 6 mois",
             'name_pt'=> "> 6 mês",
             'name_en'=> "> 6 month",
@@ -62,25 +61,25 @@ class CreateMetasTable extends Migration
     }
 
     public function seedContactBudget(){
-        \App\Models\Metas\ContactBudget::query()->create([
+        \App\Models\Metas\Budget::query()->create([
             'name_fr'=>"< 2000 €",
             'name_pt'=>"< 2000 €",
             'name_en'=>"< 2000 €",
             'name_es'=>"< 2000 €",
         ]);
-        \App\Models\Metas\ContactBudget::query()->create([
+        \App\Models\Metas\Budget::query()->create([
             'name_fr'=>"2000-4000€",
             'name_pt'=>"2000-4000€",
             'name_en'=>"2000-4000€",
             'name_es'=>"2000-4000€",
         ]);
-        \App\Models\Metas\ContactBudget::query()->create([
+        \App\Models\Metas\Budget::query()->create([
             'name_fr'=>"4000€-7000€",
             'name_pt'=>"4000€-7000€",
             'name_en'=>"4000€-7000€",
             'name_es'=>"4000€-7000€",
         ]);
-        \App\Models\Metas\ContactBudget::query()->create([
+        \App\Models\Metas\Budget::query()->create([
             'name_fr'=>"7000€",
             'name_pt'=>"7000€",
             'name_en'=>"7000€",

@@ -53,6 +53,10 @@ class Service extends Model
     | _Scopes
     |--------------------------------------------------------------------------
     */
+    public function scopeForSelect($query)
+    {
+        return $query->get()->pluck('translated_name', 'id');
+    }
 
     /*
     |--------------------------------------------------------------------------

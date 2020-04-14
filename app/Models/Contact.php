@@ -1,24 +1,52 @@
 <?php
 
-namespace App\Models\Metas;
+namespace App\Models;
 
-use Illuminate\Http\Request;
+use App\Models\Metas\Budget;
+use App\Models\Metas\Delivery;
+use App\Traits\IsTranslatable;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
-class ContactDelivery extends Meta
+class Contact extends Model
 {
+    use CrudTrait;
+    use IsTranslatable;
+    use Notifiable;
+
     /*
     |--------------------------------------------------------------------------
     | _Relations
     |--------------------------------------------------------------------------
     */
+    public function budgets()
+    {
+        return $this->belongsToMany(Budget::class,'contact_budget');
+    }
+
+    public function deliveries()
+    {
+        return $this->belongsToMany(Delivery::class,'contact_delivery');
+    }
+
+    public function services()
+    {
+        return $this->belongsToMany(Service::class,'contact_service');
+    }
 
     /*
     |--------------------------------------------------------------------------
     | _Variables
     |--------------------------------------------------------------------------
     */
-    protected $table = "contact_deliveries";
 
+    protected $fillable = [
+        'email',
+        'name',
+        'message',
+    ];
+    protected $dates = ['created_at', 'updated_at'];
 
     /*
     |--------------------------------------------------------------------------
@@ -44,4 +72,8 @@ class ContactDelivery extends Meta
     |--------------------------------------------------------------------------
     */
 
+    public function routeNotificationForDiscord()
+    {
+        return '692802447999107135';
+    }
 }

@@ -29,5 +29,8 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'discord' => [
+        'token' => "Njk5NjIyMzc1NjExODI2MTg3.XpXE4Q.s9hRArHHiFryn3CePnWjrsDptZw"
+    ]
 
 ];

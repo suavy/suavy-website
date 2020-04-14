@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('/contact', 'HomeController@contact')->name('contact');
 Route::get('switch-locale/{locale}', 'SiteSettingController@switchLocale')->name('switch-locale');
 Route::get('switch-theme/{theme}', 'SiteSettingController@switchTheme')->name('switch-theme');

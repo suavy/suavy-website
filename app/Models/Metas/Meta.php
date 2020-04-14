@@ -48,9 +48,12 @@ class Meta extends Model
     | _Scopes
     |--------------------------------------------------------------------------
     */
-    public function scopePluckNameId($query){
-        return $query->pluck('translated_name', 'id');
+
+    public function scopeForSelect($query)
+    {
+        return $query->get()->pluck('translated_name', 'id');
     }
+
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +78,7 @@ class Meta extends Model
     }
 
     public static function forSelect() {
-        return self::query()->pluckNameId();
+        return self::query()->forSelect();
     }
 
     public static function seedMeta(string $name, array $additionalParams = null) {

@@ -64,4 +64,5 @@ trait IsTranslatable
 
         return $this->$fallbackAttributeWithLocale;
     }
+
 }
