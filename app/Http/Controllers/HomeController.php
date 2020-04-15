@@ -19,7 +19,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-
         $countries = Country::query()->with(['users'=>function ($query) {
             $query->where('disabled', false);
         }])->whereNotNull('map_marker_position_top')->get();
