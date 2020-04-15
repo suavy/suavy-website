@@ -36,11 +36,11 @@ class HomeController extends Controller
         $contactBudgets = Budget::forSelect();
         $contactServices = Service::query()->take(4)->forSelect();
 
-        return view('home.index', compact('countries', 'services', 'openSourceProjects', 'projects','contactDeliveries','contactBudgets','contactServices'));
+        return view('home.index', compact('countries', 'services', 'openSourceProjects', 'projects', 'contactDeliveries', 'contactBudgets', 'contactServices'));
     }
 
-    public function contact(Request $request){
-
+    public function contact(Request $request)
+    {
         $contact = new Contact($request->input('contact'));
         $contact->save();
         $contact->services()->sync($request->input('contact.services'));

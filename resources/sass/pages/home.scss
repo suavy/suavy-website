@@ -72,25 +72,138 @@
 }
 
 .service-categories {
-    padding: 30px 40px;
+    padding: 20px 40px 40px;
     box-sizing: border-box;
     @include border-radius(5px);
+    background-color: $white;
 }
 
 .service-categories__category {
     display: inline-block;
     width: 25%;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 20px 40px 40px;
+    vertical-align: top;
+    @include media('screen-small') {
+        padding: 20px;
+        width: 50%;
+    }
 }
 
 .service-categories__category__icon {
-    @include font-size(40px);
+    @include font-size(38px);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    @include border-radius(50%);
+    text-align: center;
+    margin: 0 auto 15px;
+    //border: 2px solid $gray;
+    color: $white;
 }
 
 .service-categories__category__name {
-    @include font-size(20px);
+    @include font-size(22px);
+    font-weight: bold;
+    padding-bottom: 30px;
 }
+.service-categories__category__services {
+    display: block;
+    @include border-radius(5px);
+    padding: 5px 10px;
+    text-align: left;
+    position: relative;
+    border: 2px solid $gray;
+    &:after {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -17px;
+        width: 0;
+        height: 0;
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 17px solid $white;
+        clear: both;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -20px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $gray;
+        clear: both;
+    }
+}
+
+.service-categories__category--blue {
+    .service-categories__category__icon {
+        background-color: $blue;
+        background-image: linear-gradient(0deg, $blue 0%, darken($blue, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $blue;
+        &:before { border-bottom-color: $blue; }
+    }
+}
+
+.service-categories__category--pink {
+    .service-categories__category__icon {
+        background-color: $pink;
+        background-image: linear-gradient(0deg, $pink 0%, darken($pink, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $pink;
+        &:before { border-bottom-color: $pink; }
+    }
+}
+
+.service-categories__category--purple {
+    .service-categories__category__icon {
+        background-color: $purple;
+        background-image: linear-gradient(0deg, $purple 0%, darken($purple, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $purple;
+        &:before { border-bottom-color: $purple; }
+    }
+}
+
+.service-categories__category--orange {
+    .service-categories__category__icon {
+        background-color: $orange;
+        background-image: linear-gradient(0deg, $orange 0%, darken($orange, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $orange;
+        &:before { border-bottom-color: $orange; }
+    }
+}
+
+
+.service-categories__category__services__item {
+    padding: 5px 0;
+    span, i {
+        vertical-align: middle;
+    }
+    span {
+        @include font-size(14px);
+    }
+    i {
+
+    }
+}
+
 
 .services-view-more {
     vertical-align: middle;
@@ -237,10 +350,15 @@
 }
 
 .team__member__name {
-    padding: 10px 0 5px;
-    @include font-size(18px);
+    padding: 10px 0 3px;
+    @include font-size(16px);
+    font-weight: bold;
+    vertical-align: top;
     span {
         font-family: $titleFont;
+        @include font-size(17px);
+
+
     }
 }
 
