@@ -10,12 +10,14 @@ class Input extends Component
     public $label;
 
     public $placeholder;
+    public $maxLength;
     public $size;
 
-    public function __construct($name, $label, $params = [])
+    public function __construct($name, $label, $maxLength=null, $params = [])
     {
         $this->name = $name;
         $this->label = $label;
+        $this->maxLength = $maxLength;
         foreach ($params as $key => $value) {
             $this->$key = $value;
         }

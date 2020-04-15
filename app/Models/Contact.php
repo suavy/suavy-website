@@ -74,6 +74,6 @@ class Contact extends Model
 
     public function routeNotificationForDiscord()
     {
-        return '692802447999107135';
+        return '699560727366729779';
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Notifications;
 
+use App\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -13,14 +14,16 @@ class ContactNotification extends Notification
 {
     use Queueable;
 
+    public $contact;
+
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Contact $contact)
     {
-        //
+        $this->contact = $contact;
     }
 
     /**
@@ -37,6 +40,30 @@ class ContactNotification extends Notification
 
     public function toDiscord($notifiable)
     {
-        return DiscordMessage::create("je m'améliore de seconde en seconde");
+        return DiscordMessage::create('',[
+            'type' => 'rich',
+            'title' => ':mailbox_with_mail: Hello new',
+            'fields' => [
+                [
+                    'name' => ':moneybag: Budget',
+                    'value' => $this->contact->budgets()->pluck('name_fr')->implode("\n"),
+                    'inline' => true,
+                ],
+                [
+                    'name' => 'Deliveries',
+                    'value' => $this->contact->deliveries()->pluck('name_fr')->implode("\n"),
+                    'inline' => true,
+                ],
+                [
+                    'name' => ':joy: Services',
+                    'value' => $this->contact->services()->pluck('name_fr')->implode("\n"),
+                    'inline' => true,
+                ],
+            ],
+            'description'=>$this->contact->message,
+            'author' => [
+                'name' => $this->contact->name." ".$this->contact->email,
+            ]
+        ]);
     }
 }

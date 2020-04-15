@@ -19,6 +19,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+
         $countries = Country::query()->with(['users'=>function ($query) {
             $query->where('disabled', false);
         }])->whereNotNull('map_marker_position_top')->get();
@@ -46,8 +47,7 @@ class HomeController extends Controller
         $contact->budgets()->sync($request->input('contact.budgets'));
         $contact->deliveries()->sync($request->input('contact.deliveries'));
 
-        $c = Contact::query()->findOrFail(2);
-        $c->notify(new ContactNotification());
+        $contact->notify(new ContactNotification($contact));
 
         return redirect()->to('/#contact');
     }
