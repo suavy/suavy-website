@@ -39,7 +39,7 @@ class ContactNotification extends Notification
 
     public function toDiscord($notifiable)
     {
-        return DiscordMessage::create('',[
+        return DiscordMessage::create('', [
             'type' => 'rich',
             'title' => ':mailbox_with_mail: Hello new',
             'fields' => [
@@ -61,8 +61,8 @@ class ContactNotification extends Notification
             ],
             'description'=>$this->contact->message,
             'author' => [
-                'name' => $this->contact->name." ".$this->contact->email,
-            ]
+                'name' => $this->contact->name.' '.$this->contact->email,
+            ],
         ]);
     }
 }

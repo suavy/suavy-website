@@ -13,7 +13,7 @@ class Input extends Component
     public $maxLength;
     public $size;
 
-    public function __construct($name, $label, $maxLength=null, $params = [])
+    public function __construct($name, $label, $maxLength = null, $params = [])
     {
         $this->name = $name;
         $this->label = $label;
