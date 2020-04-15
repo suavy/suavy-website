@@ -63,6 +63,17 @@ body.night {
     /* _client
     ===========================================*/
     .client img { filter: brightness(0) invert(1); }
+
+    /* _services
+    ===========================================*/
+    .service-categories {
+        background-color: $black;
+    }
+    .service-categories__category__services {
+        &:after {
+            border-bottom: 17px solid $black;
+        }
+    }
 }
 
 
