@@ -180,5 +180,37 @@ class CreateServicesTable extends Migration
             'name_en' => 'Focus on Marketing issues',
             'name_es' => '',
         ]);
+
+        Service::create([
+            'icon' => 'fad fa-fw ',
+            'name_fr' => 'Marketing digital & réseaux sociaux',
+            'name_pt' => 'Digital & social media marketing',
+            'name_en' => 'Digital & social media marketing',
+            'name_es' => '',
+        ]);
+
+        Service::create([
+            'icon' => 'fad fa-fw ',
+            'name_fr' => 'Gestion de projets',
+            'name_pt' => 'Project Management',
+            'name_en' => 'Project Management',
+            'name_es' => '',
+        ]);
+
+        Service::create([
+            'icon' => 'fad fa-fw ',
+            'name_fr' => 'Communication',
+            'name_pt' => 'Communication',
+            'name_en' => 'Communication',
+            'name_es' => '',
+        ]);
+
+        Service::create([
+            'icon' => 'fad fa-fw ',
+            'name_fr' => 'Branding',
+            'name_pt' => 'Branding',
+            'name_en' => 'Branding',
+            'name_es' => '',
+        ]);
     }
 }
