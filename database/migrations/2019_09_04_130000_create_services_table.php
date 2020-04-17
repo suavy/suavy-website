@@ -105,7 +105,7 @@ class CreateServicesTable extends Migration
             'name_en' => 'Database management/optimization',
             'name_es' => '',
             'parent_id' => 1,
-            'lft' => 4
+            'lft' => 4,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-eye',

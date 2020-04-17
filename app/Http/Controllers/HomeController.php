@@ -29,7 +29,7 @@ class HomeController extends Controller
 
         $openSourceProjects = OpenSourceProject::query()->get();
 
-        $services = Service::query()->orderBy('lft')->whereNull('parent_id')->orWhere('parent_id',0)->with('services')->get();
+        $services = Service::query()->orderBy('lft')->whereNull('parent_id')->orWhere('parent_id', 0)->with('services')->get();
 
         $contactDeliveries = Delivery::forSelect();
         $contactBudgets = Budget::forSelect();
