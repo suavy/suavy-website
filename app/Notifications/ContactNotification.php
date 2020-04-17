@@ -39,7 +39,6 @@ class ContactNotification extends Notification
 
     public function toDiscord($notifiable)
     {
-
         $dataDiscord = [
             'type' => 'rich',
             'title' => ':mailbox_with_mail: Hello!! Ready to make money',
@@ -52,7 +51,7 @@ class ContactNotification extends Notification
             ],
         ];
 
-        if($this->contact->budgets()->count()){
+        if ($this->contact->budgets()->count()) {
             $dataDiscord['fields'][] = [
                 'name' => ':moneybag: Budget',
                 'value' => $this->contact->budgets()->pluck('name_fr')->implode("\n"),
@@ -60,7 +59,7 @@ class ContactNotification extends Notification
             ];
         }
 
-        if($this->contact->deliveries()->count()){
+        if ($this->contact->deliveries()->count()) {
             $dataDiscord['fields'][] = [
                 'name' => ':timer: Deliveries',
                 'value' => $this->contact->deliveries()->pluck('name_fr')->implode("\n"),
@@ -68,7 +67,7 @@ class ContactNotification extends Notification
             ];
         }
 
-        if($this->contact->services()->count()) {
+        if ($this->contact->services()->count()) {
             $dataDiscord['fields'][] = [
                 'name' => ':jigsaw: Services',
                 'value' => $this->contact->services()->pluck('name_fr')->implode("\n"),
@@ -76,13 +75,12 @@ class ContactNotification extends Notification
             ];
         }
 
-        if(strlen($this->contact->message) > 2048){
-            $dataDiscord['description'] = substr($this->contact->message,0, 2020)."... [link to see more]";
-        }else{
+        if (strlen($this->contact->message) > 2048) {
+            $dataDiscord['description'] = substr($this->contact->message, 0, 2020).'... [link to see more]';
+        } else {
             $dataDiscord['description'] = $this->contact->message;
         }
 
-
-        return DiscordMessage::create('',$dataDiscord );
+        return DiscordMessage::create('', $dataDiscord);
     }
 }
