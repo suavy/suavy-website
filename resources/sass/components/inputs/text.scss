@@ -13,3 +13,7 @@ input {
         opacity: 1;
     }
 }
+
+.error input {
+    border-color: $red;
+}

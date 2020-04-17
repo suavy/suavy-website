@@ -837,6 +837,10 @@ label.label {
   padding: 0 10px 5px;
 }
 
+.error label.label {
+  color: #e3342f;
+}
+
 .form-group {
   white-space: normal;
   padding: 15px 0;
@@ -922,6 +926,10 @@ input::placeholder {
   opacity: 1;
 }
 
+.error input {
+  border-color: #e3342f;
+}
+
 textarea {
   outline: none;
   resize: none;
@@ -954,6 +962,10 @@ textarea::-ms-input-placeholder {
 textarea::placeholder {
   color: #718093;
   opacity: 1;
+}
+
+.error textarea {
+  border-color: #e3342f;
 }
 
 .form-button-container {

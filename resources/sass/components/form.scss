@@ -9,6 +9,10 @@ label.label {
     padding: 0 10px 5px;
 }
 
+.error label.label {
+    color: $red;
+}
+
 .form-group {
     white-space: normal;
     padding: 15px 0;

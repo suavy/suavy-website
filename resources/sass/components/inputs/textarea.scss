@@ -14,3 +14,7 @@ textarea {
         opacity: 1;
     }
 }
+
+.error textarea {
+    border-color: $red;
+}
