@@ -20,6 +20,24 @@
 
 @push('after-foot-scripts')
     <script>
+
+
+        function animateCSS(element, animationName, callback) {
+            const node = document.querySelector(element)
+            node.classList.add('animated', animationName)
+
+            console.log('test');
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+
         $("#contact").submit(function(){
             $name = $('input[name="contact[name]"]');
             $email = $('input[name="contact[email]"]');
@@ -37,6 +55,7 @@
                 'json' // I expect a JSON response
             );
 
+            animateCSS('#contact', 'hinge');
             $(this).slideUp();
 
             return false;

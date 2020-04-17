@@ -59,7 +59,7 @@ class ServiceCrudController extends CrudController
         $this->crud->set('reorder.label', 'translated_name');
         // define how deep the admin is allowed to nest the items
         // for infinite levels, set it to 0
-        $this->crud->set('reorder.max_level', 1);
+        $this->crud->set('reorder.max_level', 2);
     }
 
     protected function setupUpdateOperation()

@@ -16,6 +16,9 @@ class Service extends Model
     | _Relations
     |--------------------------------------------------------------------------
     */
+    public function services(){ return $this->hasMany(Service::class,'parent_id');}
+
+
     /*
     |--------------------------------------------------------------------------
     | _Variables
