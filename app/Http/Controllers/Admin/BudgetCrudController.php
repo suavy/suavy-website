@@ -7,7 +7,7 @@ use App\Models\City;
 use App\Models\Country;
 use App\Models\Establishment;
 use App\Models\Group;
-use App\Models\Metas\ContactDelivery;
+use App\Models\Metas\ContactBudget;
 use App\Models\ProviderCompany;
 use App\Models\Role;
 use App\Models\Skill;
@@ -19,7 +19,7 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 
-class ContactDeliveryCrudController extends CrudController
+class BudgetCrudController extends CrudController
 {
     use ListOperation;
     use CreateOperation;
@@ -29,9 +29,9 @@ class ContactDeliveryCrudController extends CrudController
 
     public function setup()
     {
-        $this->crud->setModel(ContactDelivery::class);
-        $this->crud->setRoute('admin/contact-delivery');
-        $this->crud->setEntityNameStrings('contact delivery', 'contact deliveries');
+        $this->crud->setModel(ContactBudget::class);
+        $this->crud->setRoute('admin/contact-budget');
+        $this->crud->setEntityNameStrings('contact budget', 'contact budgets');
     }
 
     protected function setupListOperation()

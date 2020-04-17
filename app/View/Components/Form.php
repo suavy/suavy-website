@@ -7,9 +7,11 @@ use Illuminate\View\Component;
 class Form extends Component
 {
     public $link;
+    public $id;
 
-    public function __construct($link)
+    public function __construct($link,$id=null)
     {
+        $this->id=$id;
         $this->link = $link;
     }
 

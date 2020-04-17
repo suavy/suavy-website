@@ -48,6 +48,6 @@ class HomeController extends Controller
 
         $contact->notify(new ContactNotification($contact));
 
-        return redirect()->to('/#contact');
+        return json_encode(true);
     }
 }

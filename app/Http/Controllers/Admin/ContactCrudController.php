@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\ActivityLog;
 use App\Models\City;
+use App\Models\Contact;
 use App\Models\Country;
 use App\Models\Establishment;
 use App\Models\Group;
-use App\Models\Metas\ContactBudget;
 use App\Models\ProviderCompany;
 use App\Models\Role;
 use App\Models\Skill;
@@ -19,7 +19,7 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 
-class ContactBudgetCrudController extends CrudController
+class ContactCrudController extends CrudController
 {
     use ListOperation;
     use CreateOperation;
@@ -29,27 +29,19 @@ class ContactBudgetCrudController extends CrudController
 
     public function setup()
     {
-        $this->crud->setModel(ContactBudget::class);
-        $this->crud->setRoute('admin/contact-budget');
-        $this->crud->setEntityNameStrings('contact budget', 'contact budgets');
+        $this->crud->setModel(Contact::class);
+        $this->crud->setRoute('admin/contact');
+        $this->crud->setEntityNameStrings('contact', 'contacts');
     }
 
     protected function setupListOperation()
     {
         $this->crud->addColumn(['name' => 'id', 'label' => '#']);
-        $this->crud->addColumn(['name' => 'name_fr', 'label' => 'name fr']);
-        $this->crud->addColumn(['name' => 'name_pt', 'label' => 'name pt']);
-        $this->crud->addColumn(['name' => 'name_en', 'label' => 'name en']);
-        $this->crud->addColumn(['name' => 'name_es', 'label' => 'name es']);
+        $this->crud->addColumn(['name' => 'name', 'label' => 'name']);
+        $this->crud->addColumn(['name' => 'email', 'label' => 'email']);
+        $this->crud->addColumn(['name' => 'created_at', 'label' => 'date']);
     }
 
-    protected function setupCreateOperation()
-    {
-        $this->crud->addField(['name' => 'name_fr', 'label' => 'name fr', 'type' => 'text']);
-        $this->crud->addField(['name' => 'name_pt', 'label' => 'name pt', 'type' => 'text']);
-        $this->crud->addField(['name' => 'name_en', 'label' => 'name en', 'type' => 'text']);
-        $this->crud->addField(['name' => 'name_es', 'label' => 'name es', 'type' => 'text']);
-    }
 
     protected function setupUpdateOperation()
     {
