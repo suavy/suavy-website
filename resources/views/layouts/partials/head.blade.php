@@ -14,6 +14,7 @@
     @stack('before-head-scripts')
     <!-- Head Scripts -->
     <script src="https://kit.fontawesome.com/7b866af269.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
     <!-- /Head Scripts -->
     @stack('after-head-scripts')

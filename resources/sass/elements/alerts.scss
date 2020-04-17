@@ -1,28 +1,22 @@
 .alert {
-    max-width: 1024px;
+    max-width: 1130px;
     margin: 0 auto;
     padding: 30px 40px;
     box-sizing: border-box;
     background-color: #21b989;
     background-image: linear-gradient(135deg, #21b989 0%, #16A085 100%);
-    @include border-radius(5px);
-}
-
-.alert__text {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-    text-align: left;
-    @include font-size(32px);
-    line-height: 42px;
+    @include border-radius(20px);
 }
 
 .alert__title {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-    text-align: right;
     font-family: $titleFont;
-    @include font-size(52px);
-
+    @include font-size(42px);
+    line-height: 50px;
 }
+
+.alert__text {
+    @include font-size(22px);
+    line-height: 32px;
+}
+
+
