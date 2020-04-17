@@ -9,9 +9,9 @@ class Form extends Component
     public $link;
     public $id;
 
-    public function __construct($link,$id=null)
+    public function __construct($link, $id = null)
     {
-        $this->id=$id;
+        $this->id = $id;
         $this->link = $link;
     }
 

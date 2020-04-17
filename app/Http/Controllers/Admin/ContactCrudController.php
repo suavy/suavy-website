@@ -42,7 +42,6 @@ class ContactCrudController extends CrudController
         $this->crud->addColumn(['name' => 'created_at', 'label' => 'date']);
     }
 
-
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
