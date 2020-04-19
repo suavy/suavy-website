@@ -128,6 +128,11 @@ class CreateServicesTable extends Migration
             'name_fr' => 'Intégration front', 'name_pt' => 'Integração front', 'name_en' => 'Front integration', 'name_es' => '',
             'parent_id' => 2,
         ]);
+        Service::create([
+            'icon' => 'fad fa-fw fa-copyright',
+            'name_fr' => 'Logo', 'name_pt' => 'Logo', 'name_en' => 'Logo', 'name_es' => 'Logo',
+            'parent_id' => 2,
+        ]);
 
         /* Cat 3 */
         Service::create([
