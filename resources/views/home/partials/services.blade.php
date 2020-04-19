@@ -1,8 +1,7 @@
 <div class="home__row home__row--services home__row--above-team bg-green">
     <div class="services">
         <div class="service-categories" id="service-categories" data-count="{{ $services->count() }}">
-            @foreach($services as $service)
-                <div class="service-categories__category service-categories__category--blue">
+            @foreach($services as $service)<div class="service-categories__category service-categories__category--{{ $service->color }}">
                     <div class="service-categories__category__icon"><i class="{{ $service->icon }}"></i></div>
                     <div class="service-categories__category__name">{{ $service->translated_name }}</div>
                     <div class="service-categories__category__services js-service-{{ $loop->iteration }}" style="display: none">
@@ -12,8 +11,7 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
-            @endforeach
+                </div>@endforeach
             <div class="services-view-more js-show-services">
                 See <a href="javascript:;" class="link link--underline">everything we do</a>.
             </div>

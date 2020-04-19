@@ -48,6 +48,7 @@ class CreateServicesTable extends Migration
     public function seed()
     {
         Service::create([
+            'color' => 'blue',
             'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
             'name_fr' => 'Développement de votre site de A à Z',
             'name_pt' => 'Desenvolvimento do seu site de A a Z',
@@ -56,6 +57,7 @@ class CreateServicesTable extends Migration
             'lft' => 1,
         ]);
         Service::create([
+            'color' => 'pink',
             'icon' => 'fad fa-fw fa-construction',
             'name_fr' => 'Création ou refonte de votre projet',
             'name_pt' => 'Criação ou redesenho do seu projeto',
@@ -64,6 +66,7 @@ class CreateServicesTable extends Migration
             'lft' => 2,
         ]);
         Service::create([
+            'color' => 'orange',
             'icon' => 'fad fa-fw fa-mobile-alt',
             'name_fr' => 'Développement mobile iOS/Androïd',
             'name_pt' => 'Desenvolvimento mobile iOS/Androïd',
@@ -72,6 +75,7 @@ class CreateServicesTable extends Migration
             'lft' => 3,
         ]);
         Service::create([
+            'color' => 'purple',
             'icon' => 'fad fa-fw fa-analytics',
             'name_fr' => 'Data Analyse',
             'name_pt' => 'Data analysis',
