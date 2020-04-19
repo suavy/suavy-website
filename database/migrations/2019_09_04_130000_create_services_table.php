@@ -64,7 +64,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'color' => 'purple',
-            'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
+            'icon' => 'fad fa-fw fa-lightbulb',
             'name_fr' => 'Marketing', 'name_pt' => 'Marketing', 'name_en' => 'Marketing', 'name_es' => 'Marketing',
         ]);
 
@@ -163,11 +163,6 @@ class CreateServicesTable extends Migration
 
         /* Cat 4 */
         Service::create([
-            'icon' => 'fad fa-fw fa-eye',
-            'name_fr' => 'Accompagnement SEO', 'name_pt' => 'Suporte SEO', 'name_en' => 'SEO support', 'name_es' => '',
-            'parent_id' => 4,
-        ]);
-        Service::create([
             'icon' => 'fad fa-fw fa-bullhorn',
             'name_fr' => 'Communication', 'name_pt' => 'Communication', 'name_en' => 'Communication', 'name_es' => '',
             'parent_id' => 4,
@@ -175,6 +170,11 @@ class CreateServicesTable extends Migration
         Service::create([
             'icon' => 'fad fa-fw fa-comments',
             'name_fr' => 'Marketing digital & réseaux sociaux', 'name_pt' => 'Digital & social media marketing', 'name_en' => 'Digital & social media marketing', 'name_es' => '',
+            'parent_id' => 4,
+        ]);
+        Service::create([
+            'icon' => 'fad fa-fw fa-eye',
+            'name_fr' => 'Accompagnement SEO', 'name_pt' => 'Suporte SEO', 'name_en' => 'SEO support', 'name_es' => '',
             'parent_id' => 4,
         ]);
 
