@@ -222,18 +222,5 @@ class CreateServicesTable extends Migration
             'parent_id' => 5,
             'lft' => 0,
         ]);
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
