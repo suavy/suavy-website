@@ -173,11 +173,6 @@ class CreateServicesTable extends Migration
             'name_fr' => 'Marketing digital & réseaux sociaux', 'name_pt' => 'Digital & social media marketing', 'name_en' => 'Digital & social media marketing', 'name_es' => '',
             'parent_id' => 4
         ]);
-        Service::create([
-            'icon' => 'fad fa-fw fa-tasks',
-            'name_fr' => 'Gestion de projets', 'name_pt' => 'Project Management', 'name_en' => 'Project Management', 'name_es' => '',
-            'parent_id' => 4
-        ]);
 
 
         /* Cat 5 */
