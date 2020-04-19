@@ -177,7 +177,5 @@ class CreateServicesTable extends Migration
             'name_fr' => 'Marketing digital & réseaux sociaux', 'name_pt' => 'Digital & social media marketing', 'name_en' => 'Digital & social media marketing', 'name_es' => '',
             'parent_id' => 4,
         ]);
-
-
     }
 }
