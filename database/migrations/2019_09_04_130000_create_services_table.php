@@ -177,7 +177,5 @@ class CreateServicesTable extends Migration
             'name_fr' => 'Accompagnement SEO', 'name_pt' => 'Suporte SEO', 'name_en' => 'SEO support', 'name_es' => '',
             'parent_id' => 4,
         ]);
-
-
     }
 }
