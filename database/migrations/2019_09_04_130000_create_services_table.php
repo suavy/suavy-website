@@ -50,7 +50,7 @@ class CreateServicesTable extends Migration
         Service::create([
             'color' => 'blue',
             'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
-            'name_fr' => 'Développement de votre site', 'name_pt' => 'Desenvolvimento do seu site', 'name_en' => 'Development of your site', 'name_es' => '',
+            'name_fr' => 'Développement', 'name_pt' => 'Desenvolvimento', 'name_en' => 'Development', 'name_es' => '',
         ]);
         Service::create([
             'color' => 'pink',
@@ -59,25 +59,24 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'color' => 'orange',
-            'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
-            'name_fr' => 'Data', 'name_pt' => 'Cat 3', 'name_en' => 'Cat 3', 'name_es' => '',
+            'icon' => 'fad fa-fw fa-database',
+            'name_fr' => 'Data', 'name_pt' => 'Data', 'name_en' => 'Data', 'name_es' => 'Data',
         ]);
         Service::create([
             'color' => 'purple',
             'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
-            'name_fr' => 'Blabla', 'name_pt' => 'Cat 4', 'name_en' => 'Cat 4', 'name_es' => '',
-        ]);
-
-        Service::create([
-            'color' => '',
-            'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
-            'name_fr' => 'Todo', 'name_pt' => 'Cat 5', 'name_en' => 'Cat 5', 'name_es' => '',
+            'name_fr' => 'Marketing', 'name_pt' => 'Marketing', 'name_en' => 'Marketing', 'name_es' => 'Marketing',
         ]);
 
         /* Cat 1 */
         Service::create([
             'icon' => 'fad fa-fw fa-construction',
-            'name_fr' => 'Création ou refonte de votre projet', 'name_pt' => 'Criação ou redesenho do seu projeto', 'name_en' => 'Creation or redesign of your project', 'name_es' => '',
+            'name_fr' => 'Développement de votre site', 'name_pt' => '', 'name_en' => '', 'name_es' => '',
+            'parent_id' => 1,
+        ]);
+        Service::create([
+            'icon' => 'fad fa-fw fa-mobile-alt',
+            'name_fr' => 'Développement mobile iOS/Androïd', 'name_pt' => 'Desenvolvimento mobile iOS/Androïd', 'name_en' => 'Mobile development iOS/Androïd', 'name_es' => '',
             'parent_id' => 1,
         ]);
         Service::create([
@@ -99,6 +98,17 @@ class CreateServicesTable extends Migration
             'icon' => 'fad fa-fw fa-map-marked-alt',
             'name_fr' => 'Cartographie (Google Maps, Mapbox)',
             'name_pt' => 'Mapping (Google Maps, Mapbox)', 'name_en' => 'Mapping (Google Maps, Mapbox)', 'name_es' => '',
+            'parent_id' => 1,
+        ]);
+        Service::create([
+            'icon' => 'fad fa-fw fa-server',
+            'name_fr' => 'Gestion de serveur', 'name_pt' => 'Gestão de servidor', 'name_en' => 'Server management', 'name_es' => '',
+            'parent_id' => 1,
+        ]);
+
+        Service::create([
+            'icon' => 'fad fa-fw fa-robot',
+            'name_fr' => 'Automatisation des tâches', 'name_pt' => 'Automação de tarefas', 'name_en' => 'Tasks automation', 'name_es' => '',
             'parent_id' => 1,
         ]);
 
@@ -158,12 +168,6 @@ class CreateServicesTable extends Migration
             'parent_id' => 4,
         ]);
         Service::create([
-            'icon' => 'fad fa-fw fa-bug',
-            'name_fr' => 'Focus sur des problématiques marketing', 'name_pt' => 'Foco em soluções de marketing', 'name_en' => 'Focus on Marketing issues',
-            'name_es' => '',
-            'parent_id' => 4,
-        ]);
-        Service::create([
             'icon' => 'fad fa-fw fa-bullhorn',
             'name_fr' => 'Communication', 'name_pt' => 'Communication', 'name_en' => 'Communication', 'name_es' => '',
             'parent_id' => 4,
@@ -174,21 +178,6 @@ class CreateServicesTable extends Migration
             'parent_id' => 4,
         ]);
 
-        /* Cat 5 */
-        Service::create([
-            'icon' => 'fad fa-fw fa-mobile-alt',
-            'name_fr' => 'Développement mobile iOS/Androïd', 'name_pt' => 'Desenvolvimento mobile iOS/Androïd', 'name_en' => 'Mobile development iOS/Androïd', 'name_es' => '',
-            'parent_id' => 5,
-        ]);
-        Service::create([
-            'icon' => 'fad fa-fw fa-robot',
-            'name_fr' => 'Automatisation des tâches', 'name_pt' => 'Automação de tarefas', 'name_en' => 'Tasks automation', 'name_es' => '',
-            'parent_id' => 5,
-        ]);
-        Service::create([
-            'icon' => 'fad fa-fw fa-server',
-            'name_fr' => 'Gestion de serveur', 'name_pt' => 'Gestão de servidor', 'name_en' => 'Server management', 'name_es' => '',
-            'parent_id' => 5,
-        ]);
+
     }
 }
