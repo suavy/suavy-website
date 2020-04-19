@@ -47,12 +47,12 @@ $screen-larger: 1800px;
 ===========================================*/
 $white: #f5f6fa;
 $lightgray: #d2d7d3;
-$blue: #3490dc;
+$blue: #778beb;
 $indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
+$purple: #786fa6;
+$pink: #f8a5c2;
 $red: #e3342f;
-$orange: #f6993f;
+$orange: #f3a683;
 $yellow: #f6e58d;
 $green: #21b989;
 $teal: #4dc0b5;
@@ -61,20 +61,20 @@ $gray: #718093;
 $black: #1e272e;
 
 $color-list: (
-                (white, $white),
-                (lightgray, $lightgray),
-                (blue, $blue),
-                (indigo, $indigo),
-                (purple, $purple),
-                (pink, $pink),
-                (red, $red),
-                (orange, $orange),
-                (yellow, $yellow),
-                (green, $green),
-                (teal, $teal),
-                (cyan, $cyan),
-                (gray, $gray),
-                (black, $black),
+    (white, $white),
+    (lightgray, $lightgray),
+    (blue, $blue),
+    (indigo, $indigo),
+    (purple, $purple),
+    (pink, $pink),
+    (red, $red),
+    (orange, $orange),
+    (yellow, $yellow),
+    (green, $green),
+    (teal, $teal),
+    (cyan, $cyan),
+    (gray, $gray),
+    (black, $black),
 );
 
 @each $color, $value in $color-list {

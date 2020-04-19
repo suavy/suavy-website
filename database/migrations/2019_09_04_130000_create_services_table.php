@@ -55,7 +55,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'color' => 'pink',
-            'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
+            'icon' => 'fad fa-fw fa-pencil-alt',
             'name_fr' => 'Design', 'name_pt' => 'Design', 'name_en' => 'Design', 'name_es' => 'Design',
             'lft' => 2,
         ]);
