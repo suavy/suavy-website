@@ -70,7 +70,7 @@ class CreateServicesTable extends Migration
 
         /* Cat 1 */
         Service::create([
-            'icon' => 'fad fa-fw fa-construction',
+            'icon' => 'fad fa-fw fa-browser',
             'name_fr' => 'Développement de votre site', 'name_pt' => '', 'name_en' => '', 'name_es' => '',
             'parent_id' => 1,
         ]);
@@ -129,8 +129,8 @@ class CreateServicesTable extends Migration
             'parent_id' => 2,
         ]);
         Service::create([
-            'icon' => 'fad fa-fw fa-copyright',
-            'name_fr' => 'Logo', 'name_pt' => 'Logo', 'name_en' => 'Logo', 'name_es' => 'Logo',
+            'icon' => 'fad fa-fw fa-paint-brush-alt',
+            'name_fr' => 'Création de logo', 'name_pt' => 'Logo', 'name_en' => 'Logo', 'name_es' => 'Logo',
             'parent_id' => 2,
         ]);
 
