@@ -1050,6 +1050,81 @@ textarea::placeholder {
   max-width: 1150px;
   margin: 0 auto;
 }
+
+.contact__form {
+  background-color: #f8a5c2;
+  position: relative;
+  z-index: 3;
+  margin: 10px;
+  padding: 10px;
+}
+
+.contact__letter-box {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+
+.contact__letter-box__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact__letter-box__front:before, .contact__letter-box__front:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.contact__letter-box__front:before {
+  border-right: 1150px solid transparent;
+  border-bottom: 600px solid #4a6cc7;
+}
+.contact__letter-box__front:after {
+  border-left: 1150px solid transparent;
+  border-bottom: 600px solid #3e60b6;
+}
+
+.contact__letter-box__top {
+  position: absolute;
+  width: 100%;
+  height: 58%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform-origin: center bottom;
+  transform: translateY(-98%);
+  transform: translateY(-98%) rotateX(175deg);
+  transition: all 0.6s 0.3s ease-out;
+}
+.contact__letter-box__top:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 575px solid transparent;
+  border-left: 575px solid transparent;
+  border-bottom: 330px solid #284083;
+}
+
+.contact__letter-box--open {
+  margin-top: 350px;
+}
+.contact__letter-box--open .contact__letter-box__top {
+  transform: translateY(-99%);
+}
+
+.contact__letter-box--close .contact__letter-box__top {
+  transform: translateY(-100%) rotateX(-175deg);
+}
+
 /* _services
 ===========================================*/
 .services {

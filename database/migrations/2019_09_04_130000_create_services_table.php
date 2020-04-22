@@ -135,7 +135,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-border-style-alt',
-            'name_fr' => 'Prototypes', 'name_pt' => 'Prototypes', 'name_en' => 'Prototypes', 'name_es' => 'Logo',
+            'name_fr' => 'Prototype', 'name_pt' => 'Prototype', 'name_en' => 'Prototype', 'name_es' => 'Logo',
             'parent_id' => 2,
         ]);
 
