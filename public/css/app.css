@@ -379,6 +379,14 @@ html::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.display-none {
+  display: none;
+}
+
 .alert {
   max-width: 1130px;
   margin: 0 auto;
