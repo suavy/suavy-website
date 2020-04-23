@@ -321,30 +321,30 @@ a {
   background-image: linear-gradient(0deg, #1e272e 0%, #0a0d0f 100%);
 }
 
-.color-primary-color {
+.color-primary {
   color: #6574cd;
 }
 
-.bg-primary-color {
+.bg-primary {
   background-color: #6574cd;
   fill: #6574cd;
 }
 
-.bg-gradient-primary-color {
+.bg-gradient-primary {
   background-color: #6574cd;
   background-image: linear-gradient(0deg, #6574cd 0%, #3f51c1 100%);
 }
 
-.color-secondary-color {
+.color-secondary {
   color: #f8a5c2;
 }
 
-.bg-secondary-color {
+.bg-secondary {
   background-color: #f8a5c2;
   fill: #f8a5c2;
 }
 
-.bg-gradient-secondary-color {
+.bg-gradient-secondary {
   background-color: #f8a5c2;
   background-image: linear-gradient(0deg, #f8a5c2 0%, #f476a2 100%);
 }
@@ -377,6 +377,14 @@ html::-webkit-scrollbar-thumb {
 /* The vertical scrollbar background */
 html::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.display-none {
+  display: none;
 }
 
 .alert {
@@ -544,30 +552,40 @@ html::-webkit-scrollbar-track {
 }
 
 .map-col--title {
-  width: 30%;
+  width: 35%;
 }
 @media (max-width: 1800px) {
   .map-col--title {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (max-width: 1400px) {
   .map-col--title {
-    width: 45%;
+    width: 50%;
   }
 }
 @media (max-width: 1024px) {
   .map-col--title {
-    width: 80%;
+    width: 50%;
     padding: 80px 0 35px;
+  }
+}
+@media (max-width: 768px) {
+  .map-col--title {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .map-col--title {
+    width: 100%;
   }
 }
 
 .map-title {
   font-family: "Abril Fatface", cursive;
   color: #f5f6fa;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 48px;
   box-sizing: border-box;
   text-align: right;

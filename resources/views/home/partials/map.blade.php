@@ -1,4 +1,4 @@
-<div class="home__row home__row--map bg-gradient-primary-color">
+<div class="home__row home__row--map bg-gradient-primary">
     <div class="map-col map-col--title">
         <div class="map-title">@lang('base.map.title')</div>
     </div><div class="map-col map-col--map">
