@@ -544,30 +544,40 @@ html::-webkit-scrollbar-track {
 }
 
 .map-col--title {
-  width: 30%;
+  width: 35%;
 }
 @media (max-width: 1800px) {
   .map-col--title {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (max-width: 1400px) {
   .map-col--title {
-    width: 45%;
+    width: 50%;
   }
 }
 @media (max-width: 1024px) {
   .map-col--title {
-    width: 80%;
+    width: 50%;
     padding: 80px 0 35px;
+  }
+}
+@media (max-width: 768px) {
+  .map-col--title {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .map-col--title {
+    width: 100%;
   }
 }
 
 .map-title {
   font-family: "Abril Fatface", cursive;
   color: #f5f6fa;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 48px;
   box-sizing: border-box;
   text-align: right;
