@@ -1,18 +1,9 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-* Filename:     _home.scss
-* Description:  Home page specific CSS
-* Author:       Christophe DO OUTEIRO
-*** INDEX: ************************************************************
-*
-* _base
-* _clients
-* _contact
-* _team
-
+* Filename:     home.scss
+* Description:  Homepage css
+* Author:       beSuavy (https://suavy.be)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* _base
-===========================================*/
 .home__row {
     position: relative;
     padding: 30px 60px;
@@ -21,274 +12,6 @@
     }
 }
 
-/* _clients
-===========================================*/
-.home__row--clients {
-    .title {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-.clients {
-    display: flex;
-    flex-wrap: wrap;
-    //justify-content: flex-start;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.client {
-    padding: 20px;
-    img {
-        width: auto;
-        height: 45px;
-        filter: brightness(0);
-    }
-}
-
-/* _contact
-===========================================*/
-.home__row--contact {
-    padding: 60px;
-}
-
-.contact {
-    max-width: 1150px;
-    margin: 0 auto;
-}
-
-.contact__form {
-    background-color: $lightgray;
-    position: relative;
-    z-index: 3;
-    margin: 10px;
-    padding: 10px;
-}
-
-.contact__letter-box {
-    width: 100%;
-    height: 600px;
-    margin: 350px auto 0;
-    border-radius: 10px;
-    position: relative;
-    transform-style: preserve-3d;
-    //opacity: 0;
-    //transform: scale(0.5);
-    transition: all 0.3s ease-out;
-}
-
-.contact__letter-box__front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-    &:before, &:after{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-    }
-    &:before{
-        border-right: 1150px solid transparent;
-        border-bottom: 600px solid #4a6cc7;
-    }
-    &:after{
-        border-left: 1150px solid transparent;
-        border-bottom: 600px solid #3e60b6;
-    }
-}
-
-.contact__letter-box__top {
-    position: absolute;
-    width: 100%;
-    height: 58%;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 2;
-    transform-style: preserve-3d;
-    transform-origin: center bottom;
-    transform: translateY(-98%);
-    transform: translateY(-98%) rotateX(175deg);
-    transition: all 0.6s 0.3s ease-out;
-    &:before{
-        content: '';
-        width: 0;
-        height: 0;
-        border-right: 575px solid transparent;
-        border-left: 575px solid transparent;
-        border-bottom: 330px solid #284083;
-    }
-}
-
-.contact__letter-box--open {
-    .contact__letter-box__top {
-        transform: translateY(-99%);
-    }
-}
-
-.contact__letter-box--close {
-    .contact__letter-box__top {
-        transform: translateY(-100%) rotateX(-175deg);
-    }
-}
-
-
-/* _services
-===========================================*/
-.home__row--services {
-
-}
-
-.services {
-    text-align: center;
-}
-
-.service-categories {
-    padding: 20px 40px 40px;
-    box-sizing: border-box;
-    @include border-radius(5px);
-    background-color: $white;
-}
-
-.service-categories__category {
-    display: inline-block;
-    width: 25%;
-    box-sizing: border-box;
-    padding: 20px 40px 40px;
-    vertical-align: top;
-    @include media('screen-small') {
-        padding: 20px;
-        width: 50%;
-    }
-}
-
-.service-categories__category__icon {
-    @include font-size(38px);
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    @include border-radius(50%);
-    text-align: center;
-    margin: 0 auto 15px;
-    //border: 2px solid $gray;
-    color: $white;
-}
-
-.service-categories__category__name {
-    @include font-size(22px);
-    font-weight: bold;
-    padding-bottom: 30px;
-}
-.service-categories__category__services {
-    display: block;
-    @include border-radius(5px);
-    padding: 5px 10px;
-    text-align: left;
-    position: relative;
-    border: 2px solid $gray;
-    &:after {
-        content: '';
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: -17px;
-        width: 0;
-        height: 0;
-        border-left: 17px solid transparent;
-        border-right: 17px solid transparent;
-        border-bottom: 17px solid $white;
-        clear: both;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: -20px;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid $gray;
-        clear: both;
-    }
-}
-
-.service-categories__category--blue {
-    .service-categories__category__icon {
-        background-color: $blue;
-        background-image: linear-gradient(0deg, $blue 0%, darken($blue, 10%) 100%);
-    }
-    .service-categories__category__services {
-        border: 2px solid $blue;
-        &:before { border-bottom-color: $blue; }
-    }
-}
-
-.service-categories__category--pink {
-    .service-categories__category__icon {
-        background-color: $pink;
-        background-image: linear-gradient(0deg, $pink 0%, darken($pink, 10%) 100%);
-    }
-    .service-categories__category__services {
-        border: 2px solid $pink;
-        &:before { border-bottom-color: $pink; }
-    }
-}
-
-.service-categories__category--purple {
-    .service-categories__category__icon {
-        background-color: $purple;
-        background-image: linear-gradient(0deg, $purple 0%, darken($purple, 10%) 100%);
-    }
-    .service-categories__category__services {
-        border: 2px solid $purple;
-        &:before { border-bottom-color: $purple; }
-    }
-}
-
-.service-categories__category--orange {
-    .service-categories__category__icon {
-        background-color: $orange;
-        background-image: linear-gradient(0deg, $orange 0%, darken($orange, 10%) 100%);
-    }
-    .service-categories__category__services {
-        border: 2px solid $orange;
-        &:before { border-bottom-color: $orange; }
-    }
-}
-
-
-.service-categories__category__services__item {
-    padding: 5px 0;
-    span, i {
-        vertical-align: middle;
-    }
-    span {
-        @include font-size(14px);
-    }
-    i {
-
-    }
-}
-
-
-.services-view-more {
-    vertical-align: middle;
-    text-align: center;
-    font-family: $titleFont;
-    @include font-size(52px);
-}
-
-/* _map
-===========================================*/
 .home__row--map {
     text-align: center;
     @include media('screen-small') {
@@ -299,10 +22,8 @@
 .home__row--below-map {
     padding-bottom: 120px;
 }
-/* _team
-===========================================*/
-.home__row--team {
-    padding: 0 0 40px !important;
+
+.home__row--services {
 
 }
 
@@ -310,156 +31,29 @@
     padding-bottom: 160px;
 }
 
-.team {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
+.home__row--team {
+    padding: 0 0 40px !important;
 }
 
-.team__member-container {
-    position: relative;
-    display: inline-block;
-    width: 33.333%;
-    &:nth-child(3n+1):nth-last-child(-n+3),
-    &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
-        //background-color: $red;
-        margin-bottom: 20px;
+.home__row--contact {
+    padding: 60px;
+}
+
+/*
+.home__row--clients {
+    .title {
+        text-align: center;
+        padding-bottom: 20px;
     }
-    @include media('screen-small') {
-        width: 50%;
-        &:nth-child(3n+1):nth-last-child(-n+3),
-        &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
-            //bbackground-color: $green;
-            margin-bottom: inherit;
-        }
-        &:nth-child(2n+1):nth-last-child(-n+2),
-        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
-            //bbackground-color: $pink;
-            margin-bottom: 20px;
-        }
-    }
-    @include media('tablet-small') {
-        width: 100%;
-        &:nth-child(2n+1):nth-last-child(-n+2),
-        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
-            //bbackground-color: $yellow;
-            margin-bottom: inherit;
-        }
-        &:last-child {
-            //bbackground-color: $purple;
-            margin-bottom: 20px;
-        }
-
-    }
-    box-sizing: border-box;
-    padding: 0 10px 10px;
-    margin-bottom: 120px;
-}
+}*/
 
 
-.team__member {
-    text-align: center;
-}
-
-.team__member__picture {
-    position: relative;
-    @include border-radius(50%);
-    width: 200px;
-    height: 200px;
-    margin: -100px auto 0;
-    &:hover {
-        .team__member__picture__hover {
-            opacity: 1;
-            transform: rotate3d(0,1,0,-180deg);
-        }
-    }
-}
-
-.team__member__picture__image {
-    @include border-radius(50%);
-    width: 100%;
-    height: 100%;
-}
-
-.team__member__picture__border {
-    @include border-radius(50%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    border: 20px solid rgba(255,255,255,0.4);
-
-}
-
-.team__member__picture__hover {
-    opacity: 0;
-    @include border-radius(50%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transition: all 1s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.team__member__picture__hover__content {
-    @include border-radius(50%);
-    background-color: $black;
-    width: 80%;
-    height: 80%;
-    margin: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate3d(0,1,0,-180deg);
-    transform-style: preserve-3d;
-}
-
-.team__member__picture__hover__content__citation {
-    text-align: center;
-    color: $white;
-    padding: 10px;
-    font-family: $titleFont;
-
-}
-
-.team__member__name {
-    padding: 10px 0 3px;
-    @include font-size(16px);
-    font-weight: bold;
-    vertical-align: top;
-    span {
-        font-family: $titleFont;
-        @include font-size(17px);
 
 
-    }
-}
 
-.team__member__role {
-    padding: 0;
-    @include font-size(14px);
-    //text-transform: uppercase;
-    color: $gray;
-}
 
-.team__member__languages {
-    padding: 2px 0 0;
-}
 
-.team__member__language {
-    display: inline-block;
-    img {
-        vertical-align: middle;
-        height: 20px;
-        width: auto;
-    }
-}
 
-.team__member__location {
-    padding: 0 0 5px;
-    color: $gray;
-    @include font-size(14px);
-    display: none;
-}
+
+
+

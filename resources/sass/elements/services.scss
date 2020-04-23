@@ -1,0 +1,148 @@
+$firstServiceCategoryColor: $blue;
+$secondServiceCategoryColor: $pink;
+$thirdServiceCategoryColor: $orange;
+$fourthServiceCategoryColor: $purple;
+
+.services {
+    text-align: center;
+}
+
+.service-categories {
+    padding: 20px 40px 40px;
+    box-sizing: border-box;
+    @include border-radius(5px);
+    background-color: $white;
+}
+
+.service-categories__category {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px 40px 40px;
+    vertical-align: top;
+    @include media('screen-small') {
+        padding: 20px;
+        width: 50%;
+    }
+}
+
+.service-categories__category__icon {
+    @include font-size(38px);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    @include border-radius(50%);
+    text-align: center;
+    margin: 0 auto 15px;
+    //border: 2px solid $gray;
+    color: $white;
+}
+
+.service-categories__category__name {
+    @include font-size(22px);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.service-categories__category__services {
+    display: block;
+    @include border-radius(5px);
+    padding: 5px 10px;
+    text-align: left;
+    position: relative;
+    border: 2px solid $gray;
+    &:after {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -17px;
+        width: 0;
+        height: 0;
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 17px solid $white;
+        clear: both;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -20px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $gray;
+        clear: both;
+    }
+}
+
+.service-categories__category--first {
+    .service-categories__category__icon {
+        background-color: $firstServiceCategoryColor;
+        background-image: linear-gradient(0deg, $firstServiceCategoryColor 0%, darken($firstServiceCategoryColor, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $firstServiceCategoryColor;
+        &:before { border-bottom-color: $firstServiceCategoryColor; }
+    }
+}
+
+.service-categories__category--second {
+    .service-categories__category__icon {
+        background-color: $secondServiceCategoryColor;
+        background-image: linear-gradient(0deg, $secondServiceCategoryColor 0%, darken($secondServiceCategoryColor, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $secondServiceCategoryColor;
+        &:before { border-bottom-color: $secondServiceCategoryColor; }
+    }
+}
+
+.service-categories__category--third {
+    .service-categories__category__icon {
+        background-color: $thirdServiceCategoryColor;
+        background-image: linear-gradient(0deg, $thirdServiceCategoryColor 0%, darken($thirdServiceCategoryColor, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $thirdServiceCategoryColor;
+        &:before { border-bottom-color: $thirdServiceCategoryColor; }
+    }
+}
+
+.service-categories__category--fourth {
+    .service-categories__category__icon {
+        background-color: $fourthServiceCategoryColor;
+        background-image: linear-gradient(0deg, $fourthServiceCategoryColor 0%, darken($fourthServiceCategoryColor, 10%) 100%);
+    }
+    .service-categories__category__services {
+        border: 2px solid $fourthServiceCategoryColor;
+        &:before { border-bottom-color: $fourthServiceCategoryColor; }
+    }
+}
+
+.service-categories__category__services__item {
+    padding: 5px 0;
+    span, i {
+        vertical-align: middle;
+    }
+    span {
+        @include font-size(14px);
+    }
+    i {
+
+    }
+}
+
+.services-view-more {
+    vertical-align: middle;
+    text-align: center;
+    font-family: $titleFont;
+    @include font-size(52px);
+}
