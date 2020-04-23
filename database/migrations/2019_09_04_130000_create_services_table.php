@@ -48,22 +48,22 @@ class CreateServicesTable extends Migration
     public function seed()
     {
         Service::create([
-            'color' => 'blue',
+            'color' => 'first',
             'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
             'name_fr' => 'Développement', 'name_pt' => 'Desenvolvimento', 'name_en' => 'Development', 'name_es' => '',
         ]);
         Service::create([
-            'color' => 'pink',
+            'color' => 'second',
             'icon' => 'fad fa-fw fa-pencil-alt',
             'name_fr' => 'Design', 'name_pt' => 'Design', 'name_en' => 'Design', 'name_es' => 'Design',
         ]);
         Service::create([
-            'color' => 'orange',
+            'color' => 'third',
             'icon' => 'fad fa-fw fa-database',
             'name_fr' => 'Data', 'name_pt' => 'Data', 'name_en' => 'Data', 'name_es' => 'Data',
         ]);
         Service::create([
-            'color' => 'purple',
+            'color' => 'fourth',
             'icon' => 'fad fa-fw fa-lightbulb',
             'name_fr' => 'Marketing', 'name_pt' => 'Marketing', 'name_en' => 'Marketing', 'name_es' => 'Marketing',
         ]);
@@ -135,7 +135,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-border-style-alt',
-            'name_fr' => 'Prototypes', 'name_pt' => 'Prototypes', 'name_en' => 'Prototypes', 'name_es' => 'Logo',
+            'name_fr' => 'Prototype', 'name_pt' => 'Prototype', 'name_en' => 'Prototype', 'name_es' => 'Logo',
             'parent_id' => 2,
         ]);
 

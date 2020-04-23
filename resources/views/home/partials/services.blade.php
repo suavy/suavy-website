@@ -1,4 +1,4 @@
-<div class="home__row home__row--services home__row--above-team bg-green">
+<div class="home__row home__row--services home__row--above-team bg-primary-color">
     <div class="services">
         <div class="service-categories" id="service-categories" data-count="{{ $services->count() }}">
             @foreach($services as $service)<div class="service-categories__category service-categories__category--{{ $service->color }}">
