@@ -321,6 +321,34 @@ a {
   background-image: linear-gradient(0deg, #1e272e 0%, #0a0d0f 100%);
 }
 
+.color-primary-color {
+  color: #6574cd;
+}
+
+.bg-primary-color {
+  background-color: #6574cd;
+  fill: #6574cd;
+}
+
+.bg-gradient-primary-color {
+  background-color: #6574cd;
+  background-image: linear-gradient(0deg, #6574cd 0%, #3f51c1 100%);
+}
+
+.color-secondary-color {
+  color: #f8a5c2;
+}
+
+.bg-secondary-color {
+  background-color: #f8a5c2;
+  fill: #f8a5c2;
+}
+
+.bg-gradient-secondary-color {
+  background-color: #f8a5c2;
+  background-image: linear-gradient(0deg, #f8a5c2 0%, #f476a2 100%);
+}
+
 /* _fonts
 ===========================================*/
 html, body {
@@ -498,7 +526,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #f6e58d;
+  color: #f8a5c2;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -594,7 +622,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #f6e58d;
+  background-color: #f8a5c2;
   border: 2px solid #718093;
   line-height: 24px;
   font-size: 14px;
@@ -608,7 +636,6 @@ html, body {
 .map-marker__item {
   visibility: hidden;
   opacity: 0;
-  background-color: #778beb;
   width: 1px;
   height: 1px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -936,7 +963,7 @@ textarea {
   box-sizing: border-box;
   width: calc(100% - 20px);
   margin: 10px;
-  height: 300px;
+  height: 250px;
   padding: 10px;
   font-size: 16px;
   font-size: 1rem;
@@ -1052,7 +1079,7 @@ textarea::placeholder {
 }
 
 .contact__form {
-  background-color: #f8a5c2;
+  background-color: #d2d7d3;
   position: relative;
   z-index: 3;
   margin: 10px;
@@ -1062,7 +1089,7 @@ textarea::placeholder {
 .contact__letter-box {
   width: 100%;
   height: 600px;
-  margin: 0 auto;
+  margin: 350px auto 0;
   border-radius: 10px;
   position: relative;
   transform-style: preserve-3d;
@@ -1114,9 +1141,6 @@ textarea::placeholder {
   border-bottom: 330px solid #284083;
 }
 
-.contact__letter-box--open {
-  margin-top: 350px;
-}
 .contact__letter-box--open .contact__letter-box__top {
   transform: translateY(-99%);
 }
@@ -1489,7 +1513,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #f6e58d;
+  color: #f8a5c2;
   font-size: 36px;
   font-size: 2.25rem;
 }

@@ -8,6 +8,7 @@
 >
     <defs>
         <style>
+            {{-- todo, replace with the secondaryColor color code --}}
             {{"path#".$countries->pluck('code')->implode(', path#')}} { fill: #f6e58d }
         </style>
         <amcharts:ammap projection="mercator" leftLongitude="-169.522279" topLatitude="83.646363" rightLongitude="190.122401" bottomLatitude="-55.621433"></amcharts:ammap>

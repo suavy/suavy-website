@@ -60,6 +60,9 @@ $cyan: #6cb2eb;
 $gray: #718093;
 $black: #1e272e;
 
+$primaryColor: $indigo;
+$secondaryColor: $pink;
+
 $color-list: (
     (white, $white),
     (lightgray, $lightgray),
@@ -75,6 +78,8 @@ $color-list: (
     (cyan, $cyan),
     (gray, $gray),
     (black, $black),
+    ("primary-color", $primaryColor),
+    ("secondary-color", $secondaryColor)
 );
 
 @each $color, $value in $color-list {
