@@ -15,12 +15,12 @@
             </x-form>
         </div>
 
-        <div class="contact__letter-box js-letter">
+        <div class="contact__letter-box display-none js-letter">
             <div class="contact__letter-box__top"></div>
             <div class="contact__letter-box__front"></div>
         </div>
 
-        <div class="contact__success">
+        <div class="contact__success display-none">
             <div class="alert">
                 <div class="alert__title">title</div>
                 <div class="alert__text">text</div>
@@ -35,12 +35,6 @@
 @push('after-foot-scripts')
     <script>
 
-        $('.js-letter').click(function(){
-            $(this).addClass('contact__letter-box--open');
-            setTimeout(function () {
-                $('.js-letter').addClass('contact__letter-box--close');
-            },1000);
-        });
 
         function animateCSS(element, animationName, callback) {
             const node = document.querySelector(element)
@@ -57,6 +51,17 @@
 
             node.addEventListener('animationend', handleAnimationEnd)
         }
+
+        $('#contact').click(function () {
+            $('.contact__letter-box').show();
+            animateCSS('.contact__letter-box', 'fadeInUp',function () {
+                $(".js-letter").addClass('contact__letter-box--open');
+                setTimeout(function () {
+                    animateCSS('#contact', 'bounceOutDown');
+                    $('.js-letter').addClass('contact__letter-box--close');
+                },1000);
+            });
+        });
 
         $("#contact").submit(function(){
             $name = $('input[name="contact[name]"]');
