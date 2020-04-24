@@ -1,5 +1,5 @@
 <div class="home__row home__row--contact bg-white">
-    <div class="contact">
+    <div class="contact js-contact-all">
 
         <div class="contact__form js-contact-container">
             <x-form link="/contact" id="contact">
@@ -64,6 +64,11 @@
                         $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
                         setTimeout(function () {
                             $('.js-letter').addClass('contact__letter-box--close');
+                            setTimeout(function () {
+                                animateCSS('.js-contact-all','bounceOutRight',function () {
+                                    $('.js-contact-all').addClass('opacity-0');
+                                });
+                            },1000);
                         },300);
                     },1000);
                     /*
