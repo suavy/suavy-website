@@ -1,4 +1,5 @@
 <div class="home__row home__row--contact bg-white">
+    <div class="contact--check display-none js-contact-success"><i class="fad fa-check"></i></div>
     <div class="contact js-contact-all">
 
         <div class="contact__form js-contact-container">
@@ -53,36 +54,46 @@
         }
 
         $('#contact').click(function () {
-            $('.contact__letter-box').show();
-            animateCSS('.contact__letter-box', 'fadeInUp',function () {
-                setTimeout(function () {
 
-                    $(".js-letter").addClass('contact__letter-box--open');
-                    $('.js-contact-container').addClass('contact__form--mini');
+            $('html, body').animate({scrollTop: $("#scroll-to-footer").offset().top}, 100);
+            setTimeout(function () {
 
+                $('.contact__letter-box').show();
+                animateCSS('.contact__letter-box', 'fadeInUp',function () {
                     setTimeout(function () {
-                        $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
+
+                        $(".js-letter").addClass('contact__letter-box--open');
+                        $('.js-contact-container').addClass('contact__form--mini');
+
                         setTimeout(function () {
-                            $('.js-letter').addClass('contact__letter-box--close');
+                            $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
                             setTimeout(function () {
-                                animateCSS('.js-contact-all','bounceOutRight',function () {
-                                    $('.js-contact-all').addClass('opacity-0');
-                                });
-                            },1000);
+                                $('.js-letter').addClass('contact__letter-box--close');
+                                setTimeout(function () {
+                                    animateCSS('.js-contact-all','bounceOutRight',function () {
+                                        $('.js-contact-all').hide();
+                                    });
+                                    setTimeout(function () {
+                                        $('.js-contact-success').show();
+                                        animateCSS('.js-contact-success','bounceInLeft');
+                                    },500);
+                                },1000);
 
-                        },300);
+                            },300);
+                        },1000);
+                        /*
+                        setTimeout(function () {
+                            animateCSS('.js-contact-container', 'slideOutDown',function () {
+                                $('.js-letter').addClass('contact__letter-box--close');
+                                $('.js-contact-container').hide();
+                            });
+                        }, 1000);
+
+                         */
                     },1000);
-                    /*
-                    setTimeout(function () {
-                        animateCSS('.js-contact-container', 'slideOutDown',function () {
-                            $('.js-letter').addClass('contact__letter-box--close');
-                            $('.js-contact-container').hide();
-                        });
-                    }, 1000);
-
-                     */
-                },1000);
-            });
+                });
+                // Go
+            },200);
         });
 
         $("#contact").submit(function(){
