@@ -44,7 +44,7 @@
             for(i=1; i<=countServices; i++){
                 console.log('.js-service-'+i);
                 $('.js-service-'+i).show();
-                animateCSS('.js-service-'+i, 'fadeInLeft');
+                animateCSS('.js-service-'+i, 'jackInTheBox');
             }
             animateCSS('.js-services-show-more', 'fadeOutRight',function () {
                 $('.js-services-show-more').hide();
@@ -56,7 +56,7 @@
         $('.js-services-show-less').click(function () {
             for(i=1; i<=countServices; i++){
                 let e = $('.js-service-'+i);
-                animateCSS('.js-service-'+i, 'fadeOutRight',function(){
+                animateCSS('.js-service-'+i, 'zoomOut',function(){
                     $('.js-services-show-more-or-contact').hide();
                     $('.js-services-show-more').show();
                     e.hide();

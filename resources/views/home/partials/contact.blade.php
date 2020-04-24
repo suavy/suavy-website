@@ -15,27 +15,19 @@
             </x-form>
         </div>
 
-        <div class="contact__letter-box">
+        <div class="contact__letter-box display-none js-letter">
             <div class="contact__letter-box__top"></div>
             <div class="contact__letter-box__front"></div>
         </div>
 
-        <div class="contact__letter-box contact__letter-box--open">
-            <div class="contact__letter-box__top"></div>
-            <div class="contact__letter-box__front"></div>
-        </div>
-
-        <div class="contact__letter-box contact__letter-box--close">
-            <div class="contact__letter-box__top"></div>
-            <div class="contact__letter-box__front"></div>
-        </div>
-
-        <div class="contact__success">
+        <div class="contact__success display-none">
             <div class="alert">
                 <div class="alert__title">title</div>
                 <div class="alert__text">text</div>
             </div>
         </div>
+
+        <i style="text-align: center; background-color:green"></i>
 
     </div>
 </div>
@@ -59,6 +51,17 @@
 
             node.addEventListener('animationend', handleAnimationEnd)
         }
+
+        $('#contact').click(function () {
+            $('.contact__letter-box').show();
+            animateCSS('.contact__letter-box', 'fadeInUp',function () {
+                $(".js-letter").addClass('contact__letter-box--open');
+                setTimeout(function () {
+                    animateCSS('#contact', 'bounceOutDown');
+                    $('.js-letter').addClass('contact__letter-box--close');
+                },1000);
+            });
+        });
 
         $("#contact").submit(function(){
             $name = $('input[name="contact[name]"]');
