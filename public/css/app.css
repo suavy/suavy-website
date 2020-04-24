@@ -456,9 +456,13 @@ html, body {
 .contact__form {
   background-color: #21b989;
   position: relative;
-  z-index: 2;
   margin: 10px;
   padding: 10px;
+  z-index: 4;
+}
+
+.contact__form--below {
+  z-index: 2;
 }
 
 .contact__letter-box {
