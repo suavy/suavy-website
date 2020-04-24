@@ -15,7 +15,7 @@
     transform: scale(.8);
 }
 .contact__form--put{
-    transform: scale(.4) translateY(1800px);
+    transform: scale(.2) translateY(3200px);
     margin-top: -1000px;
 }
 .contact__form--below {
@@ -24,10 +24,10 @@
 
 
 .contact__letter-box {
-    width: 100%;
-    height: 600px;
+    width: 600px;
+    height: 300px;
     z-index: 3;
-    //margin: 350px auto 0;
+    margin: 0 auto;
     border-radius: 10px;
     position: relative;
     transform-style: preserve-3d;
@@ -49,14 +49,14 @@
         height: 0;
     }
     &:before{
-        border-right: 1150px solid transparent;
+        border-right: 600px solid transparent;
         //border-bottom: 600px solid #4a6cc7;
-        border-bottom: 600px solid $purple;
+        border-bottom: 300px solid $purple;
     }
     &:after{
-        border-left: 1150px solid transparent;
+        border-left: 600px solid transparent;
         //border-bottom: 600px solid #3e60b6;
-        border-bottom: 600px solid $yellow;
+        border-bottom: 300px solid $yellow;
     }
 }
 
@@ -75,10 +75,10 @@
         content: '';
         width: 0;
         height: 0;
-        border-right: 575px solid transparent;
-        border-left: 575px solid transparent;
+        border-right: 300px solid transparent;
+        border-left: 300px solid transparent;
         //border-bottom: 330px solid #284083;
-        border-bottom: 330px solid $orange;
+        border-bottom: 150px solid $orange;
     }
 }
 
