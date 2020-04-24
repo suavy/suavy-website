@@ -66,15 +66,11 @@
                         setTimeout(function () {
                             $('.js-letter').addClass('contact__letter-box--close');
                             setTimeout(function () {
-<<<<<<< HEAD
-
-                            },500);
-=======
                                 animateCSS('.js-contact-all','bounceOutRight',function () {
                                     $('.js-contact-all').addClass('opacity-0');
                                 });
                             },1000);
->>>>>>> feature-contact-cdo
+
                         },300);
                     },1000);
                     /*
