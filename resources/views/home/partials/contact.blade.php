@@ -64,7 +64,7 @@
                         $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
                         setTimeout(function () {
                             $('.js-letter').addClass('contact__letter-box--close');
-                        },1000);
+                        },300);
                     },1000);
                     /*
                     setTimeout(function () {

@@ -467,7 +467,7 @@ html, body {
 }
 
 .contact__form--put {
-  transform: scale(0.6) translateY(1500px);
+  transform: scale(0.4) translateY(2000px);
 }
 
 .contact__form--below {
