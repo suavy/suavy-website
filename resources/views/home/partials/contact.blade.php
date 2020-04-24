@@ -57,9 +57,12 @@
 
 
                 $('.contact__letter-box').show();
+                setTimeout(function () {
+                    $('html, body').animate({scrollTop: $("#scroll-to-footer").offset().top}, 300);
+                },150);
                 animateCSS('.contact__letter-box', 'fadeInUp',function () {
 
-                    $('html, body').animate({scrollTop: $("#scroll-to-footer").offset().top}, 100);
+
 
                     setTimeout(function () {
 
@@ -91,7 +94,7 @@
                         }, 1000);
 
                          */
-                    },1000);
+                    },700);
                 });
                 // Go
         });
