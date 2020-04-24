@@ -454,7 +454,7 @@ html, body {
 }
 
 .contact__form {
-  background-color: #d2d7d3;
+  background-color: #21b989;
   position: relative;
   z-index: 2;
   margin: 10px;
@@ -464,6 +464,7 @@ html, body {
 .contact__letter-box {
   width: 100%;
   height: 600px;
+  z-index: 3;
   border-radius: 10px;
   position: relative;
   transform-style: preserve-3d;
@@ -476,7 +477,6 @@ html, body {
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
-  z-index: 999999;
 }
 .contact__letter-box__front:before, .contact__letter-box__front:after {
   content: "";
@@ -486,11 +486,11 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 1150px solid transparent;
-  border-bottom: 600px solid #4a6cc7;
+  border-bottom: 600px solid #786fa6;
 }
 .contact__letter-box__front:after {
   border-left: 1150px solid transparent;
-  border-bottom: 600px solid #3e60b6;
+  border-bottom: 600px solid #f6e58d;
 }
 
 .contact__letter-box__top {
@@ -499,7 +499,6 @@ html, body {
   height: 58%;
   border-radius: 10px;
   overflow: hidden;
-  z-index: 99999;
   transform-style: preserve-3d;
   transform-origin: center bottom;
   transform: translateY(-98%);
@@ -512,7 +511,7 @@ html, body {
   height: 0;
   border-right: 575px solid transparent;
   border-left: 575px solid transparent;
-  border-bottom: 330px solid #284083;
+  border-bottom: 330px solid #f3a683;
 }
 
 .contact__letter-box--open .contact__letter-box__top {
