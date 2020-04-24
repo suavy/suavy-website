@@ -9,8 +9,14 @@
     margin: 10px;
     padding: 10px;
     z-index: 4;
+    transition: all .2s ease-in-out;
 }
-
+.contact__form--mini {
+    transform: scale(.8);
+}
+.contact__form--put{
+    transform: scale(.6) translateY(1500px);
+}
 .contact__form--below {
     z-index: 2;
 }

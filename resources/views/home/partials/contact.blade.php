@@ -56,13 +56,25 @@
             $('.contact__letter-box').show();
             animateCSS('.contact__letter-box', 'fadeInUp',function () {
                 setTimeout(function () {
+
                     $(".js-letter").addClass('contact__letter-box--open');
+                    $('.js-contact-container').addClass('contact__form--mini');
+
+                    setTimeout(function () {
+                        $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
+                        setTimeout(function () {
+                            $('.js-letter').addClass('contact__letter-box--close');
+                        },1000);
+                    },1000);
+                    /*
                     setTimeout(function () {
                         animateCSS('.js-contact-container', 'slideOutDown',function () {
                             $('.js-letter').addClass('contact__letter-box--close');
                             $('.js-contact-container').hide();
                         });
                     }, 1000);
+
+                     */
                 },1000);
             });
         });
