@@ -467,11 +467,15 @@ html, body {
 }
 
 .contact__form--put {
-  transform: scale(0.4) translateY(2000px);
+  transform: scale(0.4) translateY(600px);
 }
 
 .contact__form--below {
   z-index: 2;
+}
+
+.contact__letter-box--up {
+  transform: translateY(-600px);
 }
 
 .contact__letter-box {

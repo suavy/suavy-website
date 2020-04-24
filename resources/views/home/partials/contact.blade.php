@@ -62,8 +62,12 @@
 
                     setTimeout(function () {
                         $('.js-contact-container').addClass('contact__form--below').addClass('contact__form--put');
+                        $('.js-letter').addClass('contact__letter-box--up');
                         setTimeout(function () {
                             $('.js-letter').addClass('contact__letter-box--close');
+                            setTimeout(function () {
+
+                            },500);
                         },300);
                     },1000);
                     /*
