@@ -15,7 +15,12 @@
     transform: scale(.8);
 }
 .contact__form--put{
+<<<<<<< HEAD
     transform: scale(.4) translateY(600px);
+=======
+    transform: scale(.4) translateY(1800px);
+    margin-top: -1000px;
+>>>>>>> feature-contact-cdo
 }
 .contact__form--below {
     z-index: 2;

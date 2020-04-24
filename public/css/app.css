@@ -467,7 +467,12 @@ html, body {
 }
 
 .contact__form--put {
+<<<<<<< HEAD
   transform: scale(0.4) translateY(600px);
+=======
+  transform: scale(0.4) translateY(1800px);
+  margin-top: -1000px;
+>>>>>>> feature-contact-cdo
 }
 
 .contact__form--below {
