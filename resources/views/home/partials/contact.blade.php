@@ -18,7 +18,7 @@
 
         <div class="contact__letter-box display-none js-letter">
             <div class="contact__letter-box__top"></div>
-            <div class="contact__letter-box__front"></div>
+            <div class="contact__letter-box__front" id="scroll-to-footer"></div>
         </div>
 
         <div class="contact__success display-none">
@@ -55,11 +55,12 @@
 
         $('#contact').click(function () {
 
-            $('html, body').animate({scrollTop: $("#scroll-to-footer").offset().top}, 100);
-            setTimeout(function () {
 
                 $('.contact__letter-box').show();
                 animateCSS('.contact__letter-box', 'fadeInUp',function () {
+
+                    $('html, body').animate({scrollTop: $("#scroll-to-footer").offset().top}, 100);
+
                     setTimeout(function () {
 
                         $(".js-letter").addClass('contact__letter-box--open');
@@ -93,7 +94,6 @@
                     },1000);
                 });
                 // Go
-            },200);
         });
 
         $("#contact").submit(function(){
