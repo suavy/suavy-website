@@ -1,7 +1,7 @@
 <div class="home__row home__row--contact bg-white">
     <div class="contact">
 
-        <div class="contact__form">
+        <div class="contact__form js-contact-container">
             <x-form link="/contact" id="contact">
                 <x-inputs.checkboxes label="What type(s) of services do you need ? 🤔" name="contact[services][]" :options="$contactServices"/>
                 <x-inputs.checkboxes label="Delivery Time 🐢" name="contact[deliveries][]" :options="$contactDeliveries"/>
@@ -55,10 +55,14 @@
         $('#contact').click(function () {
             $('.contact__letter-box').show();
             animateCSS('.contact__letter-box', 'fadeInUp',function () {
-                $(".js-letter").addClass('contact__letter-box--open');
                 setTimeout(function () {
-                    animateCSS('#contact', 'bounceOutDown');
-                    $('.js-letter').addClass('contact__letter-box--close');
+                    $(".js-letter").addClass('contact__letter-box--open');
+                    setTimeout(function () {
+                        animateCSS('.js-contact-container', 'slideOutDown',function () {
+                            $('.js-letter').addClass('contact__letter-box--close');
+                            $('.js-contact-container').hide();
+                        });
+                    }, 1000);
                 },1000);
             });
         });
