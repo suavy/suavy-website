@@ -1,6 +1,15 @@
+.contact--check {
+    text-align: center;
+    i {
+        @include font-size(200px);
+        color: $green;
+    }
+}
+
 .contact {
     max-width: 1150px;
     margin: 0 auto;
+    min-height: 400px;
 }
 
 .contact__form {
@@ -22,12 +31,6 @@
     transform: scale(.15) translateY(4000px);
     margin-top: -1050px;
 }
-
-.contact--check{
-    @include font-size(400px);
-    text-align: center;
-}
-
 
 .contact__letter-box {
     width: 600px;
@@ -56,13 +59,13 @@
     }
     &:before{
         border-right: 600px solid transparent;
-        //border-bottom: 300px solid #4a6cc7;
-        border-bottom: 300px solid $purple;
+        border-bottom: 300px solid #4a6cc7;
+        border-bottom: 300px solid $primaryColor;
     }
     &:after{
         border-left: 600px solid transparent;
-        //border-bottom: 300px solid #3e60b6;
-        border-bottom: 300px solid $yellow;
+        border-bottom: 300px solid #3e60b6;
+        border-bottom: 300px solid darken($primaryColor, 10%);
     }
 }
 
@@ -84,7 +87,7 @@
         border-right: 300px solid transparent;
         border-left: 300px solid transparent;
         //border-bottom: 157px solid #284083;
-        border-bottom: 157px solid $orange;
+        border-bottom: 157px solid $secondaryColor;
     }
 }
 

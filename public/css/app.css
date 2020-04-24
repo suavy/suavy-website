@@ -448,9 +448,19 @@ html, body {
           filter: brightness(0);
 }
 
+.contact--check {
+  text-align: center;
+}
+.contact--check i {
+  font-size: 200px;
+  font-size: 12.5rem;
+  color: #21b989;
+}
+
 .contact {
   max-width: 1150px;
   margin: 0 auto;
+  min-height: 400px;
 }
 
 .contact__form {
@@ -472,12 +482,6 @@ html, body {
   z-index: 2;
   transform: scale(0.15) translateY(4000px);
   margin-top: -1050px;
-}
-
-.contact--check {
-  font-size: 400px;
-  font-size: 25rem;
-  text-align: center;
 }
 
 .contact__letter-box {
@@ -506,11 +510,13 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #786fa6;
+  border-bottom: 300px solid #4a6cc7;
+  border-bottom: 300px solid #6574cd;
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #f6e58d;
+  border-bottom: 300px solid #3e60b6;
+  border-bottom: 300px solid #3f51c1;
 }
 
 .contact__letter-box__top {
@@ -531,7 +537,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #f3a683;
+  border-bottom: 157px solid #f8a5c2;
 }
 
 .contact__letter-box--open .contact__letter-box__top {
