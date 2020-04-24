@@ -458,22 +458,20 @@ html, body {
   position: relative;
   margin: 10px;
   padding: 10px;
+  border-radius: 20px;
   z-index: 4;
   transition: all 0.6s ease-in-out;
 }
 
 .contact__form--mini {
-  transform: scale(0.6);
+  transform: scale(0.5);
   margin-top: -200px;
-}
-
-.contact__form--put {
-  transform: scale(0.2) translateY(3200px);
-  margin-top: -1000px;
 }
 
 .contact__form--below {
   z-index: 2;
+  transform: scale(0.15) translateY(4000px);
+  margin-top: -1050px;
 }
 
 .contact--check {
@@ -533,7 +531,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 150px solid #f3a683;
+  border-bottom: 157px solid #f3a683;
 }
 
 .contact__letter-box--open .contact__letter-box__top {
