@@ -13,7 +13,7 @@
 }
 
 .contact__form {
-    background-color: $green;
+    background-color: $lightgray;
     position: relative;
     margin: 10px;
     padding: 10px;
@@ -37,12 +37,15 @@
     height: 300px;
     z-index: 3;
     margin: 0 auto;
-    border-radius: 10px;
+    @include border-radius(10px);
     position: relative;
     transform-style: preserve-3d;
-    //opacity: 0;
-    //transform: scale(0.5);
     transition: all 0.3s ease-out;
+    @include media('tablet-large') {
+        width: 300px;
+        height: 150px;
+        @include border-radius(5px);
+    }
 }
 
 .contact__letter-box__front {
@@ -59,13 +62,19 @@
     }
     &:before{
         border-right: 600px solid transparent;
-        border-bottom: 300px solid #4a6cc7;
         border-bottom: 300px solid $primaryColor;
+        @include media('tablet-large') {
+            border-right-width: 300px;
+            border-bottom-width: 150px;
+        }
     }
     &:after{
         border-left: 600px solid transparent;
-        border-bottom: 300px solid #3e60b6;
-        border-bottom: 300px solid darken($primaryColor, 10%);
+        border-bottom: 300px solid darken($primaryColor, 20%);
+        @include media('tablet-large') {
+            border-left-width: 300px;
+            border-bottom-width: 150px;
+        }
     }
 }
 
@@ -73,6 +82,9 @@
     position: absolute;
     width: 100%;
     height: 58%;
+    @include media('tablet-large') {
+        height: 62%;
+    }
     border-radius: 10px;
     overflow: hidden;
     transform-style: preserve-3d;
@@ -86,8 +98,12 @@
         height: 0;
         border-right: 300px solid transparent;
         border-left: 300px solid transparent;
-        //border-bottom: 157px solid #284083;
         border-bottom: 157px solid $secondaryColor;
+        @include media('tablet-large') {
+            border-right-width: 150px;
+            border-left-width: 150px;
+            border-bottom-width: 76px;
+        }
     }
 }
 

@@ -464,7 +464,7 @@ html, body {
 }
 
 .contact__form {
-  background-color: #21b989;
+  background-color: #d2d7d3;
   position: relative;
   margin: 10px;
   padding: 10px;
@@ -494,6 +494,13 @@ html, body {
   transform-style: preserve-3d;
   transition: all 0.3s ease-out;
 }
+@media (max-width: 768px) {
+  .contact__letter-box {
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+  }
+}
 
 .contact__letter-box__front {
   position: absolute;
@@ -510,13 +517,23 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #4a6cc7;
   border-bottom: 300px solid #6574cd;
+}
+@media (max-width: 768px) {
+  .contact__letter-box__front:before {
+    border-right-width: 300px;
+    border-bottom-width: 150px;
+  }
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #3e60b6;
-  border-bottom: 300px solid #3f51c1;
+  border-bottom: 300px solid #32419a;
+}
+@media (max-width: 768px) {
+  .contact__letter-box__front:after {
+    border-left-width: 300px;
+    border-bottom-width: 150px;
+  }
 }
 
 .contact__letter-box__top {
@@ -531,6 +548,11 @@ html, body {
   transform: translateY(-98%) rotateX(175deg);
   transition: all 0.6s 0.3s ease-out;
 }
+@media (max-width: 768px) {
+  .contact__letter-box__top {
+    height: 62%;
+  }
+}
 .contact__letter-box__top:before {
   content: "";
   width: 0;
@@ -538,6 +560,13 @@ html, body {
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
   border-bottom: 157px solid #f8a5c2;
+}
+@media (max-width: 768px) {
+  .contact__letter-box__top:before {
+    border-right-width: 150px;
+    border-left-width: 150px;
+    border-bottom-width: 76px;
+  }
 }
 
 .contact__letter-box--open .contact__letter-box__top {
@@ -1464,7 +1493,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #21b989;
+  background-color: #6574cd;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
