@@ -2,7 +2,7 @@
     text-align: center;
     i {
         @include font-size(200px);
-        color: $green;
+        color: $primaryColor;
     }
 }
 

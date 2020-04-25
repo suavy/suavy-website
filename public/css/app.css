@@ -130,8 +130,8 @@ a {
 }
 
 .bg-white {
-  background-color: #f5f6fa;
-  fill: #f5f6fa;
+  background-color: #f5f6fa !important;
+  fill: #f5f6fa !important;
 }
 
 .bg-gradient-white {
@@ -144,8 +144,8 @@ a {
 }
 
 .bg-lightgray {
-  background-color: #d2d7d3;
-  fill: #d2d7d3;
+  background-color: #d2d7d3 !important;
+  fill: #d2d7d3 !important;
 }
 
 .bg-gradient-lightgray {
@@ -158,8 +158,8 @@ a {
 }
 
 .bg-blue {
-  background-color: #778beb;
-  fill: #778beb;
+  background-color: #778beb !important;
+  fill: #778beb !important;
 }
 
 .bg-gradient-blue {
@@ -172,8 +172,8 @@ a {
 }
 
 .bg-indigo {
-  background-color: #6574cd;
-  fill: #6574cd;
+  background-color: #6574cd !important;
+  fill: #6574cd !important;
 }
 
 .bg-gradient-indigo {
@@ -186,8 +186,8 @@ a {
 }
 
 .bg-purple {
-  background-color: #786fa6;
-  fill: #786fa6;
+  background-color: #786fa6 !important;
+  fill: #786fa6 !important;
 }
 
 .bg-gradient-purple {
@@ -200,8 +200,8 @@ a {
 }
 
 .bg-pink {
-  background-color: #f8a5c2;
-  fill: #f8a5c2;
+  background-color: #f8a5c2 !important;
+  fill: #f8a5c2 !important;
 }
 
 .bg-gradient-pink {
@@ -214,8 +214,8 @@ a {
 }
 
 .bg-red {
-  background-color: #e3342f;
-  fill: #e3342f;
+  background-color: #e3342f !important;
+  fill: #e3342f !important;
 }
 
 .bg-gradient-red {
@@ -228,8 +228,8 @@ a {
 }
 
 .bg-orange {
-  background-color: #f3a683;
-  fill: #f3a683;
+  background-color: #f3a683 !important;
+  fill: #f3a683 !important;
 }
 
 .bg-gradient-orange {
@@ -242,8 +242,8 @@ a {
 }
 
 .bg-yellow {
-  background-color: #f6e58d;
-  fill: #f6e58d;
+  background-color: #f6e58d !important;
+  fill: #f6e58d !important;
 }
 
 .bg-gradient-yellow {
@@ -256,8 +256,8 @@ a {
 }
 
 .bg-green {
-  background-color: #21b989;
-  fill: #21b989;
+  background-color: #21b989 !important;
+  fill: #21b989 !important;
 }
 
 .bg-gradient-green {
@@ -270,8 +270,8 @@ a {
 }
 
 .bg-teal {
-  background-color: #4dc0b5;
-  fill: #4dc0b5;
+  background-color: #4dc0b5 !important;
+  fill: #4dc0b5 !important;
 }
 
 .bg-gradient-teal {
@@ -284,8 +284,8 @@ a {
 }
 
 .bg-cyan {
-  background-color: #6cb2eb;
-  fill: #6cb2eb;
+  background-color: #6cb2eb !important;
+  fill: #6cb2eb !important;
 }
 
 .bg-gradient-cyan {
@@ -298,8 +298,8 @@ a {
 }
 
 .bg-gray {
-  background-color: #718093;
-  fill: #718093;
+  background-color: #718093 !important;
+  fill: #718093 !important;
 }
 
 .bg-gradient-gray {
@@ -312,8 +312,8 @@ a {
 }
 
 .bg-black {
-  background-color: #1e272e;
-  fill: #1e272e;
+  background-color: #1e272e !important;
+  fill: #1e272e !important;
 }
 
 .bg-gradient-black {
@@ -322,31 +322,31 @@ a {
 }
 
 .color-primary {
-  color: #6574cd;
+  color: #130f40;
 }
 
 .bg-primary {
-  background-color: #6574cd;
-  fill: #6574cd;
+  background-color: #130f40 !important;
+  fill: #130f40 !important;
 }
 
 .bg-gradient-primary {
-  background-color: #6574cd;
-  background-image: linear-gradient(0deg, #6574cd 0%, #3f51c1 100%);
+  background-color: #130f40;
+  background-image: linear-gradient(0deg, #130f40 0%, #070517 100%);
 }
 
 .color-secondary {
-  color: #f8a5c2;
+  color: #F61067;
 }
 
 .bg-secondary {
-  background-color: #f8a5c2;
-  fill: #f8a5c2;
+  background-color: #F61067 !important;
+  fill: #F61067 !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #f8a5c2;
-  background-image: linear-gradient(0deg, #f8a5c2 0%, #f476a2 100%);
+  background-color: #F61067;
+  background-image: linear-gradient(0deg, #F61067 0%, #cb0852 100%);
 }
 
 /* _fonts
@@ -359,6 +359,7 @@ html, body {
   font-size: 16px;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .center {
@@ -454,7 +455,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #21b989;
+  color: #130f40;
 }
 
 .contact {
@@ -517,7 +518,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #6574cd;
+  border-bottom: 300px solid #130f40;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -527,7 +528,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #32419a;
+  border-bottom: 300px solid black;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -559,7 +560,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #f8a5c2;
+  border-bottom: 157px solid #F61067;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -651,7 +652,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #f8a5c2;
+  color: #F61067;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -747,7 +748,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #f8a5c2;
+  background-color: #F61067;
   border: 2px solid #718093;
   line-height: 24px;
   font-size: 14px;
@@ -1493,7 +1494,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #6574cd;
+  background-color: #130f40;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1591,7 +1592,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #f8a5c2;
+  color: #F61067;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1620,7 +1621,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6574cd, #f8a5c2);
+  background: linear-gradient(180deg, #130f40, #F61067);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
