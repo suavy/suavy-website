@@ -74,13 +74,13 @@
                             setTimeout(function () {
                                 $('.js-letter').addClass('contact__letter-box--close');
                                 setTimeout(function () {
-                                    animateCSS('.js-contact-all','bounceOutRight',function () {
+                                    animateCSS('.js-contact-all','flipOutX',function () {
                                         $('.js-contact-all').hide();
+                                        setTimeout(function () {
+                                            $('.js-contact-success').show();
+                                            animateCSS('.js-contact-success', 'flipInX');
+                                        },50);
                                     });
-                                    setTimeout(function () {
-                                        $('.js-contact-success').show();
-                                        animateCSS('.js-contact-success','bounceInLeft');
-                                    },500);
                                 },1000);
 
                             },300);
