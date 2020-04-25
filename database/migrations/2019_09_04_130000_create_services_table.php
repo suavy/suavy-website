@@ -71,7 +71,7 @@ class CreateServicesTable extends Migration
         /* Cat 1 */
         Service::create([
             'icon' => 'fad fa-fw fa-browser',
-            'name_fr' => 'Développement de votre site', 'name_pt' => '', 'name_en' => '', 'name_es' => '',
+            'name_fr' => 'Développement de votre site', 'name_pt' => 'Desenvolvimento Web', 'name_en' => 'Website development', 'name_es' => '',
             'parent_id' => 1,
         ]);
         Service::create([
@@ -81,7 +81,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-exchange',
-            'name_fr' => "Développement d'API", 'name_pt' => 'Desenvolvimento de API', 'name_en' => 'API development', 'name_es' => '',
+            'name_fr' => "Développement d'API", 'name_pt' => 'Desenvolvimento de API\'s', 'name_en' => 'API development', 'name_es' => '',
             'parent_id' => 1,
         ]);
         Service::create([
@@ -102,7 +102,7 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-server',
-            'name_fr' => 'Gestion de serveur', 'name_pt' => 'Gestão de servidor', 'name_en' => 'Server management', 'name_es' => '',
+            'name_fr' => 'Gestion de serveur', 'name_pt' => 'Gestão de servidores', 'name_en' => 'Server management', 'name_es' => '',
             'parent_id' => 1,
         ]);
 
@@ -125,29 +125,29 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-paint-roller',
-            'name_fr' => 'Intégration front', 'name_pt' => 'Integração front', 'name_en' => 'Front integration', 'name_es' => '',
+            'name_fr' => 'Intégration front-end', 'name_pt' => 'Integração front-end', 'name_en' => 'Front-end integration', 'name_es' => '',
             'parent_id' => 2,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-paint-brush-alt',
-            'name_fr' => 'Création de logo', 'name_pt' => 'Logo', 'name_en' => 'Logo', 'name_es' => 'Logo',
+            'name_fr' => 'Logo design', 'name_pt' => 'Design de logo', 'name_en' => 'Logo design', 'name_es' => 'Logo',
             'parent_id' => 2,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-border-style-alt',
-            'name_fr' => 'Prototype', 'name_pt' => 'Prototype', 'name_en' => 'Prototype', 'name_es' => 'Logo',
+            'name_fr' => 'Prototype', 'name_pt' => 'Protótipo', 'name_en' => 'Prototype', 'name_es' => 'Logo',
             'parent_id' => 2,
         ]);
 
         /* Cat 3 */
         Service::create([
             'icon' => 'fad fa-fw fa-chart-network',
-            'name_fr' => 'Track your audience', 'name_pt' => 'Acompanhe seu público', 'name_en' => 'Track your audience', 'name_es' => '',
+            'name_fr' => 'Tracking', 'name_pt' => 'Acompanhe seu público', 'name_en' => 'Track your audience', 'name_es' => '',
             'parent_id' => 3,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-database',
-            'name_fr' => 'Gestion/optimisation de base de données', 'name_pt' => 'Gestão/otimização de base de dados', 'name_en' => 'Database management/optimization', 'name_es' => '',
+            'name_fr' => 'Gestion/optimisation de base de données', 'name_pt' => 'Gestão/otimização de base de dados', 'name_en' => 'Database management & optimization', 'name_es' => '',
             'parent_id' => 3,
         ]);
         Service::create([
@@ -155,36 +155,37 @@ class CreateServicesTable extends Migration
             'name_fr' => 'Data Analyse', 'name_pt' => 'Data analysis', 'name_en' => 'Data analysis', 'name_es' => '',
             'parent_id' => 3,
         ]);
-        Service::create([
-            'icon' => 'fad fa-fw fa-vials',
-            'name_fr' => 'A/B testing', 'name_pt' => 'A/B testing', 'name_en' => 'A/B testing', 'name_es' => '',
-            'parent_id' => 3,
-        ]);
+
         Service::create([
             'icon' => 'fad fa-fw fa-wrench',
-            'name_fr' => 'Stratégie Data (Marketing data-driven & CRM)', 'name_pt' => 'Data strategy (Marketing data-driven & CRM)', 'name_en' => 'Data strategy (Marketing data-driven & CRM)', 'name_es' => '',
+            'name_fr' => 'Stratégie Data (Marketing data-driven & CRM)', 'name_pt' => 'Data strategy (Marketing data-driven & CRM)', 'name_en' => 'Data strategy (Data-driven Marketing & CRM)', 'name_es' => '',
             'parent_id' => 3,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-layer-group',
-            'name_fr' => 'Déploiement de cas d’usages', 'name_pt' => 'Deployment of use cases', 'name_en' => 'Deployment of use cases', 'name_es' => '',
+            'name_fr' => 'Déploiement de cas d’usages', 'name_pt' => 'Implantação de casos de uso', 'name_en' => 'Deployment of use cases', 'name_es' => '',
             'parent_id' => 3,
         ]);
 
         /* Cat 4 */
         Service::create([
             'icon' => 'fad fa-fw fa-bullhorn',
-            'name_fr' => 'Communication', 'name_pt' => 'Communication', 'name_en' => 'Communication', 'name_es' => '',
+            'name_fr' => 'Communication', 'name_pt' => 'Comunicação', 'name_en' => 'Communication', 'name_es' => '',
             'parent_id' => 4,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-comments',
-            'name_fr' => 'Marketing digital & réseaux sociaux', 'name_pt' => 'Digital & social media marketing', 'name_en' => 'Digital & social media marketing', 'name_es' => '',
+            'name_fr' => 'Marketing digital & réseaux sociaux', 'name_pt' => 'Marketing Digital & social media ', 'name_en' => 'Digital & social media marketing', 'name_es' => '',
             'parent_id' => 4,
         ]);
         Service::create([
             'icon' => 'fad fa-fw fa-eye',
             'name_fr' => 'Accompagnement SEO', 'name_pt' => 'Suporte SEO', 'name_en' => 'SEO support', 'name_es' => '',
+            'parent_id' => 4,
+        ]);
+        Service::create([
+            'icon' => 'fad fa-fw fa-vials',
+            'name_fr' => 'A/B testing', 'name_pt' => 'Teste A/B', 'name_en' => 'A/B testing', 'name_es' => '',
             'parent_id' => 4,
         ]);
     }
