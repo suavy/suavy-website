@@ -7,7 +7,6 @@
     z-index: 1000;
     @include media('screen-small') {
         padding: 10px 15px;
-        //border-bottom: 2px solid $white;
     }
 }
 
@@ -21,6 +20,9 @@
     @include font-size(36px);
     span {
         color: $white;
+    }
+    @include media('tablet-large') {
+        @include font-size(28px);
     }
 }
 

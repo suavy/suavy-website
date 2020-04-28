@@ -2,6 +2,9 @@
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
+    @include media('tablet-large') {
+        padding-top: 40px;
+    }
 }
 
 .team__member-container {
@@ -10,35 +13,23 @@
     width: 33.333%;
     &:nth-child(3n+1):nth-last-child(-n+3),
     &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
-        //background-color: $red;
         margin-bottom: 20px;
     }
     @include media('screen-small') {
         width: 50%;
         &:nth-child(3n+1):nth-last-child(-n+3),
         &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
-            //background-color: $green;
-            margin-bottom: inherit;
+            margin-bottom: 0;
         }
         &:nth-child(2n+1):nth-last-child(-n+2),
         &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
-            //background-color: $pink;
             margin-bottom: 20px;
         }
     }
-    @include media('tablet-small') {
-        width: 100%;
-        &:nth-child(2n+1):nth-last-child(-n+2),
-        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
-            //background-color: $yellow;
-            margin-bottom: inherit;
-        }
-        &:last-child {
-            //background-color: $purple;
-            margin-bottom: 20px;
-        }
+    @include media('tablet-large') {
+        margin-bottom: 0;
+    }
 
-    }
     box-sizing: border-box;
     padding: 0 10px 10px;
     margin-bottom: 120px;
@@ -61,6 +52,11 @@
             transform: rotate3d(0,1,0,-180deg);
         }
     }
+    @include media('tablet-large') {
+        width: 140px;
+        height: 140px;
+        margin:  0 auto;
+    }
 }
 
 .team__member__picture__image {
@@ -70,6 +66,7 @@
 }
 
 .team__member__picture__border {
+    display: none; // remove this to add a transparent border
     @include border-radius(50%);
     position: absolute;
     top: 0;
@@ -102,6 +99,7 @@
     align-items: center;
     transform: rotate3d(0,1,0,-180deg);
     transform-style: preserve-3d;
+    display: none; // remove this to add back the hover effect
 }
 
 .team__member__picture__hover__content__citation {
@@ -117,19 +115,25 @@
     @include font-size(16px);
     font-weight: bold;
     vertical-align: top;
+    @include media('tablet-large') {
+        @include font-size(15px);
+    }
     span {
         font-family: $titleFont;
         @include font-size(17px);
-
-
+        @include media('tablet-large') {
+            @include font-size(16px);
+        }
     }
 }
 
 .team__member__role {
     padding: 0;
     @include font-size(14px);
-    //text-transform: uppercase;
     color: $gray;
+    @include media('tablet-large') {
+        @include font-size(13px);
+    }
 }
 
 .team__member__languages {
@@ -144,10 +148,12 @@
         width: auto;
     }
 }
-
-.team__member__location {
-    padding: 0 0 5px;
-    color: $gray;
-    @include font-size(14px);
-    display: none;
+/*
+.team__member__links {
+    padding: 2px 0 0;
 }
+
+.team__member__link {
+    display: inline-block;
+}
+*/

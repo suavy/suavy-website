@@ -32,11 +32,20 @@
 }
 
 .home__row--team {
-    padding: 0 0 40px !important;
+    padding: 0 0 40px;
+    @include media('tablet-large') {
+        padding: 10px;
+    }
 }
 
 .home__row--contact {
     padding: 60px;
+    @include media('screen-small') {
+        padding: 20px;
+    }
+    @include media('tablet-large') {
+        padding: 10px;
+    }
 }
 
 /*

@@ -1,7 +1,7 @@
-$firstServiceCategoryColor: $blue;
-$secondServiceCategoryColor: $pink;
+$firstServiceCategoryColor: $primaryColor;
+$secondServiceCategoryColor: $secondaryColor;
 $thirdServiceCategoryColor: $orange;
-$fourthServiceCategoryColor: $purple;
+$fourthServiceCategoryColor: $blue;
 
 .services {
     text-align: center;
@@ -20,9 +20,14 @@ $fourthServiceCategoryColor: $purple;
     box-sizing: border-box;
     padding: 20px 40px 40px;
     vertical-align: top;
-    @include media('screen-small') {
-        padding: 20px;
+    @include media('screen-large') {
+        padding: 10px;
         width: 50%;
+    }
+    @include media('tablet-large') {
+        padding: 10px;
+        width: 100%;
+        display: block;
     }
 }
 

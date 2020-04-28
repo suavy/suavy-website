@@ -581,6 +581,7 @@ html, body {
 
 .link {
   color: #1e272e;
+  cursor: pointer;
 }
 
 .link--underline {
@@ -952,10 +953,17 @@ html, body {
   padding: 20px 40px 40px;
   vertical-align: top;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .service-categories__category {
-    padding: 20px;
+    padding: 10px;
     width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .service-categories__category {
+    padding: 10px;
+    width: 100%;
+    display: block;
   }
 }
 
@@ -1018,25 +1026,25 @@ html, body {
 }
 
 .service-categories__category--first .service-categories__category__icon {
-  background-color: #778beb;
-  background-image: linear-gradient(0deg, #778beb 0%, #4b65e4 100%);
+  background-color: #130f40;
+  background-image: linear-gradient(0deg, #130f40 0%, #070517 100%);
 }
 .service-categories__category--first .service-categories__category__services {
-  border: 2px solid #778beb;
+  border: 2px solid #130f40;
 }
 .service-categories__category--first .service-categories__category__services:before {
-  border-bottom-color: #778beb;
+  border-bottom-color: #130f40;
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #f8a5c2;
-  background-image: linear-gradient(0deg, #f8a5c2 0%, #f476a2 100%);
+  background-color: #ef5777;
+  background-image: linear-gradient(0deg, #ef5777 0%, #eb2851 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #f8a5c2;
+  border: 2px solid #ef5777;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #f8a5c2;
+  border-bottom-color: #ef5777;
 }
 
 .service-categories__category--third .service-categories__category__icon {
@@ -1051,14 +1059,14 @@ html, body {
 }
 
 .service-categories__category--fourth .service-categories__category__icon {
-  background-color: #786fa6;
-  background-image: linear-gradient(0deg, #786fa6 0%, #5f568c 100%);
+  background-color: #778beb;
+  background-image: linear-gradient(0deg, #778beb 0%, #4b65e4 100%);
 }
 .service-categories__category--fourth .service-categories__category__services {
-  border: 2px solid #786fa6;
+  border: 2px solid #778beb;
 }
 .service-categories__category--fourth .service-categories__category__services:before {
-  border-bottom-color: #786fa6;
+  border-bottom-color: #778beb;
 }
 
 .service-categories__category__services__item {
@@ -1186,6 +1194,11 @@ html, body {
   max-width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .team {
+    padding-top: 40px;
+  }
+}
 
 .team__member-container {
   position: relative;
@@ -1203,21 +1216,15 @@ html, body {
     width: 50%;
   }
   .team__member-container:nth-child(3n+1):nth-last-child(-n+3), .team__member-container:nth-child(3n+1):nth-last-child(-n+3) ~ .team__member-container {
-    margin-bottom: inherit;
+    margin-bottom: 0;
   }
   .team__member-container:nth-child(2n+1):nth-last-child(-n+2), .team__member-container:nth-child(2n+1):nth-last-child(-n+2) ~ .team__member-container {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .team__member-container {
-    width: 100%;
-  }
-  .team__member-container:nth-child(2n+1):nth-last-child(-n+2), .team__member-container:nth-child(2n+1):nth-last-child(-n+2) ~ .team__member-container {
-    margin-bottom: inherit;
-  }
-  .team__member-container:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -1236,6 +1243,13 @@ html, body {
   opacity: 1;
   transform: rotate3d(0, 1, 0, -180deg);
 }
+@media (max-width: 768px) {
+  .team__member__picture {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+}
 
 .team__member__picture__image {
   border-radius: 50%;
@@ -1244,6 +1258,7 @@ html, body {
 }
 
 .team__member__picture__border {
+  display: none;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -1275,6 +1290,7 @@ html, body {
   align-items: center;
   transform: rotate3d(0, 1, 0, -180deg);
   transform-style: preserve-3d;
+  display: none;
 }
 
 .team__member__picture__hover__content__citation {
@@ -1291,10 +1307,22 @@ html, body {
   font-weight: bold;
   vertical-align: top;
 }
+@media (max-width: 768px) {
+  .team__member__name {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
 .team__member__name span {
   font-family: "Abril Fatface", cursive;
   font-size: 17px;
   font-size: 1.0625rem;
+}
+@media (max-width: 768px) {
+  .team__member__name span {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 .team__member__role {
@@ -1302,6 +1330,12 @@ html, body {
   font-size: 14px;
   font-size: 0.875rem;
   color: #718093;
+}
+@media (max-width: 768px) {
+  .team__member__role {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
 }
 
 .team__member__languages {
@@ -1317,14 +1351,15 @@ html, body {
   width: auto;
 }
 
-.team__member__location {
-  padding: 0 0 5px;
-  color: #718093;
-  font-size: 14px;
-  font-size: 0.875rem;
-  display: none;
+/*
+.team__member__links {
+    padding: 2px 0 0;
 }
 
+.team__member__link {
+    display: inline-block;
+}
+*/
 .title {
   font-family: "Abril Fatface", cursive;
   font-size: 32px;
@@ -1342,6 +1377,12 @@ label.label {
   font-size: 1.375rem;
   padding: 0 10px 5px;
 }
+@media (max-width: 768px) {
+  label.label {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
 
 .error label.label {
   color: #e3342f;
@@ -1351,9 +1392,20 @@ label.label {
   white-space: normal;
   padding: 15px 0;
 }
+@media (max-width: 768px) {
+  .form-group {
+    padding: 5px 0;
+  }
+}
 .form-group .form-group {
   padding: 0;
   margin: 10px;
+}
+@media (max-width: 768px) {
+  .form-group .form-group {
+    padding: 0;
+    margin: 5px;
+  }
 }
 
 .form-group--6 {
@@ -1531,11 +1583,26 @@ textarea::placeholder {
 }
 
 .home__row--team {
-  padding: 0 0 40px !important;
+  padding: 0 0 40px;
+}
+@media (max-width: 768px) {
+  .home__row--team {
+    padding: 10px;
+  }
 }
 
 .home__row--contact {
   padding: 60px;
+}
+@media (max-width: 1024px) {
+  .home__row--contact {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .home__row--contact {
+    padding: 10px;
+  }
 }
 
 /*
@@ -1600,6 +1667,12 @@ textarea::placeholder {
 .header__logo span {
   color: #f5f6fa;
 }
+@media (max-width: 768px) {
+  .header__logo {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
 
 .header__nav {
   display: inline-block;
@@ -1616,8 +1689,8 @@ textarea::placeholder {
 
 /* Sets the dimensions of the entire scrollbar */
 html::-webkit-scrollbar {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 /* The grabbable scrollbar button  */
