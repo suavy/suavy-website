@@ -1,4 +1,4 @@
-<div class="home__row home__row--contact bg-white">
+<div class="home__row home__row--contact">
     <div class="contact--check display-none js-contact-success"><i class="fad fa-check"></i></div>
     <div class="contact js-contact-all">
 
@@ -20,15 +20,6 @@
             <div class="contact__letter-box__top"></div>
             <div class="contact__letter-box__front" id="scroll-to-footer"></div>
         </div>
-
-        <div class="contact__success display-none">
-            <div class="alert">
-                <div class="alert__title">title</div>
-                <div class="alert__text">text</div>
-            </div>
-        </div>
-
-        <i style="text-align: center; background-color:green"></i>
 
     </div>
 </div>
@@ -82,8 +73,7 @@
                                         },50);
                                     });
                                 },1000);
-
-                            },300);
+                            },500);
                         },1000);
                         /*
                         setTimeout(function () {

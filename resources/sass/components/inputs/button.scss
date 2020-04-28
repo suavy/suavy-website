@@ -17,6 +17,6 @@
     @include font-size(20px);
     &:hover {
         cursor: pointer;
-        background-color: $primaryColor;
+        background-color: $secondaryColor;
     }
 }

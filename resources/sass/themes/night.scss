@@ -21,15 +21,12 @@ body.night {
 
     /* _header
     ===========================================*/
-    .header__logo {
-        color: $yellow;
-        span {
-            color: $black;
-        }
-    }
 
     /* _form
     ===========================================*/
+    .contact__form {
+        background-color: $black;
+    }
     .checkbox .label,
     input,
     textarea {
@@ -38,27 +35,6 @@ body.night {
 
     /* _map
     ===========================================*/
-    .map-title {
-        color: $black;
-    }
-
-    .map-svg {
-        path {
-            fill: transparentize($black, 0.3);
-            stroke:$black;
-        }
-    }
-
-    .map-marker {
-        &__button {
-            background-color: $black;
-            color: $black;
-            border-color: $black !important;
-        }
-        &__button.pulse:after {
-            box-shadow: 0 0 1px 2px $black;
-        }
-    }
 
     /* _client
     ===========================================*/

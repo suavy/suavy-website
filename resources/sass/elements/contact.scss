@@ -2,7 +2,8 @@
     text-align: center;
     i {
         @include font-size(200px);
-        color: $primaryColor;
+        color: $secondaryColor;
+        line-height: 280px;
     }
 }
 
@@ -19,7 +20,7 @@
     padding: 10px;
     @include border-radius(20px);
     z-index: 4;
-    transition: all 0.6s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .contact__form--mini {
     transform: scale(.5);
@@ -62,7 +63,7 @@
     }
     &:before{
         border-right: 600px solid transparent;
-        border-bottom: 300px solid $primaryColor;
+        border-bottom: 300px solid lighten($primaryColor, 10%);
         @include media('tablet-large') {
             border-right-width: 300px;
             border-bottom-width: 150px;
@@ -70,7 +71,7 @@
     }
     &:after{
         border-left: 600px solid transparent;
-        border-bottom: 300px solid darken($primaryColor, 20%);
+        border-bottom: 300px solid $primaryColor;
         @include media('tablet-large') {
             border-left-width: 300px;
             border-bottom-width: 150px;

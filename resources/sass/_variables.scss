@@ -61,7 +61,7 @@ $gray: #718093;
 $black: #1e272e;
 
 $primaryColor: #130f40;
-$secondaryColor: #F61067;
+$secondaryColor: #ef5777;
 
 $color-list: (
     (white, $white),
@@ -85,7 +85,7 @@ $color-list: (
 @each $color, $value in $color-list {
     .color-#{$color} { color: $value; }
     .bg-#{$color} { background-color: $value !important; fill: $value !important; }
-    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 10%) 100%); }
+    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, lighten($value, 10%) 100%); }
 
 }
 
