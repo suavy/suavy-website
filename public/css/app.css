@@ -470,7 +470,7 @@ html, body {
   font-size: 200px;
   font-size: 12.5rem;
   color: #f78fb3;
-  line-height: 270px;
+  line-height: 310px;
 }
 @media (max-width: 768px) {
   .contact--check i {
@@ -504,7 +504,12 @@ html, body {
 .contact__form--below {
   z-index: 2;
   transform: scale(0.15) translateY(4000px);
-  margin-top: -1050px;
+  margin-top: -950px;
+}
+@media (max-width: 768px) {
+  .contact__form--below {
+    margin-top: -950px;
+  }
 }
 
 .contact__letter-box {

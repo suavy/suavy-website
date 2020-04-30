@@ -3,7 +3,7 @@
     i {
         @include font-size(200px);
         color: $secondaryColor;
-        line-height: 270px;
+        line-height: 310px;
     }
     @include media('tablet-large') {
         i {
@@ -36,7 +36,10 @@
 .contact__form--below {
     z-index: 2;
     transform: scale(.15) translateY(4000px);
-    margin-top: -1050px;
+    margin-top: -950px;
+    @include media('tablet-large') {
+        margin-top: -950px;
+    }
 }
 
 .contact__letter-box {
