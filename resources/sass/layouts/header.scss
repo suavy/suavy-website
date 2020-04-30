@@ -23,6 +23,7 @@
     }
     @include media('tablet-large') {
         @include font-size(28px);
+        width: 45%;
     }
 }
 
@@ -31,6 +32,9 @@
     width: 50%;
     text-align: right;
     vertical-align: middle;
+    @include media('tablet-large') {
+        width: 55%;
+    }
 }
 
 .header__nav__item {

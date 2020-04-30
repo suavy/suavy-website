@@ -1447,7 +1447,7 @@ label.label {
 .checkbox .label:hover,
 .checkbox input:checked + .label {
   border-color: #21b989;
-  box-shadow: inset 350px 0 0 0 #21b989;
+  box-shadow: inset 350px 0 0 0 #ef5777;
   color: #1e272e;
 }
 
@@ -1671,6 +1671,7 @@ textarea::placeholder {
   .header__logo {
     font-size: 28px;
     font-size: 1.75rem;
+    width: 45%;
   }
 }
 
@@ -1679,6 +1680,11 @@ textarea::placeholder {
   width: 50%;
   text-align: right;
   vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    width: 55%;
+  }
 }
 
 .header__nav__item {
