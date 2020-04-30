@@ -44,9 +44,9 @@
 .team__member__picture {
     position: relative;
     @include border-radius(50%);
-    width: 200px;
-    height: 200px;
-    margin: -100px auto 0;
+    width: 180px;
+    height: 180px;
+    margin: -90px auto 0;
     &:hover {
         .team__member__picture__hover {
             opacity: 1;
@@ -113,7 +113,7 @@
 
 .team__member__name {
     padding: 10px 0 3px;
-    @include font-size(16px);
+    @include font-size(17px);
     font-weight: bold;
     vertical-align: top;
     @include media('tablet-large') {
@@ -121,7 +121,7 @@
     }
     span {
         font-family: $titleFont;
-        @include font-size(17px);
+        @include font-size(18px);
         @include media('tablet-large') {
             @include font-size(16px);
         }

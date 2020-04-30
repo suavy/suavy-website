@@ -66,7 +66,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Matthieu';
         $user->lastname = 'Kassian';
         $user->nickname = 'lemattou';
-        $user->role = 'Project Lead & Backend Dev';
+        $user->role = 'Lead developer';
         $user->email = 'kassian.matthieu@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -80,7 +80,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Christophe';
         $user->lastname = 'Do Outeiro';
         $user->nickname = 'cdo';
-        $user->role = 'Project Lead & Fullstack Dev';
+        $user->role = 'Project lead & fullstack developer';
         $user->email = 'cdo_outeiro@me.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -94,7 +94,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Matheus';
         $user->lastname = 'Matheus';
         $user->nickname = 'matheus';
-        $user->role = 'Backend Dev';
+        $user->role = 'Backend developer';
         $user->email = 'matheus@me.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -108,7 +108,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Breno';
         $user->lastname = 'Romeiro';
         $user->nickname = 'bsromeiro';
-        $user->role = 'Frontend Dev';
+        $user->role = 'Frontend developer & designer';
         $user->email = 'bsromeiro@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -121,7 +121,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Elisa';
         $user->lastname = 'Nogueira';
         $user->nickname = 'elisanog';
-        $user->role = 'Data Analyst';
+        $user->role = 'Data analyst';
         $user->email = 'elisanog05@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -135,7 +135,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Yago';
         $user->lastname = 'Lomondo';
         $user->nickname = 'yagolomondo';
-        $user->role = 'Tracking Strategy';
+        $user->role = 'Developer';
         $user->email = 'yagolcs@msn.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -148,7 +148,7 @@ class CreateUsersTable extends Migration
         $user->firstname = 'Héloïse';
         $user->lastname = 'Vieu';
         $user->nickname = 'helowwkitty';
-        $user->role = 'Com';
+        $user->role = 'Communication manager';
         $user->email = 'vieu.heloise@gmail.com';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();

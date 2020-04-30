@@ -1,3 +1,10 @@
+.clients-title {
+    font-family: $titleFont;
+    @include font-size(36px);
+    text-align: center;
+    padding-bottom: 20px;
+    color: $pureBlack;
+}
 .clients {
     display: flex;
     flex-wrap: wrap;
@@ -12,5 +19,9 @@
         width: auto;
         height: 45px;
         filter: brightness(0);
+        &:hover {
+            cursor: crosshair;
+            filter: none;
+        }
     }
 }

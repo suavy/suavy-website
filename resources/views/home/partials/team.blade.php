@@ -10,7 +10,6 @@
                         <div class="team__member__picture__hover__content">
                             <div class="team__member__picture__hover__content__citation">
                                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra.”
-
                             </div>
                         </div>
                     </div>
@@ -29,8 +28,9 @@
                     @endforeach
                 </div>
                 <div class="team__member__links">
-                    <a href="#" class="team__member__link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="team__member__link"><i class="fad fa-browser"></i></a>
+                    {{-- todo uncomment when ready --}}
+                    {{-- @if($user->github_url) --}}<a href="#" class="team__member__link" target="_blank" rel="nofollow noreferrer noopener"><i class="fab fa-github"></i></a>{{-- @endif --}}
+                    {{-- @if($user->website_url) --}}<a href="#" class="team__member__link" target="_blank" rel="nofollow noreferrer noopener"><i class="fad fa-browser"></i></a>{{-- @endif --}}
                 </div>
                 {{-- <div class="team__member__location">
                     <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}

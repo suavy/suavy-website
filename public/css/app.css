@@ -432,6 +432,15 @@ html, body {
   display: inline-block;
 }
 
+.clients-title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 36px;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #000;
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -447,6 +456,11 @@ html, body {
   height: 45px;
   -webkit-filter: brightness(0);
           filter: brightness(0);
+}
+.client img:hover {
+  cursor: crosshair;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .contact--check {
@@ -1242,9 +1256,9 @@ html, body {
 .team__member__picture {
   position: relative;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin: -100px auto 0;
+  width: 180px;
+  height: 180px;
+  margin: -90px auto 0;
 }
 .team__member__picture:hover .team__member__picture__hover {
   opacity: 1;
@@ -1309,8 +1323,8 @@ html, body {
 
 .team__member__name {
   padding: 10px 0 3px;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: bold;
   vertical-align: top;
 }
@@ -1322,8 +1336,8 @@ html, body {
 }
 .team__member__name span {
   font-family: "Abril Fatface", cursive;
-  font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (max-width: 768px) {
   .team__member__name span {
