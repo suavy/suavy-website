@@ -11,14 +11,14 @@ $fourthServiceCategoryColor: $blue;
     vertical-align: middle;
     text-align: center;
     font-family: $titleFont;
-    @include font-size(52px);
+    @include font-size(48px);
     @include media('tablet-large') {
         @include font-size(36px);
     }
 }
 
 .service-categories {
-    padding: 20px 40px 40px;
+    padding: 20px 40px 60px;
     box-sizing: border-box;
     @include border-radius(5px);
     background-color: $white;
@@ -28,7 +28,7 @@ $fourthServiceCategoryColor: $blue;
     display: inline-block;
     width: 25%;
     box-sizing: border-box;
-    padding: 20px 40px 40px;
+    padding: 15px;
     vertical-align: top;
     @include media('screen-large') {
         padding: 10px;

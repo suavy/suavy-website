@@ -648,7 +648,7 @@ html, body {
 }
 @media (max-width: 768px) {
   .map-col--title {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (max-width: 480px) {
@@ -660,8 +660,8 @@ html, body {
 .map-title {
   font-family: "Abril Fatface", cursive;
   color: #f5f6fa;
-  font-size: 38px;
-  font-size: 2.375rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   box-sizing: border-box;
   text-align: right;
@@ -687,8 +687,6 @@ html, body {
 @media (max-width: 1024px) {
   .map-title {
     text-align: center;
-    font-size: 24px;
-    font-size: 1.5rem;
     line-height: 36px;
     padding-right: 0;
   }
@@ -957,8 +955,8 @@ html, body {
   vertical-align: middle;
   text-align: center;
   font-family: "Abril Fatface", cursive;
-  font-size: 52px;
-  font-size: 3.25rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 @media (max-width: 768px) {
   .services-view-more {
@@ -968,7 +966,7 @@ html, body {
 }
 
 .service-categories {
-  padding: 20px 40px 40px;
+  padding: 20px 40px 60px;
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #f5f6fa;
@@ -978,7 +976,7 @@ html, body {
   display: inline-block;
   width: 25%;
   box-sizing: border-box;
-  padding: 20px 40px 40px;
+  padding: 15px;
   vertical-align: top;
 }
 @media (max-width: 1400px) {
