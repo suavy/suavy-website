@@ -3,7 +3,7 @@
     <div class="team">
         @foreach(\App\Models\User::query()->whereDisabled(false)->get() as $user)<div class="team__member-container">
             <div class="team__member">
-                <div class="team__member__picture">
+                <div class="team__member__picture js-team-picture" id="team-{{$user->nickname}}">
                     <img class="team__member__picture__image" src="https://picsum.photos/200"/>
                     <div class="team__member__picture__border"></div>
                     <div class="team__member__picture__hover">
@@ -48,4 +48,29 @@
             $("#teamRow").html(pattern.canvas());
         });
     </script>-->
+
+    <script>
+
+        function animateCSS(element, animationName, callback) {
+            const node = document.querySelector(element)
+            node.classList.add('animated', animationName)
+
+            console.log('test');
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+
+        $('.js-team-picture').hover(function () {
+            let id = $(this).attr('id');
+            console.log(id);
+            animateCSS('#'+id,'bounce');
+        });
+    </script>
 @endpush
