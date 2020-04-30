@@ -3,7 +3,11 @@
     i {
         @include font-size(200px);
         color: $secondaryColor;
-        line-height: 280px;
+        line-height: 270px;
+    }
+    @include media('tablet-large') {
+        @include font-size(100px);
+        line-height: 130px;
     }
 }
 
