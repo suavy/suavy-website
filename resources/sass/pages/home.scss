@@ -29,6 +29,9 @@
 
 .home__row--above-team {
     padding-bottom: 160px;
+    @include media('tablet-large') {
+        padding-bottom: 10px;
+    }
 }
 
 .home__row--team {

@@ -939,6 +939,20 @@ html, body {
   text-align: center;
 }
 
+.services-view-more {
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 52px;
+  font-size: 3.25rem;
+}
+@media (max-width: 768px) {
+  .services-view-more {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+
 .service-categories {
   padding: 20px 40px 40px;
   box-sizing: border-box;
@@ -1079,14 +1093,6 @@ html, body {
   font-size: 14px;
   font-size: 0.875rem;
 }
-.services-view-more {
-  vertical-align: middle;
-  text-align: center;
-  font-family: "Abril Fatface", cursive;
-  font-size: 52px;
-  font-size: 3.25rem;
-}
-
 /* _button-theme
 ===========================================*/
 .button-theme {
@@ -1204,6 +1210,7 @@ html, body {
   position: relative;
   display: inline-block;
   width: 33.333%;
+  vertical-align: top;
   box-sizing: border-box;
   padding: 0 10px 10px;
   margin-bottom: 120px;
@@ -1581,6 +1588,11 @@ textarea::placeholder {
 .home__row--above-team {
   padding-bottom: 160px;
 }
+@media (max-width: 768px) {
+  .home__row--above-team {
+    padding-bottom: 10px;
+  }
+}
 
 .home__row--team {
   padding: 0 0 40px;
@@ -1650,7 +1662,7 @@ textarea::placeholder {
 }
 @media (max-width: 1024px) {
   .header {
-    padding: 10px 15px;
+    padding: 10px;
   }
 }
 
