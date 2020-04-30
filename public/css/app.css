@@ -473,7 +473,7 @@ html, body {
   line-height: 270px;
 }
 @media (max-width: 768px) {
-  .contact--check {
+  .contact--check i {
     font-size: 100px;
     font-size: 6.25rem;
     line-height: 130px;
