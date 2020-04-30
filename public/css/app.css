@@ -500,6 +500,9 @@ html, body {
   transform: scale(0.5);
   margin-top: -200px;
 }
+.contact__form--mini textarea {
+  display: none;
+}
 
 .contact__form--below {
   z-index: 2;
