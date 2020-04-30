@@ -31,8 +31,14 @@
 .contact__form--mini {
     transform: scale(.5);
     margin-top: -200px;
-    textarea {
-        display: none;
+    @include media('tablet-large') {
+        #message-wrapper, .form-button-container {
+            display: none;
+        }
+        label.label {
+            font-size: 10px;
+            @include font-size(12px);
+        }
     }
 }
 
@@ -40,6 +46,10 @@
     z-index: 2;
     transform: scale(.20) translateY(3200px);
     margin-top: -950px;
+    @include media('tablet-large') {
+        transform: scale(.18) translateY(2000px);
+        margin-top: -590px;
+    }
 }
 
 .contact__letter-box {
@@ -120,6 +130,15 @@
 .contact__letter-box--open {
     .contact__letter-box__top {
         transform: translateY(-99%);
+    }
+    &:after {
+        content: ' ';
+        position: absolute;
+        background-color: $white;
+        height: 30px;
+        width: 100%;
+        bottom: -30px;
+        left: 0;
     }
 }
 

@@ -500,14 +500,27 @@ html, body {
   transform: scale(0.5);
   margin-top: -200px;
 }
-.contact__form--mini textarea {
-  display: none;
+@media (max-width: 768px) {
+  .contact__form--mini #message-wrapper, .contact__form--mini .form-button-container {
+    display: none;
+  }
+  .contact__form--mini label.label {
+    font-size: 10px;
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
 }
 
 .contact__form--below {
   z-index: 2;
   transform: scale(0.2) translateY(3200px);
   margin-top: -950px;
+}
+@media (max-width: 768px) {
+  .contact__form--below {
+    transform: scale(0.18) translateY(2000px);
+    margin-top: -590px;
+  }
 }
 
 .contact__letter-box {
@@ -597,6 +610,15 @@ html, body {
 
 .contact__letter-box--open .contact__letter-box__top {
   transform: translateY(-99%);
+}
+.contact__letter-box--open:after {
+  content: " ";
+  position: absolute;
+  background-color: #f5f6fa;
+  height: 30px;
+  width: 100%;
+  bottom: -30px;
+  left: 0;
 }
 
 .contact__letter-box--close .contact__letter-box__top {
@@ -1649,7 +1671,7 @@ textarea::placeholder {
 .footer {
   text-align: center;
   margin: 0 auto;
-  padding: 20px 0 40px;
+  padding: 40px 0 40px;
   /*&:before {
       content: " ";
       display: block;

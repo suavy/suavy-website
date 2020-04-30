@@ -9,7 +9,9 @@
                 <x-inputs.checkboxes label="Budget Range 💰" name="contact[budgets][]" :options="$contactBudgets"/>
                 <x-inputs.text name="contact[name]" label="Name*" :params="['size' => 6, 'placeholder' => 'Your name']"/>
                 <x-inputs.text name="contact[email]" label="Email*" :params="['size' => 6, 'placeholder' => 'email@example.com']"/>
-                <x-inputs.textarea name="contact[message]" label="Message*" :params="['placeholder' => 'Your most detailed message ❤']"/>
+                <div id="message-wrapper">
+                    <x-inputs.textarea name="contact[message]" label="Message*" :params="['placeholder' => 'Your most detailed message ❤']"/>
+                </div>
                 <div class="form-button-container">
                     <button class="form-button">Votre projet demarre maintenant</button>
                 </div>
