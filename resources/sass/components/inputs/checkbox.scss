@@ -29,7 +29,7 @@
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-    border-color: $green;
+    border-color: $secondaryColor;
     box-shadow: inset 350px 0 0 0 $secondaryColor;
     color: $black;
     //box-shadow: 0 5px 5px -4px $green;

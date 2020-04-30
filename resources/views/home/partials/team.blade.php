@@ -28,9 +28,13 @@
                     </div>
                     @endforeach
                 </div>
-                <div class="team__member__location">
-                    <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}
+                <div class="team__member__links">
+                    <a href="#" class="team__member__link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="team__member__link"><i class="fad fa-browser"></i></a>
                 </div>
+                {{-- <div class="team__member__location">
+                    <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}
+                </div>--}}
             </div>
         </div>@endforeach
     </div>
