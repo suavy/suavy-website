@@ -8,7 +8,7 @@
     @include media('tablet-large') {
         i {
             @include font-size(100px);
-            line-height: 130px;
+            line-height: 160px;
         }
     }
 }
@@ -35,11 +35,8 @@
 
 .contact__form--below {
     z-index: 2;
-    transform: scale(.15) translateY(4000px);
+    transform: scale(.20) translateY(3200px);
     margin-top: -950px;
-    @include media('tablet-large') {
-        margin-top: -950px;
-    }
 }
 
 .contact__letter-box {
