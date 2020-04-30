@@ -470,13 +470,13 @@ html, body {
   font-size: 200px;
   font-size: 12.5rem;
   color: #f78fb3;
-  line-height: 310px;
+  line-height: 369px;
 }
 @media (max-width: 768px) {
   .contact--check i {
     font-size: 100px;
     font-size: 6.25rem;
-    line-height: 160px;
+    line-height: 211px;
   }
 }
 
@@ -519,7 +519,7 @@ html, body {
 @media (max-width: 768px) {
   .contact__form--below {
     transform: scale(0.18) translateY(2000px);
-    margin-top: -590px;
+    margin-top: -540px;
   }
 }
 

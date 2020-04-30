@@ -3,12 +3,12 @@
     i {
         @include font-size(200px);
         color: $secondaryColor;
-        line-height: 310px;
+        line-height: 369px;
     }
     @include media('tablet-large') {
         i {
             @include font-size(100px);
-            line-height: 160px;
+            line-height: 211px;
         }
     }
 }
@@ -48,7 +48,7 @@
     margin-top: -950px;
     @include media('tablet-large') {
         transform: scale(.18) translateY(2000px);
-        margin-top: -590px;
+        margin-top: -540px;
     }
 }
 
