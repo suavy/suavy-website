@@ -67,23 +67,12 @@
                                 setTimeout(function () {
                                     animateCSS('.js-contact-all','flipOutX',function () {
                                         $('.js-contact-all').hide();
-                                        setTimeout(function () {
-                                            $('.js-contact-success').show();
-                                            animateCSS('.js-contact-success', 'flipInX');
-                                        },50);
+                                        $('.js-contact-success').show();
+                                        animateCSS('.js-contact-success', 'flipInX');
                                     });
                                 },1000);
                             },500);
                         },1000);
-                        /*
-                        setTimeout(function () {
-                            animateCSS('.js-contact-container', 'slideOutDown',function () {
-                                $('.js-letter').addClass('contact__letter-box--close');
-                                $('.js-contact-container').hide();
-                            });
-                        }, 1000);
-
-                         */
                     },700);
                 });
                 // Go
