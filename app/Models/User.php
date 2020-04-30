@@ -58,6 +58,8 @@ class User extends Authenticatable
         'admin',
         'disabled',
         'picture',
+        'github_url',
+        'website_url',
         'lft',
         'rgt',
         'depth',

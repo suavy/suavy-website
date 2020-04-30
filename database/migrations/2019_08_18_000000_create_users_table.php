@@ -24,6 +24,8 @@ class CreateUsersTable extends Migration
             $table->text('picture')->nullable();
             $table->boolean('admin')->default(false);
             $table->boolean('disabled')->default(false);
+            $table->string('github_url')->nullable();
+            $table->string('website_url')->nullable();
 
             //reorder
             $table->integer('parent_id')->nullable()->default(0);
@@ -68,6 +70,7 @@ class CreateUsersTable extends Migration
         $user->nickname = 'lemattou';
         $user->role = 'Lead developer';
         $user->email = 'kassian.matthieu@gmail.com';
+        $user->github_url = 'https://github.com/lemattou';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
@@ -82,6 +85,8 @@ class CreateUsersTable extends Migration
         $user->nickname = 'cdo';
         $user->role = 'Project lead & fullstack developer';
         $user->email = 'cdo_outeiro@me.com';
+        $user->website_url = 'https://cdo9.space/';
+        $user->github_url = 'https://github.com/cdo9';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
@@ -110,6 +115,8 @@ class CreateUsersTable extends Migration
         $user->nickname = 'bsromeiro';
         $user->role = 'Frontend developer & designer';
         $user->email = 'bsromeiro@gmail.com';
+        $user->website_url = 'https://bsrom.site/';
+        $user->github_url = 'https://github.com/obrenoco';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 2;
@@ -123,6 +130,7 @@ class CreateUsersTable extends Migration
         $user->nickname = 'elisanog';
         $user->role = 'Data analyst';
         $user->email = 'elisanog05@gmail.com';
+        $user->github_url = 'https://github.com/elisanog';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->admin = 1;
@@ -137,6 +145,7 @@ class CreateUsersTable extends Migration
         $user->nickname = 'yagolomondo';
         $user->role = 'Developer';
         $user->email = 'yagolcs@msn.com';
+        $user->github_url = 'https://github.com/yagolomondo';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 2;

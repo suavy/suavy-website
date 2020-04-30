@@ -78,14 +78,29 @@
                 // Go
         });
 
+        $('input[name="contact[name]"],input[name="contact[email]"],textarea[name="contact[message]').click(function () {
+            $(this).parent().removeClass('error');
+        });
+
         $("#contact").submit(function(){
-            $name = $('input[name="contact[name]"]');
-            $email = $('input[name="contact[email]"]');
-            $message = $('textarea[name="contact[message]"]');
+            let error = false;
+            let $name = $('input[name="contact[name]"]');
+            let $email = $('input[name="contact[email]"]');
+            let $message = $('textarea[name="contact[message]"]');
 
-            console.log(!$name.val() || !$email.val() || !$message.val());
-
-            if(!$name.val() || !$email.val() || !$message.val()) {
+            if(!$name.val()){
+                $name.parent().addClass("error");
+                error = true;
+            }
+            if(!$email.val()){
+                $email.parent().addClass("error");
+                error = true;
+            }
+            if(!$message.val()){
+                $message.parent().addClass("error");
+                error = true;
+            }
+            if(error) {
                 return false;
             }
 
