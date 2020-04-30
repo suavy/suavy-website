@@ -46,38 +46,38 @@ $screen-larger: 1800px;
 /* _colors
 ===========================================*/
 $white: #f5f6fa;
-$lightgray: #d2d7d3;
-$blue: #778beb;
+$lightgray: darken($white, 3%);
+$blue: #1e3799;
 $indigo: #6574cd;
-$purple: #786fa6;
-$pink: #f8a5c2;
+$purple: #574b90;
+$pink: #f78fb3;
 $red: #e3342f;
-$orange: #f3a683;
-$yellow: #f6e58d;
+$orange: #ffaf40;
+$yellow: #f5cd79;
 $green: #21b989;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
-$gray: #718093;
-$black: #1e272e;
+$gray: #596275;
+$black: #303952;
 
-$primaryColor: #130f40;
-$secondaryColor: #ef5777;
+$primaryColor: $purple;
+$secondaryColor: $pink;
 
 $color-list: (
-    (white, $white),
-    (lightgray, $lightgray),
-    (blue, $blue),
-    (indigo, $indigo),
-    (purple, $purple),
-    (pink, $pink),
-    (red, $red),
-    (orange, $orange),
-    (yellow, $yellow),
-    (green, $green),
-    (teal, $teal),
-    (cyan, $cyan),
-    (gray, $gray),
-    (black, $black),
+    ("white", $white),
+    ("lightgray", $lightgray),
+    ("blue", $blue),
+    ("indigo", $indigo),
+    ("purple", $purple),
+    ("pink", $pink),
+    ("red", $red),
+    ("orange", $orange),
+    ("yellow", $yellow),
+    ("green", $green),
+    ("teal", $teal),
+    ("cyan", $cyan),
+    ("gray", $gray),
+    ("black", $black),
     ("primary", $primaryColor),
     ("secondary", $secondaryColor)
 );
@@ -85,7 +85,7 @@ $color-list: (
 @each $color, $value in $color-list {
     .color-#{$color} { color: $value; }
     .bg-#{$color} { background-color: $value !important; fill: $value !important; }
-    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, lighten($value, 10%) 100%); }
+    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 10%) 100%); }
 
 }
 

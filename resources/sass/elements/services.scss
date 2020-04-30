@@ -101,7 +101,7 @@ $fourthServiceCategoryColor: $blue;
 .service-categories__category--first {
     .service-categories__category__icon {
         background-color: $firstServiceCategoryColor;
-        background-image: linear-gradient(0deg, $firstServiceCategoryColor 0%, darken($firstServiceCategoryColor, 10%) 100%);
+        background-image: linear-gradient(0deg, $firstServiceCategoryColor 0%, darken($firstServiceCategoryColor, 5%) 100%);
     }
     .service-categories__category__services {
         border: 2px solid $firstServiceCategoryColor;
@@ -112,7 +112,7 @@ $fourthServiceCategoryColor: $blue;
 .service-categories__category--second {
     .service-categories__category__icon {
         background-color: $secondServiceCategoryColor;
-        background-image: linear-gradient(0deg, $secondServiceCategoryColor 0%, darken($secondServiceCategoryColor, 10%) 100%);
+        background-image: linear-gradient(0deg, $secondServiceCategoryColor 0%, darken($secondServiceCategoryColor, 5%) 100%);
     }
     .service-categories__category__services {
         border: 2px solid $secondServiceCategoryColor;
@@ -123,7 +123,7 @@ $fourthServiceCategoryColor: $blue;
 .service-categories__category--third {
     .service-categories__category__icon {
         background-color: $thirdServiceCategoryColor;
-        background-image: linear-gradient(0deg, $thirdServiceCategoryColor 0%, darken($thirdServiceCategoryColor, 10%) 100%);
+        background-image: linear-gradient(0deg, $thirdServiceCategoryColor 0%, darken($thirdServiceCategoryColor, 5%) 100%);
     }
     .service-categories__category__services {
         border: 2px solid $thirdServiceCategoryColor;
@@ -134,7 +134,7 @@ $fourthServiceCategoryColor: $blue;
 .service-categories__category--fourth {
     .service-categories__category__icon {
         background-color: $fourthServiceCategoryColor;
-        background-image: linear-gradient(0deg, $fourthServiceCategoryColor 0%, darken($fourthServiceCategoryColor, 10%) 100%);
+        background-image: linear-gradient(0deg, $fourthServiceCategoryColor 0%, darken($fourthServiceCategoryColor, 5%) 100%);
     }
     .service-categories__category__services {
         border: 2px solid $fourthServiceCategoryColor;

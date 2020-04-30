@@ -4,7 +4,7 @@
     @include('home.partials.map')
     @include('home.partials.services')
     @include('home.partials.team')
-    <div class="home__row bg-gradient-secondary"></div>
+    @include('home.partials.clients')
     @include('home.partials.contact')
 
 

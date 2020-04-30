@@ -49,22 +49,22 @@ class CreateServicesTable extends Migration
     {
         Service::create([
             'color' => 'first',
-            'icon' => 'fad fa-fw fa-sort-alpha-up-alt',
+            'icon' => 'fab fa-fw fa-dev',
             'name_fr' => 'Développement', 'name_pt' => 'Desenvolvimento', 'name_en' => 'Development', 'name_es' => '',
         ]);
         Service::create([
             'color' => 'second',
-            'icon' => 'fad fa-fw fa-pencil-alt',
+            'icon' => 'fad fa-fw fa-icons',
             'name_fr' => 'Design', 'name_pt' => 'Design', 'name_en' => 'Design', 'name_es' => 'Design',
         ]);
         Service::create([
             'color' => 'third',
-            'icon' => 'fad fa-fw fa-database',
+            'icon' => 'fad fa-fw fa-server',
             'name_fr' => 'Data', 'name_pt' => 'Data', 'name_en' => 'Data', 'name_es' => 'Data',
         ]);
         Service::create([
             'color' => 'fourth',
-            'icon' => 'fad fa-fw fa-lightbulb',
+            'icon' => 'fad fa-fw fa-rocket-launch',
             'name_fr' => 'Marketing', 'name_pt' => 'Marketing', 'name_en' => 'Marketing', 'name_es' => 'Marketing',
         ]);
 
@@ -101,7 +101,7 @@ class CreateServicesTable extends Migration
             'parent_id' => 1,
         ]);
         Service::create([
-            'icon' => 'fad fa-fw fa-server',
+            'icon' => 'fad fa-fw fa-wrench',
             'name_fr' => 'Gestion de serveur', 'name_pt' => 'Gestão de servidores', 'name_en' => 'Server management', 'name_es' => '',
             'parent_id' => 1,
         ]);

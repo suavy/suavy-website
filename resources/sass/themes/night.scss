@@ -25,7 +25,7 @@ body.night {
     /* _form
     ===========================================*/
     .contact__form {
-        background-color: $black;
+        background-color: darken($black, 3%);
     }
     .checkbox .label,
     input,
@@ -35,6 +35,38 @@ body.night {
 
     /* _map
     ===========================================*/
+    .map-title {
+        //color: $black;
+    }
+
+    .map-svg {
+        path {
+            fill: transparentize($black, 0.3);
+            stroke:$black;
+        }
+    }
+    $nightMarkerColor: $black;
+    .map-marker {
+        &__button {
+            background-color: $nightMarkerColor;
+            color: $nightMarkerColor;
+            border-color: $nightMarkerColor !important;
+        }
+        &__button.pulse:after {
+            box-shadow: 0 0 1px 2px $nightMarkerColor;
+        }
+    }
+    .map-pulse {
+        &:after {
+            box-shadow: 0 0 1px 2px $nightMarkerColor;
+        }
+    }
+
+    /* _team
+    ===========================================*/
+    .team__member__role {
+        color: $lightgray;
+    }
 
     /* _client
     ===========================================*/

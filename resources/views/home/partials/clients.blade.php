@@ -1,5 +1,4 @@
-<div class="home__row home__row--clients bg-yellow">
-    <h2 class="title">Our clients</h2>
+<div class="home__row home__row--clients bg-gradient-secondary">
     <div class="clients">
         {{--
         @foreach($projects as $project)
