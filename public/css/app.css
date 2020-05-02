@@ -322,31 +322,31 @@ a {
 }
 
 .color-primary {
-  color: #6A8E7F;
+  color: #CFC0BD;
 }
 
 .bg-primary {
-  background-color: #6A8E7F !important;
-  fill: #6A8E7F !important;
+  background-color: #CFC0BD !important;
+  fill: #CFC0BD !important;
 }
 
 .bg-gradient-primary {
-  background-color: #6A8E7F;
-  background-image: linear-gradient(0deg, #6A8E7F 0%, #547165 100%);
+  background-color: #CFC0BD;
+  background-image: linear-gradient(0deg, #CFC0BD 0%, #baa49f 100%);
 }
 
 .color-secondary {
-  color: #D9E76C;
+  color: #B6465F;
 }
 
 .bg-secondary {
-  background-color: #D9E76C !important;
-  fill: #D9E76C !important;
+  background-color: #B6465F !important;
+  fill: #B6465F !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #D9E76C;
-  background-image: linear-gradient(0deg, #D9E76C 0%, #cee040 100%);
+  background-color: #B6465F;
+  background-image: linear-gradient(0deg, #B6465F 0%, #91384c 100%);
 }
 
 /* _fonts
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #D9E76C;
+  color: #B6465F;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -556,7 +556,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #86a598;
+  border-bottom: 300px solid #e4dcdb;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -566,7 +566,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #6A8E7F;
+  border-bottom: 300px solid #CFC0BD;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #D9E76C;
+  border-bottom: 157px solid #B6465F;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -700,7 +700,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #D9E76C;
+  color: #B6465F;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -794,7 +794,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #D9E76C;
+  background-color: #B6465F;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -1084,25 +1084,25 @@ html, body {
 }
 
 .service-categories__category--first .service-categories__category__icon {
-  background-color: #6A8E7F;
-  background-image: linear-gradient(0deg, #6A8E7F 0%, #5f7f72 100%);
+  background-color: #CFC0BD;
+  background-image: linear-gradient(0deg, #CFC0BD 0%, #c4b2ae 100%);
 }
 .service-categories__category--first .service-categories__category__services {
-  border: 2px solid #6A8E7F;
+  border: 2px solid #CFC0BD;
 }
 .service-categories__category--first .service-categories__category__services:before {
-  border-bottom-color: #6A8E7F;
+  border-bottom-color: #CFC0BD;
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #D9E76C;
-  background-image: linear-gradient(0deg, #D9E76C 0%, #d3e356 100%);
+  background-color: #B6465F;
+  background-image: linear-gradient(0deg, #B6465F 0%, #a43f55 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #D9E76C;
+  border: 2px solid #B6465F;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #D9E76C;
+  border-bottom-color: #B6465F;
 }
 
 .service-categories__category--third .service-categories__category__icon {
@@ -1497,8 +1497,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #D9E76C;
-  box-shadow: inset 350px 0 0 0 #D9E76C;
+  border-color: #B6465F;
+  box-shadow: inset 350px 0 0 0 #B6465F;
   color: #303952;
 }
 
@@ -1598,7 +1598,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #D9E76C;
+  background-color: #B6465F;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1716,7 +1716,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #D9E76C;
+  color: #B6465F;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1757,7 +1757,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6A8E7F, #D9E76C);
+  background: linear-gradient(180deg, #CFC0BD, #B6465F);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
