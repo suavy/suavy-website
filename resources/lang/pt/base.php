@@ -7,7 +7,7 @@ return [
     'services' => [
         'closed' => 'Descubra <span class="link link--underline">nossos serviços</span>',
         'opened-text' => 'Deu match ?',
-        'opened-link' => 'Entre em contacto agora !'
+        'opened-link' => 'Entre em contacto agora !',
     ],
     'contact' => [
         'services_label' => 'Qual tipo de serviços você precisa ?',
