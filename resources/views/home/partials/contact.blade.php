@@ -4,16 +4,16 @@
 
         <div class="contact__form js-contact-container">
             <x-form link="/contact" id="contact">
-                <x-inputs.checkboxes label="What type(s) of services do you need ? 🤔" name="contact[services][]" :options="$contactServices"/>
-                <x-inputs.checkboxes label="Delivery Time 🐢" name="contact[deliveries][]" :options="$contactDeliveries"/>
-                <x-inputs.checkboxes label="Budget Range 💰" name="contact[budgets][]" :options="$contactBudgets"/>
-                <x-inputs.text name="contact[name]" label="Name*" :params="['size' => 6, 'placeholder' => 'Your name']"/>
-                <x-inputs.text name="contact[email]" label="Email*" :params="['size' => 6, 'placeholder' => 'email@example.com']"/>
+                <x-inputs.checkboxes label="@lang('base.contact.services_label') 🤔" name="contact[services][]" :options="$contactServices"/>
+                <x-inputs.checkboxes label="@lang('base.contact.deliveries_label') 🐢" name="contact[deliveries][]" :options="$contactDeliveries"/>
+                <x-inputs.checkboxes label="@lang('base.contact.budgets_label') 💰" name="contact[budgets][]" :options="$contactBudgets"/>
+                <x-inputs.text name="contact[name]" label="@lang('base.contact.name_label')*" />
+                <x-inputs.text name="contact[email]" label="@lang('base.contact.email_label')*" />
                 <div id="message-wrapper">
-                    <x-inputs.textarea name="contact[message]" label="Message*" :params="['placeholder' => 'Your most detailed message ❤']"/>
+                    <x-inputs.textarea name="contact[message]" label="@lang('base.contact.message_label')*" />
                 </div>
                 <div class="form-button-container">
-                    <button class="form-button">Votre projet demarre maintenant</button>
+                    <button class="form-button">@lang('base.contact.button_name')</button>
                 </div>
             </x-form>
         </div>
