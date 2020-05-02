@@ -6,7 +6,7 @@ return [
     ],
 
     'services' => [
-        'closed' => 'See <span class="link link--underline">everything we do</span>',
+        'closed' => 'Check <span class="link link--underline">our services</span>',
         'opened-text' => 'A good match?',
         'opened-link' => 'Get in touch now!',
     ],
