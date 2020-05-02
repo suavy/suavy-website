@@ -7,6 +7,6 @@
 
     </ul>--}}
     <div class="footer__about" id="">
-        <i class="fad fa-code color-secondary"></i> with <i class="fad fa-heart color-red"></i> by us and <a href="https://github.com/suavy/suavy-website" class="link link--underline" target="_blank" rel="nofollow noreferrer noopener">open source</a>.
+        @lang('base.footer')
     </div>
 </div>
