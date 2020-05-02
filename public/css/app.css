@@ -322,31 +322,31 @@ a {
 }
 
 .color-primary {
-  color: #006f8e;
+  color: #6A8E7F;
 }
 
 .bg-primary {
-  background-color: #006f8e !important;
-  fill: #006f8e !important;
+  background-color: #6A8E7F !important;
+  fill: #6A8E7F !important;
 }
 
 .bg-gradient-primary {
-  background-color: #006f8e;
-  background-image: linear-gradient(0deg, #006f8e 0%, #00475b 100%);
+  background-color: #6A8E7F;
+  background-image: linear-gradient(0deg, #6A8E7F 0%, #547165 100%);
 }
 
 .color-secondary {
-  color: #ced7dd;
+  color: #EED2CC;
 }
 
 .bg-secondary {
-  background-color: #ced7dd !important;
-  fill: #ced7dd !important;
+  background-color: #EED2CC !important;
+  fill: #EED2CC !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #ced7dd;
-  background-image: linear-gradient(0deg, #ced7dd 0%, #b0bec8 100%);
+  background-color: #EED2CC;
+  background-image: linear-gradient(0deg, #EED2CC 0%, #e1b0a6 100%);
 }
 
 /* _fonts
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #ced7dd;
+  color: #EED2CC;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -556,7 +556,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #0097c1;
+  border-bottom: 300px solid #86a598;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -566,7 +566,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #006f8e;
+  border-bottom: 300px solid #6A8E7F;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #ced7dd;
+  border-bottom: 157px solid #EED2CC;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -700,7 +700,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #ced7dd;
+  color: #EED2CC;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -794,7 +794,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #ced7dd;
+  background-color: #EED2CC;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -1084,25 +1084,25 @@ html, body {
 }
 
 .service-categories__category--first .service-categories__category__icon {
-  background-color: #006f8e;
-  background-image: linear-gradient(0deg, #006f8e 0%, #005b75 100%);
+  background-color: #6A8E7F;
+  background-image: linear-gradient(0deg, #6A8E7F 0%, #5f7f72 100%);
 }
 .service-categories__category--first .service-categories__category__services {
-  border: 2px solid #006f8e;
+  border: 2px solid #6A8E7F;
 }
 .service-categories__category--first .service-categories__category__services:before {
-  border-bottom-color: #006f8e;
+  border-bottom-color: #6A8E7F;
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #ced7dd;
-  background-image: linear-gradient(0deg, #ced7dd 0%, #bfcbd3 100%);
+  background-color: #EED2CC;
+  background-image: linear-gradient(0deg, #EED2CC 0%, #e8c1b9 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #ced7dd;
+  border: 2px solid #EED2CC;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #ced7dd;
+  border-bottom-color: #EED2CC;
 }
 
 .service-categories__category--third .service-categories__category__icon {
@@ -1497,8 +1497,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #ced7dd;
-  box-shadow: inset 350px 0 0 0 #ced7dd;
+  border-color: #EED2CC;
+  box-shadow: inset 350px 0 0 0 #EED2CC;
   color: #303952;
 }
 
@@ -1598,7 +1598,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #ced7dd;
+  background-color: #EED2CC;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1716,7 +1716,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #ced7dd;
+  color: #EED2CC;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1757,7 +1757,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #006f8e, #ced7dd);
+  background: linear-gradient(180deg, #6A8E7F, #EED2CC);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
