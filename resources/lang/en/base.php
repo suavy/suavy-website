@@ -8,7 +8,7 @@ return [
     'services' => [
         'closed' => 'See <span class="link link--underline">everything we do</span>',
         'opened-text' => 'A good match?',
-        'opened-link' => 'Get in touch now!'
+        'opened-link' => 'Get in touch now!',
     ],
 
     'contact' => [
