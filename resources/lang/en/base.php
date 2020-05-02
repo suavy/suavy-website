@@ -6,7 +6,7 @@ return [
     ],
     'services' => [
         'closed' => 'See everything we do.',
-        'opened' => 'A good match ? Get in touch now !'
+        'opened' => 'A good match ? Get in touch now !',
     ],
     'contact' => [
         'services_label' => 'Which service(s) are you interested in ?',
