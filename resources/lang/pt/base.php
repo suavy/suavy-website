@@ -2,7 +2,7 @@
 
 return [
     'map' => [
-        'title' => 'Nós somos uma <span>comunidade de freelancers<span> internacionais que constroem juntos os projetos de amanhã.',
+        'title' => 'Nós somos uma <span>comunidade de freelancers</span> internacionais que constroem juntos os projetos de amanhã.',
     ],
     'services' => [
         'closed' => 'Descubra <span class="link link--underline">nossos serviços</span>',
