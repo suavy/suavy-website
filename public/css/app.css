@@ -336,17 +336,17 @@ a {
 }
 
 .color-secondary {
-  color: #EED2CC;
+  color: #D9E76C;
 }
 
 .bg-secondary {
-  background-color: #EED2CC !important;
-  fill: #EED2CC !important;
+  background-color: #D9E76C !important;
+  fill: #D9E76C !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #EED2CC;
-  background-image: linear-gradient(0deg, #EED2CC 0%, #e1b0a6 100%);
+  background-color: #D9E76C;
+  background-image: linear-gradient(0deg, #D9E76C 0%, #cee040 100%);
 }
 
 /* _fonts
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #EED2CC;
+  color: #D9E76C;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #EED2CC;
+  border-bottom: 157px solid #D9E76C;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -700,7 +700,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #EED2CC;
+  color: #D9E76C;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -794,7 +794,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #EED2CC;
+  background-color: #D9E76C;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -1095,14 +1095,14 @@ html, body {
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #EED2CC;
-  background-image: linear-gradient(0deg, #EED2CC 0%, #e8c1b9 100%);
+  background-color: #D9E76C;
+  background-image: linear-gradient(0deg, #D9E76C 0%, #d3e356 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #EED2CC;
+  border: 2px solid #D9E76C;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #EED2CC;
+  border-bottom-color: #D9E76C;
 }
 
 .service-categories__category--third .service-categories__category__icon {
@@ -1497,8 +1497,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #EED2CC;
-  box-shadow: inset 350px 0 0 0 #EED2CC;
+  border-color: #D9E76C;
+  box-shadow: inset 350px 0 0 0 #D9E76C;
   color: #303952;
 }
 
@@ -1598,7 +1598,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #EED2CC;
+  background-color: #D9E76C;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1716,7 +1716,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #EED2CC;
+  color: #D9E76C;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1757,7 +1757,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6A8E7F, #EED2CC);
+  background: linear-gradient(180deg, #6A8E7F, #D9E76C);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
