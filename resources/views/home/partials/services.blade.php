@@ -13,8 +13,12 @@
                     </div>
                 </div>@endforeach
             <div class="services-view-more">
-                <span class="js-services-show-more">See <a href="javascript:;" class="link link--underline">everything we do</a>.</span>
-                <span style="display: none" class="js-services-show-more-or-contact"><span class="link link--underline js-services-to-contact-us" >Contact us</span> or <span class="js-services-show-less link link--underline" >see less</span>.</span>
+                <span class="js-services-show-more">@lang('base.services.closed')</span>
+                <span style="display: none" class="js-services-show-more-or-contact">
+                    @lang('base.services.opened-text')
+                    <span class="link link--underline js-services-to-contact-us" >@lang('base.services.opened-link')</span>
+                    {{-- or <span class="js-services-show-less link link--underline" >see less</span>. --}}
+                </span>
             </div>
         </div>
     </div>
