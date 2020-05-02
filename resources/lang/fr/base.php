@@ -2,7 +2,7 @@
 
 return [
     'map' => [
-        'title' => 'Nous sommes <span>une communauté internationale de freelances</span> qui construisons ensemble les projets de demain.',
+        'title' => 'Nous sommes une <span>communauté internationale de freelances</span> qui construisons ensemble les projets de demain.',
     ],
     'services' => [
         'closed' => 'Découvrez <span class="link link--underline">nos services</span>',
@@ -24,5 +24,5 @@ return [
     'clients' => [
         'title' => 'Ils nous ont fait confiance',
     ],
-    'footer' => '</> avec <3 par nous et open source',
+    'footer' => '<i class="fad fa-code color-secondary"></i> avec <i class="fad fa-heart color-red"></i> par nous et <a href="https://github.com/suavy/suavy-website" class="link link--underline" target="_blank" rel="nofollow noreferrer noopener">open source</a>',
 ];
