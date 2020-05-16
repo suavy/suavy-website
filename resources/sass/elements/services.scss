@@ -25,6 +25,7 @@ $fourthServiceCategoryColor: $blue;
 }
 
 .service-categories__category {
+    cursor: pointer;
     display: inline-block;
     width: 25%;
     box-sizing: border-box;
@@ -51,6 +52,13 @@ $fourthServiceCategoryColor: $blue;
     margin: 0 auto 15px;
     //border: 2px solid $gray;
     color: $white;
+    transition: .2s;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transition: .2s;
+    }
 }
 
 .service-categories__category__name {
@@ -144,7 +152,7 @@ $fourthServiceCategoryColor: $blue;
 }
 
 .service-categories__category__services__item {
-    padding: 5px 0;
+    padding: 0;
     span, i {
         vertical-align: middle;
     }
