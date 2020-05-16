@@ -63,7 +63,7 @@ $pureBlack: #000;
 $pureWhite: #FFF;
 
 $primaryColor: $purple;
-$secondaryColor: $yellow;
+$secondaryColor: #ffa32b;
 
 $color-list: (
     ("white", $white),
@@ -94,4 +94,4 @@ $color-list: (
 /* _fonts
 ===========================================*/
 $defaultFont: 'Roboto', sans-serif;
-$titleFont: 'Abril Fatface', cursive;
+$titleFont: 'Nunito Sans', sans-serif;

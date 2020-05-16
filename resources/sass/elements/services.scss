@@ -18,7 +18,7 @@ $fourthServiceCategoryColor: $blue;
 }
 
 .service-categories {
-    padding: 20px 40px 60px;
+    padding: 30px 20px 30px;
     box-sizing: border-box;
     @include border-radius(5px);
     background-color: $white;
@@ -42,10 +42,10 @@ $fourthServiceCategoryColor: $blue;
 }
 
 .service-categories__category__icon {
-    @include font-size(38px);
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    @include font-size(80px);
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
     @include border-radius(50%);
     text-align: center;
     margin: 0 auto 15px;
@@ -66,6 +66,7 @@ $fourthServiceCategoryColor: $blue;
     text-align: left;
     position: relative;
     border: 2px solid $gray;
+    margin-bottom: 15px;
     &:after {
         content: '';
         position: absolute;

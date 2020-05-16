@@ -1,11 +1,15 @@
 .link {
     color: $black;
     cursor: pointer;
+    font-weight: bold;
+    transition: .2s;
 }
 .link--underline {
-    text-decoration: underline;
+    // text-decoration: underline;
     text-decoration-color: transparentize($black, 0.5);
     &:hover {
+        transition: .2s;
         text-decoration-color: $black;
+        color: $secondaryColor;
     }
 }

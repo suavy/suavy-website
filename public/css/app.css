@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -336,17 +336,17 @@ a {
 }
 
 .color-secondary {
-  color: #f2ed6f;
+  color: #ffa32b;
 }
 
 .bg-secondary {
-  background-color: #f2ed6f !important;
-  fill: #f2ed6f !important;
+  background-color: #ffa32b !important;
+  fill: #ffa32b !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #f2ed6f;
-  background-image: linear-gradient(0deg, #f2ed6f 0%, #eee740 100%);
+  background-color: #ffa32b;
+  background-image: linear-gradient(0deg, #ffa32b 0%, #f78c00 100%);
 }
 
 /* _fonts
@@ -405,7 +405,7 @@ html, body {
 }
 
 .alert__title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 42px;
   font-size: 2.625rem;
   line-height: 50px;
@@ -433,7 +433,7 @@ html, body {
 }
 
 .clients-title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 36px;
   font-size: 2.25rem;
   text-align: center;
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #f2ed6f;
+  color: #ffa32b;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #f2ed6f;
+  border-bottom: 157px solid #ffa32b;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -628,16 +628,19 @@ html, body {
 .link {
   color: #303952;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 .link--underline {
-  text-decoration: underline;
   -webkit-text-decoration-color: rgba(48, 57, 82, 0.5);
           text-decoration-color: rgba(48, 57, 82, 0.5);
 }
 .link--underline:hover {
+  transition: 0.2s;
   -webkit-text-decoration-color: #303952;
           text-decoration-color: #303952;
+  color: #ffa32b;
 }
 
 .map-row {
@@ -690,7 +693,7 @@ html, body {
 }
 
 .map-title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   color: #f5f6fa;
   font-size: 36px;
   font-size: 2.25rem;
@@ -700,7 +703,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #f2ed6f;
+  color: #ffa32b;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -794,7 +797,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #f2ed6f;
+  background-color: #ffa32b;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -986,7 +989,7 @@ html, body {
 .services-view-more {
   vertical-align: middle;
   text-align: center;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 48px;
   font-size: 3rem;
 }
@@ -998,7 +1001,7 @@ html, body {
 }
 
 .service-categories {
-  padding: 20px 40px 60px;
+  padding: 30px 20px 30px;
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #f5f6fa;
@@ -1026,11 +1029,11 @@ html, body {
 }
 
 .service-categories__category__icon {
-  font-size: 38px;
-  font-size: 2.375rem;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  font-size: 80px;
+  font-size: 5rem;
+  width: 180px;
+  height: 180px;
+  line-height: 180px;
   border-radius: 50%;
   text-align: center;
   margin: 0 auto 15px;
@@ -1051,6 +1054,7 @@ html, body {
   text-align: left;
   position: relative;
   border: 2px solid #596275;
+  margin-bottom: 15px;
 }
 .service-categories__category__services:after {
   content: "";
@@ -1095,14 +1099,14 @@ html, body {
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #f2ed6f;
-  background-image: linear-gradient(0deg, #f2ed6f 0%, #f0ea58 100%);
+  background-color: #ffa32b;
+  background-image: linear-gradient(0deg, #ffa32b 0%, #ff9812 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #f2ed6f;
+  border: 2px solid #ffa32b;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #f2ed6f;
+  border-bottom-color: #ffa32b;
 }
 
 .service-categories__category--third .service-categories__category__icon {
@@ -1348,7 +1352,7 @@ html, body {
   text-align: center;
   color: #f5f6fa;
   padding: 10px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .team__member__name {
@@ -1365,7 +1369,7 @@ html, body {
   }
 }
 .team__member__name span {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -1412,7 +1416,7 @@ html, body {
 }
 
 .title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -1497,8 +1501,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #f2ed6f;
-  box-shadow: inset 350px 0 0 0 #f2ed6f;
+  border-color: #ffa32b;
+  box-shadow: inset 350px 0 0 0 #ffa32b;
   color: #303952;
 }
 
@@ -1598,7 +1602,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #f2ed6f;
+  background-color: #ffa32b;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1715,8 +1719,8 @@ textarea::placeholder {
   width: 50%;
   text-align: left;
   vertical-align: middle;
-  font-family: "Abril Fatface", cursive;
-  color: #f2ed6f;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffa32b;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1757,7 +1761,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #574b90, #f2ed6f);
+  background: linear-gradient(180deg, #574b90, #ffa32b);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
