@@ -4,7 +4,7 @@
         @foreach(\App\Models\User::query()->whereDisabled(false)->get() as $user)<div class="team__member-container">
             <div class="team__member">
                 <div class="team__member__picture js-team-picture slow" id="team-{{$user->nickname}}">
-                    <img class="team__member__picture__image" src="https://picsum.photos/200"/>
+                    <img class="team__member__picture__image" src="{{ $user->picture_or_default }}"/>
                     <div class="team__member__picture__border"></div>
                     <div class="team__member__picture__hover">
                         <div class="team__member__picture__hover__content">

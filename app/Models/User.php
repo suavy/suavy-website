@@ -74,6 +74,9 @@ class User extends Authenticatable
     | _Accessors
     |--------------------------------------------------------------------------
     */
+    public function getPictureOrDefaultAttribute() {
+        return !is_null($this->picture) ? $this->picture : "https://picsum.photos/200";
+    }
 
     /*
     |--------------------------------------------------------------------------
