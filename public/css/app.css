@@ -1809,7 +1809,7 @@ body.night .header__logo span {
   color: #05060a;
 }
 body.night .contact__form {
-  background-color: black;
+  background-color: #0e101b;
 }
 body.night .checkbox .label,
 body.night input,
@@ -1838,8 +1838,8 @@ body.night .team__member__role {
   color: #ebedf5;
 }
 body.night .client img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(0);
+          filter: brightness(0) invert(0);
 }
 body.night .service-categories {
   background-color: #05060a;

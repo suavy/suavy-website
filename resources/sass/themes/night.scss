@@ -29,7 +29,7 @@ body.night {
     /* _form
     ===========================================*/
     .contact__form {
-        background-color: darken($black, 3%);
+        background-color: lighten($black, 5%);
     }
     .checkbox .label,
     input,
@@ -74,7 +74,7 @@ body.night {
 
     /* _client
     ===========================================*/
-    .client img { filter: brightness(0) invert(1); }
+    .client img { filter: brightness(0) invert(0); }
 
     /* _services
     ===========================================*/
