@@ -49,7 +49,7 @@ $white: #f5f6fa;
 $lightgray: darken($white, 3%);
 $blue: #1e3799;
 $indigo: #6574cd;
-$purple: #53286f;
+$purple: #4B2973;
 $pink: #D31C96;
 $red: #e3342f;
 $orange: #FF8C0E;
@@ -87,7 +87,7 @@ $color-list: (
 @each $color, $value in $color-list {
     .color-#{$color} { color: $value; }
     .bg-#{$color} { background-color: $value !important; fill: $value !important; }
-    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 5%) 100%); }
+    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 4%) 100%); }
 
 }
 
