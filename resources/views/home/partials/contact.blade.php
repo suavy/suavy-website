@@ -4,13 +4,13 @@
 
         <div class="contact__form js-contact-container">
             <x-form link="/contact" id="contact">
-                <x-inputs.checkboxes label="@lang('base.contact.services_label') 🤔" name="contact[services][]" :options="$contactServices"/>
-                <x-inputs.checkboxes label="@lang('base.contact.deliveries_label') 🐢" name="contact[deliveries][]" :options="$contactDeliveries"/>
-                <x-inputs.checkboxes label="@lang('base.contact.budgets_label') 💰" name="contact[budgets][]" :options="$contactBudgets"/>
-                <x-inputs.text name="contact[name]" label="@lang('base.contact.name_label')*" />
-                <x-inputs.text name="contact[email]" label="@lang('base.contact.email_label')*" />
+                <x-inputs.checkboxes :label="__('base.contact.services_label')" name="contact[services][]" :options="$contactServices"/>
+                <x-inputs.checkboxes :label="__('base.contact.deliveries_label')" name="contact[deliveries][]" :options="$contactDeliveries"/>
+                <x-inputs.checkboxes :label="__('base.contact.budgets_label')" name="contact[budgets][]" :options="$contactBudgets"/>
+                <x-inputs.text name="contact[name]" :label="__('base.contact.name_label')" />
+                <x-inputs.text name="contact[email]" :label="__('base.contact.email_label')" />
                 <div id="message-wrapper">
-                    <x-inputs.textarea name="contact[message]" label="@lang('base.contact.message_label')*" />
+                    <x-inputs.textarea name="contact[message]" :label="__('base.contact.message_label')" />
                 </div>
                 <div class="form-button-container">
                     <button class="form-button">@lang('base.contact.button_name')</button>

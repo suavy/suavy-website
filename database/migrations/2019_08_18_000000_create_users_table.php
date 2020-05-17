@@ -96,20 +96,6 @@ class CreateUsersTable extends Migration
         $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['FR', 'PT', 'UK', 'ES'])->get());
 
         $user = new \App\Models\User();
-        $user->firstname = 'Matheus';
-        $user->lastname = 'Matheus';
-        $user->nickname = 'matheus';
-        $user->role = 'Backend developer';
-        $user->email = 'matheus@me.com';
-        $user->password = \Illuminate\Support\Facades\Hash::make('test');
-        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
-        $user->city_id = 3;
-        $user->country_id = 2;
-        $user->disabled = true;
-        $user->save();
-        $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['BR', 'UK'])->get());
-
-        $user = new \App\Models\User();
         $user->firstname = 'Breno';
         $user->lastname = 'Romeiro';
         $user->nickname = 'bsromeiro';
@@ -156,14 +142,43 @@ class CreateUsersTable extends Migration
         $user = new \App\Models\User();
         $user->firstname = 'Héloïse';
         $user->lastname = 'Vieu';
-        $user->nickname = 'helowwkitty';
+        $user->nickname = 'helolo75';
         $user->role = 'Communication manager';
         $user->email = 'vieu.heloise@gmail.com';
+        $user->github_url = 'https://github.com/helolo75';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 1;
         $user->country_id = 1;
         $user->save();
         $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['FR', 'UK'])->get());
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Matheus';
+        $user->lastname = 'Matheus';
+        $user->nickname = 'matheus';
+        $user->role = 'Backend developer';
+        $user->email = 'matheus@me.com';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 3;
+        $user->country_id = 2;
+        $user->disabled = true;
+        $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['BR', 'UK'])->get());
+
+        $user = new \App\Models\User();
+        $user->firstname = 'Pedro';
+        $user->lastname = '';
+        $user->nickname = 'p-arth';
+        $user->role = 'Designer & frontend developer';
+        $user->email = 'test@test.fr';
+        $user->password = \Illuminate\Support\Facades\Hash::make('test');
+        $user->created_at = $user->updated_at = \Carbon\Carbon::now();
+        $user->city_id = 2;
+        $user->country_id = 3;
+        $user->disabled = true;
+        $user->save();
+        $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['BR', 'UK'])->get());
     }
 }
