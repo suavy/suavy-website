@@ -182,17 +182,17 @@ a {
 }
 
 .color-purple {
-  color: #574b90;
+  color: #A569BD;
 }
 
 .bg-purple {
-  background-color: #574b90 !important;
-  fill: #574b90 !important;
+  background-color: #A569BD !important;
+  fill: #A569BD !important;
 }
 
 .bg-gradient-purple {
-  background-color: #574b90;
-  background-image: linear-gradient(0deg, #574b90 0%, #433a6e 100%);
+  background-color: #A569BD;
+  background-image: linear-gradient(0deg, #A569BD 0%, #8e4aa9 100%);
 }
 
 .color-pink {
@@ -238,17 +238,17 @@ a {
 }
 
 .color-yellow {
-  color: #f2ed6f;
+  color: #F7DC6F;
 }
 
 .bg-yellow {
-  background-color: #f2ed6f !important;
-  fill: #f2ed6f !important;
+  background-color: #F7DC6F !important;
+  fill: #F7DC6F !important;
 }
 
 .bg-gradient-yellow {
-  background-color: #f2ed6f;
-  background-image: linear-gradient(0deg, #f2ed6f 0%, #eee740 100%);
+  background-color: #F7DC6F;
+  background-image: linear-gradient(0deg, #F7DC6F 0%, #f4d03f 100%);
 }
 
 .color-green {
@@ -322,31 +322,31 @@ a {
 }
 
 .color-primary {
-  color: #574b90;
+  color: #A569BD;
 }
 
 .bg-primary {
-  background-color: #574b90 !important;
-  fill: #574b90 !important;
+  background-color: #A569BD !important;
+  fill: #A569BD !important;
 }
 
 .bg-gradient-primary {
-  background-color: #574b90;
-  background-image: linear-gradient(0deg, #574b90 0%, #433a6e 100%);
+  background-color: #A569BD;
+  background-image: linear-gradient(0deg, #A569BD 0%, #8e4aa9 100%);
 }
 
 .color-secondary {
-  color: #f2ed6f;
+  color: #F7DC6F;
 }
 
 .bg-secondary {
-  background-color: #f2ed6f !important;
-  fill: #f2ed6f !important;
+  background-color: #F7DC6F !important;
+  fill: #F7DC6F !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #f2ed6f;
-  background-image: linear-gradient(0deg, #f2ed6f 0%, #eee740 100%);
+  background-color: #F7DC6F;
+  background-image: linear-gradient(0deg, #F7DC6F 0%, #f4d03f 100%);
 }
 
 /* _fonts
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #f2ed6f;
+  color: #F7DC6F;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -556,7 +556,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #6e61ad;
+  border-bottom: 300px solid #ba8ccd;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -566,7 +566,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #574b90;
+  border-bottom: 300px solid #A569BD;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #f2ed6f;
+  border-bottom: 157px solid #F7DC6F;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -700,7 +700,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #f2ed6f;
+  color: #F7DC6F;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -794,7 +794,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #f2ed6f;
+  background-color: #F7DC6F;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -1084,36 +1084,36 @@ html, body {
 }
 
 .service-categories__category--first .service-categories__category__icon {
-  background-color: #574b90;
-  background-image: linear-gradient(0deg, #574b90 0%, #4d427f 100%);
+  background-color: #A569BD;
+  background-image: linear-gradient(0deg, #A569BD 0%, #9a57b5 100%);
 }
 .service-categories__category--first .service-categories__category__services {
-  border: 2px solid #574b90;
+  border: 2px solid #A569BD;
 }
 .service-categories__category--first .service-categories__category__services:before {
-  border-bottom-color: #574b90;
+  border-bottom-color: #A569BD;
 }
 
 .service-categories__category--second .service-categories__category__icon {
-  background-color: #f2ed6f;
-  background-image: linear-gradient(0deg, #f2ed6f 0%, #f0ea58 100%);
+  background-color: #f78fb3;
+  background-image: linear-gradient(0deg, #f78fb3 0%, #f577a3 100%);
 }
 .service-categories__category--second .service-categories__category__services {
-  border: 2px solid #f2ed6f;
+  border: 2px solid #f78fb3;
 }
 .service-categories__category--second .service-categories__category__services:before {
-  border-bottom-color: #f2ed6f;
+  border-bottom-color: #f78fb3;
 }
 
 .service-categories__category--third .service-categories__category__icon {
-  background-color: #ffaf40;
-  background-image: linear-gradient(0deg, #ffaf40 0%, #ffa427 100%);
+  background-color: #F7DC6F;
+  background-image: linear-gradient(0deg, #F7DC6F 0%, #f6d657 100%);
 }
 .service-categories__category--third .service-categories__category__services {
-  border: 2px solid #ffaf40;
+  border: 2px solid #F7DC6F;
 }
 .service-categories__category--third .service-categories__category__services:before {
-  border-bottom-color: #ffaf40;
+  border-bottom-color: #F7DC6F;
 }
 
 .service-categories__category--fourth .service-categories__category__icon {
@@ -1497,8 +1497,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #f2ed6f;
-  box-shadow: inset 350px 0 0 0 #f2ed6f;
+  border-color: #F7DC6F;
+  box-shadow: inset 350px 0 0 0 #F7DC6F;
   color: #303952;
 }
 
@@ -1598,7 +1598,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #f2ed6f;
+  background-color: #F7DC6F;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1716,7 +1716,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #f2ed6f;
+  color: #F7DC6F;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1757,7 +1757,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #574b90, #f2ed6f);
+  background: linear-gradient(180deg, #A569BD, #F7DC6F);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
