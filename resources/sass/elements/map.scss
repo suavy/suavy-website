@@ -125,10 +125,9 @@ $markerColor: $white;
         top: 50%; left: 50%;
         transform: translate(-50%,-50%);
         transition-duration: 0.4s;
-        z-index: 2;
         .fa-times { display: none; }
     }
-    &__button.pulse:after {
+    &__button.map-pulse:after {
         box-shadow: 0 0 1px 2px $markerColor;
     }
 
@@ -186,7 +185,7 @@ $markerColor: $white;
         transform: translate(-150%,-50%);
     }
 
-    &__controller:checked ~ .pulse:after {
+    &__controller:checked ~ .map-pulse:after {
         display: none;
     }
 }

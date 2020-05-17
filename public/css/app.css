@@ -783,12 +783,11 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 0.4s;
-  z-index: 2;
 }
 .map-marker__button .fa-times {
   display: none;
 }
-.map-marker__button.pulse:after {
+.map-marker__button.map-pulse:after {
   box-shadow: 0 0 1px 2px #f5f6fa;
 }
 .map-marker__controller:checked ~ .map-marker__button {
@@ -842,7 +841,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__item:nth-of-type(4) {
   transform: translate(-150%, -50%);
 }
-.map-marker__controller:checked ~ .pulse:after {
+.map-marker__controller:checked ~ .map-pulse:after {
   display: none;
 }
 
