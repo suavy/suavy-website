@@ -21,7 +21,11 @@ body.night {
 
     /* _header
     ===========================================*/
-
+    .header__logo {
+        span {
+            color: $black;
+        }
+    }
     /* _form
     ===========================================*/
     .contact__form {
@@ -36,12 +40,12 @@ body.night {
     /* _map
     ===========================================*/
     .map-title {
-        //color: $black;
+        color: $black;
     }
 
     .map-svg {
         path {
-            fill: transparentize($black, 0.3);
+            fill: transparentize($black, 0.5);
             stroke:$black;
         }
     }
