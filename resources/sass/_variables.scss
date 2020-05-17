@@ -49,11 +49,11 @@ $white: #f5f6fa;
 $lightgray: darken($white, 3%);
 $blue: #1e3799;
 $indigo: #6574cd;
-$purple: #6a2c70;
-$pink: #b83b5e;
+$purple: #49008C;
+$pink: #D31C96;
 $red: #e3342f;
-$orange: #f08a5d;
-$yellow: #f9ed69;
+$orange: #FF8C0E;
+$yellow: #FED500;
 $green: #21b989;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
@@ -87,7 +87,7 @@ $color-list: (
 @each $color, $value in $color-list {
     .color-#{$color} { color: $value; }
     .bg-#{$color} { background-color: $value !important; fill: $value !important; }
-    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 10%) 100%); }
+    .bg-gradient-#{$color} { background-color: $value; background-image: linear-gradient(0deg, $value 0%, darken($value, 5%) 100%); }
 
 }
 

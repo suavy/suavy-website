@@ -135,7 +135,7 @@ $markerColor: $white;
     &__controller:checked ~ &__button {
         width: 24px;
         height: 24px;
-        background-color: $secondaryColor;
+        background-color: $primaryColor;
         border: 2px solid $markerColor;
         line-height: 24px;
         @include font-size(14px);
