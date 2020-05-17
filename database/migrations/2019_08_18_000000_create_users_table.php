@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('role')->nullable();
             $table->string('email')->unique();
             $table->string('password');
-            $table->text('picture')->nullable();
+            $table->longText('picture')->nullable();
             $table->boolean('admin')->default(false);
             $table->boolean('disabled')->default(false);
             $table->string('github_url')->nullable();
