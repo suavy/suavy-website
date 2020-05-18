@@ -2,7 +2,9 @@
     <div class="clients-title">Companies we worked with</div>
     <div class="clients">
         @foreach($projects as $project)
-            <img src="{{ $project->company_logo }}"/>
+            <div class="client">
+                <img src="{{ $project->company_logo }}"/>
+            </div>
         @endforeach
     </div>
 </div>
