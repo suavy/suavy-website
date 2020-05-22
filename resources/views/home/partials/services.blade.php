@@ -24,7 +24,7 @@
     </div>
 </div> -->
 
-<div class="services">
+<div class="services home__row--above-team">
     <div class="services-icons">
         <div class="service-box">
             <div class="service-icon">
