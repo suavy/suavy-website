@@ -336,17 +336,17 @@ a {
 }
 
 .color-secondary {
-  color: #FFD524;
+  color: #F61067;
 }
 
 .bg-secondary {
-  background-color: #FFD524 !important;
-  fill: #FFD524 !important;
+  background-color: #F61067 !important;
+  fill: #F61067 !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #FFD524;
-  background-image: linear-gradient(0deg, #FFD524 0%, #f0c200 100%);
+  background-color: #F61067;
+  background-image: linear-gradient(0deg, #F61067 0%, #cb0852 100%);
 }
 
 /* _fonts
@@ -469,7 +469,7 @@ html, body {
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #FFD524;
+  color: #F61067;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -598,7 +598,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #FFD524;
+  border-bottom: 157px solid #F61067;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -700,7 +700,7 @@ html, body {
   padding-right: 40px;
 }
 .map-title span {
-  color: #FFD524;
+  color: #F61067;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -908,6 +908,10 @@ html, body {
     filter: alpha(opacity=0);
   }
 }
+.bg-gradient {
+  background: linear-gradient(0deg, #150433 0%, #3A0475 100%);
+}
+
 .modal-container {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1496,8 +1500,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #FFD524;
-  box-shadow: inset 350px 0 0 0 #FFD524;
+  border-color: #F61067;
+  box-shadow: inset 350px 0 0 0 #F61067;
   color: #05060a;
 }
 
@@ -1597,7 +1601,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #FFD524;
+  background-color: #F61067;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1715,7 +1719,7 @@ textarea::placeholder {
   text-align: left;
   vertical-align: middle;
   font-family: "Abril Fatface", cursive;
-  color: #FFD524;
+  color: #F61067;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1756,7 +1760,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #531CB3, #FFD524);
+  background: linear-gradient(180deg, #531CB3, #F61067);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }

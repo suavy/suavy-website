@@ -62,8 +62,11 @@ $black: #05060a; //#303952;
 $pureBlack: #000;
 $pureWhite: #FFF;
 
+$primaryGradient: linear-gradient(0deg, #150433 0%, #3A0475 100%);
+
 $primaryColor: $purple;
-$secondaryColor: $yellow;
+// $secondaryColor: $yellow;
+$secondaryColor: #F61067;
 
 $color-list: (
     ("white", $white),
