@@ -17,14 +17,16 @@
         <div class="services-view-more">
             <span class="js-services-show-more">@lang('base.services.closed')</span>
             <span style="display: none" class="js-services-show-more-or-contact">
-                @lang('base.services.opened-text')
-                <span class="link js-services-to-contact-us" >@lang('base.services.opened-link')</span>
-                {{-- or <span class="js-services-show-less link" >see less</span>. --}}
+                <!-- @lang('base.services.opened-text') -->
+                <!-- <span class="link js-services-to-contact-us" >@lang('base.services.opened-link')</span> -->
+                <span class="js-services-show-less link" >@lang('base.services.opened-text') see less</span>
             </span>
         </div>
 
     </div>
 <!-- </div> -->
+
+
 
 
 @push('after-foot-scripts')
@@ -48,11 +50,12 @@
         let countServices = $('#service-categories').data('count');
 
         $(".js-services-show-more").click(function () {
-            for(i=1; i<=countServices; i++){
-                console.log('.js-service-'+i);
-                $('.js-service-'+i).show();
-                animateCSS('.js-service-'+i, 'jackInTheBox');
-            }
+            // << Commented to get rid of the boxes for now >>
+            // for(i=1; i<=countServices; i++){
+            //     console.log('.js-service-'+i);
+            //     $('.js-service-'+i).show();
+            //     animateCSS('.js-service-'+i, 'jackInTheBox');
+            // }
             animateCSS('.js-services-show-more', 'fadeOutRight',function () {
                 $('.js-services-show-more').hide();
                 $('.js-services-show-more-or-contact').show();

@@ -349,6 +349,20 @@ a {
   background-image: linear-gradient(0deg, #F61067 0%, #cb0852 100%);
 }
 
+.color-new {
+  color: #110C2A;
+}
+
+.bg-new {
+  background-color: #110C2A !important;
+  fill: #110C2A !important;
+}
+
+.bg-gradient-new {
+  background-color: #110C2A;
+  background-image: linear-gradient(0deg, #110C2A 0%, #010102 100%);
+}
+
 /* _fonts
 ===========================================*/
 html, body {
@@ -433,12 +447,15 @@ html, body {
 }
 
 .clients-title {
-  font-family: "Abril Fatface", cursive;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
   text-align: center;
   padding-bottom: 20px;
-  color: #000;
+  color: #F61067;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .clients {
@@ -971,12 +988,109 @@ html, body {
   color: #ff8a69;
 }
 
+.services-more {
+  background-color: #110C2A;
+  padding: 25px;
+  opacity: 1;
+  transition: all 1.5s ease;
+  max-height: 2000px;
+}
+.services-more h2 {
+  color: white;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+.services-more h3 {
+  color: white;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin: 18px 32%;
+}
+
+.services-more.invisible {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  transition: all 1.5s ease;
+}
+
+.services-category {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  text-align: center;
+}
+
+.services-categories {
+  flex: 0 0 33.33333%;
+  display: block;
+  text-align: center;
+}
+.services-categories h3 {
+  text-align: center;
+  color: #29F0B5;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.services-categories p {
+  font-family: "M PLUS 1p", sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  margin: 16px 70px 70px;
+  line-height: 180%;
+}
+
+.services-avatar {
+  margin: auto;
+  /* text-align: center; */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 1px #2C1F42;
+  background-color: #150D2D;
+  font-size: 32px;
+  color: #29F0B5;
+  line-height: 64px;
+}
+.services-avatar i {
+  margin: auto;
+}
+
+.send-message {
+  font-family: "M PLUS 1p", sans-serif;
+  background-color: transparent;
+  color: #F64467;
+  border-radius: 30px;
+  padding: 20px 50px;
+  border: 2px solid #F64467;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+.send-message:hover {
+  cursor: pointer;
+  background-color: #F64467;
+  color: white;
+  transition: all 0.3s;
+}
+
+.button-div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
 .services {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../images/pattern.jpg);
   background-size: 140%;
   background-position: center;
   width: 100%;
   text-align: center;
+  transition: height 1s ease;
 }
 
 .service-categories {
@@ -1090,144 +1204,6 @@ html, body {
   font-size: 14px;
   font-size: 0.875rem;
 }
-.services {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../images/pattern.jpg);
-  background-size: 140%;
-  background-position: center;
-  width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-.services-icons {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  /* align-items: center; */
-  /* align-self: center; */
-}
-
-.service-box {
-  display: block;
-  margin-top: 50px;
-}
-.service-box p {
-  font-family: "M PLUS 1p", sans-serif;
-  font-size: 13px;
-  letter-spacing: 6px;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #30233D;
-}
-
-.service-icon {
-  font-size: 102px;
-  color: #F64467;
-}
-
-.what-we-do {
-  font-family: "M PLUS 1p", sans-serif;
-  font-size: 21px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #F64467;
-  display: flex;
-  margin-top: 35px;
-  justify-content: center;
-  box-shadow: none !important;
-  outline: none !important;
-}
-.what-we-do:hover {
-  color: #30233D;
-  cursor: pointer;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.arrows-1 {
-  font-size: 24px;
-  color: #F64467;
-  /* -moz-animation: bounce1 2s infinite;
-  -webkit-animation: bounce1 2s infinite;
-  animation: bounce1 2s infinite;
-  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important; */
-  outline: none !important;
-  box-shadow: none !important;
-  transition: all 0.3s ease-in-out;
-}
-
-.arrows-1.active {
-  transition: all 0.3s ease-in-out;
-  transform: rotate(-90deg);
-}
-
-.arrows-2 {
-  font-size: 24px;
-  color: #F64467;
-  /* -moz-animation: bounce2 2s infinite;
-  -webkit-animation: bounce2 2s infinite;
-  animation: bounce2 2s infinite;
-  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important; */
-  outline: none !important;
-  box-shadow: none !important;
-  transition: all 0.3s ease-in-out;
-}
-
-.arrows-2.active {
-  transition: all 0.3s ease-in-out;
-  transform: rotate(90deg);
-}
-
-@-webkit-keyframes bounce1 {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-10px);
-  }
-  60% {
-    transform: translateX(-5px);
-  }
-}
-
-@keyframes bounce1 {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-10px);
-  }
-  60% {
-    transform: translateX(-5px);
-  }
-}
-@-webkit-keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(10px);
-  }
-  60% {
-    transform: translateX(5px);
-  }
-}
-@keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(10px);
-  }
-  60% {
-    transform: translateX(5px);
-  }
-}
 /* _button-theme
 ===========================================*/
 .button-theme {
@@ -1331,8 +1307,8 @@ html, body {
 }
 
 .team {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(../../../images/purple-pattern.jpg);
 }
 @media (max-width: 768px) {
@@ -1505,6 +1481,18 @@ html, body {
   display: inline-block;
   color: #f5f6fa;
   padding: 0 15px;
+}
+
+.team__title {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #F61067;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .title {

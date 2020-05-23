@@ -3,6 +3,7 @@
     <!-- Good rows -->
     @include('home.partials.map')
     @include('home.partials.services')
+    @include('home.partials.more-services')
     @include('home.partials.team')
     @include('home.partials.clients')
     @include('home.partials.contact')

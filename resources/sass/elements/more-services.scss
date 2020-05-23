@@ -1,0 +1,109 @@
+.services-more {
+    background-color: #110C2A;
+    padding: 25px;
+    & h2 {
+        color: white;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+    & h3 {
+        color: white;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin: 18px 32%;
+    }
+    opacity: 1;
+    transition: all 1.5s ease;
+    max-height: 2000px;
+}
+
+.services-more.invisible {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: all 1.5s ease;
+}
+
+.services-category {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    text-align: center;
+}
+
+.services-categories {
+    flex: 0 0 33.33333%;
+    display: block;
+    text-align: center;
+    & h3 {
+        text-align: center;
+        color: #29F0B5;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    & p {
+        font-family: 'M PLUS 1p', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        margin: 16px 70px 70px;
+        line-height: 180%;
+    }
+}
+
+.services-avatar {
+    margin: auto;
+    /* text-align: center; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 1px #2C1F42;
+    background-color: #150D2D;
+    font-size: 32px;
+    color: #29F0B5;
+    line-height: 64px;
+    & i {
+        margin: auto;
+    }
+}
+
+.send-message {
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: transparent;
+    color:#F64467;
+    border-radius: 30px;
+    padding: 20px 50px;
+    border: 2px solid #F64467;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all .3s;
+    &:hover {
+        cursor: pointer;
+        background-color: #F64467;
+        color: white;
+        transition: all .3s;
+    }
+}
+
+.button-div {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+// .show-services {
+//     font-family: 'M PLUS 1p', sans-serif;
+//     background-color: #F64467;
+//     color: white;
+//     border-radius: 30px;
+//     padding: 20px 50px;
+//     border: none;
+//     font-size: 14px;
+//     letter-spacing: 2px;
+//     &:hover {
+//         cursor: pointer;
+//     }
+// }

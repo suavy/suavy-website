@@ -1,5 +1,5 @@
-<div class="home__row home__row--clients bg-secondary">
-    <div class="clients-title">Companies we worked with</div>
+<div class="home__row home__row--clients bg-new">
+    <div class="clients-title">Our Clients</div>
     <div class="clients">
         @foreach($projects as $project)
             <div class="client">

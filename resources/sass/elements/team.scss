@@ -2,8 +2,8 @@
     // position: relative;
     // max-width: 1400px;
     // margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @include media('tablet-large') {
         padding-top: 40px;
     }
@@ -166,6 +166,17 @@
     display: inline-block;
     color: $white;
     padding: 0 15px;
+}
+
+.team__title {
+    font-family: 'M PLUS 1p', sans-serif;
+    @include font-size(21px);
+    text-align: center;
+    padding-bottom: 50px;
+    color: $secondaryColor;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 // .team {
