@@ -1,4 +1,4 @@
-<!-- <div class="home__row home__row--services home__row--above-team bg-primary">
+<!-- <div class="home__row home__row--services home__row--above-team bg-primary"> -->
     <div class="services">
         <div class="service-categories" id="service-categories" data-count="{{ $services->count() }}">
             @foreach($services as $service)<div class="service-categories__category service-categories__category--{{ $service->color }}">
@@ -11,20 +11,22 @@
                             </div>
                         @endforeach
                     </div>
-                </div>@endforeach
-            <div class="services-view-more">
-                <span class="js-services-show-more">@lang('base.services.closed')</span>
-                <span style="display: none" class="js-services-show-more-or-contact">
-                    @lang('base.services.opened-text')
-                    <span class="link link--underline js-services-to-contact-us" >@lang('base.services.opened-link')</span>
-                    {{-- or <span class="js-services-show-less link link--underline" >see less</span>. --}}
-                </span>
-            </div>
+                </div>@endforeach   
         </div>
-    </div>
-</div> -->
 
-<div class="services home__row--above-team">
+        <div class="services-view-more">
+            <span class="js-services-show-more">@lang('base.services.closed')</span>
+            <span style="display: none" class="js-services-show-more-or-contact">
+                @lang('base.services.opened-text')
+                <span class="link js-services-to-contact-us" >@lang('base.services.opened-link')</span>
+                {{-- or <span class="js-services-show-less link" >see less</span>. --}}
+            </span>
+        </div>
+
+    </div>
+<!-- </div> -->
+
+<!-- <div class="services">
     <div class="services-icons">
         <div class="service-box">
             <div class="service-icon">
@@ -64,7 +66,7 @@
         WHAT WE DO
         <div class="arrows-2"><i class="fas fa-angle-double-right"></i></div>
     </div>
-</div>
+</div> -->
 
 
 @push('after-foot-scripts')

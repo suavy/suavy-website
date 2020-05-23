@@ -1,11 +1,11 @@
 .link {
-    color: $black;
+    // color: $black;
     cursor: pointer;
 }
 .link--underline {
-    text-decoration: underline;
-    text-decoration-color: transparentize($black, 0.5);
-    &:hover {
-        text-decoration-color: $black;
-    }
+    // text-decoration: underline;
+    // text-decoration-color: transparentize($black, 0.5);
+    // &:hover {
+    //     text-decoration-color: $black;
+    // }
 }

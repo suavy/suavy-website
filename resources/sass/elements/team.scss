@@ -1,10 +1,13 @@
 .team {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
+    // position: relative;
+    // max-width: 1400px;
+    // margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
     @include media('tablet-large') {
         padding-top: 40px;
     }
+    background-image: linear-gradient(rgba(21, 4, 51, 0.9), rgba(21, 4, 51, 0.9)), url(../../../images/pattern.jpg);
 }
 
 .team__member-container {
@@ -44,9 +47,9 @@
 .team__member__picture {
     position: relative;
     @include border-radius(50%);
-    width: 180px;
-    height: 180px;
-    margin: -90px auto 0;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 0;
     &:hover {
         .team__member__picture__hover {
             opacity: 1;
@@ -158,3 +161,164 @@
     display: inline-block;
     color: $black;
 }
+
+// .team {
+//     position: relative;
+//     max-width: 1400px;
+//     margin: 0 auto;
+//     @include media('tablet-large') {
+//         padding-top: 40px;
+//     }
+// }
+
+// .team__member-container {
+//     position: relative;
+//     display: inline-block;
+//     width: 33.333%;
+//     vertical-align: top;
+//     &:nth-child(3n+1):nth-last-child(-n+3),
+//     &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
+//         margin-bottom: 20px;
+//     }
+//     @include media('screen-small') {
+//         width: 50%;
+//         &:nth-child(3n+1):nth-last-child(-n+3),
+//         &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
+//             margin-bottom: 0;
+//         }
+//         &:nth-child(2n+1):nth-last-child(-n+2),
+//         &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
+//             margin-bottom: 20px;
+//         }
+//     }
+//     @include media('tablet-large') {
+//         margin-bottom: 0;
+//     }
+
+//     box-sizing: border-box;
+//     padding: 0 10px 10px;
+//     margin-bottom: 120px;
+// }
+
+
+// .team__member {
+//     text-align: center;
+// }
+
+// .team__member__picture {
+//     position: relative;
+//     @include border-radius(50%);
+//     width: 180px;
+//     height: 180px;
+//     margin: 0 auto 0;
+//     &:hover {
+//         .team__member__picture__hover {
+//             opacity: 1;
+//             transform: rotate3d(0,1,0,-180deg);
+//         }
+//     }
+//     @include media('tablet-large') {
+//         width: 140px;
+//         height: 140px;
+//         margin:  0 auto;
+//     }
+// }
+
+// .team__member__picture__image {
+//     @include border-radius(50%);
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .team__member__picture__border {
+//     display: none; // remove this to add a transparent border
+//     @include border-radius(50%);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 80%;
+//     height: 80%;
+//     border: 20px solid rgba(255,255,255,0.4);
+
+// }
+
+// .team__member__picture__hover {
+//     opacity: 0;
+//     @include border-radius(50%);
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     transition: all 1s ease-in-out;
+//     transform-style: preserve-3d;
+// }
+
+// .team__member__picture__hover__content {
+//     @include border-radius(50%);
+//     background-color: $black;
+//     width: 80%;
+//     height: 80%;
+//     margin: 10%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transform: rotate3d(0,1,0,-180deg);
+//     transform-style: preserve-3d;
+//     display: none; // remove this to add back the hover effect
+// }
+
+// .team__member__picture__hover__content__citation {
+//     text-align: center;
+//     color: $white;
+//     padding: 10px;
+//     font-family: $titleFont;
+
+// }
+
+// .team__member__name {
+//     padding: 10px 0 3px;
+//     @include font-size(17px);
+//     font-weight: bold;
+//     vertical-align: top;
+//     @include media('tablet-large') {
+//         @include font-size(15px);
+//     }
+//     span {
+//         font-family: $titleFont;
+//         @include font-size(18px);
+//         @include media('tablet-large') {
+//             @include font-size(16px);
+//         }
+//     }
+// }
+
+// .team__member__role {
+//     padding: 0;
+//     @include font-size(14px);
+//     color: $gray;
+//     @include media('tablet-large') {
+//         @include font-size(13px);
+//     }
+// }
+
+// .team__member__languages {
+//     padding: 2px 0 0;
+// }
+
+// .team__member__language {
+//     display: inline-block;
+//     img {
+//         vertical-align: middle;
+//         height: 20px;
+//         width: auto;
+//     }
+// }
+
+// .team__member__links {
+//     padding: 2px 0 0;
+// }
+
+// .team__member__link {
+//     display: inline-block;
+//     color: $black;
+// }

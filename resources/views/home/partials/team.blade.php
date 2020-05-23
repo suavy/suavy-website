@@ -1,5 +1,5 @@
-<div class="home__row home__row--team" style="position: relative;">
-    <div style="position: absolute; width: 100%; height: 100%;"  id="teamRow"></div>
+<!-- <div class="home__row home__row--team" style="position: relative;"> -->
+    <!-- <div style="position: absolute; width: 100%; height: 100%;"  id="teamRow"></div> -->
     <div class="team">
         @foreach(\App\Models\User::query()->whereDisabled(false)->get() as $user)<div class="team__member-container">
             <div class="team__member">
@@ -36,8 +36,8 @@
                 </div>--}}
             </div>
         </div>@endforeach
-    </div>
-</div>
+    <!-- </div> -->
+<!-- </div> -->
 
 @push('after-foot-scripts')
     <!-- PS : trianglifly est inclus dans le head
