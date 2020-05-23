@@ -1333,7 +1333,7 @@ html, body {
 .team {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: linear-gradient(rgba(21, 4, 51, 0.9), rgba(21, 4, 51, 0.9)), url(../../../images/pattern.jpg);
+  background-image: url(../../../images/purple-pattern.jpg);
 }
 @media (max-width: 768px) {
   .team {
@@ -1344,7 +1344,7 @@ html, body {
 .team__member-container {
   position: relative;
   display: inline-block;
-  width: 33.333%;
+  width: 25%;
   vertical-align: top;
   box-sizing: border-box;
   padding: 0 10px 10px;
@@ -1443,20 +1443,22 @@ html, body {
 }
 
 .team__member__name {
-  padding: 10px 0 3px;
-  font-size: 17px;
-  font-size: 1.0625rem;
+  font-family: "M PLUS 1p", sans-serif;
+  padding: 15px 0 10px;
+  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: bold;
   vertical-align: top;
+  color: white;
 }
 @media (max-width: 768px) {
   .team__member__name {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 .team__member__name span {
-  font-family: "Abril Fatface", cursive;
+  font-style: italic;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -1468,20 +1470,22 @@ html, body {
 }
 
 .team__member__role {
-  padding: 0;
-  font-size: 14px;
-  font-size: 0.875rem;
+  padding: 0 0 5px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 4px;
   color: #596275;
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .team__member__role {
-    font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
 .team__member__languages {
-  padding: 2px 0 0;
+  padding: 0 0 5px;
 }
 
 .team__member__language {
@@ -1494,12 +1498,13 @@ html, body {
 }
 
 .team__member__links {
-  padding: 2px 0 0;
+  padding: 5px 0 5px;
 }
 
 .team__member__link {
   display: inline-block;
-  color: #05060a;
+  color: #f5f6fa;
+  padding: 0 15px;
 }
 
 .title {

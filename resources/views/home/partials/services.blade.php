@@ -26,48 +26,6 @@
     </div>
 <!-- </div> -->
 
-<!-- <div class="services">
-    <div class="services-icons">
-        <div class="service-box">
-            <div class="service-icon">
-                <i class="fal fa-brain"></i>
-            </div>
-            <p>
-                PRODUCT MANAGEMENT
-            </p>
-        </div>
-        <div class="service-box">
-            <div class="service-icon">
-                <i class="fal fa-atom"></i>
-            </div>
-            <p>
-                WEB DEVELOPMENT
-            </p>
-        </div>
-        <div class="service-box">
-            <div class="service-icon">
-                <i class="fal fa-balance-scale-right"></i>
-            </div>
-            <p>
-                DATA ANALYSIS
-            </p>
-        </div>
-        <div class="service-box">
-            <div class="service-icon">
-                <i class="fal fa-brain"></i>
-            </div>
-            <p>
-                PRODUCT MANAGEMENT
-            </p>
-        </div>
-    </div>
-    <div class="what-we-do">
-        <div class="arrows-1"><i class="fas fa-angle-double-left"></i></div>
-        WHAT WE DO
-        <div class="arrows-2"><i class="fas fa-angle-double-right"></i></div>
-    </div>
-</div> -->
-
 
 @push('after-foot-scripts')
     <script>

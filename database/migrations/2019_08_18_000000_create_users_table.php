@@ -163,21 +163,22 @@ class CreateUsersTable extends Migration
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 3;
         $user->country_id = 2;
-        $user->disabled = true;
+        $user->disabled = false;
         $user->save();
         $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['BR', 'UK'])->get());
 
         $user = new \App\Models\User();
         $user->firstname = 'Pedro';
-        $user->lastname = '';
+        $user->lastname = 'Arthur';
         $user->nickname = 'p-arth';
-        $user->role = 'Designer & frontend developer';
-        $user->email = 'test@test.fr';
+        $user->role = 'Fullstack developer';
+        $user->email = 'pedro.art.vel@gmail.com';
+        $user->github_url = 'https://github.com/p-arth';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
         $user->city_id = 2;
         $user->country_id = 3;
-        $user->disabled = true;
+        $user->disabled = false;
         $user->save();
         $user->countries()->sync(\App\Models\Country::query()->whereIn('code', ['BR', 'UK'])->get());
     }

@@ -7,13 +7,13 @@
     @include media('tablet-large') {
         padding-top: 40px;
     }
-    background-image: linear-gradient(rgba(21, 4, 51, 0.9), rgba(21, 4, 51, 0.9)), url(../../../images/pattern.jpg);
+    background-image: url(../../../images/purple-pattern.jpg);
 }
 
 .team__member-container {
     position: relative;
     display: inline-block;
-    width: 33.333%;
+    width: 25%;
     vertical-align: top;
     &:nth-child(3n+1):nth-last-child(-n+3),
     &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
@@ -115,33 +115,38 @@
 }
 
 .team__member__name {
-    padding: 10px 0 3px;
-    @include font-size(17px);
+    font-family: 'M PLUS 1p', sans-serif;
+    padding: 15px 0 10px;
+    @include font-size(21px);
     font-weight: bold;
     vertical-align: top;
     @include media('tablet-large') {
-        @include font-size(15px);
+        @include font-size(18px);
     }
     span {
-        font-family: $titleFont;
+        font-style: italic;
         @include font-size(18px);
         @include media('tablet-large') {
             @include font-size(16px);
         }
     }
+    color: white;
 }
 
 .team__member__role {
-    padding: 0;
-    @include font-size(14px);
+    padding: 0 0 5px;
+    @include font-size(13px);
+    letter-spacing: 4px;
     color: $gray;
+    // font-weight: bold;
+    text-transform: uppercase;
     @include media('tablet-large') {
-        @include font-size(13px);
+        @include font-size(12px);
     }
 }
 
 .team__member__languages {
-    padding: 2px 0 0;
+    padding: 0 0 5px;
 }
 
 .team__member__language {
@@ -154,12 +159,13 @@
 }
 
 .team__member__links {
-    padding: 2px 0 0;
+    padding: 5px 0 5px;
 }
 
 .team__member__link {
     display: inline-block;
-    color: $black;
+    color: $white;
+    padding: 0 15px;
 }
 
 // .team {
