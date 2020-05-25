@@ -20,7 +20,7 @@
 }
 
 .contact__form {
-    background-color: $lightgray;
+    background-color: transparent;
     position: relative;
     margin: 10px;
     padding: 10px;
@@ -145,5 +145,39 @@
 .contact__letter-box--close {
     .contact__letter-box__top {
         transform: translateY(-100%) rotateX(-175deg);
+    }
+}
+
+.form-group {
+    color: $white;
+    font-weight: normal;
+}
+
+.checkbox .label {
+    color: $white !important;
+    border: 2px solid $white !important;
+    font-family: 'M PLUS 1p', sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-size: 13.5px !important;
+    padding: 13px !important;
+    &:hover {
+        color: #05060a !important;
+        border: 2px solid $secondaryColor !important;
+    }
+}
+
+input {
+    border: 2px solid $white !important;
+}
+
+textarea {
+    border: 2px solid $white !important;
+}
+
+.form-button {
+    transition: all .3s;
+    &:hover {
+        transition: all .3s;
     }
 }

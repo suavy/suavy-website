@@ -45,6 +45,7 @@ $markerColor: $white;
 .map-title {
     font-family: $titleFont;
     color: $white;
+    font-weight: 300;
     @include font-size(36px);
     line-height: 48px;
     box-sizing: border-box;
