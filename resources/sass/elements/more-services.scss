@@ -1,5 +1,5 @@
 .services-more {
-    background-color: #110C2A;
+    background-color: $newColor;
     padding: 25px;
     & h2 {
         color: white;
@@ -41,7 +41,7 @@
     text-align: center;
     & h3 {
         text-align: center;
-        color: #29F0B5;
+        // color: #29F0B5;
         font-family: 'M PLUS 1p', sans-serif;
     }
     & p {
@@ -54,20 +54,79 @@
     }
 }
 
+.services-categories__design {
+    & h3 {
+        color: #29F0B5;
+    }
+}
+
+.services-categories__api {
+    & h3 {
+        color: #F67110;
+    }
+}
+
+.services-categories__webdev {
+    & h3 {
+        color: #29F0B5;
+    }
+}
+
+.services-categories__mobile {
+    & h3 {
+        color: #F67110;
+    }
+}
+
+.services-categories__data {
+    & h3 {
+        color: #29F0B5;
+    }
+}
+
+.services-categories__marketing {
+    & h3 {
+        color: #F67110;
+    }
+}
+
 .services-avatar {
     margin: auto;
-    /* text-align: center; */
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: solid 1px #2C1F42;
     background-color: #150D2D;
     font-size: 32px;
-    color: #29F0B5;
-    line-height: 64px;
+    // color: #29F0B5;
     & i {
+        line-height: 70px;
         margin: auto;
     }
+}
+
+.services-avatar__design {
+    color: #29F0B5
+}
+
+.services-avatar__api {
+    color: #F67110;
+}
+
+.services-avatar__webdev {
+    color: #29F0B5;
+}
+
+.services-avatar__mobile {
+    color: #F67110;
+}
+
+.services-avatar__data {
+    color: #29F0B5;
+}
+
+.services-avatar__marketing {
+    color: #F67110;
 }
 
 .send-message {
