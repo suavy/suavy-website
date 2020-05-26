@@ -16,6 +16,7 @@
     text-align: left;
     vertical-align: middle;
     font-family: $titleFont;
+    font-weight: 500;
     color: $secondaryColor;
     @include font-size(36px);
     span {

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap);@import url(https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800;900&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -322,17 +322,17 @@ a {
 }
 
 .color-primary {
-  color: #531CB3;
+  color: #30233D;
 }
 
 .bg-primary {
-  background-color: #531CB3 !important;
-  fill: #531CB3 !important;
+  background-color: #30233D !important;
+  fill: #30233D !important;
 }
 
 .bg-gradient-primary {
-  background-color: #531CB3;
-  background-image: linear-gradient(0deg, #531CB3 0%, #3f1587 100%);
+  background-color: #30233D;
+  background-image: linear-gradient(0deg, #30233D 0%, #17101d 100%);
 }
 
 .color-secondary {
@@ -368,7 +368,7 @@ a {
 html, body {
   background-color: #f5f6fa;
   color: #05060a;
-  font-family: "Roboto", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 200;
   font-size: 16px;
   margin: 0;
@@ -419,7 +419,7 @@ html, body {
 }
 
 .alert__title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "M PLUS 1p", sans-serif;
   font-size: 42px;
   font-size: 2.625rem;
   line-height: 50px;
@@ -504,7 +504,7 @@ html, body {
 }
 
 .contact__form {
-  background-color: #ebedf5;
+  background-color: transparent;
   position: relative;
   margin: 10px;
   padding: 10px;
@@ -573,7 +573,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #6825dd;
+  border-bottom: 300px solid #4a365d;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -583,7 +583,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #531CB3;
+  border-bottom: 300px solid #30233D;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -642,6 +642,40 @@ html, body {
   transform: translateY(-100%) rotateX(-175deg);
 }
 
+.form-group {
+  color: #f5f6fa;
+  font-weight: normal;
+}
+
+.checkbox .label {
+  color: #f5f6fa !important;
+  border: 2px solid #f5f6fa !important;
+  font-family: "M PLUS 1p", sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 13.5px !important;
+  padding: 13px !important;
+}
+.checkbox .label:hover {
+  color: #05060a !important;
+  border: 2px solid #F61067 !important;
+}
+
+input {
+  border: 2px solid #f5f6fa !important;
+}
+
+textarea {
+  border: 2px solid #f5f6fa !important;
+}
+
+.form-button {
+  transition: all 0.3s;
+}
+.form-button:hover {
+  transition: all 0.3s;
+}
+
 .link {
   cursor: pointer;
 }
@@ -696,8 +730,9 @@ html, body {
 }
 
 .map-title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "M PLUS 1p", sans-serif;
   color: #f5f6fa;
+  font-weight: 300;
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 48px;
@@ -799,7 +834,7 @@ html, body {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #531CB3;
+  background-color: #30233D;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -1032,7 +1067,6 @@ html, body {
 }
 .services-categories h3 {
   text-align: center;
-  color: #29F0B5;
   font-family: "M PLUS 1p", sans-serif;
 }
 .services-categories p {
@@ -1044,24 +1078,71 @@ html, body {
   line-height: 180%;
 }
 
+.services-categories__design h3 {
+  color: #29F0B5;
+}
+
+.services-categories__api h3 {
+  color: #F67110;
+}
+
+.services-categories__webdev h3 {
+  color: #29F0B5;
+}
+
+.services-categories__mobile h3 {
+  color: #F67110;
+}
+
+.services-categories__data h3 {
+  color: #29F0B5;
+}
+
+.services-categories__marketing h3 {
+  color: #F67110;
+}
+
 .services-avatar {
   margin: auto;
-  /* text-align: center; */
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: solid 1px #2C1F42;
   background-color: #150D2D;
   font-size: 32px;
-  color: #29F0B5;
-  line-height: 64px;
 }
 .services-avatar i {
+  line-height: 70px;
   margin: auto;
+}
+
+.services-avatar__design {
+  color: #29F0B5;
+}
+
+.services-avatar__api {
+  color: #F67110;
+}
+
+.services-avatar__webdev {
+  color: #29F0B5;
+}
+
+.services-avatar__mobile {
+  color: #F67110;
+}
+
+.services-avatar__data {
+  color: #29F0B5;
+}
+
+.services-avatar__marketing {
+  color: #F67110;
 }
 
 .send-message {
   font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
   background-color: transparent;
   color: #F64467;
   border-radius: 30px;
@@ -1076,6 +1157,7 @@ html, body {
   background-color: #F64467;
   color: white;
   transition: all 0.3s;
+  font-weight: 500;
 }
 
 .button-div {
@@ -1119,7 +1201,7 @@ html, body {
   line-height: 80px;
   text-align: center;
   margin: 0 auto 15px;
-  color: #F64467;
+  color: #F61067;
 }
 
 .service-categories__category__name {
@@ -1140,7 +1222,7 @@ html, body {
   letter-spacing: 2px;
   font-weight: bold;
   padding-bottom: 30px;
-  color: #F64467;
+  color: #F61067;
   display: flex;
   justify-content: center;
   box-shadow: none !important;
@@ -1415,7 +1497,7 @@ html, body {
   text-align: center;
   color: #f5f6fa;
   padding: 10px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 .team__member__name {
@@ -1451,6 +1533,7 @@ html, body {
   font-size: 0.8125rem;
   letter-spacing: 4px;
   color: #596275;
+  font-weight: 500;
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
@@ -1496,7 +1579,7 @@ html, body {
 }
 
 .title {
-  font-family: "Abril Fatface", cursive;
+  font-family: "M PLUS 1p", sans-serif;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -1799,7 +1882,8 @@ textarea::placeholder {
   width: 50%;
   text-align: left;
   vertical-align: middle;
-  font-family: "Abril Fatface", cursive;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 500;
   color: #F61067;
   font-size: 36px;
   font-size: 2.25rem;
@@ -1841,7 +1925,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #531CB3, #F61067);
+  background: linear-gradient(180deg, #30233D, #F61067);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }

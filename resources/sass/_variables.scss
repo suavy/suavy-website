@@ -64,7 +64,8 @@ $pureWhite: #FFF;
 
 $primaryGradient: linear-gradient(0deg, #150433 0%, #3A0475 100%);
 
-$primaryColor: $purple;
+$primaryColor: #30233D;
+// $primaryColor: $purple;
 // $secondaryColor: $yellow;
 $secondaryColor: #F61067;
 $newColor: #110C2A;
@@ -99,4 +100,5 @@ $color-list: (
 /* _fonts
 ===========================================*/
 $defaultFont: 'Roboto', sans-serif;
-$titleFont: 'Abril Fatface', cursive;
+$titleFont: 'M PLUS 1p', sans-serif;
+// $titleFont: 'Abril Fatface', cursive;
