@@ -16,7 +16,10 @@ Route::group([
 ], function () { // custom admin routes
     Route::crud('city', 'CityCrudController');
     Route::crud('country', 'CountryCrudController');
-    Route::crud('contact', 'ContactCrudController');
+    Route::group(['middleware' => ['admin.backend'],
+    ], function () {
+        Route::crud('contact', 'ContactCrudController');
+    });
     Route::crud('delivery', 'DeliveryCrudController');
     Route::crud('budget', 'BudgetCrudController');
 

@@ -3,7 +3,7 @@
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('dashboard') }}"><i class="far fa-fw fa-dashboard "></i> Dashboard</a></li>
 <li class="nav-title">Utilisateurs</li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('user') }}"><i class="far fa-fw fa-users "></i> Utilisateurs</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact') }}"><i class="far fa-fw fa-hospitals"></i> Contacts</a></li>
+@if(Auth::guard('backpack')->user()->isAdmin())<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact') }}"><i class="far fa-fw fa-hospitals"></i> Contacts</a></li>@endif
 <li class="nav-title">Données</li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('city') }}"><i class="far fa-fw fa-hospitals"></i> Cities</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('country') }}"><i class="far fa-fw fa-hospitals"></i> Countries</a></li>

@@ -96,4 +96,8 @@ class User extends Authenticatable
     | _Functions
     |--------------------------------------------------------------------------
     */
+
+    public function isAdmin(){
+        return $this->admin == 1;
+    }
 }
