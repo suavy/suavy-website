@@ -35,10 +35,9 @@ class UserCrudController extends CrudController
         $this->crud->setEntityNameStrings('utilisateur', 'utilisateurs');
     }
 
-
     protected function setupListOperation()
     {
-        $this->crud->removeButton("delete");
+        $this->crud->removeButton('delete');
 
         dd($this->crud->getCurrentEntry());
 

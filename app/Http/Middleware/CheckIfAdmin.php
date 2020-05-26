@@ -23,6 +23,7 @@ class CheckIfAdmin
     private function checkIfUserIsAdmin($user)
     {
         return  false;
+
         return $user->admin == 1;
     }
 
@@ -57,7 +58,7 @@ class CheckIfAdmin
         }
 
         if (! $this->checkIfUserIsAdmin(backpack_user())) {
-            return redirect("admin/dashboard");
+            return redirect('admin/dashboard');
         }
 
         return $next($request);
