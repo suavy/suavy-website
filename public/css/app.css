@@ -1025,10 +1025,9 @@ textarea {
 
 .services-more {
   background-color: #110C2A;
-  padding: 25px;
+  padding: 100px 25px;
   opacity: 1;
   transition: all 1.5s ease;
-  max-height: 2000px;
 }
 .services-more h2 {
   color: white;
@@ -1042,7 +1041,8 @@ textarea {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 18px 32%;
+  margin: 18px 0%;
+  line-height: normal;
 }
 
 .services-more.invisible {
@@ -1056,8 +1056,9 @@ textarea {
 .services-category {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 60px 15px;
   text-align: center;
+  justify-content: center;
 }
 
 .services-categories {
@@ -1181,6 +1182,11 @@ textarea {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 1024px) {
+  .service-categories {
+    flex-flow: column;
+  }
+}
 .service-categories__category {
   display: block;
   margin-top: 80px;

@@ -18,6 +18,12 @@ $fourthServiceCategoryColor: $yellow;
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 1024px) {
+    .service-categories {
+        flex-flow: column;
+    }
+}
+
 .service-categories__category {
     display: block;
     margin-top: 80px;

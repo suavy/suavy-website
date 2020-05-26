@@ -1,6 +1,6 @@
 .services-more {
     background-color: $newColor;
-    padding: 25px;
+    padding: 100px 25px;
     & h2 {
         color: white;
         font-family: 'M PLUS 1p', sans-serif;
@@ -13,11 +13,11 @@
         font-weight: bold;
         font-size: 18px;
         text-align: center;
-        margin: 18px 32%;
+        margin: 18px 0%;
+        line-height: normal;
     }
     opacity: 1;
     transition: all 1.5s ease;
-    max-height: 2000px;
 }
 
 .services-more.invisible {
@@ -31,8 +31,9 @@
 .services-category {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 60px 15px;
     text-align: center;
+    justify-content: center;
 }
 
 .services-categories {
