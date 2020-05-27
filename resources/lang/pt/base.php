@@ -5,12 +5,13 @@ return [
         'title' => 'Nós somos uma <span>comunidade de freelancers</span> internacionais que constroem juntos os projetos de amanhã.',
     ],
     'services' => [
-        'closed' => 'Descubra <span class="link link--underline">nossos serviços</span>',
-        'opened-text' => 'Deu match ?',
-        'opened-link' => 'Entre em contacto agora !',
+        'title-less' => 'O que fazemos',
+        'closed' => '<span class="link">Eu quero saber mais sobre seus serviços!</span>',
+        'opened-text' => 'É um match! Mostre-me menos por enquanto.',
+        'opened-link' => 'Entre em contacto agora!',
     ],
     'contact' => [
-        'services_label' => 'Qual tipo de serviços você precisa ? 🤔',
+        'services_label' => 'Qual tipo de serviços você precisa? 🤔',
         'deliveries_label' => 'Tempo de entrega 🐢',
         'budgets_label' => 'Orçamento 💰',
         'name_label' => 'Nome*',
@@ -19,7 +20,7 @@ return [
         'email_placeholder' => '',
         'message_label' => 'Mensagem*',
         'message_placeholder' => 'Sua mensagem detalhada aqui ❤',
-        'button_name' => 'Seu projeto começa agora !',
+        'button_name' => 'Seu projeto começa agora!',
     ],
     'clients' => [
         'title' => 'Empresas parceiras',

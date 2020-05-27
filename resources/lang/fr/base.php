@@ -5,12 +5,13 @@ return [
         'title' => 'Nous sommes une <span>communauté internationale de freelances</span> qui construisons ensemble les projets de demain.',
     ],
     'services' => [
-        'closed' => 'Découvrez <span class="link link--underline">nos services</span>',
-        'opened-text' => "C'est un match ?",
-        'opened-link' => 'Contactez-nous !',
+        'title-less' => 'Ce que nous faisons',
+        'closed' => '<span class="link>Je veux en savoir plus sur vos services!</span>',
+        'opened-text' => "C'est un match! Montrez-moi moins pour l'instant.",
+        'opened-link' => 'Contactez-nous!',
     ],
     'contact' => [
-        'services_label' => 'De quel(s) service(s) avez-vous besoin ? 🤔',
+        'services_label' => 'De quel(s) service(s) avez-vous besoin? 🤔',
         'deliveries_label' => 'Délais de livraison 🐢',
         'budgets_label' => 'Budget 💰',
         'name_label' => 'Nom*',

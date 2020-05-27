@@ -12,6 +12,17 @@ $fourthServiceCategoryColor: $yellow;
     transition: height 1s ease;
 }
 
+.services__title {
+    font-family: 'M PLUS 1p', sans-serif;
+    @include font-size(18px);
+    text-align: center;
+    padding-top: 45px;
+    color: $secondaryColor;
+    letter-spacing: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .service-categories {
     display: flex;
     text-align: center;
@@ -20,12 +31,12 @@ $fourthServiceCategoryColor: $yellow;
 
 .service-categories__category {
     display: block;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     p {
         font-family: 'M PLUS 1p', sans-serif;
         font-size: 13px;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
         font-weight: bold;
         margin-bottom: 0;
         color: $primaryColor;
@@ -55,7 +66,7 @@ $fourthServiceCategoryColor: $yellow;
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     color: $secondaryColor;
     display: flex;
     justify-content: center;

@@ -1,5 +1,6 @@
 <!-- <div class="home__row home__row--services home__row--above-team bg-primary"> -->
     <div class="services">
+        <div class="services__title">@lang('base.services.title-less')</div>
         <div class="service-categories" id="service-categories" data-count="{{ $services->count() }}">
             @foreach($services as $service)<div class="service-categories__category service-categories__category--{{ $service->color }}">
                     <div class="service-categories__category__icon"><i class="{{ $service->icon }}"></i></div>
@@ -19,7 +20,7 @@
             <span style="display: none" class="js-services-show-more-or-contact">
                 <!-- @lang('base.services.opened-text') -->
                 <!-- <span class="link js-services-to-contact-us" >@lang('base.services.opened-link')</span> -->
-                <span class="js-services-show-less link" >@lang('base.services.opened-text') see less</span>
+                <span class="js-services-show-less link" >@lang('base.services.opened-text')</span>
             </span>
         </div>
 

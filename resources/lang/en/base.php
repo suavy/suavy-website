@@ -5,8 +5,9 @@ return [
         'title' => 'We are a <span>community of freelancers</span> that build beautiful things around the world.',
     ],
     'services' => [
-        'closed' => 'Check <span class="link link--underline">our services</span>',
-        'opened-text' => 'A good match?',
+        'title-less' => 'What we do',
+        'closed' => '<span class="link">I want to know more of your services!</span>',
+        'opened-text' => "It's a match! Show me less for now.",
         'opened-link' => 'Get in touch now!',
     ],
     'contact' => [
