@@ -1040,13 +1040,15 @@ textarea {
   transition: all 1.5s ease;
   max-height: 2000px;
 }
-.services-more h2 {
+
+.services-more__title {
   color: white;
   font-family: "M PLUS 1p", sans-serif;
   font-size: 45px;
   text-align: center;
 }
-.services-more h3 {
+
+.services-more__description {
   color: white;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: bold;
@@ -1075,11 +1077,16 @@ textarea {
   display: block;
   text-align: center;
 }
-.services-categories h3 {
+
+.services-categories__title {
   text-align: center;
   font-family: "M PLUS 1p", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
 }
-.services-categories p {
+
+.services-categories__description {
   font-family: "M PLUS 1p", sans-serif;
   text-align: center;
   color: white;
@@ -1088,28 +1095,12 @@ textarea {
   line-height: 180%;
 }
 
-.services-categories__design h3 {
-  color: #29F0B5;
-}
-
-.services-categories__api h3 {
+.design, .api, .marketing {
   color: #F67110;
 }
 
-.services-categories__webdev h3 {
+.webdev, .mobile, .data {
   color: #29F0B5;
-}
-
-.services-categories__mobile h3 {
-  color: #F67110;
-}
-
-.services-categories__data h3 {
-  color: #29F0B5;
-}
-
-.services-categories__marketing h3 {
-  color: #F67110;
 }
 
 .services-avatar {
@@ -1124,30 +1115,6 @@ textarea {
 .services-avatar i {
   line-height: 70px;
   margin: auto;
-}
-
-.services-avatar__design {
-  color: #29F0B5;
-}
-
-.services-avatar__api {
-  color: #F67110;
-}
-
-.services-avatar__webdev {
-  color: #29F0B5;
-}
-
-.services-avatar__mobile {
-  color: #F67110;
-}
-
-.services-avatar__data {
-  color: #29F0B5;
-}
-
-.services-avatar__marketing {
-  color: #F67110;
 }
 
 .send-message {
