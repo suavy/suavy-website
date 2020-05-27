@@ -49,7 +49,7 @@ class CreateServicesTable extends Migration
     {
         Service::create([
             'color' => 'first',
-            'icon' => 'fab fa-fw fa-dev',
+            'icon' => 'fad fa-phone-laptop fa-swap-opacity',
             'name_fr' => 'Développement', 'name_pt' => 'Desenvolvimento', 'name_en' => 'Development', 'name_es' => '',
         ]);
         Service::create([
