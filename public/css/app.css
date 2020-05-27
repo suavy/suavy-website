@@ -1812,12 +1812,6 @@ textarea::placeholder {
 .home__row--map {
   text-align: center;
 }
-@media (max-width: 1024px) {
-  .home__row--map {
-    background-image: none;
-  }
-}
-
 .home__row--below-map {
   padding-bottom: 120px;
 }
