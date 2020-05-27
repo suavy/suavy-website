@@ -1,8 +1,7 @@
 <div class="header">
     <div class="header__logo">
         <span><</span><span>be</span>Suavy<span>/></span>
-    </div>
-    <nav class="header__nav">
+    </div><nav class="header__nav">
         <div class="header__nav__item">
             <div class="buttons-theme">
                 <a href="{{ route('switch-theme', ['theme' => 'light']) }}" class="button-theme button-theme--light @if(!session('theme') || session('theme') == "light")) button-theme--selected @endif">
