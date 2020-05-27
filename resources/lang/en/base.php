@@ -10,6 +10,9 @@ return [
         'opened-text' => "It's a match! Show me less for now.",
         'opened-link' => 'Get in touch now!',
     ],
+    'team' => [
+        'title' => 'Our team',
+    ],
     'contact' => [
         'services_label' => 'Which service(s) are you interested in ? 🤔',
         'deliveries_label' => 'Delivery Time 🐢',

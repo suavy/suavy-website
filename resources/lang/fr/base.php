@@ -10,6 +10,9 @@ return [
         'opened-text' => "C'est un match! Montrez-moi moins pour l'instant.",
         'opened-link' => 'Contactez-nous!',
     ],
+    'team' => [
+        'title' => 'Notre équipe',
+    ],
     'contact' => [
         'services_label' => 'De quel(s) service(s) avez-vous besoin? 🤔',
         'deliveries_label' => 'Délais de livraison 🐢',

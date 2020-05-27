@@ -1,7 +1,7 @@
 <!-- <div class="home__row home__row--team" style="position: relative;"> -->
     <!-- <div style="position: absolute; width: 100%; height: 100%;"  id="teamRow"></div> -->
     <div class="team">
-        <div class="team__title">Our Team</div>
+        <div class="team__title">@lang('base.team.title')</div>
         @foreach(\App\Models\User::query()->whereDisabled(false)->get() as $user)<div class="team__member-container">
             <div class="team__member">
                 <div class="team__member__picture js-team-picture slow" id="team-{{$user->nickname}}">
