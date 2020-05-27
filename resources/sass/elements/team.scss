@@ -31,7 +31,9 @@
         }
     }
     @include media('tablet-large') {
-        margin-bottom: 0;
+        padding: 0 15px 0 15px;
+        margin-bottom: 25px;
+        width: 100%;
     }
 
     box-sizing: border-box;
@@ -134,6 +136,7 @@
 }
 
 .team__member__role {
+    font-family: 'M PLUS 1p', sans-serif;
     padding: 0 0 5px;
     @include font-size(13px);
     letter-spacing: 6px;

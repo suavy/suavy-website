@@ -5,12 +5,16 @@ $fourthServiceCategoryColor: $yellow;
 
 .services {
     background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../../../images/pattern.jpg);
-    background-size: 140%;
+    background-size: cover;
     background-position: center;
     width: 100%;
     text-align: center;
     transition: height 1s ease;
     font-family: 'M PLUS 1p', sans-serif;
+    @include media('tablet-large') {
+                background-size: cover;
+                background-position: center;
+            }
 }
 
 .services__title {
@@ -28,6 +32,9 @@ $fourthServiceCategoryColor: $yellow;
     display: flex;
     text-align: center;
     justify-content: space-around;
+    @include media('tablet-large') {
+        display: block;
+    }
 }
 
 .service-categories__category {
@@ -79,6 +86,9 @@ $fourthServiceCategoryColor: $yellow;
         cursor: pointer;
         box-shadow: none !important;
         outline: none !important;
+    }
+    @include media('tablet-large') {
+        font-size: 24px;
     }
 }
 

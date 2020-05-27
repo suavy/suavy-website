@@ -3,7 +3,10 @@
     padding: 75px;
     opacity: 1;
     transition: all 1.5s ease;
-    max-height: 2000px;
+    max-height: 10000px;
+    @include media('tablet-large') {
+        padding: 75px 15px;
+    }
 }
 
 .services-more__title {
@@ -19,7 +22,7 @@
     font-weight: bold;
     font-size: 18px;
     text-align: center;
-    margin: 35px 30%;
+    margin: 35px 16px;
     line-height: 163%;
 }
 
@@ -42,6 +45,10 @@
     flex: 0 0 33.33333%;
     display: block;
     text-align: center;
+    @include media('tablet-large') {
+        flex: 0 0 100%;
+        margin: 0 auto;
+    }
 }
 
 .services-categories__title {
@@ -59,6 +66,9 @@
     font-weight: lighter;
     margin: 16px 70px 70px;
     line-height: 163%;
+    @include media('tablet-large') {
+        margin: 16px 20px 70px;
+    }
 }
 
 .design, .api, .marketing {
