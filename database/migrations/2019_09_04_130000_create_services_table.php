@@ -54,17 +54,17 @@ class CreateServicesTable extends Migration
         ]);
         Service::create([
             'color' => 'second',
-            'icon' => 'fad fa-fw fa-icons',
+            'icon' => 'fad fa-pencil-ruler',
             'name_fr' => 'Design', 'name_pt' => 'Design', 'name_en' => 'Design', 'name_es' => 'Design',
         ]);
         Service::create([
             'color' => 'third',
-            'icon' => 'fad fa-fw fa-server',
-            'name_fr' => 'Data', 'name_pt' => 'Data', 'name_en' => 'Data', 'name_es' => 'Data',
+            'icon' => 'fad fa-database',
+            'name_fr' => 'Data', 'name_pt' => 'Dados', 'name_en' => 'Data', 'name_es' => 'Data',
         ]);
         Service::create([
             'color' => 'fourth',
-            'icon' => 'fad fa-fw fa-rocket-launch',
+            'icon' => 'fad fa-lightbulb-on',
             'name_fr' => 'Marketing', 'name_pt' => 'Marketing', 'name_en' => 'Marketing', 'name_es' => 'Marketing',
         ]);
 
