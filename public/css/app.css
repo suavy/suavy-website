@@ -1054,7 +1054,8 @@ textarea {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 35px 32%;
+  margin: 35px 30%;
+  line-height: 163%;
 }
 
 .services-more.invisible {
@@ -1092,7 +1093,7 @@ textarea {
   color: white;
   font-weight: lighter;
   margin: 16px 70px 70px;
-  line-height: 180%;
+  line-height: 163%;
 }
 
 .design, .api, .marketing {
@@ -1521,9 +1522,9 @@ textarea {
   padding: 0 0 5px;
   font-size: 13px;
   font-size: 0.8125rem;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   color: #596275;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
