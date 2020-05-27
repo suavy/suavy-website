@@ -30,7 +30,7 @@
                 </div>
                 <div class="team__member__links">
                     @if($user->github_url)<a href="{{ $user->github_url }}" class="team__member__link" target="_blank" rel="nofollow noreferrer noopener"><i class="fab fa-github"></i></a>@endif
-                    @if($user->website_url)<a href="{{ $user->website_url }}" class="team__member__link" target="_blank" rel="nofollow noreferrer noopener"><i class="fad fa-browser"></i></a>@endif
+                    <!-- @if($user->website_url)<a href="{{ $user->website_url }}" class="team__member__link" target="_blank" rel="nofollow noreferrer noopener"><i class="fad fa-browser"></i></a>@endif -->
                 </div>
                 {{-- <div class="team__member__location">
                     <i class="fal fa-fw fa-location"></i> {{ $user->city->translated_name }}, {{ $user->city->country->translated_name }}

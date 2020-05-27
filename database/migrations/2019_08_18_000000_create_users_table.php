@@ -85,7 +85,6 @@ class CreateUsersTable extends Migration
         $user->nickname = 'cdo';
         $user->role = 'Project lead & fullstack developer';
         $user->email = 'cdo_outeiro@me.com';
-        $user->website_url = 'https://cdo9.space/';
         $user->github_url = 'https://github.com/cdo9';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
@@ -101,7 +100,6 @@ class CreateUsersTable extends Migration
         $user->nickname = 'bsromeiro';
         $user->role = 'Frontend developer & designer';
         $user->email = 'bsromeiro@gmail.com';
-        $user->website_url = 'https://bsrom.site/';
         $user->github_url = 'https://github.com/obrenoco';
         $user->password = \Illuminate\Support\Facades\Hash::make('test');
         $user->created_at = $user->updated_at = \Carbon\Carbon::now();
