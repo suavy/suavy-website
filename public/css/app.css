@@ -1261,7 +1261,8 @@ textarea {
 }
 @media (max-width: 768px) {
   .services-view-more {
-    font-size: 24px;
+    font-size: 21px;
+    padding: 0 15px 45px 15px;
   }
 }
 
@@ -1899,7 +1900,7 @@ textarea::placeholder {
 }
 @media (max-width: 1024px) {
   .header {
-    padding: 10px;
+    padding: 20px 80px 10px;
   }
 }
 
