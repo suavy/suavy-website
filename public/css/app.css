@@ -1074,8 +1074,9 @@ textarea {
 .services-category {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 60px 15px;
   text-align: center;
+  justify-content: center;
 }
 
 .services-categories {
@@ -1199,6 +1200,11 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .service-categories {
+    flex-flow: column;
+  }
+}
 .service-categories__category {
   display: block;
   margin-top: 45px;
