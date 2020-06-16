@@ -473,11 +473,13 @@ html, body {
   height: 45px;
   -webkit-filter: brightness(0);
           filter: brightness(0);
+  transition: 0.2s;
 }
 .client img:hover {
   cursor: crosshair;
   -webkit-filter: none;
           filter: none;
+  transition: 0.2s;
 }
 
 .contact--check {

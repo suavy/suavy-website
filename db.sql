@@ -437,7 +437,7 @@ CREATE TABLE `projects` (
   `description_en` text COLLATE utf8mb4_unicode_ci,
   `description_es` text COLLATE utf8mb4_unicode_ci,
   `area` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `company_logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_logo` longtext COLLATE utf8mb4_unicode_ci,
   `color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `color_light` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `started_at` timestamp NULL DEFAULT NULL,

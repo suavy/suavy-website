@@ -55,10 +55,10 @@ class CreateProjectSkillTable extends Migration
 
         // Projects
         $projectRemplafrance = Project::where('slug', 'remplafrance')->first()->skills();
-        $projectVictorCharles = Project::where('slug', 'victor-charles')->first()->skills();
+        $projectBPIFrance = Project::where('slug', 'bpi-france')->first()->skills();
         $projectBdbuzz = Project::where('slug', 'bdbuzz')->first()->skills();
         $projectNolimBd = Project::where('slug', 'nolim-bd')->first()->skills();
-        $projectLookaya = Project::where('slug', 'lookaya')->first()->skills();
+        $projectHermesParis = Project::where('slug', 'hermes-paris')->first()->skills();
 
         // Attach to project Remplafrance
         $projectRemplafrance->attach($skillLaravel);
@@ -68,11 +68,11 @@ class CreateProjectSkillTable extends Migration
         $projectRemplafrance->attach($skillSeo);
 
         // Attach to project Victor & Charles
-        $projectVictorCharles->attach($skillLaravel);
-        $projectVictorCharles->attach($skillHtml);
-        $projectVictorCharles->attach($skillSass);
-        $projectVictorCharles->attach($skillJquery);
-        $projectVictorCharles->attach($skillSql);
+        $projectBPIFrance->attach($skillLaravel);
+        $projectBPIFrance->attach($skillHtml);
+        $projectBPIFrance->attach($skillSass);
+        $projectBPIFrance->attach($skillJquery);
+        $projectBPIFrance->attach($skillSql);
 
         // Attach to project bdBuzz
         $projectBdbuzz->attach($skillYii);
@@ -88,11 +88,11 @@ class CreateProjectSkillTable extends Migration
         $projectNolimBd->attach($skillJquery);
         $projectNolimBd->attach($skillSql);
 
-        // Attach to project Lookaya
-        $projectLookaya->attach($skillZend);
-        $projectLookaya->attach($skillHtml);
-        $projectLookaya->attach($skillSass);
-        $projectLookaya->attach($skillJquery);
-        $projectLookaya->attach($skillSql);
+        // Attach to project HermesParis
+        $projectHermesParis->attach($skillZend);
+        $projectHermesParis->attach($skillHtml);
+        $projectHermesParis->attach($skillSass);
+        $projectHermesParis->attach($skillJquery);
+        $projectHermesParis->attach($skillSql);
     }
 }

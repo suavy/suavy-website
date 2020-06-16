@@ -24,7 +24,7 @@ class CreateProjectsTable extends Migration
             $table->text('description_en')->nullable();
             $table->text('description_es')->nullable();
             $table->string('area')->nullable();
-            $table->string('company_logo')->nullable();
+            $table->longText('company_logo')->nullable();
             $table->string('color')->nullable();
             $table->string('color_light')->nullable();
             $table->timestamp('started_at')->nullable();
@@ -71,21 +71,7 @@ class CreateProjectsTable extends Migration
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
-        ]);
-
-        Project::create([
-            'slug' => 'victor-charles',
-            'name' => 'Victor & Charles',
-            //'position_fr' => 'Développeur Web Fullstack',
-            'area' => 'Paris',
-            'color' => '#1dabe3',
-            'color_light' => hex2rgba('#1dabe3', 0.2),
-            'started_at' => \Carbon\Carbon::create(2015, 10, 1),
-            'ended_at' => \Carbon\Carbon::create(2018, 12, 31),
-            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            'description_pt' => '',
-            'description_en' => '',
-            'description_es' => '',
+            'company_logo' => '../../../public/company_logos/rempla-france.svg',
         ]);
 
         Project::create([
@@ -101,21 +87,7 @@ class CreateProjectsTable extends Migration
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
-        ]);
-
-        Project::create([
-            'slug' => 'lookaya',
-            'name' => 'Lookaya',
-            //'position_fr' => 'Développeur Web Fullstack',
-            'area' => 'Neuilly-sur-Seine',
-            'color' => '#146ccb',
-            'color_light' => hex2rgba('#146ccb', 0.2),
-            'started_at' => \Carbon\Carbon::create(2015, 9, 1),
-            'ended_at' => \Carbon\Carbon::create(2016, 9, 1),
-            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            'description_pt' => '',
-            'description_en' => '',
-            'description_es' => '',
+            'company_logo' => '../../../company_logos/carrefour.svg',
         ]);
 
         Project::create([
@@ -131,6 +103,41 @@ class CreateProjectsTable extends Migration
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
+            'company_logo' => '../../../company_logos/bdbuzz.png',
         ]);
+
+        Project::create([
+            'slug' => 'bpi-france',
+            'name' => 'BPI France',
+            //'position_fr' => 'Développeur Web Fullstack',
+            'area' => 'Paris',
+            'color' => '#1dabe3',
+            'color_light' => hex2rgba('#1dabe3', 0.2),
+            'started_at' => \Carbon\Carbon::create(2015, 10, 1),
+            'ended_at' => \Carbon\Carbon::create(2018, 12, 31),
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'description_pt' => '',
+            'description_en' => '',
+            'description_es' => '',
+            'company_logo' => '../../../company_logos/bpifrance.svg',
+        ]);
+
+
+        Project::create([
+            'slug' => 'hermes-paris',
+            'name' => 'Hérmes Paris',
+            //'position_fr' => 'Développeur Web Fullstack',
+            'area' => 'Neuilly-sur-Seine',
+            'color' => '#146ccb',
+            'color_light' => hex2rgba('#146ccb', 0.2),
+            'started_at' => \Carbon\Carbon::create(2015, 9, 1),
+            'ended_at' => \Carbon\Carbon::create(2016, 9, 1),
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'description_pt' => '',
+            'description_en' => '',
+            'description_es' => '',
+            'company_logo' => '../../../company_logos/hermes-paris.png',
+        ]);
+
     }
 }

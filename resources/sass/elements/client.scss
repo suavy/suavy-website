@@ -22,9 +22,11 @@
         width: auto;
         height: 45px;
         filter: brightness(0);
+        transition: .2s;
         &:hover {
             cursor: crosshair;
             filter: none;
+            transition: .2s;
         }
     }
 }

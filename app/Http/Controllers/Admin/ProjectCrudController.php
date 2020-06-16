@@ -67,7 +67,7 @@ class ProjectCrudController extends CrudController
         $this->crud->addField([   // Upload
             'name' => 'company_logo',
             'label' => 'Company logo',
-            'type' => 'upload',
+            'type' => 'file',
             'upload' => true,
         ]);
     }
