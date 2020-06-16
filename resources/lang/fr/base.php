@@ -6,7 +6,7 @@ return [
     ],
     'services' => [
         'title-less' => 'Ce que nous faisons',
-        'closed' => '<span class="link>Je veux en savoir plus sur vos services!</span>',
+        'closed' => '<span class="link">Je veux en savoir plus sur vos services!</span>',
         'opened-text' => "C'est un match! Montrez-moi moins pour l'instant.",
         'opened-link' => 'Contactez-nous!',
     ],
