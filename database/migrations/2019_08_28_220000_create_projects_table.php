@@ -122,7 +122,6 @@ class CreateProjectsTable extends Migration
             'company_logo' => '../../../company_logos/bpifrance.svg',
         ]);
 
-
         Project::create([
             'slug' => 'hermes-paris',
             'name' => 'Hérmes Paris',
@@ -138,6 +137,5 @@ class CreateProjectsTable extends Migration
             'description_es' => '',
             'company_logo' => '../../../company_logos/hermes-paris.png',
         ]);
-
     }
 }
