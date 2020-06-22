@@ -3,11 +3,12 @@
     @include font-size(21px);
     text-align: center;
     padding-bottom: 20px;
-    color: $secondaryColor;
+    color: $primaryColor;
     letter-spacing: 4px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .clients {
     display: flex;
     flex-wrap: wrap;
@@ -30,3 +31,11 @@
         }
     }
 }
+
+.bg-new {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(../../../images/pattern.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    // background-color: #EBEAEC !important;
+    // fill: #EBEAEC !important;
+  }

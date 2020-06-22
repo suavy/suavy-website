@@ -50,7 +50,10 @@
         // This function toggles the visibility of the div
     }
 
-    const servicesBtn = document.querySelector(".services-view-more")
-    servicesBtn.addEventListener('click', showDetailsServices); // the visibility is toggled through clicking
+    const servicesBtnOpen = document.querySelector(".js-services-show-more")
+    const servicesBtnClose = document.querySelector(".js-services-show-less")
+
+    servicesBtnOpen.addEventListener('click', showDetailsServices); // the visibility is toggled through clicking
+    servicesBtnClose.addEventListener('click', showDetailsServices); // the visibility is toggled through clicking
 
 </script>

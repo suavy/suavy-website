@@ -7,7 +7,7 @@
     @include media('tablet-large') {
         padding-top: 40px;
     }
-    background-image: url(../../../images/purple-pattern.jpg);
+    background-image: url(../../../images/blue-pattern2.jpg);
 }
 
 .team__member-container {
@@ -140,7 +140,7 @@
     padding: 0 0 5px;
     @include font-size(13px);
     letter-spacing: 6px;
-    color: $gray;
+    color: $secondaryColor;
     font-weight: 700;
     text-transform: uppercase;
     @include media('tablet-large') {
@@ -178,7 +178,7 @@
     padding-bottom: 50px;
     color: $secondaryColor;
     letter-spacing: 4px;
-    font-weight: 800;
+    font-weight: bold;
     text-transform: uppercase;
 }
 

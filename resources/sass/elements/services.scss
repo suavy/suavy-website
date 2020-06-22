@@ -4,7 +4,7 @@ $thirdServiceCategoryColor: $orange;
 $fourthServiceCategoryColor: $yellow;
 
 .services {
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../../../images/pattern.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(../../../images/pattern.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -22,9 +22,9 @@ $fourthServiceCategoryColor: $yellow;
     @include font-size(18px);
     text-align: center;
     padding-top: 45px;
-    color: $secondaryColor;
+    color: $primaryColor;
     letter-spacing: 4px;
-    font-weight: 800;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -33,7 +33,7 @@ $fourthServiceCategoryColor: $yellow;
     text-align: center;
     justify-content: space-around;
     @include media('tablet-large') {
-        display: block;
+        // display: block;
     }
 }
 
@@ -81,21 +81,33 @@ $fourthServiceCategoryColor: $yellow;
     letter-spacing: 2px;
     font-weight: bold;
     padding-bottom: 45px;
-    color: $secondaryColor;
+    color: $primaryColor;
     display: flex;
     justify-content: center;
     box-shadow: none !important;
     outline: none !important;
     text-decoration: none;
+    @include media('tablet-large') {
+        font-size: 21px;
+        padding: 0 15px 45px 15px;
+    }
+}
+
+.js-services-show-more {
     &:hover {
-        color: $primaryColor;
+        color: $secondaryColor;
         cursor: pointer;
         box-shadow: none !important;
         outline: none !important;
     }
-    @include media('tablet-large') {
-        font-size: 21px;
-        padding: 0 15px 45px 15px;
+}
+
+.js-services-show-less {
+    &:hover {
+        color: $secondaryColor;
+        cursor: pointer;
+        box-shadow: none !important;
+        outline: none !important;
     }
 }
 

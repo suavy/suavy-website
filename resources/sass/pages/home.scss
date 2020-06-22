@@ -6,9 +6,9 @@
 
 .home__row {
     position: relative;
-    padding: 30px 60px;
+    padding: 60px 60px;
     @include media('screen-small') {
-        padding: 10px 15px;
+        padding: 30px 15px;
     }
 }
 

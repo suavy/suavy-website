@@ -322,31 +322,31 @@ a {
 }
 
 .color-primary {
-  color: #30233D;
+  color: #247BA0;
 }
 
 .bg-primary {
-  background-color: #30233D !important;
-  fill: #30233D !important;
+  background-color: #247BA0 !important;
+  fill: #247BA0 !important;
 }
 
 .bg-gradient-primary {
-  background-color: #30233D;
-  background-image: linear-gradient(0deg, #30233D 0%, #17101d 100%);
+  background-color: #247BA0;
+  background-image: linear-gradient(0deg, #247BA0 0%, #1b5b76 100%);
 }
 
 .color-secondary {
-  color: #F61067;
+  color: #5fddb7;
 }
 
 .bg-secondary {
-  background-color: #F61067 !important;
-  fill: #F61067 !important;
+  background-color: #5fddb7 !important;
+  fill: #5fddb7 !important;
 }
 
 .bg-gradient-secondary {
-  background-color: #F61067;
-  background-image: linear-gradient(0deg, #F61067 0%, #cb0852 100%);
+  background-color: #5fddb7;
+  background-image: linear-gradient(0deg, #5fddb7 0%, #35d4a4 100%);
 }
 
 .color-new {
@@ -452,7 +452,7 @@ html, body {
   font-size: 1.3125rem;
   text-align: center;
   padding-bottom: 20px;
-  color: #F61067;
+  color: #247BA0;
   letter-spacing: 4px;
   font-weight: bold;
   text-transform: uppercase;
@@ -482,13 +482,19 @@ html, body {
   transition: 0.2s;
 }
 
+.bg-new {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../../images/pattern.jpg) !important;
+  background-size: cover;
+  background-position: center;
+}
+
 .contact--check {
   text-align: center;
 }
 .contact--check i {
   font-size: 200px;
   font-size: 12.5rem;
-  color: #F61067;
+  color: #5fddb7;
   line-height: 369px;
 }
 @media (max-width: 768px) {
@@ -575,7 +581,7 @@ html, body {
 }
 .contact__letter-box__front:before {
   border-right: 600px solid transparent;
-  border-bottom: 300px solid #4a365d;
+  border-bottom: 300px solid #2d9bca;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:before {
@@ -585,7 +591,7 @@ html, body {
 }
 .contact__letter-box__front:after {
   border-left: 600px solid transparent;
-  border-bottom: 300px solid #30233D;
+  border-bottom: 300px solid #247BA0;
 }
 @media (max-width: 768px) {
   .contact__letter-box__front:after {
@@ -617,7 +623,7 @@ html, body {
   height: 0;
   border-right: 300px solid transparent;
   border-left: 300px solid transparent;
-  border-bottom: 157px solid #F61067;
+  border-bottom: 157px solid #5fddb7;
 }
 @media (max-width: 768px) {
   .contact__letter-box__top:before {
@@ -660,7 +666,7 @@ html, body {
 }
 .checkbox .label:hover {
   color: #05060a !important;
-  border: 2px solid #F61067 !important;
+  border: 2px solid #5fddb7 !important;
 }
 
 input {
@@ -753,7 +759,7 @@ textarea {
   padding-right: 40px;
 }
 .map-title span {
-  color: #F61067;
+  color: #5fddb7;
 }
 @media (max-width: 1800px) {
   .map-title {
@@ -846,7 +852,7 @@ textarea {
 .map-marker__controller:checked ~ .map-marker__button {
   width: 24px;
   height: 24px;
-  background-color: #30233D;
+  background-color: #247BA0;
   border: 2px solid #f5f6fa;
   line-height: 24px;
   font-size: 14px;
@@ -962,7 +968,7 @@ textarea {
   }
 }
 .bg-gradient {
-  background: linear-gradient(0deg, #150433 0%, #3A0475 100%);
+  background: linear-gradient(0deg, #1e6b89 0%, #3baad6 100%);
 }
 
 .modal-container {
@@ -1036,7 +1042,7 @@ textarea {
 }
 
 .services-more {
-  background-color: #110C2A;
+  background-color: #247BA0;
   padding: 75px;
   opacity: 1;
   transition: all 1.5s ease;
@@ -1120,7 +1126,7 @@ textarea {
 }
 
 .webdev, .mobile, .data {
-  color: #29F0B5;
+  color: #5fddb7;
 }
 
 .services-avatar {
@@ -1128,8 +1134,8 @@ textarea {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: solid 1px #2C1F42;
-  background-color: #150D2D;
+  border: solid 1px #3baad6;
+  background-color: #257fa3;
   font-size: 32px;
 }
 .services-avatar i {
@@ -1141,17 +1147,17 @@ textarea {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   background-color: transparent;
-  color: #F64467;
+  color: #5fddb7;
   border-radius: 30px;
   padding: 20px 50px;
-  border: 2px solid #F64467;
+  border: 2px solid #5fddb7;
   font-size: 14px;
   letter-spacing: 2px;
   transition: all 0.3s;
 }
 .send-message:hover {
   cursor: pointer;
-  background-color: #F64467;
+  background-color: #5fddb7;
   color: white;
   transition: all 0.3s;
   font-weight: 500;
@@ -1164,7 +1170,7 @@ textarea {
 }
 
 .services {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../images/pattern.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../../images/pattern.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1185,9 +1191,9 @@ textarea {
   font-size: 1.125rem;
   text-align: center;
   padding-top: 45px;
-  color: #F61067;
+  color: #247BA0;
   letter-spacing: 4px;
-  font-weight: 800;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -1196,12 +1202,6 @@ textarea {
   text-align: center;
   justify-content: space-around;
 }
-@media (max-width: 768px) {
-  .service-categories {
-    display: block;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .service-categories {
     flex-flow: column;
@@ -1218,7 +1218,7 @@ textarea {
   letter-spacing: 2px;
   font-weight: bold;
   margin-bottom: 0;
-  color: #30233D;
+  color: #247BA0;
 }
 
 .service-categories__category__icon {
@@ -1227,7 +1227,7 @@ textarea {
   line-height: 80px;
   text-align: center;
   margin: 0 auto 15px;
-  color: #F61067;
+  color: #5fddb7;
 }
 
 .service-categories__category__name {
@@ -1238,7 +1238,7 @@ textarea {
   letter-spacing: 6px;
   font-weight: bold;
   margin-bottom: 0;
-  color: #30233D;
+  color: #247BA0;
   text-transform: uppercase;
 }
 
@@ -1248,24 +1248,32 @@ textarea {
   letter-spacing: 2px;
   font-weight: bold;
   padding-bottom: 45px;
-  color: #F61067;
+  color: #247BA0;
   display: flex;
   justify-content: center;
   box-shadow: none !important;
   outline: none !important;
   text-decoration: none;
 }
-.services-view-more:hover {
-  color: #30233D;
-  cursor: pointer;
-  box-shadow: none !important;
-  outline: none !important;
-}
 @media (max-width: 768px) {
   .services-view-more {
     font-size: 21px;
     padding: 0 15px 45px 15px;
   }
+}
+
+.js-services-show-more:hover {
+  color: #5fddb7;
+  cursor: pointer;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.js-services-show-less:hover {
+  color: #5fddb7;
+  cursor: pointer;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .service-categories__category__services {
@@ -1423,7 +1431,7 @@ textarea {
 .team {
   padding-top: 80px;
   padding-bottom: 60px;
-  background-image: url(../../../images/purple-pattern.jpg);
+  background-image: url(../../../images/blue-pattern2.jpg);
 }
 @media (max-width: 768px) {
   .team {
@@ -1567,7 +1575,7 @@ textarea {
   font-size: 13px;
   font-size: 0.8125rem;
   letter-spacing: 6px;
-  color: #596275;
+  color: #5fddb7;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1607,9 +1615,9 @@ textarea {
   font-size: 1.3125rem;
   text-align: center;
   padding-bottom: 50px;
-  color: #F61067;
+  color: #5fddb7;
   letter-spacing: 4px;
-  font-weight: 800;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -1699,8 +1707,8 @@ label.label {
 
 .checkbox .label:hover,
 .checkbox input:checked + .label {
-  border-color: #F61067;
-  box-shadow: inset 350px 0 0 0 #F61067;
+  border-color: #5fddb7;
+  box-shadow: inset 350px 0 0 0 #5fddb7;
   color: #05060a;
 }
 
@@ -1800,7 +1808,7 @@ textarea::placeholder {
 }
 .form-button:hover {
   cursor: pointer;
-  background-color: #F61067;
+  background-color: #5fddb7;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1810,11 +1818,11 @@ textarea::placeholder {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .home__row {
   position: relative;
-  padding: 30px 60px;
+  padding: 60px 60px;
 }
 @media (max-width: 1024px) {
   .home__row {
-    padding: 10px 15px;
+    padding: 30px 15px;
   }
 }
 
@@ -1913,7 +1921,7 @@ textarea::placeholder {
   vertical-align: middle;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 500;
-  color: #F61067;
+  color: #5fddb7;
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -1954,7 +1962,7 @@ html::-webkit-scrollbar {
 
 /* The grabbable scrollbar button  */
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #30233D, #F61067);
+  background: linear-gradient(180deg, #247BA0, #5fddb7);
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
