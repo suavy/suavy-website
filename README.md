@@ -46,7 +46,6 @@ text here
 
 * [lemattou](https://github.com/lemattou)
 * [cdo9](https://github.com/cdo9)
-* [obrenoco](https://github.com/obrenoco)
 
 
 ## License
