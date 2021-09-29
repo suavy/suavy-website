@@ -12,8 +12,7 @@ class BackpackUser extends User
     /**
      * Send the password reset notification.
      *
-     * @param string $token
-     *
+     * @param  string  $token
      * @return void
      */
     public function sendPasswordResetNotification($token)
