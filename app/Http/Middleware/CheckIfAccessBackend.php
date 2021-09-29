@@ -17,7 +17,6 @@ class CheckIfAccessBackend
      * is an admin, and not a regular user.
      *
      * @param [type] $user [description]
-     *
      * @return bool [description]
      */
     private function checkIfUserCanAccessBackEnd($user)
@@ -29,7 +28,6 @@ class CheckIfAccessBackend
      * Answer to unauthorized access request.
      *
      * @param [type] $request [description]
-     *
      * @return [type] [description]
      */
     private function respondToUnauthorizedRequest($request)
@@ -44,9 +42,8 @@ class CheckIfAccessBackend
     /**
      * Handle an incoming request.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \Closure                 $next
-     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
      * @return mixed
      */
     public function handle($request, Closure $next)
