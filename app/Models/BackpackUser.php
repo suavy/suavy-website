@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Backpack\CRUD\app\Notifications\ResetPasswordNotification as ResetPasswordNotification;
+use Backpack\CRUD\app\Notifications\ResetPasswordNotification;
 use Illuminate\Notifications\Notifiable;
 
 class BackpackUser extends User
